@@ -5,7 +5,7 @@
 
 Ever wanted a long-range solution to the destruction of a minecraft base? Ever wanted to recreate the stunning images of SAM missiles intercepting rockets?
 MissileWarfare provides both of those, and more.
-This Slimefun addon adds the following (amazing) features to your (wonderful) server.
+This [Slimefun 5](https://github.com/Slimefun5/Slimefun5) addon adds the following (amazing) features to your (wonderful) server.
 
  - SSM: Surface-to-Surface Missiles
 	 - Small, medium, large and advanced missiles with Normal, Accurate, Long-Range and High-Explosive types!
