@@ -21,14 +21,30 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A hand-held man-portable air defence system (MANPAD) Slimefun item
+ * that allows players to lock onto and fire at incoming missiles.
+ *
+ * @author MissileWarfare contributors
+ */
 public class ManPad extends SlimefunItem {
     public static List<Player> active = new ArrayList<>();
     public final int range = 300 * 300;
 
-    public ManPad(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    /**
+     * Creates a new ManPad item with right-click targeting behaviour.
+     *
+     * @param itemGroup  the item group this item belongs to
+     * @param item       the Slimefun item stack
+     * @param recipeType the recipe type
+     * @param recipe     the crafting recipe
+     */
+    public ManPad(@Nonnull ItemGroup itemGroup, @Nonnull SlimefunItemStack item,
+                  @Nonnull RecipeType recipeType, @Nonnull ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
         ItemUseHandler itemUseHandler = this::itemUse;
         addItemHandler(itemUseHandler);
@@ -56,8 +72,7 @@ public class ManPad extends SlimefunItem {
                     List<MissileController> missiles = new ArrayList<>();
                     for (MissileController missile : MissileWarfare.activemissiles) {
                         if (missile.isgroundmissile) {
-                            // again, when checking distances, check world first!!! -Colonel_Kai
-                            if(missile.world == event.getPlayer().getWorld()) {
+                            if (missile.world == event.getPlayer().getWorld()) {
                                 if (missile.pos.distanceSquared(event.getPlayer().getLocation().toVector()) < range) {
                                     missiles.add(missile);
                                 }
@@ -74,7 +89,7 @@ public class ManPad extends SlimefunItem {
                         Vector target = loc.add(dir.multiply(loc.distance(missile.pos.toLocation(event.getPlayer().getWorld())))).toVector();
                         float dist = (float) Math.floor(target.distanceSquared(missile.pos));
                         float acdist = (float) loc.distanceSquared(missile.pos.toLocation(event.getPlayer().getWorld()));
-                        if (target.isInSphere(missile.pos, missile.speed+((acdist/range)*8)) && dist < mindist) {
+                        if (target.isInSphere(missile.pos, missile.speed + ((acdist / range) * 8)) && dist < mindist) {
                             lockedmissile = missile;
                             mindist = dist;
                         }
@@ -123,7 +138,6 @@ public class ManPad extends SlimefunItem {
                     // Check if sneaking
                     if (!event.getPlayer().isSneaking()) {
                         if (lockedmissile == null) {
-                            // you had forgotten to remove the player from active after it failed.
                             active.remove(event.getPlayer());
                             event.getPlayer().sendMessage(Translations.get("messages.manpad.notarget"));
                             this.cancel();
@@ -139,11 +153,5 @@ public class ManPad extends SlimefunItem {
                 }
             }.runTaskTimer(MissileWarfare.getInstance(), 0, 2);
         }
-        /*else {
-            //DEBUGGING TOOL, IF IN RELEASED BUILD CONTACT ME IMMEDIATELY.
-            MissileController missile = new MissileController(true, event.getPlayer().getLocation().toVector(), event.getPlayer().getLocation().toVector(), 5, event.getPlayer().getWorld(), 5, 5, 1);
-            MissileWarfare.activemissiles.add(missile);
-            event.getPlayer().sendMessage("Spawned debug missile at : "+missile.pos);
-        }*/
     }
 }

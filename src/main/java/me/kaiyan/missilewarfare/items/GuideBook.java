@@ -12,8 +12,26 @@ import net.md_5.bungee.api.chat.ComponentBuilder;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.BookMeta;
 
+import javax.annotation.Nonnull;
+
+/**
+ * A Slimefun item that provides an in-game written book guide for
+ * MissileWarfare features and mechanics.
+ *
+ * @author MissileWarfare contributors
+ */
 public class GuideBook extends SlimefunItem {
-    public GuideBook(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+
+    /**
+     * Creates a new guide book item with populated book pages.
+     *
+     * @param itemGroup  the item group this item belongs to
+     * @param item       the Slimefun item stack
+     * @param recipeType the recipe type
+     * @param recipe     the crafting recipe
+     */
+    public GuideBook(@Nonnull ItemGroup itemGroup, @Nonnull SlimefunItemStack item,
+                     @Nonnull RecipeType recipeType, @Nonnull ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
         BookMeta meta = (BookMeta) item.getItemMeta();
 
@@ -22,32 +40,32 @@ public class GuideBook extends SlimefunItem {
 
         String[] content = Translations.getarr("guidebook.homepage.content");
 
-        BaseComponent[] homepage = new ComponentBuilder(ChatColor.BOLD+ Translations.get("guidebook.homepage.title") +"\n").color(ChatColor.BOLD)
-                .append(Translations.get("guidebook.homepage.subtitle")+"\n")
-                .append(ChatColor.BOLD+Translations.get("guidebook.homepage.contenttitle")+"\n")
-                .append(ChatColor.BLUE+""+ChatColor.UNDERLINE+content[0]+"\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "2"))
-                .append(ChatColor.BLUE+""+ChatColor.UNDERLINE+content[1]+"\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "3"))
-                .append(ChatColor.BLUE+""+ChatColor.UNDERLINE+content[2]+"\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "4"))
-                .append(ChatColor.BLUE+""+ChatColor.UNDERLINE+content[3]+"").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "5"))
+        BaseComponent[] homepage = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.homepage.title") + "\n").color(ChatColor.BOLD)
+                .append(Translations.get("guidebook.homepage.subtitle") + "\n")
+                .append(ChatColor.BOLD + Translations.get("guidebook.homepage.contenttitle") + "\n")
+                .append(ChatColor.BLUE + "" + ChatColor.UNDERLINE + content[0] + "\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "2"))
+                .append(ChatColor.BLUE + "" + ChatColor.UNDERLINE + content[1] + "\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "3"))
+                .append(ChatColor.BLUE + "" + ChatColor.UNDERLINE + content[2] + "\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "4"))
+                .append(ChatColor.BLUE + "" + ChatColor.UNDERLINE + content[3] + "").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "5"))
                 .create();
 
-        BaseComponent[] groundMissileLauncher = new ComponentBuilder(ChatColor.BOLD+Translations.get("guidebook.groundlauncherpage.title")+"\n")
+        BaseComponent[] groundMissileLauncher = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.groundlauncherpage.title") + "\n")
                 .append(Translations.getPage("guidebook.groundlauncherpage"))
                 .create();
 
-        BaseComponent[] antiMissileLauncher = new ComponentBuilder(ChatColor.BOLD+Translations.get("guidebook.antimissilepage.title")+"\n")
+        BaseComponent[] antiMissileLauncher = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.antimissilepage.title") + "\n")
                 .append(Translations.getPage("guidebook.antimissilepage"))
                 .create();
 
-        BaseComponent[] manpad = new ComponentBuilder(ChatColor.BOLD+Translations.get("guidebook.manpadpage.title")+"\n")
+        BaseComponent[] manpad = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.manpadpage.title") + "\n")
                 .append(Translations.getPage("guidebook.manpadpage"))
                 .create();
 
-        BaseComponent[] antiElytraLaunchers = new ComponentBuilder(ChatColor.BOLD+Translations.get("guidebook.antielytrapage.title")+"\n")
+        BaseComponent[] antiElytraLaunchers = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.antielytrapage.title") + "\n")
                 .append(Translations.getPage("guidebook.antielytrapage"))
                 .create();
 
-        BaseComponent[] playerID = new ComponentBuilder(ChatColor.BOLD+Translations.get("guidebook.playeridpage.title")+"\n")
+        BaseComponent[] playerID = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.playeridpage.title") + "\n")
                 .append(Translations.getPage("guidebook.playeridpage"))
                 .create();
 

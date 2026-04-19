@@ -12,7 +12,11 @@ import me.kaiyan.missilewarfare.util.PlayerID;
 import me.kaiyan.missilewarfare.util.Translations;
 import org.bukkit.NamespacedKey;
 import org.bukkit.OfflinePlayer;
-import org.bukkit.conversations.*;
+import org.bukkit.conversations.Conversation;
+import org.bukkit.conversations.ConversationContext;
+import org.bukkit.conversations.ConversationFactory;
+import org.bukkit.conversations.Prompt;
+import org.bukkit.conversations.StringPrompt;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.event.player.PlayerDropItemEvent;
@@ -21,11 +25,28 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * A Slimefun item that manages a named list of players, used for
+ * missile launcher targeting permissions via the Conversation API.
+ *
+ * @author MissileWarfare contributors
+ */
 public class PlayerList extends SlimefunItem {
-    public PlayerList(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+
+    /**
+     * Creates a new player list item with use and drop handlers.
+     *
+     * @param itemGroup  the item group this item belongs to
+     * @param item       the Slimefun item stack
+     * @param recipeType the recipe type
+     * @param recipe     the crafting recipe
+     */
+    public PlayerList(@Nonnull ItemGroup itemGroup, @Nonnull SlimefunItemStack item,
+                      @Nonnull RecipeType recipeType, @Nonnull ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
 
         ItemUseHandler itemUseHandler = this::itemUse;
@@ -36,10 +57,10 @@ public class PlayerList extends SlimefunItem {
     }
 
     private boolean itemDrop(PlayerDropItemEvent event, Player player, Item item) {
-        if (SlimefunItem.getByItem(item.getItemStack()) == null){
+        if (SlimefunItem.getByItem(item.getItemStack()) == null) {
             return true;
         }
-        if (!player.isSneaking() && SlimefunItem.getByItem(item.getItemStack()).getId().equals("PLAYERLIST")){
+        if (!player.isSneaking() && SlimefunItem.getByItem(item.getItemStack()).getId().equals("PLAYERLIST")) {
             event.setCancelled(true);
 
             NamespacedKey key = new NamespacedKey(MissileWarfare.getInstance(), "id");
@@ -58,14 +79,14 @@ public class PlayerList extends SlimefunItem {
         ItemMeta meta = event.getItem().getItemMeta();
         PersistentDataContainer cont = meta.getPersistentDataContainer();
 
-        try{
-            if (event.getSlimefunBlock().isPresent()){
-                if (event.getSlimefunBlock().get().getId().equals("ANTIELYTRALAUNCHER")){
-                    event.getPlayer().sendMessage(Translations.get("messages.playerlist.addedkey")+cont.get(key, PersistentDataType.STRING)+"");
+        try {
+            if (event.getSlimefunBlock().isPresent()) {
+                if (event.getSlimefunBlock().get().getId().equals("ANTIELYTRALAUNCHER")) {
+                    event.getPlayer().sendMessage(Translations.get("messages.playerlist.addedkey") + cont.get(key, PersistentDataType.STRING) + "");
                     return;
                 }
             }
-        } catch (NullPointerException e){
+        } catch (NullPointerException e) {
             event.getPlayer().sendMessage(Translations.get("messages.playerlist.noid"));
             return;
         }
@@ -133,9 +154,9 @@ public class PlayerList extends SlimefunItem {
                         out += players;
                         conversationContext.getForWhom().sendRawMessage(out);
                         return END_OF_CONVERSATION;
-                    }else if (s.equals(add)) {
+                    } else if (s.equals(add)) {
                         return askToWrite;
-                    }else if (s.equals(remove)){
+                    } else if (s.equals(remove)) {
                         return askToRemove;
                     }
                     conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.incorrectinput"));

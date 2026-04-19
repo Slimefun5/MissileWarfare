@@ -9,14 +9,28 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.util.Vector;
 
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
 import java.util.Random;
 
+/**
+ * Utility class for missile variant type mappings, inventory scanning,
+ * and missile trail particle effects.
+ *
+ * @author MissileWarfare contributors
+ */
 public class VariantsAPI {
-    // the amount of magic values in this file is astounding. -ck
 
     public static Random rand = new Random();
 
-    public static String getStrVariantFromInt(int type){
+    /**
+     * Returns the short string code for the given missile type integer.
+     *
+     * @param type the missile type integer
+     * @return the string variant code, or {@code "NONE"} if unrecognised
+     */
+    @Nonnull
+    public static String getStrVariantFromInt(int type) {
         switch (type) {
             case 0:
                 return "UNKNOWN";
@@ -70,11 +84,23 @@ public class VariantsAPI {
         return "NONE";
     }
 
-    public static int getIntTypeFromSlimefunitem(SlimefunItem item){
+    /**
+     * Returns the integer type identifier for the given Slimefun item.
+     *
+     * @param item the Slimefun item
+     * @return the type integer, or {@code 0} if unrecognised
+     */
+    public static int getIntTypeFromSlimefunitem(@Nonnull SlimefunItem item) {
         return getIntTypeFromSlimefunitemID(item.getId());
     }
 
-    public static int getIntTypeFromSlimefunitemID(String id){
+    /**
+     * Returns the integer type identifier for the given Slimefun item ID string.
+     *
+     * @param id the Slimefun item ID
+     * @return the type integer, or {@code 0} if unrecognised
+     */
+    public static int getIntTypeFromSlimefunitemID(@Nonnull String id) {
         switch (id) {
             case "SMALLMISSILE":
                 return 1;
@@ -126,30 +152,50 @@ public class VariantsAPI {
         return 0;
     }
 
-    public static ItemStack getFirstMissile(Inventory inv){
-        // Returns the first missile item in an inventory
-        for (ItemStack item : inv){
+    /**
+     * Returns the first missile item found in the given inventory.
+     *
+     * @param inv the inventory to search
+     * @return the first missile ItemStack, or {@code null} if none found
+     */
+    @Nullable
+    public static ItemStack getFirstMissile(@Nonnull Inventory inv) {
+        for (ItemStack item : inv) {
             SlimefunItem slimefun_item = SlimefunItem.getByItem(item);
-            if (slimefun_item != null && getIntTypeFromSlimefunitem(slimefun_item) != 0){
+            if (slimefun_item != null && getIntTypeFromSlimefunitem(slimefun_item) != 0) {
                 return item;
             }
         }
         return null;
     }
 
-    public static ItemStack getOtherFirstMissile(Inventory inv, SlimefunItem slimefunItem){
-        // Returns the first missile matching the type ID of second argument.
-        for (ItemStack item : inv){
+    /**
+     * Returns the first missile item in the inventory that matches the given Slimefun item type.
+     *
+     * @param inv          the inventory to search
+     * @param slimefunItem the Slimefun item to match against
+     * @return the first matching ItemStack, or {@code null} if none found
+     */
+    @Nullable
+    public static ItemStack getOtherFirstMissile(@Nonnull Inventory inv, @Nonnull SlimefunItem slimefunItem) {
+        for (ItemStack item : inv) {
             SlimefunItem _item = SlimefunItem.getByItem(item);
-            if (_item != null && _item.getId().equals(slimefunItem.getId())){
+            if (_item != null && _item.getId().equals(slimefunItem.getId())) {
                 return item;
             }
         }
         return null;
     }
 
-    public static MissileClass missileStatsFromType(int type){
-        switch (type){
+    /**
+     * Returns the {@link MissileClass} stats for the given missile type.
+     *
+     * @param type the missile type integer
+     * @return the missile class, or {@code null} if unrecognised
+     */
+    @Nullable
+    public static MissileClass missileStatsFromType(int type) {
+        switch (type) {
             case 1:
                 return MissileConfig.missiles[0];
             case 2:
@@ -200,31 +246,47 @@ public class VariantsAPI {
         return null;
     }
 
-    public static boolean isInRange(int dist, int type){
+    /**
+     * Checks whether the given distance exceeds the range of the specified missile type.
+     *
+     * @param dist the squared distance to check
+     * @param type the missile type integer
+     * @return {@code true} if the distance is out of range
+     */
+    public static boolean isInRange(int dist, int type) {
         MissileClass missile = missileStatsFromType(type);
         return dist >= missile.range;
     }
 
-    public static void spawnMissileTrail(World world, int type, Vector pos, Vector velocity){
+    /**
+     * Spawns particle trail effects for a missile at the given position.
+     *
+     * @param world    the world to spawn particles in
+     * @param type     the missile type integer
+     * @param pos      the current missile position
+     * @param velocity the current missile velocity
+     */
+    public static void spawnMissileTrail(@Nonnull World world, int type, @Nonnull Vector pos,
+                                         @Nonnull Vector velocity) {
         world.spawnParticle(Particle.CAMPFIRE_COSY_SMOKE, pos.toLocation(world), 0, 0, 0, 0, 0.1, null, true);
-        world.spawnParticle(Particle.FLAME, pos.toLocation(world), 0, -velocity.getX()+((rand.nextDouble()-0.5)*0.5), -velocity.getY()+((rand.nextDouble()-0.5)*0.5), -velocity.getZ()+((rand.nextDouble()-0.5)*0.5), 0.25, null, true);
-        world.spawnParticle(Particle.FLAME, pos.toLocation(world), 0, -velocity.getX()+((rand.nextDouble()-0.5)*0.5), -velocity.getY()+((rand.nextDouble()-0.5)*0.5), -velocity.getZ()+((rand.nextDouble()-0.5)*0.5), 0.25, null, true);
-        world.spawnParticle(Particle.FLAME, pos.toLocation(world), 0, -velocity.getX()+((rand.nextDouble()-0.5)*0.5), -velocity.getY()+((rand.nextDouble()-0.5)*0.5), -velocity.getZ()+((rand.nextDouble()-0.5)*0.5), 0.25, null, true);
-        if (type == 2 || type == 7){
-            //HE MISSILES
-            world.spawnParticle(Particle.ANGRY_VILLAGER, pos.toLocation(world), 0, 0,0,0, 0.1, null, true);
-        } else if (type == 3 || type == 8){
-            //LONG RANGE
-            world.spawnParticle(Particle.END_ROD, pos.toLocation(world), 0, -velocity.getX()+((rand.nextDouble()-0.5)*0.25), -velocity.getY()+((rand.nextDouble()-0.5)*0.25), -velocity.getZ()+((rand.nextDouble()-0.5)*0.25), 0.3, null, true);
-        } else if (type == 4 || type == 9){
-            //ACCURATE MISSILES
-            world.spawnParticle(Particle.CRIT, pos.toLocation(world), 0, -velocity.getX()+((rand.nextDouble()-0.5)*0.25), -velocity.getY()+((rand.nextDouble()-0.5)*0.25), -velocity.getZ()+((rand.nextDouble()-0.5)*0.25), 0.3, null, true);
+        world.spawnParticle(Particle.FLAME, pos.toLocation(world), 0, -velocity.getX() + ((rand.nextDouble() - 0.5) * 0.5), -velocity.getY() + ((rand.nextDouble() - 0.5) * 0.5), -velocity.getZ() + ((rand.nextDouble() - 0.5) * 0.5), 0.25, null, true);
+        world.spawnParticle(Particle.FLAME, pos.toLocation(world), 0, -velocity.getX() + ((rand.nextDouble() - 0.5) * 0.5), -velocity.getY() + ((rand.nextDouble() - 0.5) * 0.5), -velocity.getZ() + ((rand.nextDouble() - 0.5) * 0.5), 0.25, null, true);
+        world.spawnParticle(Particle.FLAME, pos.toLocation(world), 0, -velocity.getX() + ((rand.nextDouble() - 0.5) * 0.5), -velocity.getY() + ((rand.nextDouble() - 0.5) * 0.5), -velocity.getZ() + ((rand.nextDouble() - 0.5) * 0.5), 0.25, null, true);
+        if (type == 2 || type == 7) {
+            // HE missiles
+            world.spawnParticle(Particle.ANGRY_VILLAGER, pos.toLocation(world), 0, 0, 0, 0, 0.1, null, true);
+        } else if (type == 3 || type == 8) {
+            // Long range
+            world.spawnParticle(Particle.END_ROD, pos.toLocation(world), 0, -velocity.getX() + ((rand.nextDouble() - 0.5) * 0.25), -velocity.getY() + ((rand.nextDouble() - 0.5) * 0.25), -velocity.getZ() + ((rand.nextDouble() - 0.5) * 0.25), 0.3, null, true);
+        } else if (type == 4 || type == 9) {
+            // Accurate missiles
+            world.spawnParticle(Particle.CRIT, pos.toLocation(world), 0, -velocity.getX() + ((rand.nextDouble() - 0.5) * 0.25), -velocity.getY() + ((rand.nextDouble() - 0.5) * 0.25), -velocity.getZ() + ((rand.nextDouble() - 0.5) * 0.25), 0.3, null, true);
         }
-        if (type == 6 || type == 7 || type == 8 || type == 9 || type == 10){
-            // 'Missile' TYPES
+        if (type == 6 || type == 7 || type == 8 || type == 9 || type == 10) {
+            // 'Missile' types
             world.spawnParticle(Particle.HAPPY_VILLAGER, pos.toLocation(world), 1);
         }
-        if (type == 10 || type == 11 || type == 12){
+        if (type == 10 || type == 11 || type == 12) {
             world.spawnParticle(Particle.DRAGON_BREATH, pos.toLocation(world), 1);
         }
     }

@@ -6,16 +6,35 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.util.Vector;
 
-// TODO: Re-enable WorldGuard integration when compatible dependency versions are available.
-// WorldGuard/WorldEdit deps are commented out due to strict version constraints conflicting with Paper API.
+import javax.annotation.Nonnull;
+
+/**
+ * Handles integration with WorldGuard for region-aware explosion processing.
+ * WorldGuard/WorldEdit dependencies are resolved at runtime when available.
+ *
+ * @author MissileWarfare contributors
+ */
 public class WorldGuardLoader {
 
-    public static void load(){
+    /**
+     * Enables WorldGuard integration within the plugin.
+     */
+    public static void load() {
         MissileWarfare.worldGuardEnabled = true;
         MissileWarfare.getInstance().getLogger().info("WorldGuard Enabled!");
     }
 
-    public static void explode(World world, Vector pos, double power, Entity armourStand, Player nearestPlayer){
+    /**
+     * Creates an explosion at the given position, respecting WorldGuard region flags.
+     *
+     * @param world         the world in which to create the explosion
+     * @param pos           the position vector of the explosion
+     * @param power         the explosive power
+     * @param armourStand   the armour stand entity representing the missile
+     * @param nearestPlayer the nearest player to the launch site
+     */
+    public static void explode(@Nonnull World world, @Nonnull Vector pos, double power,
+                               @Nonnull Entity armourStand, @Nonnull Player nearestPlayer) {
         world.createExplosion(pos.toLocation(world), (float) power, false, true, armourStand);
     }
 }

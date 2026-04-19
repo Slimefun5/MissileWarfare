@@ -37,32 +37,46 @@ import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
+import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.UUID;
 
-public class AntiElytraLauncher extends SlimefunItem{
+/**
+ * A Slimefun block that automatically detects and fires anti-elytra missiles
+ * at players flying with elytras within range.
+ *
+ * @author MissileWarfare contributors
+ */
+public class AntiElytraLauncher extends SlimefunItem {
     public final int range = 490000;
 
-    public AntiElytraLauncher(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    /**
+     * Creates a new anti-elytra launcher block.
+     *
+     * @param itemGroup  the item group this item belongs to
+     * @param item       the Slimefun item stack
+     * @param recipeType the recipe type
+     * @param recipe     the crafting recipe
+     */
+    public AntiElytraLauncher(@Nonnull ItemGroup itemGroup, @Nonnull SlimefunItemStack item,
+                              @Nonnull RecipeType recipeType, @Nonnull ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 
     @Override
     public void preRegister() {
-        //cancel thing on place
         BlockPlaceHandler blockPlaceHandler = new BlockPlaceHandler(false) {
             @Override
             public void onPlayerPlace(BlockPlaceEvent event) {
                 BlockData data = event.getBlockPlaced().getBlockData();
-                ((Directional)data).setFacing(BlockFace.UP);
+                ((Directional) data).setFacing(BlockFace.UP);
                 event.getBlockPlaced().setBlockData(data);
                 Block block = event.getBlockPlaced();
-                //Block bottom = world.getBlockAt(event.getBlock().getLocation().subtract(new Vector(0, 2, 0)));
-                if (correctlyBuilt(block)){
+                if (correctlyBuilt(block)) {
                     event.getPlayer().sendMessage(Translations.get("messages.launchers.createantielytra.success"));
-                }else{
+                } else {
                     event.getPlayer().sendMessage(Translations.get("messages.launchers.createantielytra.failure"));
                 }
             }
@@ -72,7 +86,7 @@ public class AntiElytraLauncher extends SlimefunItem{
         BlockDispenseHandler blockDispenseHandler = this::blockDispense;
         addItemHandler(blockDispenseHandler);
 
-        addItemHandler(new BlockTicker(){
+        addItemHandler(new BlockTicker() {
 
             @Override
             public boolean isSynchronized() {
@@ -88,12 +102,11 @@ public class AntiElytraLauncher extends SlimefunItem{
                     Collection<? extends Player> missiles = MissileWarfare.getInstance().getServer().getOnlinePlayers();
                     if (!missiles.isEmpty()) {
                         for (Player player : missiles) {
-                            //Thanks Colonel Kai : https://github.com/koiboi-dev/MissileWarfare/pull/18
-                            if(block.getLocation().getWorld() == player.getLocation().getWorld()) {
+                            if (block.getLocation().getWorld() == player.getLocation().getWorld()) {
                                 if (block.getLocation().distanceSquared(player.getLocation()) < range) {
                                     if (player.isGliding() && !PlayerID.targets.contains(player)) {
                                         List<OfflinePlayer> ignore = PlayerID.players.get(cont.get(new NamespacedKey(MissileWarfare.getInstance(), "groupid"), PersistentDataType.STRING));
-                                        if (ignore == null){
+                                        if (ignore == null) {
                                             locked = player;
                                             break;
                                         } else if (ignore.contains(player)) {
@@ -106,25 +119,25 @@ public class AntiElytraLauncher extends SlimefunItem{
                         }
                     }
                     state.update();
-                    if (locked != null){
+                    if (locked != null) {
                         UUID playerUUID = locked.getUniqueId();
                         PlayerID.targets.add(MissileWarfare.getInstance().getServer().getPlayer(playerUUID));
 
                         Player finalLocked = locked;
                         finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Translations.get("messages.elytraattack.locking")).color(ChatColor.RED).create());
-                        new BukkitRunnable(){
+                        new BukkitRunnable() {
                             @Override
                             public void run() {
                                 Player player = MissileWarfare.getInstance().getServer().getPlayer(playerUUID);
-                                if (player == null){
+                                if (player == null) {
                                     PlayerID.targets = new ArrayList<>();
                                     return;
                                 }
                                 if (player.isGliding()) {
                                     finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Translations.get("messages.elytraattack.locked")).color(ChatColor.DARK_RED).create());
                                     fireMissile((Dispenser) block.getState(), MissileWarfare.getInstance().getServer().getPlayer(playerUUID));
-                                }else if (player.isInsideVehicle()){
-                                    if (!player.getVehicle().isOnGround()){
+                                } else if (player.isInsideVehicle()) {
+                                    if (!player.getVehicle().isOnGround()) {
                                         finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Translations.get("messages.elytraattack.locked")).color(ChatColor.DARK_RED).create());
                                         fireMissile((Dispenser) block.getState(), MissileWarfare.getInstance().getServer().getPlayer(playerUUID));
                                     }
@@ -141,7 +154,7 @@ public class AntiElytraLauncher extends SlimefunItem{
     }
 
     private void onBlockRightClick(PlayerRightClickEvent event) {
-        if (SlimefunItem.getByItem(event.getItem()) == SlimefunItem.getById("PLAYERLIST")){
+        if (SlimefunItem.getByItem(event.getItem()) == SlimefunItem.getById("PLAYERLIST")) {
             event.cancel();
             TileState state = (TileState) event.getClickedBlock().get().getBlockData();
             PersistentDataContainer cont = state.getPersistentDataContainer();
@@ -154,7 +167,13 @@ public class AntiElytraLauncher extends SlimefunItem{
         event.setCancelled(true);
     }
 
-    public void fireMissile(Dispenser disp, Player target){
+    /**
+     * Fires an anti-elytra missile at the specified target player.
+     *
+     * @param disp   the dispenser block acting as the launcher
+     * @param target the player to target
+     */
+    public void fireMissile(@Nonnull Dispenser disp, @Nonnull Player target) {
         ItemStack missileitem = VariantsAPI.getOtherFirstMissile(disp.getInventory(), SlimefunItem.getById("ANTIELYTRAMISSILE"));
         if (SlimefunItem.getByItem(missileitem) == SlimefunItem.getById("ANTIELYTRAMISSILE")) {
             ItemUtils.consumeItem(missileitem, false);
@@ -165,7 +184,13 @@ public class AntiElytraLauncher extends SlimefunItem{
         }
     }
 
-    public boolean correctlyBuilt(Block block) {
+    /**
+     * Checks whether the launcher block is correctly built on obsidian.
+     *
+     * @param block the launcher block
+     * @return {@code true} if an obsidian block is below
+     */
+    public boolean correctlyBuilt(@Nonnull Block block) {
         return block.getRelative(BlockFace.DOWN).getType() == Material.OBSIDIAN;
     }
 }

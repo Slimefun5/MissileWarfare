@@ -20,9 +20,24 @@ import org.bukkit.event.block.BlockRedstoneEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import javax.annotation.Nonnull;
+
+/**
+ * A Slimefun block that detects nearby missiles and outputs a redstone
+ * signal when one is within range.
+ *
+ * @author MissileWarfare contributors
+ */
 public class MissileRadar extends SlimefunItem {
-    public MissileRadar(ItemGroup itemGroup, ItemStack[] recipe) {
-        super(itemGroup, new SlimefunItemStack("MISSILERADAR", Material.GRAY_WOOL, ChatColor.YELLOW +Translations.get("radar.name"), ChatColor.GRAY+Translations.get("radar.lore")), RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+
+    /**
+     * Creates a new missile radar block with tick-based missile detection.
+     *
+     * @param itemGroup the item group this item belongs to
+     * @param recipe    the crafting recipe
+     */
+    public MissileRadar(@Nonnull ItemGroup itemGroup, @Nonnull ItemStack[] recipe) {
+        super(itemGroup, new SlimefunItemStack("MISSILERADAR", Material.GRAY_WOOL, ChatColor.YELLOW + Translations.get("radar.name"), ChatColor.GRAY + Translations.get("radar.lore")), RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
     }
 
     @Override
@@ -37,8 +52,8 @@ public class MissileRadar extends SlimefunItem {
             public void tick(Block block, SlimefunItem slimefunItem, Config config) {
                 if (!MissileWarfare.activemissiles.isEmpty()) {
                     boolean missilenear = false;
-                    for (MissileController missile : MissileWarfare.activemissiles){
-                        if (block.getLocation().distanceSquared(missile.pos.toLocation(missile.world)) < (700*700)){
+                    for (MissileController missile : MissileWarfare.activemissiles) {
+                        if (block.getLocation().distanceSquared(missile.pos.toLocation(missile.world)) < (700 * 700)) {
                             missilenear = true;
                             break;
                         }

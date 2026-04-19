@@ -28,29 +28,43 @@ import org.bukkit.persistence.PersistentDataContainer;
 import org.bukkit.persistence.PersistentDataType;
 import org.bukkit.util.Vector;
 
+import javax.annotation.Nonnull;
 import java.util.List;
 
-public class AntiMissileLauncher extends SlimefunItem{
+/**
+ * A Slimefun block that automatically detects incoming ground missiles
+ * and fires anti-air missiles to intercept them.
+ *
+ * @author MissileWarfare contributors
+ */
+public class AntiMissileLauncher extends SlimefunItem {
     public final int range = 40000;
 
-    public AntiMissileLauncher(ItemGroup itemGroup, SlimefunItemStack item, RecipeType recipeType, ItemStack[] recipe) {
+    /**
+     * Creates a new anti-missile launcher block.
+     *
+     * @param itemGroup  the item group this item belongs to
+     * @param item       the Slimefun item stack
+     * @param recipeType the recipe type
+     * @param recipe     the crafting recipe
+     */
+    public AntiMissileLauncher(@Nonnull ItemGroup itemGroup, @Nonnull SlimefunItemStack item,
+                               @Nonnull RecipeType recipeType, @Nonnull ItemStack[] recipe) {
         super(itemGroup, item, recipeType, recipe);
     }
 
     @Override
     public void preRegister() {
-        //cancel thing on place
         BlockPlaceHandler blockPlaceHandler = new BlockPlaceHandler(false) {
             @Override
             public void onPlayerPlace(BlockPlaceEvent event) {
                 BlockData data = event.getBlockPlaced().getBlockData();
-                ((Directional)data).setFacing(BlockFace.UP);
+                ((Directional) data).setFacing(BlockFace.UP);
                 event.getBlockPlaced().setBlockData(data);
                 Block block = event.getBlockPlaced();
-                //Block bottom = world.getBlockAt(event.getBlock().getLocation().subtract(new Vector(0, 2, 0)));
-                if (correctlyBuilt(block)){
+                if (correctlyBuilt(block)) {
                     event.getPlayer().sendMessage(Translations.get("messages.launchers.createantiair.success"));
-                }else{
+                } else {
                     event.getPlayer().sendMessage(Translations.get("messages.launchers.createantiair.failure"));
                 }
             }
@@ -60,7 +74,7 @@ public class AntiMissileLauncher extends SlimefunItem{
         BlockDispenseHandler blockDispenseHandler = this::blockDispense;
         addItemHandler(blockDispenseHandler);
 
-        addItemHandler(new BlockTicker(){
+        addItemHandler(new BlockTicker() {
 
             @Override
             public boolean isSynchronized() {
@@ -85,10 +99,10 @@ public class AntiMissileLauncher extends SlimefunItem{
                     state.update();
                     try {
                         if (locked != null && cont.get(new NamespacedKey(MissileWarfare.getInstance(), "timesincelastshot"), PersistentDataType.INTEGER) <= System.currentTimeMillis()) {
-                            cont.set(new NamespacedKey(MissileWarfare.getInstance(), "timesincelastshot"), PersistentDataType.INTEGER, (int)System.currentTimeMillis()+1000);
+                            cont.set(new NamespacedKey(MissileWarfare.getInstance(), "timesincelastshot"), PersistentDataType.INTEGER, (int) System.currentTimeMillis() + 1000);
                             fireMissile((Dispenser) block.getState(), locked);
                         }
-                    } catch (NullPointerException e){
+                    } catch (NullPointerException e) {
                         cont.set(new NamespacedKey(MissileWarfare.getInstance(), "timesincelastshot"), PersistentDataType.INTEGER, Integer.MIN_VALUE);
                         state.update();
                     }
@@ -101,25 +115,13 @@ public class AntiMissileLauncher extends SlimefunItem{
         event.setCancelled(true);
     }
 
-    /*@Deprecated
-        public void fireMissile(PlayerRightClickEvent event){
-            Dispenser disp = (Dispenser) Objects.requireNonNull(event.getInteractEvent().getClickedBlock()).getState();
-            int type = hasAmmo(disp.getInventory(), (SmallGtGMissile) itemMissile);
-            if (type !=0){
-                TileState state = (TileState) Objects.requireNonNull(event.getInteractEvent().getClickedBlock()).getState();
-                PersistentDataContainer cont = state.getPersistentDataContainer();
-                int[] coords = cont.get(new NamespacedKey(AdvancedWarfare.getInstance(), "coords"), PersistentDataType.INTEGER_ARRAY);
-                event.getPlayer().sendMessage(Arrays.toString(coords));
-                if (coords == null) {
-                    event.getPlayer().sendMessage("You need to input coordinates!");
-                    return;
-                }
-                MissileController missile = new MissileController(true, event.getInteractEvent().getClickedBlock().getLocation().add(new Vector(0.5, 1, 0.5)).toVector(), new Vector(coords[0], 0, coords[1]), 1, event.getPlayer().getWorld(), 3, 30);
-                missile.FireMissile();
-            }
-        }
-         */
-    public void fireMissile(Dispenser disp, MissileController target){
+    /**
+     * Fires an anti-air missile at the specified target missile.
+     *
+     * @param disp   the dispenser block acting as the launcher
+     * @param target the missile controller to intercept
+     */
+    public void fireMissile(@Nonnull Dispenser disp, @Nonnull MissileController target) {
         ItemStack missileitem = VariantsAPI.getOtherFirstMissile(disp.getInventory(), SlimefunItem.getById("ANTIAIRMISSILE"));
         if (SlimefunItem.getByItem(missileitem) == SlimefunItem.getById("ANTIAIRMISSILE")) {
             ItemUtils.consumeItem(missileitem, false);
@@ -128,7 +130,13 @@ public class AntiMissileLauncher extends SlimefunItem{
         }
     }
 
-    public boolean correctlyBuilt(Block block) {
+    /**
+     * Checks whether the launcher block is correctly built on obsidian.
+     *
+     * @param block the launcher block
+     * @return {@code true} if an obsidian block is below
+     */
+    public boolean correctlyBuilt(@Nonnull Block block) {
         return block.getRelative(BlockFace.DOWN).getType() == Material.OBSIDIAN;
     }
 }
