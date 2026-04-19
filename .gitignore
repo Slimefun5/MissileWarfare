@@ -7,3 +7,6 @@
 .classpath
 dependency-reduced-pom.xml
 .DS_Store
+/.gradle/
+/build/
+build_output.txt
