@@ -156,7 +156,7 @@ public class AntiElytraLauncher extends SlimefunItem {
     private void onBlockRightClick(PlayerRightClickEvent event) {
         if (SlimefunItem.getByItem(event.getItem()) == SlimefunItem.getById("PLAYERLIST")) {
             event.cancel();
-            TileState state = (TileState) event.getClickedBlock().get().getBlockData();
+            TileState state = (TileState) event.getClickedBlock().get().getState();
             PersistentDataContainer cont = state.getPersistentDataContainer();
             cont.set(new NamespacedKey(MissileWarfare.getInstance(), "groupid"), PersistentDataType.STRING, event.getItem().getItemMeta().getPersistentDataContainer().get(new NamespacedKey(MissileWarfare.getInstance(), "id"), PersistentDataType.STRING));
             state.update();

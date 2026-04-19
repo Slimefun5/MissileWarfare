@@ -220,7 +220,7 @@ public class GroundMissileLauncher extends SlimefunItem {
             }
         } else if (SlimefunItem.getByItem(event.getItem()) == SlimefunItem.getById("PLAYERLIST")) {
             event.cancel();
-            TileState state = (TileState) event.getClickedBlock().get().getBlockData();
+            TileState state = (TileState) event.getClickedBlock().get().getState();
             state.update();
         }
     }
