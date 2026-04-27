@@ -1,7 +1,7 @@
 plugins {
     java
     id("com.gradleup.shadow") version "9.3.2"
-    id("io.github.intisy.github-gradle") version "1.3.8"
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
 }
 
 group = "me.kaiyan.missilewarfare"
@@ -10,10 +10,9 @@ description = "MissileWarfare is a Slimefun addon adding missiles and warfare it
 
 github {
     accessToken = System.getenv("GITHUB_TOKEN") ?: ""
-}
-
-publishGithub {
-    tag = System.getenv("GITHUB_REF_NAME")
+    publish {
+        tag = System.getenv("GITHUB_REF_NAME")
+    }
 }
 
 java {
@@ -35,7 +34,7 @@ repositories {
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    githubCompileOnly("Slimefun5:Slimefun5:v5.0.3")
+    "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
 
     // External softdepend compileOnly
     // TODO: WorldGuard/WorldEdit/Towny are softdepends — commented out due to
