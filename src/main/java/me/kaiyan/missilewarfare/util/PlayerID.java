@@ -1,6 +1,6 @@
 package me.kaiyan.missilewarfare.util;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
 import org.bukkit.Bukkit;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.entity.Player;
@@ -56,3 +56,4 @@ public class PlayerID {
         file.save();
     }
 }
+

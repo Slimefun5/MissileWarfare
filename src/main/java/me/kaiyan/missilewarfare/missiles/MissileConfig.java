@@ -1,6 +1,6 @@
 package me.kaiyan.missilewarfare.missiles;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
 import me.kaiyan.missilewarfare.items.MissileClass;
 import me.kaiyan.missilewarfare.util.VariantsAPI;
 
@@ -37,3 +37,4 @@ public class MissileConfig {
         missiles = outMissiles.toArray(new MissileClass[0]);
     }
 }
+

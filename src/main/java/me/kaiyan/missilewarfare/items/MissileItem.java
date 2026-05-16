@@ -1,10 +1,10 @@
 package me.kaiyan.missilewarfare.items;
 
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
-import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.core.handlers.WeaponUseHandler;
+import io.github.thebusybiscuit.slimefun5.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItemStack;
+import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun5.core.handlers.WeaponUseHandler;
 import me.kaiyan.missilewarfare.util.Translations;
 import me.kaiyan.missilewarfare.util.VariantsAPI;
 import org.bukkit.ChatColor;
@@ -53,3 +53,4 @@ public class MissileItem extends SlimefunItem {
         addItemHandler(attack);
     }
 }
+

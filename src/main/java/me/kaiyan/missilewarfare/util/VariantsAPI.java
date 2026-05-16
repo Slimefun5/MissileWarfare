@@ -1,6 +1,6 @@
 package me.kaiyan.missilewarfare.util;
 
-import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
 import me.kaiyan.missilewarfare.items.MissileClass;
 import me.kaiyan.missilewarfare.missiles.MissileConfig;
 import org.bukkit.Particle;
@@ -291,3 +291,4 @@ public class VariantsAPI {
         }
     }
 }
+

@@ -1,6 +1,6 @@
 package me.kaiyan.missilewarfare.util;
 
-import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
 import net.md_5.bungee.api.ChatColor;
 
 import javax.annotation.Nonnull;
@@ -181,3 +181,4 @@ public class Translations {
         pack = cfg;
     }
 }
+
