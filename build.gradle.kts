@@ -1,4 +1,4 @@
-plugins {
+﻿plugins {
     java
     id("com.gradleup.shadow") version "9.3.2"
     id("io.github.intisy.github-gradle") version "1.8.2.1"
@@ -17,7 +17,7 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(21))
+        languageVersion.set(JavaLanguageVersion.of(25))
     }
 }
 
@@ -32,12 +32,12 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.0.3")
+    "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
 
     // External softdepend compileOnly
-    // TODO: WorldGuard/WorldEdit/Towny are softdepends — commented out due to
+    // TODO: WorldGuard/WorldEdit/Towny are softdepends â€” commented out due to
     // strict version constraints in worldedit-bukkit conflicting with Paper API.
     // The integration classes are stubbed; re-enable when compatible versions are available.
     // compileOnly("com.sk89q.worldguard:worldguard-bukkit:7.0.7")
