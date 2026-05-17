@@ -12,22 +12,6 @@ A Slimefun addon that adds missiles, launchers, and warfare equipment.
 - Paper 1.16.* - 26.1.*
 - Slimefun 5
 
-## Developer API
-
-You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
-
-In your `build.gradle.kts`:
-
-```kotlin
-plugins {
-    id("io.github.intisy.github-gradle") version "1.8.2.1"
-}
-
-dependencies {
-    "githubCompileOnly"("Slimefun5:MissileWarfare:v2.0.1")
-}
-```
-
 > Join our [Discord](https://discord.gg/bcYdK8xfkF) for support.
 
 Ever wanted a long-range solution to the destruction of a minecraft base? Ever wanted to recreate the stunning images of SAM missiles intercepting rockets?
@@ -50,7 +34,21 @@ This [Slimefun 5](https://github.com/Slimefun5/Slimefun5) addon adds the followi
 
 ## Contributors
 |Position|Discord|Github|
-|--|--|--|
 |Original Author| pain.#2883 | [koiboi-dev](https://github.com/koiboi-dev) |
 | Current Maintainer and Developer | Colonel Kai#0001 | [ColonelKai](https://github.com/ColonelKai) |
 
+## Developer API
+
+You can easily depend on this project using [github-gradle](https://github.com/intisy/github-gradle).
+
+In your `build.gradle.kts`:
+
+```kotlin
+plugins {
+    id("io.github.intisy.github-gradle") version "1.8.2.1"
+}
+
+dependencies {
+    "githubCompileOnly"("Slimefun5:MissileWarfare:v2.0.1")
+}
+```
