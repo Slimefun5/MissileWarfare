@@ -1,4 +1,4 @@
-name: Build
+name: CI
 
 on:
   push:
@@ -6,11 +6,13 @@ on:
     paths:
       - 'src/**'
       - 'build.gradle.kts'
+      - '.github/workflows/**'
   pull_request:
     branches: [ "master", "main" ]
     paths:
       - 'src/**'
       - 'build.gradle.kts'
+      - '.github/workflows/**'
 
 jobs:
   build:
