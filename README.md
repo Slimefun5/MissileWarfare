@@ -4,6 +4,7 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/Slimefun5/MissileWarfare/total)
 [![GitHub Followers](https://img.shields.io/github/followers/Slimefun5?style=social)](https://github.com/Slimefun5)
 [![GitHub Stars](https://img.shields.io/github/stars/Slimefun5/MissileWarfare?style=social)](https://github.com/Slimefun5/MissileWarfare)
+[![bStats](https://bStats.org/signatures/bukkit/MissileWarfare.svg)](https://bStats.org/plugin/bukkit/MissileWarfare/31437)
 
 A Slimefun addon that adds missiles, launchers, and warfare equipment.
 
