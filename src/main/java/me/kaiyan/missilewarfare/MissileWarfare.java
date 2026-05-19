@@ -10,11 +10,11 @@ import me.kaiyan.missilewarfare.integrations.TownyLoader;
 import me.kaiyan.missilewarfare.integrations.WorldGuardLoader;
 import me.kaiyan.missilewarfare.util.PlayerID;
 import me.kaiyan.missilewarfare.util.Translations;
-import org.bstats.bukkit.Metrics;
 import org.bstats.charts.SingleLineChart;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
 import org.bukkit.plugin.java.JavaPlugin;
+import dev.walshy.sfmetrics.MetricsModule;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import javax.annotation.Nonnull;
@@ -42,6 +42,8 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
+        MetricsModule.setup(this, 31437);
+
         int pluginId = 14904;
         metrics = new Metrics(this, pluginId);
 
