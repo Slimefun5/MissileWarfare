@@ -14,7 +14,7 @@ import me.kaiyan.missilewarfare.blocks.AntiMissileLauncher;
 import me.kaiyan.missilewarfare.blocks.GroundMissileLauncher;
 import me.kaiyan.missilewarfare.util.Translations;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
@@ -33,7 +33,7 @@ public class CustomItems {
      */
     public static void setup() {
         //Add section to guide
-        NamespacedKey categoryId = new NamespacedKey(MissileWarfare.getInstance(), "missile_warfare");
+        NamespacedKey categoryId = new NamespacedKey("missilewarfare", "missile_warfare");
         ItemStack categoryItem = CustomItemStack.create(Material.GUNPOWDER, Translations.get("missilegroupname"));
 
         ItemGroup group = new ItemGroup(categoryId, categoryItem);
@@ -608,70 +608,70 @@ public class CustomItems {
 
         //ADD RESEARCH
         //<editor-fold desc="RESEARCH">
-        NamespacedKey basicfuelkey = new NamespacedKey(main, "basic_fuel");
+        NamespacedKey basicfuelkey = new NamespacedKey("missilewarfare", "basic_fuel");
         Research basicfuel = new Research(basicfuelkey, 3467341, "Inedible Sugar", 10);
         basicfuel.addItems(sugarfuel);
         basicfuel.register();
 
-        NamespacedKey explosiveskey = new NamespacedKey(main, "explosives");
+        NamespacedKey explosiveskey = new NamespacedKey("missilewarfare", "explosives");
         Research explosives = new Research(explosiveskey, 3447321, "Explosive Diarrhea", 15);
         explosives.addItems(explosivepowder, compressedpowder);
         explosives.register();
 
-        NamespacedKey chlorinekey = new NamespacedKey(main, "chlorine");
+        NamespacedKey chlorinekey = new NamespacedKey("missilewarfare", "chlorine");
         Research chlorineres = new Research(chlorinekey, 214141, "Cleaner Pools!", 15);
         chlorineres.addItems(chlorine, chlorinepellet);
         chlorineres.register();
 
-        NamespacedKey groundlauncherskey = new NamespacedKey(main, "groundlauncher");
+        NamespacedKey groundlauncherskey = new NamespacedKey("missilewarfare", "groundlauncher");
         Research groundlauncherres = new Research(groundlauncherskey, 34117322, "Ground Missile Launcher", 15);
         groundlauncherres.addItems(groundlauncher);
         groundlauncherres.register();
 
-        NamespacedKey antimissilekey = new NamespacedKey(main, "antimissilelauncher");
+        NamespacedKey antimissilekey = new NamespacedKey("missilewarfare", "antimissilelauncher");
         Research antimissileres = new Research(antimissilekey, 3424321, "Iron Dome.", 15);
         antimissileres.addItems(antiairlauncher, manpad, antiAirMissile);
         antimissileres.register();
 
-        NamespacedKey antielytramissilekey = new NamespacedKey(main, "antielytramissilelauncher");
+        NamespacedKey antielytramissilekey = new NamespacedKey("missilewarfare", "antielytramissilelauncher");
         Research antielytramissileres = new Research(antielytramissilekey, 34213253, "Ender Dome?", 20);
         antielytramissileres.addItems(antiElytraLauncher, antielytramissile);
         antielytramissileres.register();
 
-        NamespacedKey smallgmissilepartskey = new NamespacedKey(main, "smallgmissileparts");
+        NamespacedKey smallgmissilepartskey = new NamespacedKey("missilewarfare", "smallgmissileparts");
         Research smallgmissileparts = new Research(smallgmissilepartskey, 2667313, "Missile with extra steps", 15);
         smallgmissileparts.addItems(smallwarhead, smallbody, smallfin);
         smallgmissileparts.register();
 
-        NamespacedKey gmissilepartskey = new NamespacedKey(main, "gmissileparts");
+        NamespacedKey gmissilepartskey = new NamespacedKey("missilewarfare", "gmissileparts");
         Research gmissileparts = new Research(gmissilepartskey, 2667313, "Missile with extra steps", 15);
         gmissileparts.addItems(warhead, warheadAP, missilebody, fins);
         gmissileparts.register();
 
-        NamespacedKey smallgmissilekey = new NamespacedKey(main, "smallgmissile");
+        NamespacedKey smallgmissilekey = new NamespacedKey("missilewarfare", "smallgmissile");
         Research smallgmissile = new Research(smallgmissilekey, 35673323, "5 Shades Of Gray", 20);
         smallgmissile.addItems(smallmissile, smallmissileHE, smallmissileLR, smallmissileLR, smallmissileAC);
         smallgmissile.register();
 
-        NamespacedKey advancedfuelkey = new NamespacedKey(main, "advancedfuel");
+        NamespacedKey advancedfuelkey = new NamespacedKey("missilewarfare", "advancedfuel");
         Research advancedfuel = new Research(advancedfuelkey, 3461423, "Advanced (and even less edible) Fuels!", 20);
         advancedfuel.addItems(rocketfuel);
         advancedfuel.register();
 
-        NamespacedKey missilepartskey = new NamespacedKey(main, "missileparts");
+        NamespacedKey missilepartskey = new NamespacedKey("missilewarfare", "missileparts");
         Research missileparts = new Research(missilepartskey, 4461423, "Missile with even more steps", 25);
         missileparts.addItems(ultraliteingot, ultraliteplate, simpleflightcomputer, radar);
         missileparts.register();
 
-        NamespacedKey gmissilekey = new NamespacedKey(main, "gmissile");
+        NamespacedKey gmissilekey = new NamespacedKey("missilewarfare", "gmissile");
         Research gmissile = new Research(gmissilekey, 341243, "The Colors Of The Rainbow!", 20);
         gmissile.addItems(missile, missileHE, missileLR, missileAC);
 
-        NamespacedKey gmissileAPkey = new NamespacedKey(main, "gmissileAP");
+        NamespacedKey gmissileAPkey = new NamespacedKey("missilewarfare", "gmissileAP");
         Research gmissileAP = new Research(gmissileAPkey, 341246, "The Penetrator Trio", 15);
         gmissileAP.addItems(missileAP, missileAPt, missileAPtr);
 
-        NamespacedKey gmissileGASkey = new NamespacedKey(main, "gmissileGAS");
+        NamespacedKey gmissileGASkey = new NamespacedKey("missilewarfare", "gmissileGAS");
         Research gmissileGAS = new Research(gmissileGASkey, 341226, "One Ball Man", 15);
         gmissileGAS.addItems(missilegas);
         //</editor-fold>

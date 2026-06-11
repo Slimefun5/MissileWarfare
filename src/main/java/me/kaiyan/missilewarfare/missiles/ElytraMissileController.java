@@ -11,6 +11,7 @@ import org.bukkit.World;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
+import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.util.Vector;
 
@@ -143,8 +144,8 @@ public class ElytraMissileController {
             }
             if (player.isGliding()) {
                 ItemStack elytra = player.getEquipment().getChestplate();
-                Damageable meta = (Damageable) elytra.getItemMeta();
-                meta.setDamage(elytra.getType().getMaxDurability() - 5);
+                ItemMeta meta = elytra.getItemMeta();
+                ((Damageable) meta).setDamage(elytra.getType().getMaxDurability() - 5);
                 elytra.setItemMeta(meta);
                 player.getEquipment().setChestplate(elytra);
                 run.cancel();
