@@ -20,14 +20,15 @@ import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.ComponentBuilder;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import me.kaiyan.missilewarfare.util.MaterialCompat;
 import org.bukkit.NamespacedKey;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Dispenser;
 import org.bukkit.block.TileState;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.Directional;
+import me.kaiyan.missilewarfare.util.BlockDataCompat;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockDispenseEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
@@ -70,9 +71,7 @@ public class AntiElytraLauncher extends SlimefunItem {
         BlockPlaceHandler blockPlaceHandler = new BlockPlaceHandler(false) {
             @Override
             public void onPlayerPlace(BlockPlaceEvent event) {
-                BlockData data = event.getBlockPlaced().getBlockData();
-                ((Directional) data).setFacing(BlockFace.UP);
-                event.getBlockPlaced().setBlockData(data);
+                BlockDataCompat.setFacing(event.getBlockPlaced(), BlockFace.UP);
                 Block block = event.getBlockPlaced();
                 if (correctlyBuilt(block)) {
                     event.getPlayer().sendMessage(Translations.get("messages.launchers.createantielytra.success"));
@@ -191,7 +190,7 @@ public class AntiElytraLauncher extends SlimefunItem {
      * @return {@code true} if an obsidian block is below
      */
     public boolean correctlyBuilt(@Nonnull Block block) {
-        return block.getRelative(BlockFace.DOWN).getType() == Material.OBSIDIAN;
+        return block.getRelative(BlockFace.DOWN).getType() == MaterialCompat.safe(XMaterial.OBSIDIAN);
     }
 }
 

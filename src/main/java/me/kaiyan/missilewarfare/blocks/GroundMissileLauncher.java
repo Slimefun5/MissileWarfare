@@ -16,14 +16,15 @@ import me.kaiyan.missilewarfare.util.Translations;
 import me.kaiyan.missilewarfare.util.VariantsAPI;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import me.kaiyan.missilewarfare.util.MaterialCompat;
 import org.bukkit.NamespacedKey;
 import org.bukkit.World;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
 import org.bukkit.block.Dispenser;
 import org.bukkit.block.TileState;
-import org.bukkit.block.data.BlockData;
-import org.bukkit.block.data.Directional;
+import me.kaiyan.missilewarfare.util.BlockDataCompat;
 import org.bukkit.conversations.Conversation;
 import org.bukkit.conversations.ConversationContext;
 import org.bukkit.conversations.ConversationFactory;
@@ -69,10 +70,8 @@ public class GroundMissileLauncher extends SlimefunItem {
             public void onPlayerPlace(BlockPlaceEvent event) {
                 World world = event.getBlock().getWorld();
                 Block below = world.getBlockAt(event.getBlock().getLocation().subtract(new Vector(0, 1, 0)));
-                BlockData data = event.getBlockPlaced().getBlockData();
-                ((Directional) data).setFacing(BlockFace.UP);
-                event.getBlockPlaced().setBlockData(data);
-                if (below.getType() == Material.GREEN_CONCRETE) {
+                BlockDataCompat.setFacing(event.getBlockPlaced(), BlockFace.UP);
+                if (below.getType() == MaterialCompat.safe(XMaterial.GREEN_CONCRETE)) {
                     event.getPlayer().sendMessage(Translations.get("messages.launchers.ground.create.success"));
                     TileState state = (TileState) event.getBlockPlaced().getState();
                     PersistentDataContainer cont = state.getPersistentDataContainer();
@@ -106,7 +105,7 @@ public class GroundMissileLauncher extends SlimefunItem {
         new BukkitRunnable() {
             @Override
             public void run() {
-                if (dispenser.getBlock().getRelative(BlockFace.DOWN).getType() == Material.GREEN_CONCRETE) {
+                if (dispenser.getBlock().getRelative(BlockFace.DOWN).getType() == MaterialCompat.safe(XMaterial.GREEN_CONCRETE)) {
                     fireMissile(dispenser);
                 }
             }
@@ -115,7 +114,7 @@ public class GroundMissileLauncher extends SlimefunItem {
 
     private void onBlockRightClick(PlayerRightClickEvent event) {
         // Stick/Blaze Rod Method
-        if (event.getItem().getType() == Material.STICK) {
+        if (event.getItem().getType() == MaterialCompat.safe(XMaterial.STICK)) {
             event.cancel();
             TileState state = (TileState) Objects.requireNonNull(event.getInteractEvent().getClickedBlock()).getState();
             PersistentDataContainer cont = state.getPersistentDataContainer();
@@ -182,7 +181,7 @@ public class GroundMissileLauncher extends SlimefunItem {
             } catch (NullPointerException e) {
                 state.update();
             }
-        } else if (event.getItem().getType() == Material.BLAZE_ROD) {
+        } else if (event.getItem().getType() == MaterialCompat.safe(XMaterial.BLAZE_ROD)) {
             event.cancel();
             TileState state = (TileState) Objects.requireNonNull(event.getInteractEvent().getClickedBlock()).getState();
             PersistentDataContainer cont = state.getPersistentDataContainer();

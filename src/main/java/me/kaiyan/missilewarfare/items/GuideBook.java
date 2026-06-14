@@ -70,14 +70,23 @@ public class GuideBook extends SlimefunItem {
                 .create();
 
 
-        meta.spigot().addPage(homepage);
-        meta.spigot().addPage(groundMissileLauncher);
-        meta.spigot().addPage(antiMissileLauncher);
-        meta.spigot().addPage(manpad);
-        meta.spigot().addPage(antiElytraLaunchers);
-        meta.spigot().addPage(playerID);
+        addPage(meta, homepage);
+        addPage(meta, groundMissileLauncher);
+        addPage(meta, antiMissileLauncher);
+        addPage(meta, manpad);
+        addPage(meta, antiElytraLaunchers);
+        addPage(meta, playerID);
 
         item.setItemMeta(meta);
+    }
+
+    // BookMeta.spigot() (rich component pages) is absent on 1.8; fall back to legacy plain-text pages.
+    private static void addPage(BookMeta meta, BaseComponent[] page) {
+        try {
+            meta.spigot().addPage(page);
+        } catch (NoSuchMethodError | NoClassDefFoundError e) {
+            meta.addPage(BaseComponent.toLegacyText(page));
+        }
     }
 }
 
