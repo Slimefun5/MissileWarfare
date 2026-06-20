@@ -38,7 +38,7 @@ public class CustomItems {
         NamespacedKey categoryId = new NamespacedKey("missilewarfare", "missile_warfare");
         ItemStack categoryItem = CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), Translations.get("missilegroupname"));
 
-        ItemGroup group = new ItemGroup(categoryId, categoryItem);
+        ItemGroup group = new ItemGroup(categoryId, categoryItem).setTheme("weapons");
 
         //Add Items
         //<editor-fold desc="CREATE ITEMSTACKS">
