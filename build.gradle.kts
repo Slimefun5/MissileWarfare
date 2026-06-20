@@ -75,7 +75,7 @@ tasks {
     }
     shadowJar {
         relocate("org.bstats", "missilewarfare.libs.bstats")
-        archiveFileName.set("MissileWarfare v${project.version}.jar")
+        archiveFileName.set("MissileWarfare-1.6.13-UNOFFICIAL.jar")
                 exclude("META-INF/**")
     }
     build {
