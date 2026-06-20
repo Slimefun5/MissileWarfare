@@ -42,7 +42,7 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
-        int pluginId = 14904;
+        int pluginId = 31437;
         metrics = new Metrics(this, pluginId);
 
         metrics.addCustomChart(new SingleLineChart("missiles_fired", () -> {
