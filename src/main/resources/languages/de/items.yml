@@ -1,0 +1,65 @@
+# Deutsche Item-Übersetzungen für MissileWarfare. Schlüssel = Slimefun-Item-ID.
+# name = Anzeigename, lore = Liste von Zeilen, '&' Farbcodes. Fehlende Items fallen auf Englisch zurück.
+
+GROUNDLAUNCHER:
+  name: "&6Boden-zu-Boden-Raketenwerfer"
+  lore:
+    - "&7Beschießt ein bestimmtes Gebiet am Boden."
+    - "&7Mit einem Stock die Zielkoordinaten setzen"
+    - "&7Muss auf einem grünen Betonblock gebaut werden."
+
+ANTIMISSILELAUNCHER:
+  name: "&6Raketenabwehrwerfer"
+  lore:
+    - "&7Erfasst und schießt andere Raketen im Umkreis ab."
+    - "&7Mit Redstone deaktivieren"
+    - "&7Benötigt Abwehrraketen"
+
+ANTIELYTRA:
+  name: "&6Elytra-Abwehrwerfer"
+  lore:
+    - "&7Feuert eine Rakete auf nahe Spieler,"
+    - "&7die eine Elytra benutzen"
+    - "&7Benötigt Anti-Elytra-Raketen"
+
+MANPAD:
+  name: "&6Manpad"
+  lore:
+    - "&7Tragbares Raketenabwehrgerät"
+    - "&7Umschalt+Rechtsklick zum Anvisieren"
+    - "&7Umschalt loslassen zum Feuern"
+
+MINE:
+  name: "&cMine"
+  lore:
+    - "&7Funktioniert sie auch gegen Panzer?"
+
+MISSILE:
+  name: "&6Boden-zu-Boden-Rakete"
+  lore:
+    - "&7Deine freundliche Rakete von nebenan"
+
+MISSILEICBM:
+  name: "&bICBM-Rakete"
+  lore:
+    - "&7Langstreckenrakete"
+    - "&7Interkontinentale ballistische Rakete"
+    - "&7'Nirgendwo ist sicher.'"
+
+MISSILECLUSTER:
+  name: "&6Streurakete"
+  lore:
+    - "&7Streurakete, setzt viele Raketen vor dem Einschlag frei"
+    - "&7'Löscht Dörfer schneller aus, als du schreien kannst!'"
+
+MISSILENAPALM:
+  name: "&6Napalmrakete"
+  lore:
+    - "&7Feuerrakete"
+    - "&7Napalmrakete, verteilt beim Aufprall überall Feuer."
+
+MISSILEGAS:
+  name: "&aGasrakete"
+  lore:
+    - "&7Reinigungsrakete"
+    - "&7Setzt beim Treffer giftiges Gas frei"

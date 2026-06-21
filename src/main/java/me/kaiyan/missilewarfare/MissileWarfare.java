@@ -1,6 +1,7 @@
 package me.kaiyan.missilewarfare;
 
 import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
 import me.kaiyan.missilewarfare.items.CustomItems;
 import me.kaiyan.missilewarfare.listeners.ExplosionEventListener;
@@ -123,6 +124,8 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
         }.runTaskLater(this, 0);
 
         getServer().getPluginManager().registerEvents(new ExplosionEventListener(), this);
+
+        Slimefun.getItemTranslationService().registerTranslations(this);
     }
 
     /**

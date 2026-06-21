@@ -1,0 +1,65 @@
+# Traductions françaises des objets pour MissileWarfare. Clé = identifiant d'objet Slimefun.
+# name = nom affiché, lore = liste de lignes, codes couleur '&'. Les objets manquants reviennent à l'anglais.
+
+GROUNDLAUNCHER:
+  name: "&6Lanceur de missiles sol-sol"
+  lore:
+    - "&7Tire sur une zone précise au sol."
+    - "&7Utilisez un bâton pour définir les coordonnées cibles"
+    - "&7Doit être construit sur un bloc de béton vert."
+
+ANTIMISSILELAUNCHER:
+  name: "&6Lanceur antimissile"
+  lore:
+    - "&7Cible et abat les autres missiles de la zone."
+    - "&7Utilisez de la redstone pour le désactiver"
+    - "&7Nécessite des missiles antimissile"
+
+ANTIELYTRA:
+  name: "&6Lanceur anti-élytre"
+  lore:
+    - "&7Tire un missile sur les joueurs proches"
+    - "&7qui utilisent une élytre"
+    - "&7Nécessite des missiles anti-élytre"
+
+MANPAD:
+  name: "&6Manpad"
+  lore:
+    - "&7Dispositif antimissile portatif"
+    - "&7Maj+Clic droit pour commencer le ciblage"
+    - "&7Relâchez Maj pour tirer"
+
+MINE:
+  name: "&cMine"
+  lore:
+    - "&7Fonctionnera-t-elle sur les chars ?"
+
+MISSILE:
+  name: "&6Missile sol-sol"
+  lore:
+    - "&7Votre missile de quartier préféré"
+
+MISSILEICBM:
+  name: "&bMissile ICBM"
+  lore:
+    - "&7Missile à longue portée"
+    - "&7Missile balistique intercontinental"
+    - "&7'Nulle part n'est sûr.'"
+
+MISSILECLUSTER:
+  name: "&6Missile à fragmentation"
+  lore:
+    - "&7Missile à fragmentation, déploie de nombreux missiles avant l'impact"
+    - "&7'Efface des villages plus vite que vous ne pouvez crier !'"
+
+MISSILENAPALM:
+  name: "&6Missile au napalm"
+  lore:
+    - "&7Missile incendiaire"
+    - "&7Missile au napalm, projette du feu partout à l'impact."
+
+MISSILEGAS:
+  name: "&aMissile à gaz"
+  lore:
+    - "&7Missile de nettoyage"
+    - "&7Déploie un gaz toxique en touchant une cible"
