@@ -1,8 +1,12 @@
 package me.kaiyan.missilewarfare;
 
 import io.github.thebusybiscuit.slimefun5.api.SlimefunAddon;
+import io.github.thebusybiscuit.slimefun5.api.items.SlimefunItem;
+import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiText;
+import io.github.thebusybiscuit.slimefun5.core.guide.wiki.WikiTopic;
 import io.github.thebusybiscuit.slimefun5.implementation.Slimefun;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.config.Config;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.kaiyan.missilewarfare.items.CustomItems;
 import me.kaiyan.missilewarfare.listeners.ExplosionEventListener;
 import me.kaiyan.missilewarfare.missiles.MissileConfig;
@@ -24,6 +28,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -126,6 +131,35 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
         getServer().getPluginManager().registerEvents(new ExplosionEventListener(), this);
 
         Slimefun.getItemTranslationService().registerTranslations(this);
+
+        // Register this addon's own in-game wiki page (core does not auto-generate addon wikis).
+        registerWiki();
+    }
+
+    private void registerWiki() {
+        WikiText wiki = Slimefun.getWikiText();
+        String topicId = "addon_missilewarfare";
+
+        wiki.registerTopic(new WikiTopic(topicId, "Missile Warfare", XMaterial.FIRE_CHARGE, "&7Build, launch and intercept"));
+        wiki.setMechanic(topicId, Arrays.asList(
+            "&7Build, launch and intercept.", "",
+            "&7Surface-to-surface and surface-to-air", "&7missiles, launchers, anti-air systems", "&7and mines for large-scale warfare.", "",
+            "&7Click an item below for its recipe."));
+
+        // Collect this addon's own items dynamically - never hardcode item lists.
+        List<String> items = new ArrayList<>();
+
+        for (SlimefunItem item : Slimefun.getRegistry().getEnabledSlimefunItems()) {
+            try {
+                if (item.getAddon() == this) {
+                    items.add(item.getId());
+                }
+            } catch (Exception | LinkageError ignored) {
+                // A broken item should not break wiki registration.
+            }
+        }
+
+        wiki.setTopicItems(topicId, items);
     }
 
     /**
