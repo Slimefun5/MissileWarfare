@@ -1,65 +1,155 @@
 # Traducciones al español de los objetos de MissileWarfare. Clave = identificador del objeto de Slimefun.
-# name = nombre mostrado, lore = lista de líneas, códigos de color '&'. Los objetos faltantes usan el inglés.
+# name = display name with '&' colour codes. Missing items fall back to English.
 
-GROUNDLAUNCHER:
-  name: "&6Lanzador de misiles tierra-tierra"
-  lore:
-    - "&7Dispara a un área concreta en el suelo."
-    - "&7Usa un palo para fijar las coordenadas objetivo"
-    - "&7Debe construirse sobre un bloque de hormigón verde."
+SUGARFUEL:
+  name: "&eCombustible de azúcar"
 
-ANTIMISSILELAUNCHER:
-  name: "&6Lanzador antimisiles"
-  lore:
-    - "&7Apunta y derriba otros misiles del área."
-    - "&7Usa redstone para desactivarlo"
-    - "&7Necesita misiles antimisiles"
+GUIDEBOOK:
+  name: "&eManual"
 
-ANTIELYTRA:
-  name: "&6Lanzador antiélitros"
-  lore:
-    - "&7Dispara un misil a los jugadores cercanos"
-    - "&7que usan élitros"
-    - "&7Necesita misiles antiélitros"
+EXPLOSIVEPOWDER:
+  name: "&ePólvora explosiva"
 
-MANPAD:
-  name: "&6Manpad"
-  lore:
-    - "&7Dispositivo antimisiles portátil"
-    - "&7Mayús+Clic derecho para empezar a rastrear"
-    - "&7Suelta Mayús para disparar"
+COMPRESSEDEXPLOSIVES:
+  name: "&ePólvora explosiva comprimida"
+
+ULTRALITE_INGOT:
+  name: "&eLingote UltraLite"
+
+ULTRALITE_PLATE:
+  name: "&ePlaca UltraLite"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eComputadora de vuelo simple"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&eCombustible para cohetes"
+
+SMALLWARHEAD:
+  name: "&eOjiva pequeña"
+
+SMALLBODY:
+  name: "&eFuselaje de misil pequeño"
+
+SMALLFIN:
+  name: "&eAletas de misil pequeñas"
+
+MISSILEBODY:
+  name: "&eCuerpo de misil"
+
+MISSILEFINS:
+  name: "&eAletas de misil"
+
+WARHEAD:
+  name: "&eOjiva de misil"
+
+WARHEADAP:
+  name: "&eOjiva reforzada"
+
+CHLORINE:
+  name: "&eCloro"
+
+CHLORINEPELLET:
+  name: "&ePastilla de cloro"
+
+ADVANCEDMISSILEBODY:
+  name: "&eCuerpo de misil avanzado"
+
+HEAVYWARHEAD:
+  name: "&eOjiva pesada"
+
+ICBMMISSILEBODY:
+  name: "&eCuerpo de ICBM"
 
 MINE:
   name: "&cMina"
-  lore:
-    - "&7¿Funcionará contra los tanques?"
+
+SMALLMISSILE:
+  name: "&eMisil tierra-tierra pequeño"
+
+SMALLMISSILEHE:
+  name: "&eMisil tierra-tierra pequeño HE"
+
+SMALLMISSILELR:
+  name: "&eMisil tierra-tierra pequeño LR"
+
+SMALLMISSILEAC:
+  name: "&eMisil tierra-tierra pequeño AC"
+
+ANTIAIRMISSILE:
+  name: "&eMisil antimisiles"
+
+ANTIELYTRAMISSILE:
+  name: "&eMisil antiélitros"
 
 MISSILE:
-  name: "&6Misil tierra-tierra"
-  lore:
-    - "&7Tu amistoso misil del vecindario"
+  name: "&eMisil tierra-tierra"
 
-MISSILEICBM:
-  name: "&bMisil ICBM"
-  lore:
-    - "&7Misil de largo alcance"
-    - "&7Misil balístico intercontinental"
-    - "&7'Ningún lugar es seguro.'"
+MISSILEHE:
+  name: "&eMisil tierra-tierra HE"
 
-MISSILECLUSTER:
-  name: "&6Misil de racimo"
-  lore:
-    - "&7Misil de racimo, despliega muchos misiles antes de impactar"
-    - "&7'¡Borra aldeas más rápido de lo que puedes gritar!'"
+MISSILELR:
+  name: "&eMisil tierra-tierra LR"
 
-MISSILENAPALM:
-  name: "&6Misil de napalm"
-  lore:
-    - "&7Misil incendiario"
-    - "&7Misil de napalm, lanza fuego por todas partes al impactar."
+MISSILEAC:
+  name: "&eMisil tierra-tierra AC"
+
+MISSILEAPONE:
+  name: "&eMisil tierra-tierra AP"
+
+MISSILEAPTWO:
+  name: "&eMisil tierra-tierra AP"
+
+MISSILEAPTHR:
+  name: "&eMisil tierra-tierra AP"
+
+MISSILEADV:
+  name: "&eMisil tierra-tierra avanzado"
+
+MISSILEHEADV:
+  name: "&eMisil tierra-tierra avanzado HE"
+
+MISSILELRADV:
+  name: "&eMisil tierra-tierra avanzado LR"
+
+MISSILEACADV:
+  name: "&eMisil tierra-tierra avanzado AC"
 
 MISSILEGAS:
-  name: "&aMisil de gas"
-  lore:
-    - "&7Misil de limpieza"
-    - "&7Despliega gas tóxico al impactar en un objetivo"
+  name: "&cMisil de gas"
+
+MISSILEEXCAV:
+  name: "&cMisil de excavación"
+
+MISSILESTICK:
+  name: "&cMisil pegajoso"
+
+MISSILEICBM:
+  name: "&cMisil ICBM"
+
+MISSILECLUSTER:
+  name: "&cMisil de racimo"
+
+MISSILENAPALM:
+  name: "&cMisil de napalm"
+
+GROUNDLAUNCHER:
+  name: "&6Lanzador de misiles tierra-tierra"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Lanzador antimisiles"
+
+ANTIELYTRA:
+  name: "&6Lanzador antiélitros"
+
+MISSILERADAR:
+  name: "&6Radar de misiles"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Lista de jugadores"

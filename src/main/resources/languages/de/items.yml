@@ -1,65 +1,155 @@
 # Deutsche Item-Übersetzungen für MissileWarfare. Schlüssel = Slimefun-Item-ID.
-# name = Anzeigename, lore = Liste von Zeilen, '&' Farbcodes. Fehlende Items fallen auf Englisch zurück.
+# name = Anzeigename. '&' Farbcodes. Fehlende Items fallen auf Englisch zurück.
 
-GROUNDLAUNCHER:
-  name: "&6Boden-zu-Boden-Raketenwerfer"
-  lore:
-    - "&7Beschießt ein bestimmtes Gebiet am Boden."
-    - "&7Mit einem Stock die Zielkoordinaten setzen"
-    - "&7Muss auf einem grünen Betonblock gebaut werden."
+SUGARFUEL:
+  name: "&eZuckertreibstoff"
 
-ANTIMISSILELAUNCHER:
-  name: "&6Raketenabwehrwerfer"
-  lore:
-    - "&7Erfasst und schießt andere Raketen im Umkreis ab."
-    - "&7Mit Redstone deaktivieren"
-    - "&7Benötigt Abwehrraketen"
+GUIDEBOOK:
+  name: "&eHandbuch"
 
-ANTIELYTRA:
-  name: "&6Elytra-Abwehrwerfer"
-  lore:
-    - "&7Feuert eine Rakete auf nahe Spieler,"
-    - "&7die eine Elytra benutzen"
-    - "&7Benötigt Anti-Elytra-Raketen"
+EXPLOSIVEPOWDER:
+  name: "&eSprengpulver"
 
-MANPAD:
-  name: "&6Manpad"
-  lore:
-    - "&7Tragbares Raketenabwehrgerät"
-    - "&7Umschalt+Rechtsklick zum Anvisieren"
-    - "&7Umschalt loslassen zum Feuern"
+COMPRESSEDEXPLOSIVES:
+  name: "&eKomprimiertes Sprengpulver"
+
+ULTRALITE_INGOT:
+  name: "&eUltraLite-Barren"
+
+ULTRALITE_PLATE:
+  name: "&eUltraLite-Platte"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eEinfacher Flugcomputer"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&eRaketentreibstoff"
+
+SMALLWARHEAD:
+  name: "&eKleiner Sprengkopf"
+
+SMALLBODY:
+  name: "&eKleiner Raketenrumpf"
+
+SMALLFIN:
+  name: "&eKleine Raketenflossen"
+
+MISSILEBODY:
+  name: "&eRaketenrumpf"
+
+MISSILEFINS:
+  name: "&eRaketenflossen"
+
+WARHEAD:
+  name: "&eRaketensprengkopf"
+
+WARHEADAP:
+  name: "&eVerstärkter Sprengkopf"
+
+CHLORINE:
+  name: "&eChlor"
+
+CHLORINEPELLET:
+  name: "&eChlortablette"
+
+ADVANCEDMISSILEBODY:
+  name: "&eFortgeschrittener Raketenrumpf"
+
+HEAVYWARHEAD:
+  name: "&eSchwerer Sprengkopf"
+
+ICBMMISSILEBODY:
+  name: "&eICBM-Rumpf"
 
 MINE:
   name: "&cMine"
-  lore:
-    - "&7Funktioniert sie auch gegen Panzer?"
+
+SMALLMISSILE:
+  name: "&eKleine BzB-Rakete"
+
+SMALLMISSILEHE:
+  name: "&eKleine BzB-Rakete HE"
+
+SMALLMISSILELR:
+  name: "&eKleine BzB-Rakete LR"
+
+SMALLMISSILEAC:
+  name: "&eKleine BzB-Rakete AC"
+
+ANTIAIRMISSILE:
+  name: "&eAbwehrrakete"
+
+ANTIELYTRAMISSILE:
+  name: "&eAnti-Elytra-Rakete"
 
 MISSILE:
-  name: "&6Boden-zu-Boden-Rakete"
-  lore:
-    - "&7Deine freundliche Rakete von nebenan"
+  name: "&eBzB-Rakete"
 
-MISSILEICBM:
-  name: "&bICBM-Rakete"
-  lore:
-    - "&7Langstreckenrakete"
-    - "&7Interkontinentale ballistische Rakete"
-    - "&7'Nirgendwo ist sicher.'"
+MISSILEHE:
+  name: "&eBzB-Rakete HE"
 
-MISSILECLUSTER:
-  name: "&6Streurakete"
-  lore:
-    - "&7Streurakete, setzt viele Raketen vor dem Einschlag frei"
-    - "&7'Löscht Dörfer schneller aus, als du schreien kannst!'"
+MISSILELR:
+  name: "&eBzB-Rakete LR"
 
-MISSILENAPALM:
-  name: "&6Napalmrakete"
-  lore:
-    - "&7Feuerrakete"
-    - "&7Napalmrakete, verteilt beim Aufprall überall Feuer."
+MISSILEAC:
+  name: "&eBzB-Rakete AC"
+
+MISSILEAPONE:
+  name: "&eBzB-Rakete AP"
+
+MISSILEAPTWO:
+  name: "&eBzB-Rakete AP"
+
+MISSILEAPTHR:
+  name: "&eBzB-Rakete AP"
+
+MISSILEADV:
+  name: "&eFortgeschrittene BzB-Rakete"
+
+MISSILEHEADV:
+  name: "&eFortgeschrittene BzB-Rakete HE"
+
+MISSILELRADV:
+  name: "&eFortgeschrittene BzB-Rakete LR"
+
+MISSILEACADV:
+  name: "&eFortgeschrittene BzB-Rakete AC"
 
 MISSILEGAS:
-  name: "&aGasrakete"
-  lore:
-    - "&7Reinigungsrakete"
-    - "&7Setzt beim Treffer giftiges Gas frei"
+  name: "&cGasrakete"
+
+MISSILEEXCAV:
+  name: "&cAushubrakete"
+
+MISSILESTICK:
+  name: "&cKleberakete"
+
+MISSILEICBM:
+  name: "&cICBM-Rakete"
+
+MISSILECLUSTER:
+  name: "&cStreurakete"
+
+MISSILENAPALM:
+  name: "&cNapalmrakete"
+
+GROUNDLAUNCHER:
+  name: "&6Boden-zu-Boden-Raketenwerfer"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Raketenabwehrwerfer"
+
+ANTIELYTRA:
+  name: "&6Elytra-Abwehrwerfer"
+
+MISSILERADAR:
+  name: "&6Raketenradar"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Spielerliste"

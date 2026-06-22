@@ -1,0 +1,155 @@
+# Polskie tłumaczenia przedmiotów MissileWarfare. Klucz = ID przedmiotu Slimefun.
+# name = display name with '&' colour codes. Missing items fall back to English.
+
+SUGARFUEL:
+  name: "&ePaliwo cukrowe"
+
+GUIDEBOOK:
+  name: "&ePoradnik"
+
+EXPLOSIVEPOWDER:
+  name: "&eProszek wybuchowy"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&eSprężony proszek wybuchowy"
+
+ULTRALITE_INGOT:
+  name: "&eSztabka UltraLite"
+
+ULTRALITE_PLATE:
+  name: "&ePłyta UltraLite"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eProsty komputer lotu"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&ePaliwo rakietowe"
+
+SMALLWARHEAD:
+  name: "&eMała głowica"
+
+SMALLBODY:
+  name: "&eMały kadłub pocisku"
+
+SMALLFIN:
+  name: "&eMałe stateczniki pocisku"
+
+MISSILEBODY:
+  name: "&eKorpus pocisku"
+
+MISSILEFINS:
+  name: "&eStateczniki pocisku"
+
+WARHEAD:
+  name: "&eGłowica pocisku"
+
+WARHEADAP:
+  name: "&eWzmocniona głowica"
+
+CHLORINE:
+  name: "&eChlor"
+
+CHLORINEPELLET:
+  name: "&eTabletka chloru"
+
+ADVANCEDMISSILEBODY:
+  name: "&eZaawansowany korpus pocisku"
+
+HEAVYWARHEAD:
+  name: "&eCiężka głowica"
+
+ICBMMISSILEBODY:
+  name: "&eKorpus ICBM"
+
+MINE:
+  name: "&cMina"
+
+SMALLMISSILE:
+  name: "&eMały pocisk ziemia-ziemia"
+
+SMALLMISSILEHE:
+  name: "&eMały pocisk ziemia-ziemia HE"
+
+SMALLMISSILELR:
+  name: "&eMały pocisk ziemia-ziemia LR"
+
+SMALLMISSILEAC:
+  name: "&eMały pocisk ziemia-ziemia AC"
+
+ANTIAIRMISSILE:
+  name: "&ePocisk przeciwrakietowy"
+
+ANTIELYTRAMISSILE:
+  name: "&ePocisk przeciw elytrom"
+
+MISSILE:
+  name: "&ePocisk ziemia-ziemia"
+
+MISSILEHE:
+  name: "&ePocisk ziemia-ziemia HE"
+
+MISSILELR:
+  name: "&ePocisk ziemia-ziemia LR"
+
+MISSILEAC:
+  name: "&ePocisk ziemia-ziemia AC"
+
+MISSILEAPONE:
+  name: "&ePocisk ziemia-ziemia AP"
+
+MISSILEAPTWO:
+  name: "&ePocisk ziemia-ziemia AP"
+
+MISSILEAPTHR:
+  name: "&ePocisk ziemia-ziemia AP"
+
+MISSILEADV:
+  name: "&eZaawansowany pocisk ziemia-ziemia"
+
+MISSILEHEADV:
+  name: "&eZaawansowany pocisk ziemia-ziemia HE"
+
+MISSILELRADV:
+  name: "&eZaawansowany pocisk ziemia-ziemia LR"
+
+MISSILEACADV:
+  name: "&eZaawansowany pocisk ziemia-ziemia AC"
+
+MISSILEGAS:
+  name: "&cPocisk gazowy"
+
+MISSILEEXCAV:
+  name: "&cPocisk wykopowy"
+
+MISSILESTICK:
+  name: "&cLepki pocisk"
+
+MISSILEICBM:
+  name: "&cPocisk ICBM"
+
+MISSILECLUSTER:
+  name: "&cPocisk kasetowy"
+
+MISSILENAPALM:
+  name: "&cPocisk napalmowy"
+
+GROUNDLAUNCHER:
+  name: "&6Wyrzutnia pocisków ziemia-ziemia"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Wyrzutnia przeciwrakietowa"
+
+ANTIELYTRA:
+  name: "&6Wyrzutnia przeciw elytrom"
+
+MISSILERADAR:
+  name: "&6Radar pocisków"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Lista graczy"
