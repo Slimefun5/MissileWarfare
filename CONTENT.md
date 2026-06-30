@@ -1,4 +1,4 @@
-> Join our [Discord](https://discord.gg/bcYdK8xfkF) for support.
+> Join our [Discord](https://discord.gg/CbBYZBEWdR) for support.
 
 Ever wanted a long-range solution to the destruction of a minecraft base? Ever wanted to recreate the stunning images of SAM missiles intercepting rockets?
 MissileWarfare provides both of those, and more.
