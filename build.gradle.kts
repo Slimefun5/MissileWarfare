@@ -5,7 +5,19 @@
 }
 
 group = "me.kaiyan.missilewarfare"
-version = "1.6.13"
+
+fun latestGitTagVersion(): String? = try {
+    val out = providers.exec { workingDir = rootDir; commandLine("git","describe","--tags","--abbrev=0"); isIgnoreExitValue = true }
+    if (out.result.get().exitValue == 0) out.standardOutput.asText.get().trim().removePrefix("gh-").removePrefix("v").takeIf { it.isNotBlank() } else null
+} catch (e: Exception) { null }
+
+version = (project.findProperty("artifact_version") as String?)?.removePrefix("v")?.takeIf { it.isNotBlank() } ?: latestGitTagVersion() ?: "1.6.13"
+val versionSuffix: String = when {
+    !(project.findProperty("artifact_version") as String?).isNullOrBlank() -> ""
+    System.getenv("GITHUB_ACTIONS") == "true" -> "-EXPERIMENTAL"
+    else -> "-UNOFFICIAL"
+}
+val displayVersion = "${project.version}$versionSuffix"
 description = "MissileWarfare is a Slimefun addon adding missiles and warfare items."
 
 github {
@@ -71,7 +83,7 @@ tasks {
     }
     processResources {
         filesMatching("plugin.yml") {
-            expand("version" to project.version)
+            expand("version" to displayVersion)
         }
     }
     jar {
@@ -82,7 +94,11 @@ tasks {
         archiveFileName.set("MissileWarfare v${project.version}.jar")
 =======
         relocate("org.bstats", "missilewarfare.libs.bstats")
+<<<<<<< HEAD
         archiveFileName.set("MissileWarfare-1.6.13-UNOFFICIAL.jar")
+>>>>>>> origin/experimental
+=======
+        archiveFileName.set("MissileWarfare-$displayVersion.jar")
 >>>>>>> origin/experimental
                 exclude("META-INF/**")
     }
