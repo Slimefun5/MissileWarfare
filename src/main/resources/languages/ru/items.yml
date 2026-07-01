@@ -1,0 +1,155 @@
+# Русские переводы предметов MissileWarfare. Ключ = ID предмета Slimefun.
+# name = display name with '&' colour codes. Missing items fall back to English.
+
+SUGARFUEL:
+  name: "&eСахарное топливо"
+
+GUIDEBOOK:
+  name: "&eРуководство"
+
+EXPLOSIVEPOWDER:
+  name: "&eВзрывчатый порошок"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&eСжатый взрывчатый порошок"
+
+ULTRALITE_INGOT:
+  name: "&eСлиток UltraLite"
+
+ULTRALITE_PLATE:
+  name: "&eПластина UltraLite"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eПростой полётный компьютер"
+
+RADAR:
+  name: "&eРадар"
+
+ROCKETFUEL:
+  name: "&eРакетное топливо"
+
+SMALLWARHEAD:
+  name: "&eМалая боеголовка"
+
+SMALLBODY:
+  name: "&eМалый корпус ракеты"
+
+SMALLFIN:
+  name: "&eМалые стабилизаторы ракеты"
+
+MISSILEBODY:
+  name: "&eКорпус ракеты"
+
+MISSILEFINS:
+  name: "&eСтабилизаторы ракеты"
+
+WARHEAD:
+  name: "&eБоеголовка ракеты"
+
+WARHEADAP:
+  name: "&eУсиленная боеголовка"
+
+CHLORINE:
+  name: "&eХлор"
+
+CHLORINEPELLET:
+  name: "&eХлорная таблетка"
+
+ADVANCEDMISSILEBODY:
+  name: "&eУлучшенный корпус ракеты"
+
+HEAVYWARHEAD:
+  name: "&eТяжёлая боеголовка"
+
+ICBMMISSILEBODY:
+  name: "&eКорпус МБР"
+
+MINE:
+  name: "&cМина"
+
+SMALLMISSILE:
+  name: "&eМалая ракета земля-земля"
+
+SMALLMISSILEHE:
+  name: "&eМалая ракета земля-земля HE"
+
+SMALLMISSILELR:
+  name: "&eМалая ракета земля-земля LR"
+
+SMALLMISSILEAC:
+  name: "&eМалая ракета земля-земля AC"
+
+ANTIAIRMISSILE:
+  name: "&eПротиворакета"
+
+ANTIELYTRAMISSILE:
+  name: "&eРакета против элитр"
+
+MISSILE:
+  name: "&eРакета земля-земля"
+
+MISSILEHE:
+  name: "&eРакета земля-земля HE"
+
+MISSILELR:
+  name: "&eРакета земля-земля LR"
+
+MISSILEAC:
+  name: "&eРакета земля-земля AC"
+
+MISSILEAPONE:
+  name: "&eРакета земля-земля AP"
+
+MISSILEAPTWO:
+  name: "&eРакета земля-земля AP"
+
+MISSILEAPTHR:
+  name: "&eРакета земля-земля AP"
+
+MISSILEADV:
+  name: "&eУлучшенная ракета земля-земля"
+
+MISSILEHEADV:
+  name: "&eУлучшенная ракета земля-земля HE"
+
+MISSILELRADV:
+  name: "&eУлучшенная ракета земля-земля LR"
+
+MISSILEACADV:
+  name: "&eУлучшенная ракета земля-земля AC"
+
+MISSILEGAS:
+  name: "&cГазовая ракета"
+
+MISSILEEXCAV:
+  name: "&cЗемлеройная ракета"
+
+MISSILESTICK:
+  name: "&cЛипкая ракета"
+
+MISSILEICBM:
+  name: "&cРакета МБР"
+
+MISSILECLUSTER:
+  name: "&cКассетная ракета"
+
+MISSILENAPALM:
+  name: "&cНапалмовая ракета"
+
+GROUNDLAUNCHER:
+  name: "&6Пусковая установка земля-земля"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Противоракетная установка"
+
+ANTIELYTRA:
+  name: "&6Установка против элитр"
+
+MISSILERADAR:
+  name: "&6Ракетный радар"
+
+MANPAD:
+  name: "&6ПЗРК"
+
+PLAYERLIST:
+  name: "&6Список игроков"

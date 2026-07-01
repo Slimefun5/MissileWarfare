@@ -1,0 +1,155 @@
+# Nederlandse vertalingen van MissileWarfare-items. Sleutel = Slimefun-item-ID.
+# name = display name with '&' colour codes. Missing items fall back to English.
+
+SUGARFUEL:
+  name: "&eSuikerbrandstof"
+
+GUIDEBOOK:
+  name: "&eHandboek"
+
+EXPLOSIVEPOWDER:
+  name: "&eExplosief poeder"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&eSamengeperst explosief poeder"
+
+ULTRALITE_INGOT:
+  name: "&eUltraLite-staaf"
+
+ULTRALITE_PLATE:
+  name: "&eUltraLite-plaat"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eEenvoudige vluchtcomputer"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&eRaketbrandstof"
+
+SMALLWARHEAD:
+  name: "&eKleine kernkop"
+
+SMALLBODY:
+  name: "&eKleine raketromp"
+
+SMALLFIN:
+  name: "&eKleine raketvinnen"
+
+MISSILEBODY:
+  name: "&eRaketromp"
+
+MISSILEFINS:
+  name: "&eRaketvinnen"
+
+WARHEAD:
+  name: "&eRaketkernkop"
+
+WARHEADAP:
+  name: "&eVersterkte kernkop"
+
+CHLORINE:
+  name: "&eChloor"
+
+CHLORINEPELLET:
+  name: "&eChloortablet"
+
+ADVANCEDMISSILEBODY:
+  name: "&eGeavanceerde raketromp"
+
+HEAVYWARHEAD:
+  name: "&eZware kernkop"
+
+ICBMMISSILEBODY:
+  name: "&eICBM-romp"
+
+MINE:
+  name: "&cMijn"
+
+SMALLMISSILE:
+  name: "&eKleine grond-grondraket"
+
+SMALLMISSILEHE:
+  name: "&eKleine grond-grondraket HE"
+
+SMALLMISSILELR:
+  name: "&eKleine grond-grondraket LR"
+
+SMALLMISSILEAC:
+  name: "&eKleine grond-grondraket AC"
+
+ANTIAIRMISSILE:
+  name: "&eAntiraketraket"
+
+ANTIELYTRAMISSILE:
+  name: "&eAnti-elytraraket"
+
+MISSILE:
+  name: "&eGrond-grondraket"
+
+MISSILEHE:
+  name: "&eGrond-grondraket HE"
+
+MISSILELR:
+  name: "&eGrond-grondraket LR"
+
+MISSILEAC:
+  name: "&eGrond-grondraket AC"
+
+MISSILEAPONE:
+  name: "&eGrond-grondraket AP"
+
+MISSILEAPTWO:
+  name: "&eGrond-grondraket AP"
+
+MISSILEAPTHR:
+  name: "&eGrond-grondraket AP"
+
+MISSILEADV:
+  name: "&eGeavanceerde grond-grondraket"
+
+MISSILEHEADV:
+  name: "&eGeavanceerde grond-grondraket HE"
+
+MISSILELRADV:
+  name: "&eGeavanceerde grond-grondraket LR"
+
+MISSILEACADV:
+  name: "&eGeavanceerde grond-grondraket AC"
+
+MISSILEGAS:
+  name: "&cGasraket"
+
+MISSILEEXCAV:
+  name: "&cGraafraket"
+
+MISSILESTICK:
+  name: "&cPlakkerige raket"
+
+MISSILEICBM:
+  name: "&cICBM-raket"
+
+MISSILECLUSTER:
+  name: "&cClusterraket"
+
+MISSILENAPALM:
+  name: "&cNapalmraket"
+
+GROUNDLAUNCHER:
+  name: "&6Grond-grondraketlanceerinrichting"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Antiraketlanceerinrichting"
+
+ANTIELYTRA:
+  name: "&6Anti-elytralanceerinrichting"
+
+MISSILERADAR:
+  name: "&6Raketradar"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Spelerslijst"

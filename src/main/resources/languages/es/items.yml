@@ -1,0 +1,155 @@
+# Traducciones al español de los objetos de MissileWarfare. Clave = identificador del objeto de Slimefun.
+# name = display name with '&' colour codes. Missing items fall back to English.
+
+SUGARFUEL:
+  name: "&eCombustible de azúcar"
+
+GUIDEBOOK:
+  name: "&eManual"
+
+EXPLOSIVEPOWDER:
+  name: "&ePólvora explosiva"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&ePólvora explosiva comprimida"
+
+ULTRALITE_INGOT:
+  name: "&eLingote UltraLite"
+
+ULTRALITE_PLATE:
+  name: "&ePlaca UltraLite"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eComputadora de vuelo simple"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&eCombustible para cohetes"
+
+SMALLWARHEAD:
+  name: "&eOjiva pequeña"
+
+SMALLBODY:
+  name: "&eFuselaje de misil pequeño"
+
+SMALLFIN:
+  name: "&eAletas de misil pequeñas"
+
+MISSILEBODY:
+  name: "&eCuerpo de misil"
+
+MISSILEFINS:
+  name: "&eAletas de misil"
+
+WARHEAD:
+  name: "&eOjiva de misil"
+
+WARHEADAP:
+  name: "&eOjiva reforzada"
+
+CHLORINE:
+  name: "&eCloro"
+
+CHLORINEPELLET:
+  name: "&ePastilla de cloro"
+
+ADVANCEDMISSILEBODY:
+  name: "&eCuerpo de misil avanzado"
+
+HEAVYWARHEAD:
+  name: "&eOjiva pesada"
+
+ICBMMISSILEBODY:
+  name: "&eCuerpo de ICBM"
+
+MINE:
+  name: "&cMina"
+
+SMALLMISSILE:
+  name: "&eMisil tierra-tierra pequeño"
+
+SMALLMISSILEHE:
+  name: "&eMisil tierra-tierra pequeño HE"
+
+SMALLMISSILELR:
+  name: "&eMisil tierra-tierra pequeño LR"
+
+SMALLMISSILEAC:
+  name: "&eMisil tierra-tierra pequeño AC"
+
+ANTIAIRMISSILE:
+  name: "&eMisil antimisiles"
+
+ANTIELYTRAMISSILE:
+  name: "&eMisil antiélitros"
+
+MISSILE:
+  name: "&eMisil tierra-tierra"
+
+MISSILEHE:
+  name: "&eMisil tierra-tierra HE"
+
+MISSILELR:
+  name: "&eMisil tierra-tierra LR"
+
+MISSILEAC:
+  name: "&eMisil tierra-tierra AC"
+
+MISSILEAPONE:
+  name: "&eMisil tierra-tierra AP"
+
+MISSILEAPTWO:
+  name: "&eMisil tierra-tierra AP"
+
+MISSILEAPTHR:
+  name: "&eMisil tierra-tierra AP"
+
+MISSILEADV:
+  name: "&eMisil tierra-tierra avanzado"
+
+MISSILEHEADV:
+  name: "&eMisil tierra-tierra avanzado HE"
+
+MISSILELRADV:
+  name: "&eMisil tierra-tierra avanzado LR"
+
+MISSILEACADV:
+  name: "&eMisil tierra-tierra avanzado AC"
+
+MISSILEGAS:
+  name: "&cMisil de gas"
+
+MISSILEEXCAV:
+  name: "&cMisil de excavación"
+
+MISSILESTICK:
+  name: "&cMisil pegajoso"
+
+MISSILEICBM:
+  name: "&cMisil ICBM"
+
+MISSILECLUSTER:
+  name: "&cMisil de racimo"
+
+MISSILENAPALM:
+  name: "&cMisil de napalm"
+
+GROUNDLAUNCHER:
+  name: "&6Lanzador de misiles tierra-tierra"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Lanzador antimisiles"
+
+ANTIELYTRA:
+  name: "&6Lanzador antiélitros"
+
+MISSILERADAR:
+  name: "&6Radar de misiles"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Lista de jugadores"

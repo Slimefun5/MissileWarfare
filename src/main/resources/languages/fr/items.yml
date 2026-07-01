@@ -1,0 +1,155 @@
+# Traductions françaises des objets pour MissileWarfare. Clé = identifiant d'objet Slimefun.
+# name = display name with '&' colour codes. Missing items fall back to English.
+
+SUGARFUEL:
+  name: "&eCarburant au sucre"
+
+GUIDEBOOK:
+  name: "&eGuide"
+
+EXPLOSIVEPOWDER:
+  name: "&ePoudre explosive"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&ePoudre explosive compressée"
+
+ULTRALITE_INGOT:
+  name: "&eLingot UltraLite"
+
+ULTRALITE_PLATE:
+  name: "&ePlaque UltraLite"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eOrdinateur de vol simple"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&eCarburant pour fusée"
+
+SMALLWARHEAD:
+  name: "&ePetite ogive"
+
+SMALLBODY:
+  name: "&ePetit fuselage de missile"
+
+SMALLFIN:
+  name: "&ePetits ailerons de missile"
+
+MISSILEBODY:
+  name: "&eCorps de missile"
+
+MISSILEFINS:
+  name: "&eAilerons de missile"
+
+WARHEAD:
+  name: "&eOgive de missile"
+
+WARHEADAP:
+  name: "&eOgive renforcée"
+
+CHLORINE:
+  name: "&eChlore"
+
+CHLORINEPELLET:
+  name: "&ePastille de chlore"
+
+ADVANCEDMISSILEBODY:
+  name: "&eCorps de missile avancé"
+
+HEAVYWARHEAD:
+  name: "&eOgive lourde"
+
+ICBMMISSILEBODY:
+  name: "&eCorps d'ICBM"
+
+MINE:
+  name: "&cMine"
+
+SMALLMISSILE:
+  name: "&ePetit missile sol-sol"
+
+SMALLMISSILEHE:
+  name: "&ePetit missile sol-sol HE"
+
+SMALLMISSILELR:
+  name: "&ePetit missile sol-sol LR"
+
+SMALLMISSILEAC:
+  name: "&ePetit missile sol-sol AC"
+
+ANTIAIRMISSILE:
+  name: "&eMissile antimissile"
+
+ANTIELYTRAMISSILE:
+  name: "&eMissile anti-élytre"
+
+MISSILE:
+  name: "&eMissile sol-sol"
+
+MISSILEHE:
+  name: "&eMissile sol-sol HE"
+
+MISSILELR:
+  name: "&eMissile sol-sol LR"
+
+MISSILEAC:
+  name: "&eMissile sol-sol AC"
+
+MISSILEAPONE:
+  name: "&eMissile sol-sol AP"
+
+MISSILEAPTWO:
+  name: "&eMissile sol-sol AP"
+
+MISSILEAPTHR:
+  name: "&eMissile sol-sol AP"
+
+MISSILEADV:
+  name: "&eMissile sol-sol avancé"
+
+MISSILEHEADV:
+  name: "&eMissile sol-sol avancé HE"
+
+MISSILELRADV:
+  name: "&eMissile sol-sol avancé LR"
+
+MISSILEACADV:
+  name: "&eMissile sol-sol avancé AC"
+
+MISSILEGAS:
+  name: "&cMissile à gaz"
+
+MISSILEEXCAV:
+  name: "&cMissile d'excavation"
+
+MISSILESTICK:
+  name: "&cMissile collant"
+
+MISSILEICBM:
+  name: "&cMissile ICBM"
+
+MISSILECLUSTER:
+  name: "&cMissile à fragmentation"
+
+MISSILENAPALM:
+  name: "&cMissile au napalm"
+
+GROUNDLAUNCHER:
+  name: "&6Lanceur de missiles sol-sol"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Lanceur antimissile"
+
+ANTIELYTRA:
+  name: "&6Lanceur anti-élytre"
+
+MISSILERADAR:
+  name: "&6Radar à missiles"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Liste de joueurs"

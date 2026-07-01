@@ -1,0 +1,155 @@
+# Deutsche Item-Übersetzungen für MissileWarfare. Schlüssel = Slimefun-Item-ID.
+# name = Anzeigename. '&' Farbcodes. Fehlende Items fallen auf Englisch zurück.
+
+SUGARFUEL:
+  name: "&eZuckertreibstoff"
+
+GUIDEBOOK:
+  name: "&eHandbuch"
+
+EXPLOSIVEPOWDER:
+  name: "&eSprengpulver"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&eKomprimiertes Sprengpulver"
+
+ULTRALITE_INGOT:
+  name: "&eUltraLite-Barren"
+
+ULTRALITE_PLATE:
+  name: "&eUltraLite-Platte"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eEinfacher Flugcomputer"
+
+RADAR:
+  name: "&eRadar"
+
+ROCKETFUEL:
+  name: "&eRaketentreibstoff"
+
+SMALLWARHEAD:
+  name: "&eKleiner Sprengkopf"
+
+SMALLBODY:
+  name: "&eKleiner Raketenrumpf"
+
+SMALLFIN:
+  name: "&eKleine Raketenflossen"
+
+MISSILEBODY:
+  name: "&eRaketenrumpf"
+
+MISSILEFINS:
+  name: "&eRaketenflossen"
+
+WARHEAD:
+  name: "&eRaketensprengkopf"
+
+WARHEADAP:
+  name: "&eVerstärkter Sprengkopf"
+
+CHLORINE:
+  name: "&eChlor"
+
+CHLORINEPELLET:
+  name: "&eChlortablette"
+
+ADVANCEDMISSILEBODY:
+  name: "&eFortgeschrittener Raketenrumpf"
+
+HEAVYWARHEAD:
+  name: "&eSchwerer Sprengkopf"
+
+ICBMMISSILEBODY:
+  name: "&eICBM-Rumpf"
+
+MINE:
+  name: "&cMine"
+
+SMALLMISSILE:
+  name: "&eKleine BzB-Rakete"
+
+SMALLMISSILEHE:
+  name: "&eKleine BzB-Rakete HE"
+
+SMALLMISSILELR:
+  name: "&eKleine BzB-Rakete LR"
+
+SMALLMISSILEAC:
+  name: "&eKleine BzB-Rakete AC"
+
+ANTIAIRMISSILE:
+  name: "&eAbwehrrakete"
+
+ANTIELYTRAMISSILE:
+  name: "&eAnti-Elytra-Rakete"
+
+MISSILE:
+  name: "&eBzB-Rakete"
+
+MISSILEHE:
+  name: "&eBzB-Rakete HE"
+
+MISSILELR:
+  name: "&eBzB-Rakete LR"
+
+MISSILEAC:
+  name: "&eBzB-Rakete AC"
+
+MISSILEAPONE:
+  name: "&eBzB-Rakete AP"
+
+MISSILEAPTWO:
+  name: "&eBzB-Rakete AP"
+
+MISSILEAPTHR:
+  name: "&eBzB-Rakete AP"
+
+MISSILEADV:
+  name: "&eFortgeschrittene BzB-Rakete"
+
+MISSILEHEADV:
+  name: "&eFortgeschrittene BzB-Rakete HE"
+
+MISSILELRADV:
+  name: "&eFortgeschrittene BzB-Rakete LR"
+
+MISSILEACADV:
+  name: "&eFortgeschrittene BzB-Rakete AC"
+
+MISSILEGAS:
+  name: "&cGasrakete"
+
+MISSILEEXCAV:
+  name: "&cAushubrakete"
+
+MISSILESTICK:
+  name: "&cKleberakete"
+
+MISSILEICBM:
+  name: "&cICBM-Rakete"
+
+MISSILECLUSTER:
+  name: "&cStreurakete"
+
+MISSILENAPALM:
+  name: "&cNapalmrakete"
+
+GROUNDLAUNCHER:
+  name: "&6Boden-zu-Boden-Raketenwerfer"
+
+ANTIMISSILELAUNCHER:
+  name: "&6Raketenabwehrwerfer"
+
+ANTIELYTRA:
+  name: "&6Elytra-Abwehrwerfer"
+
+MISSILERADAR:
+  name: "&6Raketenradar"
+
+MANPAD:
+  name: "&6Manpad"
+
+PLAYERLIST:
+  name: "&6Spielerliste"

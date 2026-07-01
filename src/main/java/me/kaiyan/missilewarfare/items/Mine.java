@@ -8,6 +8,8 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.BlockPlaceHandler;
 import me.kaiyan.missilewarfare.MissileWarfare;
 import me.mrCookieSlime.Slimefun.api.BlockStorage;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import me.kaiyan.missilewarfare.util.MaterialCompat;
 import org.bukkit.block.BlockFace;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -42,7 +44,7 @@ public class Mine extends SlimefunItem implements Listener {
             @Override
             public void onPlayerPlace(BlockPlaceEvent blockPlaceEvent) {
                 Material type = blockPlaceEvent.getBlockAgainst().getType();
-                if (type == Material.BEDROCK || type == Material.ICE) {
+                if (type == MaterialCompat.safe(XMaterial.BEDROCK) || type == MaterialCompat.safe(XMaterial.ICE)) {
                     return;
                 }
                 blockPlaceEvent.getBlockPlaced().setType(type);

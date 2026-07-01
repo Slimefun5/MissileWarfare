@@ -8,13 +8,15 @@ import io.github.thebusybiscuit.slimefun5.api.researches.Research;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import io.github.thebusybiscuit.slimefun5.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun5.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
 import me.kaiyan.missilewarfare.MissileWarfare;
+import me.kaiyan.missilewarfare.util.MaterialCompat;
 import me.kaiyan.missilewarfare.blocks.AntiElytraLauncher;
 import me.kaiyan.missilewarfare.blocks.AntiMissileLauncher;
 import me.kaiyan.missilewarfare.blocks.GroundMissileLauncher;
 import me.kaiyan.missilewarfare.util.Translations;
 import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
+import io.github.thebusybiscuit.slimefun5.libraries.keys.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
@@ -33,39 +35,39 @@ public class CustomItems {
      */
     public static void setup() {
         //Add section to guide
-        NamespacedKey categoryId = new NamespacedKey(MissileWarfare.getInstance(), "missile_warfare");
-        ItemStack categoryItem = CustomItemStack.create(Material.GUNPOWDER, Translations.get("missilegroupname"));
+        NamespacedKey categoryId = new NamespacedKey("missilewarfare", "missile_warfare");
+        ItemStack categoryItem = CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), Translations.get("missilegroupname"));
 
-        ItemGroup group = new ItemGroup(categoryId, categoryItem);
+        ItemGroup group = new ItemGroup(categoryId, categoryItem).setTheme("weapons");
 
         //Add Items
         //<editor-fold desc="CREATE ITEMSTACKS">
         //<editor-fold desc="SUGARFUEL">
-        SlimefunItemStack sugarfuelstack = new SlimefunItemStack("SUGARFUEL", Material.SUGAR, Translations.getMaterialName("sugarfuel"), Translations.getMaterialLore("sugarfuel"));
+        SlimefunItemStack sugarfuelstack = new SlimefunItemStack("SUGARFUEL", MaterialCompat.safe(XMaterial.SUGAR), Translations.getMaterialName("sugarfuel"), Translations.getMaterialLore("sugarfuel"));
         ItemStack[] sugarfuelrecipe = {
                 null, SlimefunItems.MAGNESIUM_DUST.item(), null,
-                SlimefunItems.MAGNESIUM_DUST.item(), new ItemStack(Material.COAL), SlimefunItems.MAGNESIUM_DUST.item(),
+                SlimefunItems.MAGNESIUM_DUST.item(), new ItemStack(MaterialCompat.safe(XMaterial.COAL)), SlimefunItems.MAGNESIUM_DUST.item(),
                 null, SlimefunItems.MAGNESIUM_DUST.item(), null
         };
 
         SlimefunItem sugarfuel = new SlimefunItem(group, sugarfuelstack, RecipeType.ENHANCED_CRAFTING_TABLE, sugarfuelrecipe);
         //</editor-fold>
         //<editor-fold desc="GUIDEBOOK">
-        SlimefunItemStack guidestack = new SlimefunItemStack("GUIDEBOOK", Material.WRITTEN_BOOK, Translations.getMaterialName("guidebook"), Translations.getMaterialLore("guidebook"));
+        SlimefunItemStack guidestack = new SlimefunItemStack("GUIDEBOOK", MaterialCompat.safe(XMaterial.WRITTEN_BOOK), Translations.getMaterialName("guidebook"), Translations.getMaterialLore("guidebook"));
         ItemStack[] guiderecipe = {
                 null, sugarfuelstack.item(), null,
-                sugarfuelstack.item(), new ItemStack(Material.BOOK), sugarfuelstack.item(),
+                sugarfuelstack.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOK)), sugarfuelstack.item(),
                 null, sugarfuelstack.item(), null
         };
 
         GuideBook guide = new GuideBook(group, guidestack, RecipeType.ENHANCED_CRAFTING_TABLE, guiderecipe);
         //</editor-fold>
         //<editor-fold desc="EXPLOSIVEPOWDER">
-        SlimefunItemStack explosivepowderstack = new SlimefunItemStack("EXPLOSIVEPOWDER", Material.GLOWSTONE_DUST, Translations.getMaterialName("explosivepowder"), Translations.getMaterialLore("explosivepowder"));
+        SlimefunItemStack explosivepowderstack = new SlimefunItemStack("EXPLOSIVEPOWDER", MaterialCompat.safe(XMaterial.GLOWSTONE_DUST), Translations.getMaterialName("explosivepowder"), Translations.getMaterialLore("explosivepowder"));
         ItemStack[] explosivepowderrecipe = {
-                SlimefunItems.MAGNESIUM_DUST.item(), new ItemStack(Material.COAL), SlimefunItems.MAGNESIUM_DUST.item(),
-                new ItemStack(Material.COAL), new ItemStack(Material.GUNPOWDER), new ItemStack(Material.COAL),
-                SlimefunItems.MAGNESIUM_DUST.item(), new ItemStack(Material.COAL), SlimefunItems.MAGNESIUM_DUST.item(),
+                SlimefunItems.MAGNESIUM_DUST.item(), new ItemStack(MaterialCompat.safe(XMaterial.COAL)), SlimefunItems.MAGNESIUM_DUST.item(),
+                new ItemStack(MaterialCompat.safe(XMaterial.COAL)), new ItemStack(MaterialCompat.safe(XMaterial.GUNPOWDER)), new ItemStack(MaterialCompat.safe(XMaterial.COAL)),
+                SlimefunItems.MAGNESIUM_DUST.item(), new ItemStack(MaterialCompat.safe(XMaterial.COAL)), SlimefunItems.MAGNESIUM_DUST.item(),
         };
 
         SlimefunItem explosivepowder = new SlimefunItem(group, explosivepowderstack, RecipeType.ENHANCED_CRAFTING_TABLE, explosivepowderrecipe);
@@ -73,16 +75,16 @@ public class CustomItems {
 
         //</editor-fold>
         //<editor-fold desc="COMPRESSEDEXPLOSIVES">
-        SlimefunItemStack compressedpowderstack = new SlimefunItemStack("COMPRESSEDEXPLOSIVES", Material.YELLOW_CONCRETE, Translations.getMaterialName("compressedexplosives"), Translations.getMaterialLore("compressedexplosives"));
+        SlimefunItemStack compressedpowderstack = new SlimefunItemStack("COMPRESSEDEXPLOSIVES", MaterialCompat.safe(XMaterial.YELLOW_CONCRETE), Translations.getMaterialName("compressedexplosives"), Translations.getMaterialLore("compressedexplosives"));
         ItemStack[] compressedpowderrecipe = {
-                null, new ItemStack(Material.GUNPOWDER), null,
+                null, new ItemStack(MaterialCompat.safe(XMaterial.GUNPOWDER)), null,
                 explosivepowderstack.item(), explosivepowderstack.item(), explosivepowderstack.item(),
-                null, new ItemStack(Material.GUNPOWDER), null,
+                null, new ItemStack(MaterialCompat.safe(XMaterial.GUNPOWDER)), null,
         };
         SlimefunItem compressedpowder = new SlimefunItem(group, compressedpowderstack, RecipeType.ENHANCED_CRAFTING_TABLE, compressedpowderrecipe);
         //</editor-fold>
         //<editor-fold desc="ULTRALITE_INGOT">
-        SlimefunItemStack ultraliteingotstack = new SlimefunItemStack("ULTRALITE_INGOT", Material.BRICK, Translations.getMaterialName("ultraliteingot"), Translations.getMaterialLore("ultraliteingot"));
+        SlimefunItemStack ultraliteingotstack = new SlimefunItemStack("ULTRALITE_INGOT", MaterialCompat.safe(XMaterial.BRICK), Translations.getMaterialName("ultraliteingot"), Translations.getMaterialLore("ultraliteingot"));
         ItemStack[] ultraliteingotrecipe = {
                 SlimefunItems.IRON_DUST.item(), SlimefunItems.ALUMINUM_INGOT.item(), SlimefunItems.COPPER_DUST.item(),
                 SlimefunItems.ALUMINUM_BRONZE_INGOT.item(), null, null,
@@ -92,23 +94,23 @@ public class CustomItems {
         SlimefunItem ultraliteingot = new SlimefunItem(group, ultraliteingotstack, RecipeType.SMELTERY, ultraliteingotrecipe);
         //</editor-fold>
         //<editor-fold desc="ULTRALITE_PLATE">
-        SlimefunItemStack ultraliteplatestack = new SlimefunItemStack("ULTRALITE_PLATE", Material.IRON_INGOT, Translations.getMaterialName("ultraliteplate"), Translations.getMaterialLore("ultraliteplate"));
+        SlimefunItemStack ultraliteplatestack = new SlimefunItemStack("ULTRALITE_PLATE", MaterialCompat.safe(XMaterial.IRON_INGOT), Translations.getMaterialName("ultraliteplate"), Translations.getMaterialLore("ultraliteplate"));
         ItemStack[] ultraliteplaterecipe = {
                 ultraliteingotstack.item(), null, ultraliteingotstack.item(),
-                null, new ItemStack(Material.COAL), null,
+                null, new ItemStack(MaterialCompat.safe(XMaterial.COAL)), null,
                 ultraliteingotstack.item(), null, ultraliteingotstack.item()
         };
 
         SlimefunItem ultraliteplate = new SlimefunItem(group, ultraliteplatestack, RecipeType.ENHANCED_CRAFTING_TABLE, ultraliteplaterecipe);
         //</editor-fold>
         //<editor-fold desc="SIMPLE_FLIGHT_COMPUTER">
-        SlimefunItemStack simpleflightcomputerstacks = new SlimefunItemStack("SIMPLEFLIGHTCOMPUTER", Material.POWERED_RAIL, Translations.getMaterialName("simpleflightcomputer"), Translations.getMaterialLore("simpleflightcomputer"));
+        SlimefunItemStack simpleflightcomputerstacks = new SlimefunItemStack("SIMPLEFLIGHTCOMPUTER", MaterialCompat.safe(XMaterial.POWERED_RAIL), Translations.getMaterialName("simpleflightcomputer"), Translations.getMaterialLore("simpleflightcomputer"));
         SlimefunItemStack simpleflightcomputerstack = (SlimefunItemStack) simpleflightcomputerstacks.clone();
         simpleflightcomputerstacks.setAmount(8);
         simpleflightcomputerstack.setAmount(1);
         ItemStack[] simpleflightcomputerrecipe = {
                 ultraliteingotstack.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), ultraliteingotstack.item(),
-                new ItemStack(Material.REDSTONE), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), new ItemStack(Material.REDSTONE),
+                new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE)), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE)),
                 ultraliteingotstack.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), ultraliteingotstack.item()
         };
 
@@ -116,26 +118,26 @@ public class CustomItems {
         simpleflightcomputer.setRecipeOutput(simpleflightcomputerstacks.item());
         //</editor-fold>
         //<editor-fold desc="RADAR">
-        SlimefunItemStack radarstack = new SlimefunItemStack("RADAR", Material.ACTIVATOR_RAIL, Translations.getMaterialName("radar"), Translations.getMaterialLore("radar"));
+        SlimefunItemStack radarstack = new SlimefunItemStack("RADAR", MaterialCompat.safe(XMaterial.ACTIVATOR_RAIL), Translations.getMaterialName("radar"), Translations.getMaterialLore("radar"));
         ItemStack[] radarrecipe = {
                 null, ultraliteplatestack.item(), null,
                 ultraliteplatestack.item(), simpleflightcomputerstack.item(), ultraliteplatestack.item(),
-                new ItemStack(Material.REDSTONE), null, new ItemStack(Material.REDSTONE)
+                new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE)), null, new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE))
         };
 
         SlimefunItem radar = new SlimefunItem(group, radarstack, RecipeType.ENHANCED_CRAFTING_TABLE, radarrecipe);
         //</editor-fold>
         //<editor-fold desc="ROCKETFUEL">
-        SlimefunItemStack rocketfuelstack = new SlimefunItemStack("ROCKETFUEL", Material.GUNPOWDER, Translations.getMaterialName("rocketfuel"), Translations.getMaterialLore("rocketfuel"));
+        SlimefunItemStack rocketfuelstack = new SlimefunItemStack("ROCKETFUEL", MaterialCompat.safe(XMaterial.GUNPOWDER), Translations.getMaterialName("rocketfuel"), Translations.getMaterialLore("rocketfuel"));
         ItemStack[] rocketfuelrecipe = {
-                explosivepowderstack.item(), new ItemStack(Material.GUNPOWDER), explosivepowderstack.item(),
+                explosivepowderstack.item(), new ItemStack(MaterialCompat.safe(XMaterial.GUNPOWDER)), explosivepowderstack.item(),
                 null, SlimefunItems.ALUMINUM_DUST.item(), null,
-                explosivepowderstack.item(), new ItemStack(Material.GUNPOWDER), explosivepowderstack.item()
+                explosivepowderstack.item(), new ItemStack(MaterialCompat.safe(XMaterial.GUNPOWDER)), explosivepowderstack.item()
         };
         SlimefunItem rocketfuel = new SlimefunItem(group, rocketfuelstack, RecipeType.ENHANCED_CRAFTING_TABLE, rocketfuelrecipe);
         //</editor-fold>
         //<editor-fold desc="SMALLWARHEAD">
-        SlimefunItemStack smallwarheadstack = new SlimefunItemStack("SMALLWARHEAD", Material.TNT, Translations.getMaterialName("smallwarhead"), Translations.getMaterialLore("smallwarhead"));
+        SlimefunItemStack smallwarheadstack = new SlimefunItemStack("SMALLWARHEAD", MaterialCompat.safe(XMaterial.TNT), Translations.getMaterialName("smallwarhead"), Translations.getMaterialLore("smallwarhead"));
         ItemStack[] smallwarheadrecipe = {
                 null, SlimefunItems.ALUMINUM_INGOT.item(), null,
                 SlimefunItems.ALUMINUM_INGOT.item(), explosivepowderstack.item(), SlimefunItems.ALUMINUM_INGOT.item(),
@@ -145,7 +147,7 @@ public class CustomItems {
         SlimefunItem smallwarhead = new SlimefunItem(group, smallwarheadstack, RecipeType.ENHANCED_CRAFTING_TABLE, smallwarheadrecipe);
         //</editor-fold>
         //<editor-fold desc="SMALLBODY">
-        SlimefunItemStack smallbodystack = new SlimefunItemStack("SMALLBODY", Material.IRON_BLOCK, Translations.getMaterialName("smallbody"), Translations.getMaterialLore("smallbody"));
+        SlimefunItemStack smallbodystack = new SlimefunItemStack("SMALLBODY", MaterialCompat.safe(XMaterial.IRON_BLOCK), Translations.getMaterialName("smallbody"), Translations.getMaterialLore("smallbody"));
         ItemStack[] smallbodyrecipe = {
                 SlimefunItems.ALUMINUM_INGOT.item(), null, SlimefunItems.ALUMINUM_INGOT.item(),
                 ultraliteingotstack.item(), simpleflightcomputerstack.item(), ultraliteingotstack.item(),
@@ -155,7 +157,7 @@ public class CustomItems {
         SlimefunItem smallbody = new SlimefunItem(group, smallbodystack, RecipeType.ENHANCED_CRAFTING_TABLE, smallbodyrecipe);
         //</editor-fold>
         //<editor-fold desc="SMALLFIN">
-        SlimefunItemStack smallfinstack = new SlimefunItemStack("SMALLFIN", Material.IRON_BOOTS, Translations.getMaterialName("smallfin"), Translations.getMaterialLore("smallfin"));
+        SlimefunItemStack smallfinstack = new SlimefunItemStack("SMALLFIN", MaterialCompat.safe(XMaterial.IRON_BOOTS), Translations.getMaterialName("smallfin"), Translations.getMaterialLore("smallfin"));
         ItemStack[] smallfinrecipe = {
                 null, null, null,
                 null, simpleflightcomputerstack.item(), null,
@@ -165,9 +167,9 @@ public class CustomItems {
         SlimefunItem smallfin = new SlimefunItem(group, smallfinstack, RecipeType.ENHANCED_CRAFTING_TABLE, smallfinrecipe);
         //</editor-fold>
         //<editor-fold desc="MINE">
-        SlimefunItemStack minestack = new SlimefunItemStack("MINE", Material.TNT, Translations.getMaterialName("mine"), Translations.getMaterialLore("mine"));
+        SlimefunItemStack minestack = new SlimefunItemStack("MINE", MaterialCompat.safe(XMaterial.TNT), Translations.getMaterialName("mine"), Translations.getMaterialLore("mine"));
         ItemStack[] minerecipe = {
-                SlimefunItems.SILVER_INGOT.item(), new ItemStack(Material.STONE_PRESSURE_PLATE), SlimefunItems.SILVER_INGOT.item(),
+                SlimefunItems.SILVER_INGOT.item(), new ItemStack(MaterialCompat.safe(XMaterial.STONE_PRESSURE_PLATE)), SlimefunItems.SILVER_INGOT.item(),
                 SlimefunItems.SILVER_INGOT.item(), rocketfuelstack.item(), SlimefunItems.SILVER_INGOT.item(),
                 SlimefunItems.SILVER_INGOT.item(), explosivepowderstack.item(), SlimefunItems.SILVER_INGOT.item()
         };
@@ -175,7 +177,7 @@ public class CustomItems {
         Mine mine = new Mine(group, minestack, RecipeType.ENHANCED_CRAFTING_TABLE, minerecipe);
         //</editor-fold>
         //<editor-fold desc="WARHEAD">
-        SlimefunItemStack warheadstack = new SlimefunItemStack("WARHEAD", Material.TNT, Translations.getMaterialName("warhead"), Translations.getMaterialLore("warhead"));
+        SlimefunItemStack warheadstack = new SlimefunItemStack("WARHEAD", MaterialCompat.safe(XMaterial.TNT), Translations.getMaterialName("warhead"), Translations.getMaterialLore("warhead"));
         ItemStack[] warheadrecipe = {
                 null, ultraliteingotstack.item(), null,
                 ultraliteingotstack.item(), compressedpowderstack.item(), ultraliteingotstack.item(),
@@ -186,7 +188,7 @@ public class CustomItems {
         //</editor-fold>
         Translations.setType("smallmissile");
         //<editor-fold desc="SMALLMISSILE">
-        SlimefunItemStack smallmissilestack = new SlimefunItemStack("SMALLMISSILE", Material.IRON_SWORD, Translations.getMissileName("normal"), Translations.getTypeLore(), Translations.getMissileVariant("normal"));
+        SlimefunItemStack smallmissilestack = new SlimefunItemStack("SMALLMISSILE", MaterialCompat.safe(XMaterial.IRON_SWORD), Translations.getMissileName("normal"), Translations.getTypeLore(), Translations.getMissileVariant("normal"));
         ItemStack[] smallmissilerecipe = {
                 explosivepowderstack.item(), smallwarheadstack.item(), explosivepowderstack.item(),
                 sugarfuelstack.item(), smallbodystack.item(), sugarfuelstack.item(),
@@ -196,7 +198,7 @@ public class CustomItems {
         MissileItem smallmissile = new MissileItem(group, smallmissilestack, RecipeType.ENHANCED_CRAFTING_TABLE, smallmissilerecipe, 1, Translations.getTypeLore());
         //</editor-fold>
         //<editor-fold desc="SMALLMISSILEHE">
-        SlimefunItemStack smallmissilestackHE = new SlimefunItemStack("SMALLMISSILEHE", Material.IRON_SWORD, Translations.getMissileName("he"), Translations.getTypeLore(), Translations.getMissileVariant("he"));
+        SlimefunItemStack smallmissilestackHE = new SlimefunItemStack("SMALLMISSILEHE", MaterialCompat.safe(XMaterial.IRON_SWORD), Translations.getMissileName("he"), Translations.getTypeLore(), Translations.getMissileVariant("he"));
         ItemStack[] smallmissilerecipeHE = {
                 explosivepowderstack.item(), smallwarheadstack.item(), explosivepowderstack.item(),
                 explosivepowderstack.item(), smallbodystack.item(), sugarfuelstack.item(),
@@ -206,7 +208,7 @@ public class CustomItems {
         MissileItem smallmissileHE = new MissileItem(group, smallmissilestackHE, RecipeType.ENHANCED_CRAFTING_TABLE, smallmissilerecipeHE, 2, Translations.getTypeLore());
         //</editor-fold>
         //<editor-fold desc="SMALLMISSILELR">
-        SlimefunItemStack smallmissileLRstack = new SlimefunItemStack("SMALLMISSILELR", Material.IRON_SWORD, Translations.getMissileName("lr"), Translations.getTypeLore(), Translations.getMissileVariant("lr"));
+        SlimefunItemStack smallmissileLRstack = new SlimefunItemStack("SMALLMISSILELR", MaterialCompat.safe(XMaterial.IRON_SWORD), Translations.getMissileName("lr"), Translations.getTypeLore(), Translations.getMissileVariant("lr"));
         ItemStack[] smallmissileLRrecipe = {
                 explosivepowderstack.item(), smallwarheadstack.item(), explosivepowderstack.item(),
                 sugarfuelstack.item(), smallbodystack.item(), sugarfuelstack.item(),
@@ -215,7 +217,7 @@ public class CustomItems {
         MissileItem smallmissileLR = new MissileItem(group, smallmissileLRstack, RecipeType.ENHANCED_CRAFTING_TABLE, smallmissileLRrecipe, 3, Translations.getMissileLore("lr"));
         //</editor-fold>
         //<editor-fold desc="SMALLMISSILEAC">
-        SlimefunItemStack smallmissileACstack = new SlimefunItemStack("SMALLMISSILEAC", Material.IRON_SWORD, Translations.getMissileName("ac"), Translations.getTypeLore(), Translations.getMissileVariant("ac"));
+        SlimefunItemStack smallmissileACstack = new SlimefunItemStack("SMALLMISSILEAC", MaterialCompat.safe(XMaterial.IRON_SWORD), Translations.getMissileName("ac"), Translations.getTypeLore(), Translations.getMissileVariant("ac"));
         ItemStack[] smallmissileACrecipe = {
                 explosivepowderstack.item(), smallwarheadstack.item(), explosivepowderstack.item(),
                 sugarfuelstack.item(), smallbodystack.item(), sugarfuelstack.item(),
@@ -224,16 +226,16 @@ public class CustomItems {
         MissileItem smallmissileAC = new MissileItem(group, smallmissileACstack, RecipeType.ENHANCED_CRAFTING_TABLE, smallmissileACrecipe, 4, Translations.getMissileLore("ac"));
         //</editor-fold>
         //<editor-fold desc="GROUNDLAUNCHER">
-        SlimefunItemStack groundlauncherstack = new SlimefunItemStack("GROUNDLAUNCHER", Material.DISPENSER, Translations.get("launchers.ground.name"), Translations.pack.getStringList("launchers.ground.lore").toArray(new String[0]));
+        SlimefunItemStack groundlauncherstack = new SlimefunItemStack("GROUNDLAUNCHER", MaterialCompat.safe(XMaterial.DISPENSER), Translations.get("launchers.ground.name"), Translations.pack.getStringList("launchers.ground.lore").toArray(new String[0]));
         ItemStack[] groundlauncherrecipe = {
                 SlimefunItems.REINFORCED_PLATE.item(), null, SlimefunItems.REINFORCED_PLATE.item(),
                 SlimefunItems.REINFORCED_PLATE.item(), SlimefunItems.ELECTRIC_MOTOR.item(), SlimefunItems.REINFORCED_PLATE.item(),
-                SlimefunItems.REINFORCED_PLATE.item(), new ItemStack(Material.FLINT_AND_STEEL), SlimefunItems.REINFORCED_PLATE.item()
+                SlimefunItems.REINFORCED_PLATE.item(), new ItemStack(MaterialCompat.safe(XMaterial.FLINT_AND_STEEL)), SlimefunItems.REINFORCED_PLATE.item()
         };
         GroundMissileLauncher groundlauncher = new GroundMissileLauncher(group, groundlauncherstack, RecipeType.ENHANCED_CRAFTING_TABLE, groundlauncherrecipe);
         //</editor-fold>
         //<editor-fold desc="MISSILEBODY">
-        SlimefunItemStack missilebodystack = new SlimefunItemStack("MISSILEBODY", Material.SMOOTH_STONE, Translations.getMaterialName("missilebody"), Translations.getMaterialLore("missilebody"));
+        SlimefunItemStack missilebodystack = new SlimefunItemStack("MISSILEBODY", MaterialCompat.safe(XMaterial.SMOOTH_STONE), Translations.getMaterialName("missilebody"), Translations.getMaterialLore("missilebody"));
         ItemStack[] missilebodyrecipe = {
                 ultraliteplatestack.item(), simpleflightcomputerstack.item(), ultraliteplatestack.item(),
                 ultraliteplatestack.item(), rocketfuelstack.item(), ultraliteplatestack.item(),
@@ -248,7 +250,7 @@ public class CustomItems {
 
         //</editor-fold>
         //<editor-fold desc="MISSILEFINS">
-        SlimefunItemStack finsstack = new SlimefunItemStack("MISSILEFINS", Material.GOLDEN_BOOTS, Translations.getMaterialName("missilefins"), Translations.getMaterialLore("missilefins"));
+        SlimefunItemStack finsstack = new SlimefunItemStack("MISSILEFINS", MaterialCompat.safe(XMaterial.GOLDEN_BOOTS), Translations.getMaterialName("missilefins"), Translations.getMaterialLore("missilefins"));
         ItemStack[] finsrecipe = {
                 null, null, null,
                 ultraliteplatestack.item(), null, ultraliteplatestack.item(),
@@ -259,7 +261,7 @@ public class CustomItems {
         //</editor-fold>
         Translations.setType("anti-missiles");
         //<editor-fold desc="ANTIAIRMISSILE">
-        SlimefunItemStack antiAirMissilestack = new SlimefunItemStack("ANTIAIRMISSILE", Material.IRON_SWORD, Translations.getMissileName("missile"), Translations.getTypeLore(), Translations.getMissileVariant("missile"));
+        SlimefunItemStack antiAirMissilestack = new SlimefunItemStack("ANTIAIRMISSILE", MaterialCompat.safe(XMaterial.IRON_SWORD), Translations.getMissileName("missile"), Translations.getTypeLore(), Translations.getMissileVariant("missile"));
         ItemStack[] antiAirMissilerecipe = {
                 null, radarstack.item(), null,
                 explosivepowderstack.item(), missilebodystack.item(), explosivepowderstack.item(),
@@ -268,7 +270,7 @@ public class CustomItems {
         MissileItem antiAirMissile = new MissileItem(group, antiAirMissilestack, RecipeType.ENHANCED_CRAFTING_TABLE, antiAirMissilerecipe, 5, Translations.getMissileLore("missile"));
         //</editor-fold>
         //<editor-fold desc="ANTIELYTRAMISSILE">
-        SlimefunItemStack antielytramissilestack = new SlimefunItemStack("ANTIELYTRAMISSILE", Material.GOLDEN_SWORD, Translations.getMissileName("elytra"), Translations.getTypeLore(), Translations.getMissileVariant("missile"));
+        SlimefunItemStack antielytramissilestack = new SlimefunItemStack("ANTIELYTRAMISSILE", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getMissileName("elytra"), Translations.getTypeLore(), Translations.getMissileVariant("missile"));
         ItemStack[] antielytramissilerecipe = {
                 radarstack.item(), smallwarheadstack.item(), radarstack.item(),
                 explosivepowderstack.item(), missilebodystack.item(), explosivepowderstack.item(),
@@ -277,26 +279,26 @@ public class CustomItems {
         MissileItem antielytramissile = new MissileItem(group, antielytramissilestack, RecipeType.ENHANCED_CRAFTING_TABLE, antielytramissilerecipe, 23, Translations.getMissileLore("missile"));
         //</editor-fold>
         //<editor-fold desc="ANTIMISSILELAUNCHER">
-        SlimefunItemStack antiairlauncherstack = new SlimefunItemStack("ANTIMISSILELAUNCHER", Material.DISPENSER, Translations.get("launchers.antimissile.name"), Translations.pack.getStringList("launchers.antimissile.lore").toArray(new String[0]));
+        SlimefunItemStack antiairlauncherstack = new SlimefunItemStack("ANTIMISSILELAUNCHER", MaterialCompat.safe(XMaterial.DISPENSER), Translations.get("launchers.antimissile.name"), Translations.pack.getStringList("launchers.antimissile.lore").toArray(new String[0]));
         ItemStack[] antiairlauncherrecipe = {
                 SlimefunItems.SILVER_INGOT.item(), SlimefunItems.BASIC_CIRCUIT_BOARD.item(), SlimefunItems.SILVER_INGOT.item(),
                 SlimefunItems.SILVER_INGOT.item(), null, SlimefunItems.SILVER_INGOT.item(),
-                SlimefunItems.LEAD_INGOT.item(), new ItemStack(Material.REDSTONE_BLOCK), SlimefunItems.LEAD_INGOT.item()
+                SlimefunItems.LEAD_INGOT.item(), new ItemStack(MaterialCompat.safe(XMaterial.REDSTONE_BLOCK)), SlimefunItems.LEAD_INGOT.item()
         };
         AntiMissileLauncher antiairlauncher = new AntiMissileLauncher(group, antiairlauncherstack, RecipeType.ENHANCED_CRAFTING_TABLE, antiairlauncherrecipe);
         //</editor-fold>
         //<editor-fold desc="MANPAD">
         SlimefunItemStack manpadstack = new SlimefunItemStack("MANPAD", "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjFiNmVlNWJiZTVhZDQyOTY4MGMxYzE1Y2Y0MjBmOTgxMWUxMTRiNzY4NTRmODk5ZjBlZjA4ZmRlMzMyNzk4YyJ9fX0=", Translations.get("other.manpad.name"), Translations.pack.getStringList("other.manpad.lore").toArray(new String[0]));
         ItemStack[] manpadrecipe = {
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT),
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)),
                 explosivepowderstack.item(), sugarfuelstack.item(), sugarfuelstack.item(),
-                new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT), new ItemStack(Material.IRON_INGOT)
+                new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT)), new ItemStack(MaterialCompat.safe(XMaterial.IRON_INGOT))
         };
         ManPad manpad = new ManPad(group, manpadstack, RecipeType.ENHANCED_CRAFTING_TABLE, manpadrecipe);
         //</editor-fold>
         Translations.setType("normalmissile");
         //<editor-fold desc="MISSILE">
-        SlimefunItemStack missilestack = new SlimefunItemStack("MISSILE", Material.GOLDEN_SWORD, Translations.getMissileName("normal"), Translations.getTypeLore(), Translations.getMissileVariant("normal"));
+        SlimefunItemStack missilestack = new SlimefunItemStack("MISSILE", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getMissileName("normal"), Translations.getTypeLore(), Translations.getMissileVariant("normal"));
         ItemStack[] missilerecipe = {
                 null, warheadstack.item(), null,
                 rocketfuelstack.item(), missilebodystack.item(), rocketfuelstack.item(),
@@ -305,7 +307,7 @@ public class CustomItems {
         MissileItem missile = new MissileItem(group, missilestack, RecipeType.ENHANCED_CRAFTING_TABLE, missilerecipe, 6, Translations.getMissileLore("normal"));
         //</editor-fold>
         //<editor-fold desc="MISSILEHE">
-        SlimefunItemStack missileHEstack = new SlimefunItemStack("MISSILEHE", Material.GOLDEN_SWORD, Translations.getMissileName("he"), Translations.getTypeLore(), Translations.getMissileVariant("he"));
+        SlimefunItemStack missileHEstack = new SlimefunItemStack("MISSILEHE", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getMissileName("he"), Translations.getTypeLore(), Translations.getMissileVariant("he"));
         ItemStack[] missileHErecipe = {
                 compressedpowderstack.item(), warheadstack.item(), compressedpowderstack.item(),
                 rocketfuelstack.item(), missilebodystack.item(), rocketfuelstack.item(),
@@ -314,7 +316,7 @@ public class CustomItems {
         MissileItem missileHE = new MissileItem(group, missileHEstack, RecipeType.ENHANCED_CRAFTING_TABLE, missileHErecipe, 7, Translations.getMissileLore("he"));
         //</editor-fold>
         //<editor-fold desc="MISSILELR">
-        SlimefunItemStack missileLRstack = new SlimefunItemStack("MISSILELR", Material.GOLDEN_SWORD, Translations.getMissileName("lr"), Translations.getTypeLore(), Translations.getMissileVariant("lr"));
+        SlimefunItemStack missileLRstack = new SlimefunItemStack("MISSILELR", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getMissileName("lr"), Translations.getTypeLore(), Translations.getMissileVariant("lr"));
         ItemStack[] missileLRrecipe = {
                 rocketfuelstack.item(), warheadstack.item(), rocketfuelstack.item(),
                 rocketfuelstack.item(), missilebodystack.item(), rocketfuelstack.item(),
@@ -323,7 +325,7 @@ public class CustomItems {
         MissileItem missileLR = new MissileItem(group, missileLRstack, RecipeType.ENHANCED_CRAFTING_TABLE, missileLRrecipe, 8, Translations.getMissileLore("lr"));
         //</editor-fold>
         //<editor-fold desc="MISSILEAC">
-        SlimefunItemStack missileACstack = new SlimefunItemStack("MISSILEAC", Material.GOLDEN_SWORD, Translations.getMissileName("ac"), Translations.getTypeLore(), Translations.getMissileVariant("ac"));
+        SlimefunItemStack missileACstack = new SlimefunItemStack("MISSILEAC", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getMissileName("ac"), Translations.getTypeLore(), Translations.getMissileVariant("ac"));
         ItemStack[] missileACrecipe = {
                 compressedpowderstack.item(), warheadstack.item(), compressedpowderstack.item(),
                 rocketfuelstack.item(), missilebodystack.item(), rocketfuelstack.item(),
@@ -332,16 +334,16 @@ public class CustomItems {
         MissileItem missileAC = new MissileItem(group, missileACstack, RecipeType.ENHANCED_CRAFTING_TABLE, missileACrecipe, 9, Translations.getMissileLore("ac"));
         //</editor-fold>
         //<editor-fold desc="PLAYERLIST">
-        SlimefunItemStack playerliststack = new SlimefunItemStack("PLAYERLIST", Material.ENCHANTED_BOOK, Translations.get("other.playerlist.name"), Translations.pack.getStringList("other.playerlist.lore").toArray(new String[0]));
+        SlimefunItemStack playerliststack = new SlimefunItemStack("PLAYERLIST", MaterialCompat.safe(XMaterial.ENCHANTED_BOOK), Translations.get("other.playerlist.name"), Translations.pack.getStringList("other.playerlist.lore").toArray(new String[0]));
         ItemStack[] playerlistrecipe = {
                 null, ultraliteingotstack.item(), null,
-                ultraliteingotstack.item(), new ItemStack(Material.BOOK), ultraliteingotstack.item(),
+                ultraliteingotstack.item(), new ItemStack(MaterialCompat.safe(XMaterial.BOOK)), ultraliteingotstack.item(),
                 null, ultraliteingotstack.item(), null
         };
         PlayerList playerList = new PlayerList(group, playerliststack, RecipeType.ENHANCED_CRAFTING_TABLE, playerlistrecipe);
         //</editor-fold>
         //<editor-fold desc="ANTIELYTRA">
-        SlimefunItemStack antielytrastack = new SlimefunItemStack("ANTIELYTRA", Material.DISPENSER, Translations.get("launchers.antielytra.name"), Translations.pack.getStringList("launchers.antielytra.lore").toArray(new String[0]));
+        SlimefunItemStack antielytrastack = new SlimefunItemStack("ANTIELYTRA", MaterialCompat.safe(XMaterial.DISPENSER), Translations.get("launchers.antielytra.name"), Translations.pack.getStringList("launchers.antielytra.lore").toArray(new String[0]));
         ItemStack[] antielytralauncherrecipe = {
                 ultraliteplatestack.item(), null, ultraliteplatestack.item(),
                 SlimefunItems.REINFORCED_PLATE.item(), null, SlimefunItems.REINFORCED_PLATE.item(),
@@ -352,7 +354,7 @@ public class CustomItems {
         MissileWarfare main = MissileWarfare.getInstance();
         //</editor-fold>
         //<editor-fold desc="REINFORCEDWARHEAD">
-        SlimefunItemStack warheadAPstack = new SlimefunItemStack("WARHEADAP", Material.TNT, Translations.getMaterialName("reinforcedwarhead"), Translations.getMaterialLore("reinforcedwarhead"));
+        SlimefunItemStack warheadAPstack = new SlimefunItemStack("WARHEADAP", MaterialCompat.safe(XMaterial.TNT), Translations.getMaterialName("reinforcedwarhead"), Translations.getMaterialLore("reinforcedwarhead"));
         ItemStack[] warheadAPrecipe = {
                 null, SlimefunItems.LEAD_INGOT.item(), null,
                 ultraliteingotstack.item(), compressedpowderstack.item(), ultraliteingotstack.item(),
@@ -363,7 +365,7 @@ public class CustomItems {
         //</editor-fold>
         Translations.setType("armourpiercing");
         //<editor-fold desc="APMISSILET1">
-        SlimefunItemStack missileAPstack = new SlimefunItemStack("MISSILEAPONE", Material.DIAMOND_SWORD, Translations.getMissileName("tierone"), Translations.getTypeLore(), Translations.getMissileVariant("tierone"));
+        SlimefunItemStack missileAPstack = new SlimefunItemStack("MISSILEAPONE", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("tierone"), Translations.getTypeLore(), Translations.getMissileVariant("tierone"));
         ItemStack[] missileAPrecipe = {
                 compressedpowderstack.item(), smallwarheadstack.item(), compressedpowderstack.item(),
                 rocketfuelstack.item(), missilebodystack.item(), rocketfuelstack.item(),
@@ -372,7 +374,7 @@ public class CustomItems {
         MissileItem missileAP = new MissileItem(group, missileAPstack, RecipeType.ENHANCED_CRAFTING_TABLE, missileAPrecipe, 10, Translations.getMissileLore("tierone"));
         //</editor-fold>
         //<editor-fold desc="APMISSILET2">
-        SlimefunItemStack missileAPtstack = new SlimefunItemStack("MISSILEAPTWO", Material.DIAMOND_SWORD, Translations.getMissileName("tiertwo"), Translations.getTypeLore(), Translations.getMissileVariant("tiertwo"));
+        SlimefunItemStack missileAPtstack = new SlimefunItemStack("MISSILEAPTWO", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("tiertwo"), Translations.getTypeLore(), Translations.getMissileVariant("tiertwo"));
         ItemStack[] missileAPtrecipe = {
                 ultraliteingotstack.item(), ultraliteplatestack.item(), ultraliteingotstack.item(),
                 ultraliteingotstack.item(), missileAPstack.item(), ultraliteingotstack.item(),
@@ -381,7 +383,7 @@ public class CustomItems {
         MissileItem missileAPt = new MissileItem(group, missileAPtstack, RecipeType.ENHANCED_CRAFTING_TABLE, missileAPtrecipe, 11, Translations.getMissileLore("tiertwo"));
         //</editor-fold>
         //<editor-fold desc="APMISSILET3">
-        SlimefunItemStack missileAPtrstack = new SlimefunItemStack("MISSILEAPTHR", Material.DIAMOND_SWORD, Translations.getMissileName("tierthree"), Translations.getTypeLore(), Translations.getMissileVariant("tierthree"));
+        SlimefunItemStack missileAPtrstack = new SlimefunItemStack("MISSILEAPTHR", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("tierthree"), Translations.getTypeLore(), Translations.getMissileVariant("tierthree"));
         ItemStack[] missileAPtrrecipe = {
                 ultraliteingotstack.item(), ultraliteplatestack.item(), ultraliteingotstack.item(),
                 ultraliteingotstack.item(), missileAPtstack.item(), ultraliteingotstack.item(),
@@ -390,9 +392,9 @@ public class CustomItems {
         MissileItem missileAPtr = new MissileItem(group, missileAPtrstack, RecipeType.ENHANCED_CRAFTING_TABLE, missileAPtrrecipe, 12, Translations.getMissileLore("tierthree"));
         //</editor-fold>
         //<editor-fold desc="CHLORINE">
-        SlimefunItemStack chlorinestack = new SlimefunItemStack("CHLORINE", Material.SUGAR, Translations.getMaterialName("chlorine"), Translations.getMaterialLore("chlorine"));
+        SlimefunItemStack chlorinestack = new SlimefunItemStack("CHLORINE", MaterialCompat.safe(XMaterial.SUGAR), Translations.getMaterialName("chlorine"), Translations.getMaterialLore("chlorine"));
         ItemStack[] chlorinerecipe = {
-                new ItemStack(Material.SOUL_SAND), null, null,
+                new ItemStack(MaterialCompat.safe(XMaterial.SOUL_SAND)), null, null,
                 null, null, null,
                 null, null, null
         };
@@ -401,7 +403,7 @@ public class CustomItems {
         chlorine.addItemHandler((ItemUseHandler) playerRightClickEvent -> playerRightClickEvent.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 80, 2)));
         //</editor-fold>
         //<editor-fold desc="CHLORINEPELLET">
-        SlimefunItemStack chlorinepelletstack = new SlimefunItemStack("CHLORINEPELLET", Material.LIME_DYE, Translations.getMaterialName("chlorinepellet"), Translations.getMaterialLore("chlorinepellet"));
+        SlimefunItemStack chlorinepelletstack = new SlimefunItemStack("CHLORINEPELLET", MaterialCompat.safe(XMaterial.LIME_DYE), Translations.getMaterialName("chlorinepellet"), Translations.getMaterialLore("chlorinepellet"));
         ItemStack[] chlorinepelletrecipe = {
                 chlorinestack.item(), SlimefunItems.SULFATE.item(), chlorinestack.item(),
                 SlimefunItems.SULFATE.item(), SlimefunItems.SALT.item(), SlimefunItems.SULFATE.item(),
@@ -411,7 +413,7 @@ public class CustomItems {
         chlorine.addItemHandler((ItemUseHandler) playerRightClickEvent -> playerRightClickEvent.getPlayer().addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 10, 2)));
         //</editor-fold>
         //<editor-fold desc="GASMISSILE">
-        SlimefunItemStack missilegasstack = new SlimefunItemStack("MISSILEGAS", Material.GOLDEN_SWORD, Translations.getSpecialName("gasmissile"), Translations.getSpecialLore("gasmissile"));
+        SlimefunItemStack missilegasstack = new SlimefunItemStack("MISSILEGAS", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getSpecialName("gasmissile"), Translations.getSpecialLore("gasmissile"));
         ItemStack[] missilegasrecipe = {
                 chlorinepelletstack.item(), chlorinepelletstack.item(), chlorinepelletstack.item(),
                 rocketfuelstack.item(), missilebodystack.item(), rocketfuelstack.item(),
@@ -420,7 +422,7 @@ public class CustomItems {
         MissileItem missilegas = new MissileItem(group, missilegasstack, RecipeType.ENHANCED_CRAFTING_TABLE, missilegasrecipe, 13, Translations.getSpecialALore("gasmissile"));
         //</editor-fold>
         //<editor-fold desc="EXCAVATIONMISSILE">
-        SlimefunItemStack excabmissilestack = new SlimefunItemStack("MISSILEEXCAV", Material.WOODEN_SWORD, Translations.getSpecialName("excavmissile"), Translations.getSpecialLore("excavmissile"));
+        SlimefunItemStack excabmissilestack = new SlimefunItemStack("MISSILEEXCAV", MaterialCompat.safe(XMaterial.WOODEN_SWORD), Translations.getSpecialName("excavmissile"), Translations.getSpecialLore("excavmissile"));
         ItemStack[] excabmissilerecipe = {
                 explosivepowderstack.item(), warheadstack.item(), explosivepowderstack.item(),
                 warheadstack.item(), smallbodystack.item(), warheadstack.item(),
@@ -429,16 +431,16 @@ public class CustomItems {
         MissileItem excavmissile = new MissileItem(group, excabmissilestack, RecipeType.ENHANCED_CRAFTING_TABLE, excabmissilerecipe, 14, Translations.getSpecialALore("excavmissile"));
         //</editor-fold>
         //<editor-fold desc="COBWEBMISSILE">
-        SlimefunItemStack stickymissilestack = new SlimefunItemStack("MISSILESTICK", Material.IRON_SWORD, Translations.getSpecialName("stickymissile"), Translations.getSpecialLore("stickymissile"));
+        SlimefunItemStack stickymissilestack = new SlimefunItemStack("MISSILESTICK", MaterialCompat.safe(XMaterial.IRON_SWORD), Translations.getSpecialName("stickymissile"), Translations.getSpecialLore("stickymissile"));
         ItemStack[] stickymissilerecipe = {
-                new ItemStack(Material.STRING), new ItemStack(Material.STRING), new ItemStack(Material.STRING),
+                new ItemStack(MaterialCompat.safe(XMaterial.STRING)), new ItemStack(MaterialCompat.safe(XMaterial.STRING)), new ItemStack(MaterialCompat.safe(XMaterial.STRING)),
                 sugarfuelstack.item(), missilebodystack.item(), sugarfuelstack.item(),
                 rocketfuelstack.item(), finsstack.item(), rocketfuelstack.item()
         };
         MissileItem stickymissile = new MissileItem(group, stickymissilestack, RecipeType.ENHANCED_CRAFTING_TABLE, stickymissilerecipe, 15, Translations.getSpecialALore("stickymissile"));
         //</editor-fold>
         //<editor-fold desc="ADVANCEDMISSILEBODY">
-        SlimefunItemStack advancedmissilebodystack = new SlimefunItemStack("ADVANCEDMISSILEBODY", Material.GRAY_CONCRETE, Translations.getMaterialName("advancedbody"), Translations.getMaterialLore("advancedbody"));
+        SlimefunItemStack advancedmissilebodystack = new SlimefunItemStack("ADVANCEDMISSILEBODY", MaterialCompat.safe(XMaterial.GRAY_CONCRETE), Translations.getMaterialName("advancedbody"), Translations.getMaterialLore("advancedbody"));
         ItemStack[] advancedmissilebodyrecipe = {
                 rocketfuelstack.item(), simpleflightcomputerstack.item(), rocketfuelstack.item(),
                 ultraliteplatestack.item(), missilebodystack.item(), ultraliteplatestack.item(),
@@ -451,7 +453,7 @@ public class CustomItems {
 
         //</editor-fold>
         //<editor-fold desc="LARGEWARHEAD">
-        SlimefunItemStack heavywarheadstack = new SlimefunItemStack("HEAVYWARHEAD", Material.RED_CONCRETE, Translations.getMaterialName("heavywarhead"), Translations.getMaterialLore("heavywarhead"));
+        SlimefunItemStack heavywarheadstack = new SlimefunItemStack("HEAVYWARHEAD", MaterialCompat.safe(XMaterial.RED_CONCRETE), Translations.getMaterialName("heavywarhead"), Translations.getMaterialLore("heavywarhead"));
         ItemStack[] heavywarheadrecipe = {
                 compressedpowderstack.item(), warheadstack.item(), compressedpowderstack.item(),
                 warheadstack.item(), ultraliteplatestack.item(), warheadstack.item(),
@@ -461,7 +463,7 @@ public class CustomItems {
         SlimefunItem heavywarhead = new SlimefunItem(group, heavywarheadstack, RecipeType.ENHANCED_CRAFTING_TABLE, heavywarheadrecipe);
         //</editor-fold>
         //<editor-fold desc="ICBMMISSILEBODY">
-        SlimefunItemStack icbmmissilebodystack = new SlimefunItemStack("ICBMMISSILEBODY", Material.GREEN_CONCRETE, Translations.getMaterialName("icbmbody"), Translations.getMaterialLore("icbmbody"));
+        SlimefunItemStack icbmmissilebodystack = new SlimefunItemStack("ICBMMISSILEBODY", MaterialCompat.safe(XMaterial.GREEN_CONCRETE), Translations.getMaterialName("icbmbody"), Translations.getMaterialLore("icbmbody"));
         ItemStack[] icbmmissilebodyrecipe = {
                 compressedpowderstack.item(), SlimefunItems.NEPTUNIUM.item(), compressedpowderstack.item(),
                 SlimefunItems.NEPTUNIUM.item(), advancedmissilebodystack.item(), SlimefunItems.NEPTUNIUM.item(),
@@ -474,7 +476,7 @@ public class CustomItems {
 
         //</editor-fold>
         //<editor-fold desc="ICBM">
-        SlimefunItemStack icbmstack = new SlimefunItemStack("MISSILEICBM", Material.DIAMOND_SWORD, Translations.getSpecialName("icbm"), Translations.getSpecialLore("icbm"));
+        SlimefunItemStack icbmstack = new SlimefunItemStack("MISSILEICBM", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getSpecialName("icbm"), Translations.getSpecialLore("icbm"));
         ItemStack[] icbmrecipe = {
                 rocketfuelstack.item(), heavywarheadstack.item(), rocketfuelstack.item(),
                 rocketfuelstack.item(), icbmmissilebodystack.item(), rocketfuelstack.item(),
@@ -483,7 +485,7 @@ public class CustomItems {
         MissileItem icbm = new MissileItem(group, icbmstack, RecipeType.ENHANCED_CRAFTING_TABLE, icbmrecipe, 16, Translations.getSpecialALore("icbm"));
         //</editor-fold>
         //<editor-fold desc="CLUSTERMISSILE">
-        SlimefunItemStack clusterstack = new SlimefunItemStack("MISSILECLUSTER", Material.GOLDEN_SWORD, Translations.getSpecialName("clustermissile"), Translations.getSpecialLore("clustermissile"));
+        SlimefunItemStack clusterstack = new SlimefunItemStack("MISSILECLUSTER", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getSpecialName("clustermissile"), Translations.getSpecialLore("clustermissile"));
         ItemStack[] clusterrecipe = {
                 warheadstack.item(), heavywarheadstack.item(), warheadstack.item(),
                 rocketfuelstack.item(), advancedmissilebodystack.item(), rocketfuelstack.item(),
@@ -492,9 +494,9 @@ public class CustomItems {
         MissileItem cluster = new MissileItem(group, clusterstack, RecipeType.ENHANCED_CRAFTING_TABLE, clusterrecipe, 17, Translations.getSpecialALore("clustermissile"));
         //</editor-fold>
         //<editor-fold desc="NAPALMMISSILE">
-        SlimefunItemStack napalmmissilestack = new SlimefunItemStack("MISSILENAPALM", Material.GOLDEN_SWORD, Translations.getSpecialName("napalmmissile"), Translations.getSpecialLore("napalmmissile"));
+        SlimefunItemStack napalmmissilestack = new SlimefunItemStack("MISSILENAPALM", MaterialCompat.safe(XMaterial.GOLDEN_SWORD), Translations.getSpecialName("napalmmissile"), Translations.getSpecialLore("napalmmissile"));
         ItemStack[] napalmmissilerecipe = {
-                new ItemStack(Material.FIRE_CHARGE), heavywarheadstack.item(), new ItemStack(Material.FIRE_CHARGE),
+                new ItemStack(MaterialCompat.safe(XMaterial.FIRE_CHARGE)), heavywarheadstack.item(), new ItemStack(MaterialCompat.safe(XMaterial.FIRE_CHARGE)),
                 rocketfuelstack.item(), advancedmissilebodystack.item(), rocketfuelstack.item(),
                 rocketfuelstack.item(), finsstack.item(), rocketfuelstack.item()
         };
@@ -502,7 +504,7 @@ public class CustomItems {
         //</editor-fold>
         Translations.setType("advanced");
         //<editor-fold desc="ADVANCEDMISSILE">
-        SlimefunItemStack advmissilestack = new SlimefunItemStack("MISSILEADV", Material.DIAMOND_SWORD, Translations.getMissileName("normal"), Translations.getTypeLore(), Translations.getMissileVariant("normal"));
+        SlimefunItemStack advmissilestack = new SlimefunItemStack("MISSILEADV", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("normal"), Translations.getTypeLore(), Translations.getMissileVariant("normal"));
         ItemStack[] advmissilerecipe = {
                 null, warheadstack.item(), null,
                 rocketfuelstack.item(), advancedmissilebodystack.item(), rocketfuelstack.item(),
@@ -511,7 +513,7 @@ public class CustomItems {
         MissileItem advmissile = new MissileItem(group, advmissilestack, RecipeType.ENHANCED_CRAFTING_TABLE, advmissilerecipe, 19, Translations.getMissileLore("normal"));
         //</editor-fold>
         //<editor-fold desc="ADVANCEDMISSILEHE">
-        SlimefunItemStack advmissileHEstack = new SlimefunItemStack("MISSILEHEADV", Material.DIAMOND_SWORD, Translations.getMissileName("he"), Translations.getTypeLore(), Translations.getMissileVariant("he"));
+        SlimefunItemStack advmissileHEstack = new SlimefunItemStack("MISSILEHEADV", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("he"), Translations.getTypeLore(), Translations.getMissileVariant("he"));
         ItemStack[] advmissileHErecipe = {
                 compressedpowderstack.item(), heavywarheadstack.item(), compressedpowderstack.item(),
                 rocketfuelstack.item(), advancedmissilebodystack.item(), rocketfuelstack.item(),
@@ -520,7 +522,7 @@ public class CustomItems {
         MissileItem advmissileHE = new MissileItem(group, advmissileHEstack, RecipeType.ENHANCED_CRAFTING_TABLE, advmissileHErecipe, 20, Translations.getMissileLore("he"));
         //</editor-fold>
         //<editor-fold desc="ADVANCEDMISSILELR">
-        SlimefunItemStack advmissileLRstack = new SlimefunItemStack("MISSILELRADV", Material.DIAMOND_SWORD, Translations.getMissileName("lr"), Translations.getTypeLore(), Translations.getMissileVariant("lr"));
+        SlimefunItemStack advmissileLRstack = new SlimefunItemStack("MISSILELRADV", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("lr"), Translations.getTypeLore(), Translations.getMissileVariant("lr"));
         ItemStack[] advmissileLRrecipe = {
                 compressedpowderstack.item(), warheadstack.item(), compressedpowderstack.item(),
                 rocketfuelstack.item(), advancedmissilebodystack.item(), rocketfuelstack.item(),
@@ -529,7 +531,7 @@ public class CustomItems {
         MissileItem advmissileLR = new MissileItem(group, advmissileLRstack, RecipeType.ENHANCED_CRAFTING_TABLE, advmissileLRrecipe, 21, Translations.getMissileLore("lr"));
         //</editor-fold>
         //<editor-fold desc="ADVANCEDMISSILEAC">
-        SlimefunItemStack advmissileACstack = new SlimefunItemStack("MISSILEACADV", Material.DIAMOND_SWORD, Translations.getMissileName("ac"), Translations.getTypeLore(), Translations.getMissileVariant("ac"));
+        SlimefunItemStack advmissileACstack = new SlimefunItemStack("MISSILEACADV", MaterialCompat.safe(XMaterial.DIAMOND_SWORD), Translations.getMissileName("ac"), Translations.getTypeLore(), Translations.getMissileVariant("ac"));
         ItemStack[] advmissileACrecipe = {
                 compressedpowderstack.item(), warheadstack.item(), compressedpowderstack.item(),
                 rocketfuelstack.item(), advancedmissilebodystack.item(), rocketfuelstack.item(),
@@ -608,70 +610,70 @@ public class CustomItems {
 
         //ADD RESEARCH
         //<editor-fold desc="RESEARCH">
-        NamespacedKey basicfuelkey = new NamespacedKey(main, "basic_fuel");
+        NamespacedKey basicfuelkey = new NamespacedKey("missilewarfare", "basic_fuel");
         Research basicfuel = new Research(basicfuelkey, 3467341, "Inedible Sugar", 10);
         basicfuel.addItems(sugarfuel);
         basicfuel.register();
 
-        NamespacedKey explosiveskey = new NamespacedKey(main, "explosives");
+        NamespacedKey explosiveskey = new NamespacedKey("missilewarfare", "explosives");
         Research explosives = new Research(explosiveskey, 3447321, "Explosive Diarrhea", 15);
         explosives.addItems(explosivepowder, compressedpowder);
         explosives.register();
 
-        NamespacedKey chlorinekey = new NamespacedKey(main, "chlorine");
+        NamespacedKey chlorinekey = new NamespacedKey("missilewarfare", "chlorine");
         Research chlorineres = new Research(chlorinekey, 214141, "Cleaner Pools!", 15);
         chlorineres.addItems(chlorine, chlorinepellet);
         chlorineres.register();
 
-        NamespacedKey groundlauncherskey = new NamespacedKey(main, "groundlauncher");
+        NamespacedKey groundlauncherskey = new NamespacedKey("missilewarfare", "groundlauncher");
         Research groundlauncherres = new Research(groundlauncherskey, 34117322, "Ground Missile Launcher", 15);
         groundlauncherres.addItems(groundlauncher);
         groundlauncherres.register();
 
-        NamespacedKey antimissilekey = new NamespacedKey(main, "antimissilelauncher");
+        NamespacedKey antimissilekey = new NamespacedKey("missilewarfare", "antimissilelauncher");
         Research antimissileres = new Research(antimissilekey, 3424321, "Iron Dome.", 15);
         antimissileres.addItems(antiairlauncher, manpad, antiAirMissile);
         antimissileres.register();
 
-        NamespacedKey antielytramissilekey = new NamespacedKey(main, "antielytramissilelauncher");
+        NamespacedKey antielytramissilekey = new NamespacedKey("missilewarfare", "antielytramissilelauncher");
         Research antielytramissileres = new Research(antielytramissilekey, 34213253, "Ender Dome?", 20);
         antielytramissileres.addItems(antiElytraLauncher, antielytramissile);
         antielytramissileres.register();
 
-        NamespacedKey smallgmissilepartskey = new NamespacedKey(main, "smallgmissileparts");
+        NamespacedKey smallgmissilepartskey = new NamespacedKey("missilewarfare", "smallgmissileparts");
         Research smallgmissileparts = new Research(smallgmissilepartskey, 2667313, "Missile with extra steps", 15);
         smallgmissileparts.addItems(smallwarhead, smallbody, smallfin);
         smallgmissileparts.register();
 
-        NamespacedKey gmissilepartskey = new NamespacedKey(main, "gmissileparts");
+        NamespacedKey gmissilepartskey = new NamespacedKey("missilewarfare", "gmissileparts");
         Research gmissileparts = new Research(gmissilepartskey, 2667313, "Missile with extra steps", 15);
         gmissileparts.addItems(warhead, warheadAP, missilebody, fins);
         gmissileparts.register();
 
-        NamespacedKey smallgmissilekey = new NamespacedKey(main, "smallgmissile");
+        NamespacedKey smallgmissilekey = new NamespacedKey("missilewarfare", "smallgmissile");
         Research smallgmissile = new Research(smallgmissilekey, 35673323, "5 Shades Of Gray", 20);
         smallgmissile.addItems(smallmissile, smallmissileHE, smallmissileLR, smallmissileLR, smallmissileAC);
         smallgmissile.register();
 
-        NamespacedKey advancedfuelkey = new NamespacedKey(main, "advancedfuel");
+        NamespacedKey advancedfuelkey = new NamespacedKey("missilewarfare", "advancedfuel");
         Research advancedfuel = new Research(advancedfuelkey, 3461423, "Advanced (and even less edible) Fuels!", 20);
         advancedfuel.addItems(rocketfuel);
         advancedfuel.register();
 
-        NamespacedKey missilepartskey = new NamespacedKey(main, "missileparts");
+        NamespacedKey missilepartskey = new NamespacedKey("missilewarfare", "missileparts");
         Research missileparts = new Research(missilepartskey, 4461423, "Missile with even more steps", 25);
         missileparts.addItems(ultraliteingot, ultraliteplate, simpleflightcomputer, radar);
         missileparts.register();
 
-        NamespacedKey gmissilekey = new NamespacedKey(main, "gmissile");
+        NamespacedKey gmissilekey = new NamespacedKey("missilewarfare", "gmissile");
         Research gmissile = new Research(gmissilekey, 341243, "The Colors Of The Rainbow!", 20);
         gmissile.addItems(missile, missileHE, missileLR, missileAC);
 
-        NamespacedKey gmissileAPkey = new NamespacedKey(main, "gmissileAP");
+        NamespacedKey gmissileAPkey = new NamespacedKey("missilewarfare", "gmissileAP");
         Research gmissileAP = new Research(gmissileAPkey, 341246, "The Penetrator Trio", 15);
         gmissileAP.addItems(missileAP, missileAPt, missileAPtr);
 
-        NamespacedKey gmissileGASkey = new NamespacedKey(main, "gmissileGAS");
+        NamespacedKey gmissileGASkey = new NamespacedKey("missilewarfare", "gmissileGAS");
         Research gmissileGAS = new Research(gmissileGASkey, 341226, "One Ball Man", 15);
         gmissileGAS.addItems(missilegas);
         //</editor-fold>

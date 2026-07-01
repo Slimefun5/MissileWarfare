@@ -12,9 +12,11 @@ import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import me.kaiyan.missilewarfare.util.BlockDataCompat;
+import me.kaiyan.missilewarfare.util.MaterialCompat;
 import org.bukkit.block.Block;
 import org.bukkit.block.BlockFace;
-import org.bukkit.block.data.type.RedstoneWire;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.event.block.BlockRedstoneEvent;
 import org.bukkit.inventory.ItemStack;
@@ -37,7 +39,7 @@ public class MissileRadar extends SlimefunItem {
      * @param recipe    the crafting recipe
      */
     public MissileRadar(@Nonnull ItemGroup itemGroup, @Nonnull ItemStack[] recipe) {
-        super(itemGroup, new SlimefunItemStack("MISSILERADAR", Material.GRAY_WOOL, ChatColor.YELLOW + Translations.get("radar.name"), ChatColor.GRAY + Translations.get("radar.lore")), RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+        super(itemGroup, new SlimefunItemStack("MISSILERADAR", MaterialCompat.safe(XMaterial.GRAY_WOOL), ChatColor.YELLOW + Translations.get("radar.name"), ChatColor.GRAY + Translations.get("radar.lore")), RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
     }
 
     @Override
@@ -58,18 +60,15 @@ public class MissileRadar extends SlimefunItem {
                             break;
                         }
                     }
-                    if (block.getRelative(BlockFace.UP).getType() == Material.REDSTONE_WIRE && missilenear) {
-                        RedstoneWire wire = (RedstoneWire) block.getRelative(BlockFace.UP).getBlockData();
-                        wire.setPower(wire.getMaximumPower());
-                        block.getRelative(BlockFace.UP).setBlockData(wire);
-                        MissileWarfare.getInstance().getServer().getPluginManager().callEvent(new BlockRedstoneEvent(block.getRelative(BlockFace.UP), wire.getPower(), wire.getMaximumPower()));
+                    if (block.getRelative(BlockFace.UP).getType() == MaterialCompat.safe(XMaterial.REDSTONE_WIRE) && missilenear) {
+                        Block wireBlock = block.getRelative(BlockFace.UP);
+                        int power = BlockDataCompat.setRedstoneWirePower(wireBlock, true);
+                        MissileWarfare.getInstance().getServer().getPluginManager().callEvent(new BlockRedstoneEvent(wireBlock, 0, power));
                         new BukkitRunnable() {
                             @Override
                             public void run() {
-                                RedstoneWire wire = (RedstoneWire) block.getRelative(BlockFace.UP).getBlockData();
-                                wire.setPower(0);
-                                block.getRelative(BlockFace.UP).setBlockData(wire);
-                                MissileWarfare.getInstance().getServer().getPluginManager().callEvent(new BlockRedstoneEvent(block.getRelative(BlockFace.UP), wire.getPower(), 0));
+                                BlockDataCompat.setRedstoneWirePower(wireBlock, false);
+                                MissileWarfare.getInstance().getServer().getPluginManager().callEvent(new BlockRedstoneEvent(wireBlock, power, 0));
                             }
                         }.runTaskLater(MissileWarfare.getInstance(), 1);
                     }

@@ -13,3 +13,4 @@ bin/
 # Temporary files
 *.tmp
 *.log
+*.stackdump

@@ -1,0 +1,155 @@
+# MissileWarfare 物品的简体中文翻译。键 = Slimefun 物品 ID。
+# name = display name with '&' colour codes. Missing items fall back to English.
+
+SUGARFUEL:
+  name: "&e糖燃料"
+
+GUIDEBOOK:
+  name: "&e指南手册"
+
+EXPLOSIVEPOWDER:
+  name: "&e爆炸粉末"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&e压缩爆炸粉末"
+
+ULTRALITE_INGOT:
+  name: "&e超轻锭"
+
+ULTRALITE_PLATE:
+  name: "&e超轻板"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&e简易飞行计算机"
+
+RADAR:
+  name: "&e雷达"
+
+ROCKETFUEL:
+  name: "&e火箭燃料"
+
+SMALLWARHEAD:
+  name: "&e小型弹头"
+
+SMALLBODY:
+  name: "&e小型导弹机身"
+
+SMALLFIN:
+  name: "&e小型导弹尾翼"
+
+MISSILEBODY:
+  name: "&e导弹弹体"
+
+MISSILEFINS:
+  name: "&e导弹尾翼"
+
+WARHEAD:
+  name: "&e导弹弹头"
+
+WARHEADAP:
+  name: "&e强化弹头"
+
+CHLORINE:
+  name: "&e氯气"
+
+CHLORINEPELLET:
+  name: "&e氯气颗粒"
+
+ADVANCEDMISSILEBODY:
+  name: "&e高级导弹弹体"
+
+HEAVYWARHEAD:
+  name: "&e重型弹头"
+
+ICBMMISSILEBODY:
+  name: "&e洲际导弹弹体"
+
+MINE:
+  name: "&c地雷"
+
+SMALLMISSILE:
+  name: "&e小型地对地导弹"
+
+SMALLMISSILEHE:
+  name: "&e小型地对地导弹 HE"
+
+SMALLMISSILELR:
+  name: "&e小型地对地导弹 LR"
+
+SMALLMISSILEAC:
+  name: "&e小型地对地导弹 AC"
+
+ANTIAIRMISSILE:
+  name: "&e反导导弹"
+
+ANTIELYTRAMISSILE:
+  name: "&e反鞘翅导弹"
+
+MISSILE:
+  name: "&e地对地导弹"
+
+MISSILEHE:
+  name: "&e地对地导弹 HE"
+
+MISSILELR:
+  name: "&e地对地导弹 LR"
+
+MISSILEAC:
+  name: "&e地对地导弹 AC"
+
+MISSILEAPONE:
+  name: "&e地对地导弹 AP"
+
+MISSILEAPTWO:
+  name: "&e地对地导弹 AP"
+
+MISSILEAPTHR:
+  name: "&e地对地导弹 AP"
+
+MISSILEADV:
+  name: "&e高级地对地导弹"
+
+MISSILEHEADV:
+  name: "&e高级地对地导弹 HE"
+
+MISSILELRADV:
+  name: "&e高级地对地导弹 LR"
+
+MISSILEACADV:
+  name: "&e高级地对地导弹 AC"
+
+MISSILEGAS:
+  name: "&c毒气导弹"
+
+MISSILEEXCAV:
+  name: "&c挖掘导弹"
+
+MISSILESTICK:
+  name: "&c黏性导弹"
+
+MISSILEICBM:
+  name: "&c洲际弹道导弹"
+
+MISSILECLUSTER:
+  name: "&c集束导弹"
+
+MISSILENAPALM:
+  name: "&c凝固汽油弹导弹"
+
+GROUNDLAUNCHER:
+  name: "&6地对地导弹发射器"
+
+ANTIMISSILELAUNCHER:
+  name: "&6反导发射器"
+
+ANTIELYTRA:
+  name: "&6反鞘翅发射器"
+
+MISSILERADAR:
+  name: "&6导弹雷达"
+
+MANPAD:
+  name: "&6便携式防空导弹"
+
+PLAYERLIST:
+  name: "&6玩家列表"

@@ -17,7 +17,7 @@ github {
 
 java {
     toolchain {
-        languageVersion.set(JavaLanguageVersion.of(25))
+        languageVersion.set(JavaLanguageVersion.of(8))
     }
 }
 
@@ -33,9 +33,13 @@ repositories {
 
 dependencies {
     implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
+<<<<<<< HEAD
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
+=======
+    compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
+>>>>>>> origin/experimental
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    "githubCompileOnly"("Slimefun5:Slimefun5:v5.1.1")
+    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.3.2")
 
     // External softdepend compileOnly
     // TODO: WorldGuard/WorldEdit/Towny are softdepends â€” commented out due to
@@ -74,13 +78,21 @@ tasks {
         enabled = false
     }
     shadowJar {
+<<<<<<< HEAD
         archiveFileName.set("MissileWarfare v${project.version}.jar")
+=======
+        relocate("org.bstats", "missilewarfare.libs.bstats")
+        archiveFileName.set("MissileWarfare-1.6.13-UNOFFICIAL.jar")
+>>>>>>> origin/experimental
                 exclude("META-INF/**")
     }
     build {
         dependsOn(shadowJar)
     }
+    compileTestJava {
+        enabled = false
+    }
     test {
-        useJUnitPlatform()
+        enabled = false
     }
 }

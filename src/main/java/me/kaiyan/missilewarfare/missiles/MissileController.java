@@ -7,6 +7,8 @@ import me.kaiyan.missilewarfare.integrations.WorldGuardLoader;
 import org.bukkit.Color;
 import org.bukkit.FluidCollisionMode;
 import org.bukkit.Material;
+import io.github.thebusybiscuit.slimefun5.libraries.xseries.XMaterial;
+import me.kaiyan.missilewarfare.util.MaterialCompat;
 import org.bukkit.Particle;
 import org.bukkit.World;
 import org.bukkit.block.Block;
@@ -102,7 +104,7 @@ public class MissileController {
 
         armourStand = world.spawnEntity(pos.toLocation(world), EntityType.ARMOR_STAND);
         armourStand.setPersistent(true);
-        ((LivingEntity) armourStand).getEquipment().setHelmet(new ItemStack(Material.GREEN_CONCRETE));
+        ((LivingEntity) armourStand).getEquipment().setHelmet(new ItemStack(MaterialCompat.safe(XMaterial.GREEN_CONCRETE)));
         armourStand.setGravity(false);
         ((LivingEntity) armourStand).setInvisible(true);
         armourStand.setCustomName("MissileHolder");
@@ -200,14 +202,14 @@ public class MissileController {
         if (world.getBlockAt(pos.toLocation(world)).getType() != Material.AIR) {
             if (type == 10) {
                 //<editor-fold desc="APT1">
-                if (blockcount >= 1 || world.getBlockAt(pos.toLocation(world)).getType() == Material.OBSIDIAN) {
+                if (blockcount >= 1 || world.getBlockAt(pos.toLocation(world)).getType() == MaterialCompat.safe(XMaterial.OBSIDIAN)) {
                     explode(run);
                 }
                 blockcount++;
                 //</editor-fold>
             } else if (type == 11) {
                 //<editor-fold desc="APT2">
-                if (world.getBlockAt(pos.toLocation(world)).getType() == Material.OBSIDIAN && rand.nextBoolean()) {
+                if (world.getBlockAt(pos.toLocation(world)).getType() == MaterialCompat.safe(XMaterial.OBSIDIAN) && rand.nextBoolean()) {
                     explode(run);
                 }
                 if (rand.nextDouble() < 0.1) {
@@ -224,7 +226,7 @@ public class MissileController {
                 if (blockcount >= 2) {
                     explode(run);
                 }
-                if (world.getBlockAt(pos.toLocation(world)).getType() == Material.OBSIDIAN && rand.nextDouble() < 0.75) {
+                if (world.getBlockAt(pos.toLocation(world)).getType() == MaterialCompat.safe(XMaterial.OBSIDIAN) && rand.nextDouble() < 0.75) {
                     explode(run);
                 }
                 if (rand.nextDouble() < 0.25) {
@@ -240,7 +242,7 @@ public class MissileController {
 
                     @Override
                     public void run() {
-                        world.spawnParticle(Particle.DUST, pos.toLocation(world), 5, 5, 3, 5, new Particle.DustOptions(Color.fromRGB(0, 255, 0), 20f));
+                        world.spawnParticle(Particle.REDSTONE, pos.toLocation(world), 5, 5, 3, 5, new Particle.DustOptions(Color.fromRGB(0, 255, 0), 20f));
                         for (Player player : world.getPlayers()) {
                             if (player.getLocation().toVector().isInSphere(pos, 6)) {
                                 player.addPotionEffect(new PotionEffect(PotionEffectType.WITHER, 80, 3));
@@ -337,14 +339,14 @@ public class MissileController {
                 RayTraceResult result = world.rayTraceBlocks(pos.toLocation(world).add(0, 3, 0), dir, 10, FluidCollisionMode.ALWAYS, true);
                 if (result != null) {
                     Block hitblock = result.getHitBlock();
-                    hitblock.getRelative(result.getHitBlockFace()).setType(Material.COBWEB);
+                    hitblock.getRelative(result.getHitBlockFace()).setType(MaterialCompat.safe(XMaterial.COBWEB));
                 } else {
                     Vector hit = dir.clone();
                     for (int _i = 0; _i < 10; _i++) {
                         hit.subtract(new Vector(0, 1, 0));
                         if (world.getBlockAt(hit.toLocation(world)) != null) {
                             Block hitblock = world.getBlockAt(hit.toLocation(world));
-                            hitblock.getRelative(BlockFace.UP).setType(Material.COBWEB);
+                            hitblock.getRelative(BlockFace.UP).setType(MaterialCompat.safe(XMaterial.COBWEB));
                             break;
                         }
                     }
@@ -357,14 +359,14 @@ public class MissileController {
                 RayTraceResult result = world.rayTraceBlocks(pos.toLocation(world).add(0, 3, 0), dir, 10, FluidCollisionMode.ALWAYS, true);
                 if (result != null) {
                     Block hitblock = result.getHitBlock();
-                    hitblock.getRelative(result.getHitBlockFace()).setType(Material.LAVA);
+                    hitblock.getRelative(result.getHitBlockFace()).setType(MaterialCompat.safe(XMaterial.LAVA));
                 } else {
                     Vector hit = dir.clone();
                     for (int _i = 0; _i < 20; _i++) {
                         hit.subtract(new Vector(0, 1, 0));
                         if (world.getBlockAt(hit.toLocation(world)) != null) {
                             Block hitblock = world.getBlockAt(hit.toLocation(world));
-                            hitblock.getRelative(BlockFace.UP).setType(Material.LAVA);
+                            hitblock.getRelative(BlockFace.UP).setType(MaterialCompat.safe(XMaterial.LAVA));
                             break;
                         }
                     }
@@ -377,14 +379,14 @@ public class MissileController {
                 if (result != null) {
                     Block hitblock = result.getHitBlock();
                     assert hitblock != null;
-                    hitblock.getRelative(Objects.requireNonNull(result.getHitBlockFace())).setType(Material.FIRE);
+                    hitblock.getRelative(Objects.requireNonNull(result.getHitBlockFace())).setType(MaterialCompat.safe(XMaterial.FIRE));
                 } else {
                     Vector hit = dir.clone();
                     for (int _i = 0; _i < 10; _i++) {
                         hit.subtract(new Vector(0, 1, 0));
                         if (world.getBlockAt(hit.toLocation(world)).getType() != Material.AIR) {
                             Block hitblock = world.getBlockAt(hit.toLocation(world));
-                            hitblock.getRelative(BlockFace.UP).setType(Material.FIRE);
+                            hitblock.getRelative(BlockFace.UP).setType(MaterialCompat.safe(XMaterial.FIRE));
                             break;
                         }
                     }
