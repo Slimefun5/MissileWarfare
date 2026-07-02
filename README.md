@@ -112,7 +112,7 @@ plugins {
 }
 
 dependencies {
-    "githubCompileOnly"("Slimefun5:MissileWarfare:v2.0.2.1")
+    "githubCompileOnly"("Slimefun5:MissileWarfare:v2.0.2.2")
 }
 ```
 
