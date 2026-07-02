@@ -51,6 +51,10 @@ dependencies {
 =======
 =======
     githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
+<<<<<<< HEAD
+>>>>>>> origin/experimental
+=======
+    implementation("org.bstats:bstats-bukkit:2.2.1")
 >>>>>>> origin/experimental
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
 >>>>>>> origin/experimental
