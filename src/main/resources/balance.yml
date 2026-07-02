@@ -1,0 +1,71 @@
+# Per-item balance scores (0-100) for MissileWarfare, relative to vanilla Minecraft.
+# Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
+#   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
+#   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+scores:
+  # --- Utility / non-combat tools ---
+  GUIDEBOOK: 3
+  PLAYERLIST: 3
+  # --- Fuels ---
+  SUGARFUEL: 14
+  ROCKETFUEL: 22
+  # --- Base explosive/chemical materials ---
+  EXPLOSIVEPOWDER: 16
+  COMPRESSEDEXPLOSIVES: 24
+  CHLORINE: 14
+  CHLORINEPELLET: 20
+  # --- Alloy / structural materials ---
+  ULTRALITE_INGOT: 18
+  ULTRALITE_PLATE: 22
+  # --- Guidance / detection components ---
+  SIMPLEFLIGHTCOMPUTER: 20
+  RADAR: 20
+  MISSILERADAR: 34
+  # --- Missile body/fin components ---
+  SMALLBODY: 14
+  SMALLFIN: 12
+  MISSILEBODY: 16
+  MISSILEFINS: 14
+  ADVANCEDMISSILEBODY: 22
+  ICBMMISSILEBODY: 28
+  # --- Warhead components ---
+  SMALLWARHEAD: 28
+  WARHEAD: 32
+  WARHEADAP: 36
+  HEAVYWARHEAD: 40
+  # --- Placed explosive ---
+  MINE: 45
+  # --- Small tier missiles ---
+  SMALLMISSILE: 45
+  SMALLMISSILELR: 48
+  SMALLMISSILEHE: 50
+  SMALLMISSILEAC: 50
+  # --- Specialized anti-target missiles ---
+  ANTIAIRMISSILE: 42
+  ANTIELYTRAMISSILE: 44
+  # --- Standard tier missiles ---
+  MISSILE: 55
+  MISSILELR: 58
+  MISSILEAPONE: 58
+  MISSILEHE: 60
+  MISSILEAC: 60
+  MISSILEAPTWO: 62
+  MISSILEAPTHR: 66
+  # --- Advanced tier missiles ---
+  MISSILEADV: 68
+  MISSILELRADV: 70
+  MISSILEHEADV: 72
+  MISSILEACADV: 72
+  # --- Utility/area-denial missiles ---
+  MISSILESTICK: 40
+  # --- Mass destruction warheads ---
+  MISSILEGAS: 78
+  MISSILENAPALM: 82
+  MISSILEEXCAV: 80
+  MISSILECLUSTER: 85
+  MISSILEICBM: 92
+  # --- Launchers / turrets ---
+  GROUNDLAUNCHER: 46
+  ANTIELYTRA: 48
+  ANTIMISSILELAUNCHER: 50
+  MANPAD: 52
