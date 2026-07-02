@@ -44,10 +44,14 @@ repositories {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
 <<<<<<< HEAD
     compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
 =======
+=======
+    githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
+>>>>>>> origin/experimental
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
 >>>>>>> origin/experimental
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
