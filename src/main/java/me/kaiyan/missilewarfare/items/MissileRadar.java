@@ -39,7 +39,7 @@ public class MissileRadar extends SlimefunItem {
      * @param recipe    the crafting recipe
      */
     public MissileRadar(@Nonnull ItemGroup itemGroup, @Nonnull ItemStack[] recipe) {
-        super(itemGroup, new SlimefunItemStack("MISSILERADAR", MaterialCompat.safe(XMaterial.GRAY_WOOL), ChatColor.YELLOW + Translations.get("radar.name"), ChatColor.GRAY + Translations.get("radar.lore")), RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+        super(itemGroup, new SlimefunItemStack("MISSILERADAR", MaterialCompat.safe(XMaterial.GRAY_WOOL)), RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
     }
 
     @Override
