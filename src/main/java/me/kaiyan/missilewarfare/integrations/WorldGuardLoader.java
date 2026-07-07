@@ -21,7 +21,6 @@ public class WorldGuardLoader {
      */
     public static void load() {
         MissileWarfare.worldGuardEnabled = true;
-        MissileWarfare.getInstance().getLogger().info("WorldGuard Enabled!");
     }
 
     /**

@@ -117,7 +117,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
             }
         }.runTaskTimer(this, 0, cfg.getInt("other.cleanup-wait-time"));
 
-        getLogger().info("Checking For Worldguard");
         new BukkitRunnable() {
             @Override
             public void run() {

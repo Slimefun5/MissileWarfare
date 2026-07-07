@@ -273,7 +273,6 @@ public class GroundMissileLauncher extends SlimefunItem {
                         result = p;
                     }
                 }
-                MissileWarfare.getInstance().getLogger().info("Missile Shot || Location: " + disp.getBlock().getLocation() + " Target: " + new Vector(coords[0], 0, coords[1]) + " Nearest Player: " + result.getName());
                 if (MissileWarfare.getInstance().getConfig().getBoolean("logging.broadcastMissileShots")) {
                     final String playername = result.getName();
                     new BukkitRunnable() {
