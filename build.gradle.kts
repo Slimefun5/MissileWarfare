@@ -48,9 +48,8 @@ dependencies {
     implementation("org.bstats:bstats-bukkit:2.2.1")
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.4.5")
+    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.4.6")
 
-    // External softdepend compileOnly
     // TODO: WorldGuard/WorldEdit/Towny are softdepends â€” commented out due to
     // strict version constraints in worldedit-bukkit conflicting with Paper API.
     // The integration classes are stubbed; re-enable when compatible versions are available.
@@ -58,8 +57,6 @@ dependencies {
     // compileOnly("com.sk89q.worldedit:worldedit-bukkit:7.3.9")
     // compileOnly("com.palmergames.bukkit.towny:towny:0.99.5.0")
 
-    // Shaded
-    
     testImplementation(platform("org.junit:junit-bom:5.11.4"))
     testImplementation("org.junit.jupiter:junit-jupiter")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
