@@ -65,8 +65,7 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
             return blocks;
         }));
 
-        getLogger().info("Missile Warfare Starting Up!");
-
+        // Startup line intentionally omitted: Slimefun core logs every installed addon uniformly.
         activemissiles = new ArrayList<>();
         plugin = this;
         Config cfg = new Config(this);
