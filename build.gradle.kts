@@ -44,20 +44,9 @@ repositories {
 }
 
 dependencies {
-<<<<<<< HEAD
-    implementation("com.github.Slimefun5:SlimefunMetrics:master-SNAPSHOT")
-<<<<<<< HEAD
-    compileOnly("io.papermc.paper:paper-api:${property("paperApiVersion")}")
-=======
-=======
     githubImplementation("Slimefun5:SlimefunMetrics:v1.0.0")
-<<<<<<< HEAD
->>>>>>> origin/experimental
-=======
     implementation("org.bstats:bstats-bukkit:2.2.1")
->>>>>>> origin/experimental
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
->>>>>>> origin/experimental
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.4.6")
 
@@ -95,16 +84,8 @@ tasks {
         enabled = false
     }
     shadowJar {
-<<<<<<< HEAD
-        archiveFileName.set("MissileWarfare v${project.version}.jar")
-=======
         relocate("org.bstats", "missilewarfare.libs.bstats")
-<<<<<<< HEAD
-        archiveFileName.set("MissileWarfare-1.6.13-UNOFFICIAL.jar")
->>>>>>> origin/experimental
-=======
         archiveFileName.set("MissileWarfare-$displayVersion.jar")
->>>>>>> origin/experimental
                 exclude("META-INF/**")
     }
     build {
