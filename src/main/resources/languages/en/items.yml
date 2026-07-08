@@ -1,0 +1,567 @@
+# English item name + lore blocks for MissileWarfare. Key = Slimefun item ID.
+
+SUGARFUEL:
+  name: "&eSugar Fuel"
+  type:
+    - "&7&oResource"
+  description:
+    - "&7Cheap, high energy, perfect for small missiles."
+
+GUIDEBOOK:
+  name: "&eGuide Book"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7It Will Guide You?!?"
+  usage:
+    - "&eRight Click&7 to open the guide"
+
+EXPLOSIVEPOWDER:
+  name: "&eExplosive Powder"
+  type:
+    - "&7&oResource"
+  description:
+    - "&7Handle with care!"
+
+COMPRESSEDEXPLOSIVES:
+  name: "&eCompressed Explosive Powder"
+  type:
+    - "&7&oResource"
+  description:
+    - "&7Compressed so hard it became a solid"
+
+ULTRALITE_INGOT:
+  name: "&eUltraLite Ingot"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Super Lightweight ingot used for missiles"
+
+ULTRALITE_PLATE:
+  name: "&eUltraLite Plate"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7A super lightweight plate for missiles"
+
+SIMPLEFLIGHTCOMPUTER:
+  name: "&eSimple Flight Computer"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7A simple computer capable of guiding a missile"
+
+RADAR:
+  name: "&eRadar"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used to track missiles or players to hit"
+
+ROCKETFUEL:
+  name: "&eRocket Fuel"
+  type:
+    - "&7&oResource"
+  description:
+    - "&7Burns with the power of 1000 coal..."
+
+SMALLWARHEAD:
+  name: "&eSmall Warhead"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used in creation of a missile."
+    - "&7'Dont touch the red bit'"
+
+SMALLBODY:
+  name: "&eSmall Missile Fuselage"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used in the creation of a missile"
+    - "&7'You better not dent that'"
+
+SMALLFIN:
+  name: "&eSmall Missile Fins"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used in the creation of a missile"
+
+MISSILEBODY:
+  name: "&eMissile Body"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Missile body containing a flight computer"
+
+MISSILEFINS:
+  name: "&eMissile Fins"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Able to direct the missile better"
+
+WARHEAD:
+  name: "&eMissile Warhead"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used in creation of a missile."
+    - "&7'Potato-be-gone'"
+
+WARHEADAP:
+  name: "&eReinforced Warhead"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Used to create AP Missiles"
+    - "&7'Bunker-be-Gone'"
+
+CHLORINE:
+  name: "&eChlorine"
+  type:
+    - "&7&oResource"
+  description:
+    - "&7Poisonous"
+    - "&7Causes a slow and painful death!"
+  usage:
+    - "&eRight Click&7 to apply a Wither effect"
+
+CHLORINEPELLET:
+  name: "&eChlorine Pellet"
+  type:
+    - "&7&oResource"
+  description:
+    - "&7A pellet of Chlorine"
+
+ADVANCEDMISSILEBODY:
+  name: "&eAdvanced Missile Body"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7An upgraded version ofthe missile body"
+
+HEAVYWARHEAD:
+  name: "&eHeavy Warhead"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7A warhead packed with heavy explosives"
+
+ICBMMISSILEBODY:
+  name: "&eICBM Body"
+  type:
+    - "&7&oComponent"
+  description:
+    - "&7Engineered to perfection, Sleek, Deadly."
+    - "&7The body of the ICBM missile"
+
+MINE:
+  name: "&cMine"
+  type:
+    - "&7&oGadget"
+  description:
+    - "&7Will it work on tanks?"
+  stats:
+    - "&8⇨ &7Explosion Power: &e8"
+    - "&8⇨ &7Random Damage: &eUp to 10"
+  usage:
+    - "&ePlace&7 against a block to disguise it as that block"
+
+SMALLMISSILE:
+  name: "&eSmall GtG Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Small Ground-to-Ground Missile"
+    - "&7Normal Variant"
+  stats:
+    - "&8⇨ &7Range: &e750 Blocks"
+    - "&8⇨ &7Power: &e3"
+    - "&8⇨ &7Speed: &e2"
+    - "&8⇨ &7Accuracy: &eWithin 100 Blocks"
+
+SMALLMISSILEHE:
+  name: "&eSmall GtG Missile HE"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Small Ground-to-Ground Missile"
+    - "&7High Explosive Variant"
+  stats:
+    - "&8⇨ &7Range: &e600 Blocks"
+    - "&8⇨ &7Power: &e3.5"
+    - "&8⇨ &7Speed: &e1"
+    - "&8⇨ &7Accuracy: &eWithin 120 Blocks"
+
+SMALLMISSILELR:
+  name: "&eSmall GtG Missile LR"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Small Ground-to-Ground Missile"
+    - "&7Long Range Variant"
+    - "&7'Very far away timmy never stood a chance'"
+  stats:
+    - "&8⇨ &7Range: &e900 Blocks"
+    - "&8⇨ &7Power: &e3"
+    - "&8⇨ &7Speed: &e2"
+    - "&8⇨ &7Accuracy: &eWithin 100 Blocks"
+
+SMALLMISSILEAC:
+  name: "&eSmall GtG Missile AC"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Small Ground-to-Ground Missile"
+    - "&7Accurate Variant"
+    - "&7'Tiny Timmy never stood a chance'"
+  stats:
+    - "&8⇨ &7Range: &e700 Blocks"
+    - "&8⇨ &7Power: &e3"
+    - "&8⇨ &7Speed: &e2"
+    - "&8⇨ &7Accuracy: &eWithin 60 Blocks"
+
+ANTIAIRMISSILE:
+  name: "&eAnti-Missile Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Anti-Missile / Anti-Elytra"
+    - "&7Anti-Missile Variant"
+    - "&7'Timmy's fireworks have been canceled'"
+  stats:
+    - "&8⇨ &7Range: &e600 Blocks"
+    - "&8⇨ &7Power: &e4"
+    - "&8⇨ &7Speed: &e5"
+    - "&8⇨ &7Accuracy: &eWithin 0 Blocks"
+
+ANTIELYTRAMISSILE:
+  name: "&eAnti-Elytra Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Anti-Missile / Anti-Elytra"
+    - "&7Anti-Missile Variant"
+    - "&7'Timmy's fireworks have been canceled'"
+  stats:
+    - "&8⇨ &7Range: &e700 Blocks"
+    - "&8⇨ &7Power: &e4"
+    - "&8⇨ &7Speed: &e6"
+    - "&8⇨ &7Accuracy: &eWithin 0 Blocks"
+
+MISSILE:
+  name: "&eGtG Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Missile"
+    - "&7Normal Variant"
+    - "&7'Your friendly neighbourhood missile'"
+  stats:
+    - "&8⇨ &7Range: &e1000 Blocks"
+    - "&8⇨ &7Power: &e4.5"
+    - "&8⇨ &7Speed: &e2.5"
+    - "&8⇨ &7Accuracy: &eWithin 80 Blocks"
+
+MISSILEHE:
+  name: "&eGtG Missile HE"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Missile"
+    - "&7High Explosive Variant"
+    - "&7'Your not-so friendly neighbourhood missile'"
+  stats:
+    - "&8⇨ &7Range: &e1000 Blocks"
+    - "&8⇨ &7Power: &e5"
+    - "&8⇨ &7Speed: &e2"
+    - "&8⇨ &7Accuracy: &eWithin 100 Blocks"
+
+MISSILELR:
+  name: "&eGtG Missile LR"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Missile"
+    - "&7Long Range Variant"
+    - "&7'Your friendly city missile'"
+  stats:
+    - "&8⇨ &7Range: &e1500 Blocks"
+    - "&8⇨ &7Power: &e4.5"
+    - "&8⇨ &7Speed: &e2.5"
+    - "&8⇨ &7Accuracy: &eWithin 80 Blocks"
+
+MISSILEAC:
+  name: "&eGtG Missile AC"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Missile"
+    - "&7Accurate Variant"
+    - "&7'Your friendly room-clearing missile'"
+  stats:
+    - "&8⇨ &7Range: &e1250 Blocks"
+    - "&8⇨ &7Power: &e4.5"
+    - "&8⇨ &7Speed: &e2.5"
+    - "&8⇨ &7Accuracy: &eWithin 16 Blocks"
+
+MISSILEAPONE:
+  name: "&eGtG Missile AP"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Armour Piercing Missile"
+    - "&7Tier 1 AP"
+    - "&7'Your basement isnt safe for long!'"
+  stats:
+    - "&8⇨ &7Penetrates 1 block before exploding"
+    - "&8⇨ &7Wont go through obsidian"
+    - "&8⇨ &7Range: &e1550 Blocks"
+    - "&8⇨ &7Power: &e3.5"
+    - "&8⇨ &7Speed: &e2"
+    - "&8⇨ &7Accuracy: &eWithin 40 Blocks"
+
+MISSILEAPTWO:
+  name: "&eGtG Missile AP"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Armour Piercing Missile"
+    - "&7Tier 2 AP"
+    - "&7'Your bunker isnt safe for long!'"
+  stats:
+    - "&8⇨ &7Penetrates 1 block before exploding"
+    - "&8⇨ &750% Chance to go through obsidian"
+    - "&8⇨ &710% chance to break the hit obsidian"
+    - "&8⇨ &7Range: &e1700 Blocks"
+    - "&8⇨ &7Power: &e4"
+    - "&8⇨ &7Speed: &e2.5"
+    - "&8⇨ &7Accuracy: &eWithin 20 Blocks"
+
+MISSILEAPTHR:
+  name: "&eGtG Missile AP"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Armour Piercing Missile"
+    - "&7Tier 3 AP"
+    - "&7'Your bunker definitely isnt safe for long!'"
+  stats:
+    - "&8⇨ &7Penetrates 2 blocks before exploding"
+    - "&8⇨ &775% Chance to go through obsidian"
+    - "&8⇨ &720% chance to break the hit obsidian"
+    - "&8⇨ &7Range: &e1850 Blocks"
+    - "&8⇨ &7Power: &e4.5"
+    - "&8⇨ &7Speed: &e4"
+    - "&8⇨ &7Accuracy: &eWithin 10 Blocks"
+
+MISSILEADV:
+  name: "&eGtG Advanced Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Advanced Missiles"
+    - "&7Normal Variant"
+    - "&7'Powered by AI (technically)'"
+  stats:
+    - "&8⇨ &7Range: &e2000 Blocks"
+    - "&8⇨ &7Power: &e4"
+    - "&8⇨ &7Speed: &e4"
+    - "&8⇨ &7Accuracy: &eWithin 40 Blocks"
+
+MISSILEHEADV:
+  name: "&eGtG Advanced Missile HE"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Advanced Missiles"
+    - "&7High Explosive Variant"
+    - "&7'Very dangerous, do not touche'"
+  stats:
+    - "&8⇨ &7Range: &e2000 Blocks"
+    - "&8⇨ &7Power: &e6"
+    - "&8⇨ &7Speed: &e3.5"
+    - "&8⇨ &7Accuracy: &eWithin 35 Blocks"
+
+MISSILELRADV:
+  name: "&eGtG Advanced Missile LR"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Advanced Missiles"
+    - "&7Long Range Variant"
+    - "&7'Im running out of lore ideas'"
+  stats:
+    - "&8⇨ &7Range: &e2500 Blocks"
+    - "&8⇨ &7Power: &e4"
+    - "&8⇨ &7Speed: &e4.5"
+    - "&8⇨ &7Accuracy: &eWithin 40 Blocks"
+
+MISSILEACADV:
+  name: "&eGtG Advanced Missile AC"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7GtG Advanced Missiles"
+    - "&7Accurate Variant"
+    - "&7'Pretty accurate i guess'"
+  stats:
+    - "&8⇨ &7Range: &e2000 Blocks"
+    - "&8⇨ &7Power: &e4.5"
+    - "&8⇨ &7Speed: &e4"
+    - "&8⇨ &7Accuracy: &eWithin 20 Blocks"
+
+MISSILEGAS:
+  name: "&cGas Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Cleaning Missile"
+    - "&7Deploys poisonous gas on hitting a target"
+    - "&7'Commit Timmycide.'"
+  stats:
+    - "&8⇨ &7Range: &e1600 Blocks"
+    - "&8⇨ &7Power: &e0.5"
+    - "&8⇨ &7Speed: &e3"
+    - "&8⇨ &7Accuracy: &eWithin 80 Blocks"
+
+MISSILEEXCAV:
+  name: "&cAushubrakete"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Utility Missile"
+    - "&7Has a large explosion radius but little damage"
+    - "&7Used for mining"
+    - "&7'Better than a 100 Pickaxes!'"
+  stats:
+    - "&8⇨ &7Range: &e100 Blocks"
+    - "&8⇨ &7Power: &e14"
+    - "&8⇨ &7Speed: &e0.5"
+    - "&8⇨ &7Accuracy: &eWithin 50 Blocks"
+
+MISSILESTICK:
+  name: "&cSticky Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Trap Missile"
+    - "&7A small explosion that releases cobwebs"
+    - "&7'Dont ask what its made of.'"
+  stats:
+    - "&8⇨ &7Range: &e1600 Blocks"
+    - "&8⇨ &7Power: &e1"
+    - "&8⇨ &7Speed: &e4"
+    - "&8⇨ &7Accuracy: &eWithin 70 Blocks"
+
+MISSILEICBM:
+  name: "&cICBM Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Long-Range Missile"
+    - "&7Inter-Continental Ballistic Missile"
+    - "&7'Nowhere is safe.'"
+  stats:
+    - "&8⇨ &7Range: &e7000 Blocks"
+    - "&8⇨ &7Power: &e10"
+    - "&8⇨ &7Speed: &e5"
+    - "&8⇨ &7Accuracy: &eWithin 50 Blocks"
+
+MISSILECLUSTER:
+  name: "&cCluster Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Cluster Missile, Deploys many missiles before hitting"
+    - "&7'Removes villages faster than you can scream!'"
+  stats:
+    - "&8⇨ &7Range: &e1600 Blocks"
+    - "&8⇨ &7Power: &e4"
+    - "&8⇨ &7Speed: &e3.5"
+    - "&8⇨ &7Accuracy: &eWithin 90 Blocks"
+
+MISSILENAPALM:
+  name: "&cNapalm Missile"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Fire Missile"
+    - "&7Napalm Missile, Throws fire everywhere upon hit."
+    - "&7'Kindergarten Remover! Tried and tested™'"
+  stats:
+    - "&8⇨ &7Range: &e1600 Blocks"
+    - "&8⇨ &7Power: &e2"
+    - "&8⇨ &7Speed: &e3"
+    - "&8⇨ &7Accuracy: &eWithin 80 Blocks"
+
+GROUNDLAUNCHER:
+  name: "&6GtG Missile Launcher"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Shoots a specified area on the ground."
+  stats:
+    - "&8⇨ &7Default Cruise Altitude: &eY:120"
+  usage:
+    - "&eUse a stick&7 to set target coords"
+    - "&eShift with a stick&7 to check if it can fire"
+    - "&eRight click with a blaze rod&7 to set cruise alt"
+    - "&7Needs to be built on 1 green concrete block."
+
+ANTIMISSILELAUNCHER:
+  name: "&6Anti Missile Launcher"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Targets and shoots down other missiles in the area."
+  usage:
+    - "&eUse redstone&7 to disable it"
+    - "&7Needs to be built on obsidian"
+    - "&7Needs Anti-Missile Missiles"
+
+ANTIELYTRA:
+  name: "&6Anti Elytra Launcher"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Fires a missile at nearby player"
+    - "&7that are using an elytra"
+    - "&7Excluding those on the"
+    - "&7ID assigned to this"
+  usage:
+    - "&eUse a stick&7 to set the group ID"
+    - "&7Needs Anti-Elytra Missiles"
+
+MISSILERADAR:
+  name: "&eMissile Radar"
+  type:
+    - "&7&oMachine"
+  description:
+    - "&7Emits a redstone signal when a missile is within 700 blocks"
+  usage:
+    - "&ePlace&7 redstone on top of this block to get its output"
+    - "&7A repeater is required to get the one tick pulse"
+
+MANPAD:
+  name: "&6Manpad"
+  type:
+    - "&7&oWeapon"
+  description:
+    - "&7Handheld anti-missile device"
+  usage:
+    - "&eShift + Right Click&7 to begin tracking"
+    - "&eRelease Shift&7 to fire"
+
+PLAYERLIST:
+  name: "&6Player List"
+  type:
+    - "&7&oMisc"
+  description:
+    - "&7THESE ID'S ARE GLOBAL"
+    - "&7ANYONE CAN EDIT THEM IF"
+    - "&7THEY HAVE THE ID"
+  usage:
+    - "&eRight Click&7 to set the players for a ID"

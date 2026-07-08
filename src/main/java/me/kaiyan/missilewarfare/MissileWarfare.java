@@ -71,8 +71,7 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
             return blocks;
         }));
 
-        getLogger().info("Missile Warfare Starting Up!");
-
+        // Startup line intentionally omitted: Slimefun core logs every installed addon uniformly.
         activemissiles = new ArrayList<>();
         plugin = this;
         Config cfg = new Config(this);
@@ -124,7 +123,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
             }
         }.runTaskTimer(this, 0, cfg.getInt("other.cleanup-wait-time"));
 
-        getLogger().info("Checking For Worldguard");
         new BukkitRunnable() {
             @Override
             public void run() {

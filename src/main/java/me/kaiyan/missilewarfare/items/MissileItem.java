@@ -12,6 +12,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -40,7 +41,9 @@ public class MissileItem extends SlimefunItem {
         MissileClass missileClass = VariantsAPI.missileStatsFromType(type);
 
         ItemMeta meta = item.getItemMeta();
-        List<String> lore = meta.getLore();
+        // id-only items carry no lore in code (display is resolved from en/items.yml at runtime), so
+        // getLore() is null here - start from an empty list instead of NPEing.
+        List<String> lore = meta.getLore() != null ? meta.getLore() : new ArrayList<>();
         lore.add(ChatColor.translateAlternateColorCodes('&', "&7" + Translations.get("missiledesc.range")) + Math.sqrt(missileClass.range));
         lore.add(ChatColor.translateAlternateColorCodes('&', "&7" + Translations.get("missiledesc.power") + missileClass.power));
         lore.add(ChatColor.translateAlternateColorCodes('&', "&7" + Translations.get("missiledesc.speed") + missileClass.speed));

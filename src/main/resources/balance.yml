@@ -1,0 +1,75 @@
+# Per-item balance scores (0-100) for MissileWarfare, relative to vanilla Minecraft.
+# Read by Slimefun's BalanceService (overrides the auto heuristic). Bands:
+#   0-10 Trivial | 11-25 Standard | 26-40 Advanced | 41-69 Powerful | 70-100 Overpowered
+#   (vanilla anchors: iron gear ~15, netherite ~30, beacon ~35, end crystal ~70, mace ~85)
+# Scores below are derived from actual source values (config.yml "power" = the
+# float passed straight into World#createExplosion, i.e. TNT-equivalent blast;
+# vanilla TNT/creeper = 4/3) and hardcoded effects in the missile controllers,
+# not from item-id tier guessing.
+scores:
+  # --- Utility / non-combat tools ---
+  GUIDEBOOK: 3
+  PLAYERLIST: 4
+  # --- Fuels ---
+  SUGARFUEL: 12
+  ROCKETFUEL: 20
+  # --- Base explosive/chemical materials ---
+  EXPLOSIVEPOWDER: 14
+  COMPRESSEDEXPLOSIVES: 22
+  CHLORINE: 10
+  CHLORINEPELLET: 16
+  # --- Alloy / structural materials ---
+  ULTRALITE_INGOT: 16
+  ULTRALITE_PLATE: 20
+  # --- Guidance / detection components ---
+  SIMPLEFLIGHTCOMPUTER: 18
+  RADAR: 18
+  MISSILERADAR: 24
+  # --- Missile body/fin components ---
+  SMALLBODY: 12
+  SMALLFIN: 10
+  MISSILEBODY: 18
+  MISSILEFINS: 14
+  ADVANCEDMISSILEBODY: 24
+  ICBMMISSILEBODY: 32
+  # --- Warhead components ---
+  SMALLWARHEAD: 20
+  WARHEAD: 24
+  WARHEADAP: 26
+  HEAVYWARHEAD: 34
+  # --- Placed explosive (config: mine.explosivepower=8, ~2x TNT, disguised trigger + up to 10 bonus dmg) ---
+  MINE: 58
+  # --- Small tier missiles (config power 3-3.5, range 600-900) ---
+  SMALLMISSILE: 40
+  SMALLMISSILELR: 40
+  SMALLMISSILEHE: 43
+  SMALLMISSILEAC: 41
+  # --- Specialized anti-target missiles ---
+  ANTIAIRMISSILE: 44
+  ANTIELYTRAMISSILE: 46
+  # --- Standard tier missiles (config power 3.5-5, range 1000-1850) ---
+  MISSILE: 50
+  MISSILELR: 52
+  MISSILEAPONE: 47
+  MISSILEHE: 56
+  MISSILEAC: 51
+  MISSILEAPTWO: 53
+  MISSILEAPTHR: 59
+  # --- Advanced tier missiles (config power 4-6, range 2000-2500) ---
+  MISSILEADV: 54
+  MISSILELRADV: 55
+  MISSILEHEADV: 63
+  MISSILEACADV: 56
+  # --- Utility/area-denial missiles ---
+  MISSILESTICK: 36
+  # --- Mass destruction warheads ---
+  MISSILEGAS: 75
+  MISSILENAPALM: 79
+  MISSILEEXCAV: 88
+  MISSILECLUSTER: 85
+  MISSILEICBM: 92
+  # --- Launchers / turrets ---
+  GROUNDLAUNCHER: 46
+  ANTIELYTRA: 50
+  ANTIMISSILELAUNCHER: 48
+  MANPAD: 32

@@ -184,7 +184,7 @@ public class PlayerList extends SlimefunItem {
                     } else {
                         conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.gottenid"));
                         cont.set(key, PersistentDataType.STRING, s);
-                        List<String> lore = meta.getLore();
+                        List<String> lore = meta.getLore() != null ? meta.getLore() : new ArrayList<>();
                         lore.add("ID: " + s);
                         event.getItem().setItemMeta(meta);
                         return askToRead;
