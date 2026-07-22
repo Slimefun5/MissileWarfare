@@ -540,6 +540,37 @@ public class CustomItems {
         MissileItem advmissileAC = new MissileItem(group, advmissileACstack, RecipeType.ENHANCED_CRAFTING_TABLE, advmissileACrecipe, 22, Translations.getMissileLore("ac"));
         //</editor-fold>
         //</editor-fold>
+
+        //<editor-fold desc="== Declare Guide Categories ==">
+        // Warheads, mines and the handheld launcher are combat items.
+        smallwarhead.setGuideType("weapons");
+        warhead.setGuideType("weapons");
+        warheadAP.setGuideType("weapons");
+        heavywarhead.setGuideType("weapons");
+        mine.setGuideType("weapons");
+        manpad.setGuideType("weapons");
+        // Placed launcher/detection blocks behave as machines.
+        groundlauncher.setGuideType("machines");
+        antiairlauncher.setGuideType("machines");
+        antiElytraLauncher.setGuideType("machines");
+        // Fuels, chemicals, plates and missile sub-assemblies are crafting resources.
+        sugarfuel.setGuideType("resources");
+        rocketfuel.setGuideType("resources");
+        explosivepowder.setGuideType("resources");
+        compressedpowder.setGuideType("resources");
+        ultraliteingot.setGuideType("resources");
+        ultraliteplate.setGuideType("resources");
+        simpleflightcomputer.setGuideType("resources");
+        radar.setGuideType("resources");
+        smallbody.setGuideType("resources");
+        missilebody.setGuideType("resources");
+        advancedmissilebody.setGuideType("resources");
+        icbmmissilebody.setGuideType("resources");
+        chlorine.setGuideType("resources");
+        chlorinepellet.setGuideType("resources");
+        playerList.setGuideType("resources");
+        //</editor-fold>
+
         //Register All
         //<editor-fold desc="== Register Items ==">
         //Guides
@@ -555,7 +586,7 @@ public class CustomItems {
                 ultraliteplatestack.item(), radarstack.item(), ultraliteplatestack.item(),
                 simpleflightcomputerstack.item(), ultraliteplatestack.item(), simpleflightcomputerstack.item(),
         };
-        new MissileRadar(group, missileradarrecipe).register(main);
+        new MissileRadar(group, missileradarrecipe).setGuideType("machines").register(main);
         mine.register(main);
         //Handhelds
         manpad.register(main);
