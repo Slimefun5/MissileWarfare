@@ -48,7 +48,8 @@ dependencies {
     implementation("org.bstats:bstats-bukkit:2.2.1")
     compileOnly("org.spigotmc:spigot-api:1.16.5-R0.1-SNAPSHOT")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
-    githubCompileOnly("Slimefun5:Slimefun5:gh-v5.2.4.6")
+    val sfCoreVersion = (project.findProperty("sfCoreVersion") as String?)?.takeIf { it.isNotBlank() } ?: "gh-v5.2.4.6"
+    githubCompileOnly("Slimefun5:Slimefun5:$sfCoreVersion")
 
     // TODO: WorldGuard/WorldEdit/Towny are softdepends â€” commented out due to
     // strict version constraints in worldedit-bukkit conflicting with Paper API.
