@@ -52,18 +52,21 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
     @Override
     public void onEnable() {
         int pluginId = 31437;
-        metrics = new Metrics(this, pluginId);
+        // Consolidated metrics: only start our own bStats if the server opted out (metrics.disable-addon-metrics = false).
+        if (Slimefun.getCfg().contains("metrics.disable-addon-metrics") && !Slimefun.getCfg().getBoolean("metrics.disable-addon-metrics")) {
+            metrics = new Metrics(this, pluginId);
 
-        metrics.addCustomChart(new SingleLineChart("missiles_fired", () -> {
-            int missiles = firedMissiles;
-            firedMissiles = 0;
-            return missiles;
-        }));
-        metrics.addCustomChart(new SingleLineChart("missile_destroy", () -> {
-            int blocks = blocksExploded;
-            blocksExploded = 0;
-            return blocks;
-        }));
+            metrics.addCustomChart(new SingleLineChart("missiles_fired", () -> {
+                int missiles = firedMissiles;
+                firedMissiles = 0;
+                return missiles;
+            }));
+            metrics.addCustomChart(new SingleLineChart("missile_destroy", () -> {
+                int blocks = blocksExploded;
+                blocksExploded = 0;
+                return blocks;
+            }));
+        }
 
         // Startup line intentionally omitted: Slimefun core logs every installed addon uniformly.
         activemissiles = new ArrayList<>();
