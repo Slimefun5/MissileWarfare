@@ -143,7 +143,7 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
     private void registerWiki() {
         WikiText wiki = Slimefun.getWikiText();
 
-        // Bucket this addon's items by their ItemGroup, preserving discovery order.
+        // LinkedHashMap preserves item discovery order.
         Map<ItemGroup, List<String>> groupedItems = new LinkedHashMap<>();
         for (SlimefunItem item : Slimefun.getRegistry().getEnabledSlimefunItems()) {
             try {
@@ -241,7 +241,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
     @Nullable
     private List<String> describeItem(@Nonnull String itemId) {
         switch (itemId) {
-            // --- Launchers & defensive blocks ---
             case "GROUNDLAUNCHER":
                 return Arrays.asList(
                     "&7The main surface-to-surface launcher.",
@@ -299,7 +298,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
                     "&7Right-click to read tips on building and firing."
                 );
 
-            // --- Missiles ---
             case "MISSILE":
                 return Arrays.asList(
                     "&7The standard surface-to-surface missile.",
@@ -399,7 +397,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
             case "MISSILEACADV":
                 return Arrays.asList("&7Advanced Accuracy missile.", "&7Precision strikes on an advanced body.");
 
-            // --- Fuels, explosives & airframe parts ---
             case "SUGARFUEL":
                 return Arrays.asList(
                     "&7Basic solid propellant pressed from sugar",
@@ -441,7 +438,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
                     "&7blocks and seeking anti-air missiles."
                 );
 
-            // --- Warheads & bodies ---
             case "SMALLWARHEAD":
                 return Arrays.asList("&7A compact warhead for small missiles.");
             case "WARHEAD":
@@ -478,7 +474,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
                     "&7for the ICBM. Extreme structural strength."
                 );
 
-            // --- Chemicals ---
             case "CHLORINE":
                 return Arrays.asList(
                     "&7Toxic chlorine washed from soul sand.",
@@ -516,7 +511,6 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
                 try {
                     missile.update.cancel();
                 } catch (NullPointerException ignored) {
-                    // already cancelled
                 }
             }
         }

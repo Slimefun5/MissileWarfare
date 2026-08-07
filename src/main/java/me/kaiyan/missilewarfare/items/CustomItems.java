@@ -34,13 +34,11 @@ public class CustomItems {
      * with the Slimefun registry.
      */
     public static void setup() {
-        //Add section to guide
         NamespacedKey categoryId = new NamespacedKey("missilewarfare", "missile_warfare");
         ItemStack categoryItem = CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), Translations.get("missilegroupname"));
 
         ItemGroup group = new ItemGroup(categoryId, categoryItem).setTheme("weapons");
 
-        //Add Items
         //<editor-fold desc="CREATE ITEMSTACKS">
         //<editor-fold desc="SUGARFUEL">
         SlimefunItemStack sugarfuelstack = new SlimefunItemStack("SUGARFUEL", MaterialCompat.safe(XMaterial.SUGAR));
@@ -542,18 +540,15 @@ public class CustomItems {
         //</editor-fold>
 
         //<editor-fold desc="== Declare Guide Categories ==">
-        // Warheads, mines and the handheld launcher are combat items.
         smallwarhead.setGuideType("weapons");
         warhead.setGuideType("weapons");
         warheadAP.setGuideType("weapons");
         heavywarhead.setGuideType("weapons");
         mine.setGuideType("weapons");
         manpad.setGuideType("weapons");
-        // Placed launcher/detection blocks behave as machines.
         groundlauncher.setGuideType("machines");
         antiairlauncher.setGuideType("machines");
         antiElytraLauncher.setGuideType("machines");
-        // Fuels, chemicals, plates and missile sub-assemblies are crafting resources.
         sugarfuel.setGuideType("resources");
         rocketfuel.setGuideType("resources");
         explosivepowder.setGuideType("resources");
@@ -571,16 +566,12 @@ public class CustomItems {
         playerList.setGuideType("resources");
         //</editor-fold>
 
-        //Register All
         //<editor-fold desc="== Register Items ==">
-        //Guides
         guide.register(main);
         playerList.register(main);
-        //Missile Launchers
         groundlauncher.register(main);
         antiElytraLauncher.register(main);
         antiairlauncher.register(main);
-        //Other Blocks
         ItemStack[] missileradarrecipe = new ItemStack[]{
                 simpleflightcomputerstack.item(), ultraliteplatestack.item(), simpleflightcomputerstack.item(),
                 ultraliteplatestack.item(), radarstack.item(), ultraliteplatestack.item(),
@@ -588,9 +579,7 @@ public class CustomItems {
         };
         new MissileRadar(group, missileradarrecipe).setGuideType("machines").register(main);
         mine.register(main);
-        //Handhelds
         manpad.register(main);
-        // Materials
         sugarfuel.register(main);
         explosivepowder.register(main);
         compressedpowder.register(main);
@@ -601,7 +590,6 @@ public class CustomItems {
         simpleflightcomputer.register(main);
         radar.register(main);
         rocketfuel.register(main);
-        //Missile Parts
         smallwarhead.register(main);
         warhead.register(main);
         warheadAP.register(main);
@@ -612,7 +600,6 @@ public class CustomItems {
         advancedmissilebody.register(main);
         heavywarhead.register(main);
         icbmmissilebody.register(main);
-        //Missile Types
         antiAirMissile.register(main);
         antielytramissile.register(main);
         smallmissile.register(main);
@@ -639,7 +626,6 @@ public class CustomItems {
 
         //</editor-fold>
 
-        //ADD RESEARCH
         //<editor-fold desc="RESEARCH">
         NamespacedKey basicfuelkey = new NamespacedKey("missilewarfare", "basic_fuel");
         Research basicfuel = new Research(basicfuelkey, 3467341, "Inedible Sugar", 10);
