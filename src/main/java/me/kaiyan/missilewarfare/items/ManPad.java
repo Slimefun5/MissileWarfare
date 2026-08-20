@@ -61,14 +61,12 @@ public class ManPad extends SlimefunItem {
 
                 @Override
                 public void run() {
-                    //check if changed weapon
                     if (!event.getSlimefunItem().isPresent()) {
                         event.getPlayer().sendMessage(Translations.get("messages.manpad.itemchanged"));
                     } else if (event.getSlimefunItem().get() != manpad) {
                         event.getPlayer().sendMessage(Translations.get("messages.manpad.itemchanged"));
                     }
                     MissileController lockedmissile = null;
-                    //Get Missiles In Range
                     List<MissileController> missiles = new ArrayList<>();
                     for (MissileController missile : MissileWarfare.activemissiles) {
                         if (missile.isgroundmissile) {
@@ -80,7 +78,6 @@ public class ManPad extends SlimefunItem {
                         }
                     }
 
-                    //Get looked at missile
                     float mindist = 100000;
 
                     for (MissileController missile : missiles) {
@@ -132,10 +129,8 @@ public class ManPad extends SlimefunItem {
                         event.getPlayer().playNote(event.getPlayer().getLocation(), Instrument.FLUTE, Note.flat(1, Note.Tone.E));
                     }
 
-                    // SendScanLine
                     event.getPlayer().spigot().sendMessage(ChatMessageType.ACTION_BAR, scanline.create());
 
-                    // Check if sneaking
                     if (!event.getPlayer().isSneaking()) {
                         if (lockedmissile == null) {
                             active.remove(event.getPlayer());

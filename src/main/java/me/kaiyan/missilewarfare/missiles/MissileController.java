@@ -353,7 +353,6 @@ public class MissileController {
                 }
             }
         } else if (type == 18) {
-            // Lava
             for (int i = 0; i < 2; i++) {
                 Vector dir = new Vector((rand.nextFloat() - 0.5) * 2, (rand.nextFloat() - 0.5) * 2, (rand.nextFloat() - 0.5) * 2);
                 RayTraceResult result = world.rayTraceBlocks(pos.toLocation(world).add(0, 3, 0), dir, 10, FluidCollisionMode.ALWAYS, true);
@@ -372,7 +371,6 @@ public class MissileController {
                     }
                 }
             }
-            // Fire
             for (int i = 0; i < 75; i++) {
                 Vector dir = new Vector((rand.nextFloat() - 0.5) * 2, (rand.nextFloat() - 0.5) * 2, (rand.nextFloat() - 0.5) * 2);
                 RayTraceResult result = world.rayTraceBlocks(pos.toLocation(world).add(0, 3, 0), dir, 10, FluidCollisionMode.ALWAYS, true);

@@ -113,7 +113,6 @@ public class GroundMissileLauncher extends SlimefunItem {
     }
 
     private void onBlockRightClick(PlayerRightClickEvent event) {
-        // Stick/Blaze Rod Method
         if (event.getItem().getType() == MaterialCompat.safe(XMaterial.STICK)) {
             event.cancel();
             TileState state = (TileState) Objects.requireNonNull(event.getInteractEvent().getClickedBlock()).getState();
