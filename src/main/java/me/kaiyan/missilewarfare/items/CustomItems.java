@@ -38,6 +38,8 @@ public class CustomItems {
         ItemStack categoryItem = CustomItemStack.create(MaterialCompat.safe(XMaterial.GUNPOWDER), Translations.get("missilegroupname"));
 
         ItemGroup group = new ItemGroup(categoryId, categoryItem).setTheme("weapons");
+        // Places this addon's items in the shared guide categories (see ItemTypeClassifier).
+        group.setCategory("weapons");
 
         //<editor-fold desc="CREATE ITEMSTACKS">
         //<editor-fold desc="SUGARFUEL">
