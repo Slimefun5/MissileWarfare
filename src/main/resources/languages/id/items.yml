@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oKomponen'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oSenjata'
+ANTIELYTRA:
+  type:
+  - '&7&oMesin'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oSenjata'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oMesin'
+CHLORINE:
+  type:
+  - '&7&oSumber Daya'
+CHLORINEPELLET:
+  type:
+  - '&7&oSumber Daya'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oSumber Daya'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oSumber Daya'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oMesin'
+GUIDEBOOK:
+  type:
+  - '&7&oLainnya'
+HEAVYWARHEAD:
+  type:
+  - '&7&oKomponen'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oKomponen'
+MANPAD:
+  type:
+  - '&7&oSenjata'
+MINE:
+  type:
+  - '&7&oGadget'
+MISSILE:
+  type:
+  - '&7&oSenjata'
+MISSILEAC:
+  type:
+  - '&7&oSenjata'
+MISSILEACADV:
+  type:
+  - '&7&oSenjata'
+MISSILEADV:
+  type:
+  - '&7&oSenjata'
+MISSILEAPONE:
+  type:
+  - '&7&oSenjata'
+MISSILEAPTHR:
+  type:
+  - '&7&oSenjata'
+MISSILEAPTWO:
+  type:
+  - '&7&oSenjata'
+MISSILEBODY:
+  type:
+  - '&7&oKomponen'
+MISSILECLUSTER:
+  type:
+  - '&7&oSenjata'
+MISSILEEXCAV:
+  type:
+  - '&7&oSenjata'
+MISSILEFINS:
+  type:
+  - '&7&oKomponen'
+MISSILEGAS:
+  type:
+  - '&7&oSenjata'
+MISSILEHE:
+  type:
+  - '&7&oSenjata'
+MISSILEHEADV:
+  type:
+  - '&7&oSenjata'
+MISSILEICBM:
+  type:
+  - '&7&oSenjata'
+MISSILELR:
+  type:
+  - '&7&oSenjata'
+MISSILELRADV:
+  type:
+  - '&7&oSenjata'
+MISSILENAPALM:
+  type:
+  - '&7&oSenjata'
+MISSILERADAR:
+  type:
+  - '&7&oMesin'
+MISSILESTICK:
+  type:
+  - '&7&oSenjata'
+PLAYERLIST:
+  type:
+  - '&7&oLainnya'
+RADAR:
+  type:
+  - '&7&oKomponen'
+ROCKETFUEL:
+  type:
+  - '&7&oSumber Daya'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oKomponen'
+SMALLBODY:
+  type:
+  - '&7&oKomponen'
+SMALLFIN:
+  type:
+  - '&7&oKomponen'
+SMALLMISSILE:
+  type:
+  - '&7&oSenjata'
+SMALLMISSILEAC:
+  type:
+  - '&7&oSenjata'
+SMALLMISSILEHE:
+  type:
+  - '&7&oSenjata'
+SMALLMISSILELR:
+  type:
+  - '&7&oSenjata'
+SMALLWARHEAD:
+  type:
+  - '&7&oKomponen'
+SUGARFUEL:
+  type:
+  - '&7&oSumber Daya'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oKomponen'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oKomponen'
+WARHEAD:
+  type:
+  - '&7&oKomponen'
+WARHEADAP:
+  type:
+  - '&7&oKomponen'

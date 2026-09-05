@@ -1,155 +1,204 @@
-# Nederlandse vertalingen van MissileWarfare-items. Sleutel = Slimefun-item-ID.
-# name = display name with '&' colour codes. Missing items fall back to English.
-
-SUGARFUEL:
-  name: "&eSuikerbrandstof"
-
-GUIDEBOOK:
-  name: "&eHandboek"
-
-EXPLOSIVEPOWDER:
-  name: "&eExplosief poeder"
-
-COMPRESSEDEXPLOSIVES:
-  name: "&eSamengeperst explosief poeder"
-
-ULTRALITE_INGOT:
-  name: "&eUltraLite-staaf"
-
-ULTRALITE_PLATE:
-  name: "&eUltraLite-plaat"
-
-SIMPLEFLIGHTCOMPUTER:
-  name: "&eEenvoudige vluchtcomputer"
-
-RADAR:
-  name: "&eRadar"
-
-ROCKETFUEL:
-  name: "&eRaketbrandstof"
-
-SMALLWARHEAD:
-  name: "&eKleine kernkop"
-
-SMALLBODY:
-  name: "&eKleine raketromp"
-
-SMALLFIN:
-  name: "&eKleine raketvinnen"
-
-MISSILEBODY:
-  name: "&eRaketromp"
-
-MISSILEFINS:
-  name: "&eRaketvinnen"
-
-WARHEAD:
-  name: "&eRaketkernkop"
-
-WARHEADAP:
-  name: "&eVersterkte kernkop"
-
-CHLORINE:
-  name: "&eChloor"
-
-CHLORINEPELLET:
-  name: "&eChloortablet"
-
 ADVANCEDMISSILEBODY:
-  name: "&eGeavanceerde raketromp"
-
-HEAVYWARHEAD:
-  name: "&eZware kernkop"
-
-ICBMMISSILEBODY:
-  name: "&eICBM-romp"
-
-MINE:
-  name: "&cMijn"
-
-SMALLMISSILE:
-  name: "&eKleine grond-grondraket"
-
-SMALLMISSILEHE:
-  name: "&eKleine grond-grondraket HE"
-
-SMALLMISSILELR:
-  name: "&eKleine grond-grondraket LR"
-
-SMALLMISSILEAC:
-  name: "&eKleine grond-grondraket AC"
-
+  name: '&eGeavanceerde raketromp'
+  type:
+  - '&7&oOnderdeel'
 ANTIAIRMISSILE:
-  name: "&eAntiraketraket"
-
-ANTIELYTRAMISSILE:
-  name: "&eAnti-elytraraket"
-
-MISSILE:
-  name: "&eGrond-grondraket"
-
-MISSILEHE:
-  name: "&eGrond-grondraket HE"
-
-MISSILELR:
-  name: "&eGrond-grondraket LR"
-
-MISSILEAC:
-  name: "&eGrond-grondraket AC"
-
-MISSILEAPONE:
-  name: "&eGrond-grondraket AP"
-
-MISSILEAPTWO:
-  name: "&eGrond-grondraket AP"
-
-MISSILEAPTHR:
-  name: "&eGrond-grondraket AP"
-
-MISSILEADV:
-  name: "&eGeavanceerde grond-grondraket"
-
-MISSILEHEADV:
-  name: "&eGeavanceerde grond-grondraket HE"
-
-MISSILELRADV:
-  name: "&eGeavanceerde grond-grondraket LR"
-
-MISSILEACADV:
-  name: "&eGeavanceerde grond-grondraket AC"
-
-MISSILEGAS:
-  name: "&cGasraket"
-
-MISSILEEXCAV:
-  name: "&cGraafraket"
-
-MISSILESTICK:
-  name: "&cPlakkerige raket"
-
-MISSILEICBM:
-  name: "&cICBM-raket"
-
-MISSILECLUSTER:
-  name: "&cClusterraket"
-
-MISSILENAPALM:
-  name: "&cNapalmraket"
-
-GROUNDLAUNCHER:
-  name: "&6Grond-grondraketlanceerinrichting"
-
-ANTIMISSILELAUNCHER:
-  name: "&6Antiraketlanceerinrichting"
-
+  name: '&eAntiraketraket'
+  type:
+  - '&7&oWapen'
 ANTIELYTRA:
-  name: "&6Anti-elytralanceerinrichting"
-
-MISSILERADAR:
-  name: "&eRaketradar"
-
+  name: '&6Anti-elytralanceerinrichting'
+  type:
+  - '&7&oMachine'
+ANTIELYTRAMISSILE:
+  name: '&eAnti-elytraraket'
+  type:
+  - '&7&oWapen'
+ANTIMISSILELAUNCHER:
+  name: '&6Antiraketlanceerinrichting'
+  type:
+  - '&7&oMachine'
+CHLORINE:
+  name: '&eChloor'
+  type:
+  - '&7&oGrondstof'
+CHLORINEPELLET:
+  name: '&eChloortablet'
+  type:
+  - '&7&oGrondstof'
+COMPRESSEDEXPLOSIVES:
+  name: '&eSamengeperst explosief poeder'
+  type:
+  - '&7&oGrondstof'
+EXPLOSIVEPOWDER:
+  name: '&eExplosief poeder'
+  type:
+  - '&7&oGrondstof'
+GROUNDLAUNCHER:
+  name: '&6Grond-grondraketlanceerinrichting'
+  type:
+  - '&7&oMachine'
+GUIDEBOOK:
+  name: '&eHandboek'
+  type:
+  - '&7&oOverig'
+HEAVYWARHEAD:
+  name: '&eZware kernkop'
+  type:
+  - '&7&oOnderdeel'
+ICBMMISSILEBODY:
+  name: '&eICBM-romp'
+  type:
+  - '&7&oOnderdeel'
 MANPAD:
-  name: "&6Manpad"
-
+  name: '&6Manpad'
+  type:
+  - '&7&oWapen'
+MINE:
+  name: '&cMijn'
+  type:
+  - '&7&oGadget'
+MISSILE:
+  name: '&eGrond-grondraket'
+  type:
+  - '&7&oWapen'
+MISSILEAC:
+  name: '&eGrond-grondraket AC'
+  type:
+  - '&7&oWapen'
+MISSILEACADV:
+  name: '&eGeavanceerde grond-grondraket AC'
+  type:
+  - '&7&oWapen'
+MISSILEADV:
+  name: '&eGeavanceerde grond-grondraket'
+  type:
+  - '&7&oWapen'
+MISSILEAPONE:
+  name: '&eGrond-grondraket AP'
+  type:
+  - '&7&oWapen'
+MISSILEAPTHR:
+  name: '&eGrond-grondraket AP'
+  type:
+  - '&7&oWapen'
+MISSILEAPTWO:
+  name: '&eGrond-grondraket AP'
+  type:
+  - '&7&oWapen'
+MISSILEBODY:
+  name: '&eRaketromp'
+  type:
+  - '&7&oOnderdeel'
+MISSILECLUSTER:
+  name: '&cClusterraket'
+  type:
+  - '&7&oWapen'
+MISSILEEXCAV:
+  name: '&cGraafraket'
+  type:
+  - '&7&oWapen'
+MISSILEFINS:
+  name: '&eRaketvinnen'
+  type:
+  - '&7&oOnderdeel'
+MISSILEGAS:
+  name: '&cGasraket'
+  type:
+  - '&7&oWapen'
+MISSILEHE:
+  name: '&eGrond-grondraket HE'
+  type:
+  - '&7&oWapen'
+MISSILEHEADV:
+  name: '&eGeavanceerde grond-grondraket HE'
+  type:
+  - '&7&oWapen'
+MISSILEICBM:
+  name: '&cICBM-raket'
+  type:
+  - '&7&oWapen'
+MISSILELR:
+  name: '&eGrond-grondraket LR'
+  type:
+  - '&7&oWapen'
+MISSILELRADV:
+  name: '&eGeavanceerde grond-grondraket LR'
+  type:
+  - '&7&oWapen'
+MISSILENAPALM:
+  name: '&cNapalmraket'
+  type:
+  - '&7&oWapen'
+MISSILERADAR:
+  name: '&eRaketradar'
+  type:
+  - '&7&oMachine'
+MISSILESTICK:
+  name: '&cPlakkerige raket'
+  type:
+  - '&7&oWapen'
 PLAYERLIST:
-  name: "&6Spelerslijst"
+  name: '&6Spelerslijst'
+  type:
+  - '&7&oOverig'
+RADAR:
+  name: '&eRadar'
+  type:
+  - '&7&oOnderdeel'
+ROCKETFUEL:
+  name: '&eRaketbrandstof'
+  type:
+  - '&7&oGrondstof'
+SIMPLEFLIGHTCOMPUTER:
+  name: '&eEenvoudige vluchtcomputer'
+  type:
+  - '&7&oOnderdeel'
+SMALLBODY:
+  name: '&eKleine raketromp'
+  type:
+  - '&7&oOnderdeel'
+SMALLFIN:
+  name: '&eKleine raketvinnen'
+  type:
+  - '&7&oOnderdeel'
+SMALLMISSILE:
+  name: '&eKleine grond-grondraket'
+  type:
+  - '&7&oWapen'
+SMALLMISSILEAC:
+  name: '&eKleine grond-grondraket AC'
+  type:
+  - '&7&oWapen'
+SMALLMISSILEHE:
+  name: '&eKleine grond-grondraket HE'
+  type:
+  - '&7&oWapen'
+SMALLMISSILELR:
+  name: '&eKleine grond-grondraket LR'
+  type:
+  - '&7&oWapen'
+SMALLWARHEAD:
+  name: '&eKleine kernkop'
+  type:
+  - '&7&oOnderdeel'
+SUGARFUEL:
+  name: '&eSuikerbrandstof'
+  type:
+  - '&7&oGrondstof'
+ULTRALITE_INGOT:
+  name: '&eUltraLite-staaf'
+  type:
+  - '&7&oOnderdeel'
+ULTRALITE_PLATE:
+  name: '&eUltraLite-plaat'
+  type:
+  - '&7&oOnderdeel'
+WARHEAD:
+  name: '&eRaketkernkop'
+  type:
+  - '&7&oOnderdeel'
+WARHEADAP:
+  name: '&eVersterkte kernkop'
+  type:
+  - '&7&oOnderdeel'

@@ -1,204 +1,153 @@
 ADVANCEDMISSILEBODY:
-  name: '&eCorpo de míssil avançado'
   type:
   - '&7&oComponente'
 ANTIAIRMISSILE:
-  name: '&eMíssil antimíssil'
   type:
   - '&7&oArma'
 ANTIELYTRA:
-  name: '&6Lançador anti-élitros'
   type:
   - '&7&oMáquina'
 ANTIELYTRAMISSILE:
-  name: '&eMíssil anti-élitros'
   type:
   - '&7&oArma'
 ANTIMISSILELAUNCHER:
-  name: '&6Lançador antimíssil'
   type:
   - '&7&oMáquina'
 CHLORINE:
-  name: '&eCloro'
   type:
   - '&7&oRecurso'
 CHLORINEPELLET:
-  name: '&ePastilha de cloro'
   type:
   - '&7&oRecurso'
 COMPRESSEDEXPLOSIVES:
-  name: '&ePólvora explosiva comprimida'
   type:
   - '&7&oRecurso'
 EXPLOSIVEPOWDER:
-  name: '&ePólvora explosiva'
   type:
   - '&7&oRecurso'
 GROUNDLAUNCHER:
-  name: '&6Lançador de mísseis terra-terra'
   type:
   - '&7&oMáquina'
 GUIDEBOOK:
-  name: '&eManual'
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 HEAVYWARHEAD:
-  name: '&eOgiva pesada'
   type:
   - '&7&oComponente'
 ICBMMISSILEBODY:
-  name: '&eCorpo de ICBM'
   type:
   - '&7&oComponente'
 MANPAD:
-  name: '&6Manpad'
   type:
   - '&7&oArma'
 MINE:
-  name: '&cMina'
   type:
-  - '&7&oUtensílio'
+  - '&7&oAcessório'
 MISSILE:
-  name: '&eMíssil terra-terra'
   type:
   - '&7&oArma'
 MISSILEAC:
-  name: '&eMíssil terra-terra AC'
   type:
   - '&7&oArma'
 MISSILEACADV:
-  name: '&eMíssil terra-terra avançado AC'
   type:
   - '&7&oArma'
 MISSILEADV:
-  name: '&eMíssil terra-terra avançado'
   type:
   - '&7&oArma'
 MISSILEAPONE:
-  name: '&eMíssil terra-terra AP'
   type:
   - '&7&oArma'
 MISSILEAPTHR:
-  name: '&eMíssil terra-terra AP'
   type:
   - '&7&oArma'
 MISSILEAPTWO:
-  name: '&eMíssil terra-terra AP'
   type:
   - '&7&oArma'
 MISSILEBODY:
-  name: '&eCorpo de míssil'
   type:
   - '&7&oComponente'
 MISSILECLUSTER:
-  name: '&cMíssil de fragmentação'
   type:
   - '&7&oArma'
 MISSILEEXCAV:
-  name: '&cMíssil de escavação'
   type:
   - '&7&oArma'
 MISSILEFINS:
-  name: '&eAletas de míssil'
   type:
   - '&7&oComponente'
 MISSILEGAS:
-  name: '&cMíssil de gás'
   type:
   - '&7&oArma'
 MISSILEHE:
-  name: '&eMíssil terra-terra HE'
   type:
   - '&7&oArma'
 MISSILEHEADV:
-  name: '&eMíssil terra-terra avançado HE'
   type:
   - '&7&oArma'
 MISSILEICBM:
-  name: '&cMíssil ICBM'
   type:
   - '&7&oArma'
 MISSILELR:
-  name: '&eMíssil terra-terra LR'
   type:
   - '&7&oArma'
 MISSILELRADV:
-  name: '&eMíssil terra-terra avançado LR'
   type:
   - '&7&oArma'
 MISSILENAPALM:
-  name: '&cMíssil de napalm'
   type:
   - '&7&oArma'
 MISSILERADAR:
-  name: '&eRadar de mísseis'
   type:
   - '&7&oMáquina'
 MISSILESTICK:
-  name: '&cMíssil pegajoso'
   type:
   - '&7&oArma'
 PLAYERLIST:
-  name: '&6Lista de jogadores'
   type:
-  - '&7&oDiversos'
+  - '&7&oDiverso'
 RADAR:
-  name: '&eRadar'
   type:
   - '&7&oComponente'
 ROCKETFUEL:
-  name: '&eCombustível de foguete'
   type:
   - '&7&oRecurso'
 SIMPLEFLIGHTCOMPUTER:
-  name: '&eComputador de voo simples'
   type:
   - '&7&oComponente'
 SMALLBODY:
-  name: '&eFuselagem de míssil pequena'
   type:
   - '&7&oComponente'
 SMALLFIN:
-  name: '&eAletas de míssil pequenas'
   type:
   - '&7&oComponente'
 SMALLMISSILE:
-  name: '&eMíssil terra-terra pequeno'
   type:
   - '&7&oArma'
 SMALLMISSILEAC:
-  name: '&eMíssil terra-terra pequeno AC'
   type:
   - '&7&oArma'
 SMALLMISSILEHE:
-  name: '&eMíssil terra-terra pequeno HE'
   type:
   - '&7&oArma'
 SMALLMISSILELR:
-  name: '&eMíssil terra-terra pequeno LR'
   type:
   - '&7&oArma'
 SMALLWARHEAD:
-  name: '&eOgiva pequena'
   type:
   - '&7&oComponente'
 SUGARFUEL:
-  name: '&eCombustível de açúcar'
   type:
   - '&7&oRecurso'
 ULTRALITE_INGOT:
-  name: '&eLingote UltraLite'
   type:
   - '&7&oComponente'
 ULTRALITE_PLATE:
-  name: '&ePlaca UltraLite'
   type:
   - '&7&oComponente'
 WARHEAD:
-  name: '&eOgiva de míssil'
   type:
   - '&7&oComponente'
 WARHEADAP:
-  name: '&eOgiva reforçada'
   type:
   - '&7&oComponente'

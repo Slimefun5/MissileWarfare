@@ -1,155 +1,204 @@
-# Traducciones al español de los objetos de MissileWarfare. Clave = identificador del objeto de Slimefun.
-# name = display name with '&' colour codes. Missing items fall back to English.
-
-SUGARFUEL:
-  name: "&eCombustible de azúcar"
-
-GUIDEBOOK:
-  name: "&eManual"
-
-EXPLOSIVEPOWDER:
-  name: "&ePólvora explosiva"
-
-COMPRESSEDEXPLOSIVES:
-  name: "&ePólvora explosiva comprimida"
-
-ULTRALITE_INGOT:
-  name: "&eLingote UltraLite"
-
-ULTRALITE_PLATE:
-  name: "&ePlaca UltraLite"
-
-SIMPLEFLIGHTCOMPUTER:
-  name: "&eComputadora de vuelo simple"
-
-RADAR:
-  name: "&eRadar"
-
-ROCKETFUEL:
-  name: "&eCombustible para cohetes"
-
-SMALLWARHEAD:
-  name: "&eOjiva pequeña"
-
-SMALLBODY:
-  name: "&eFuselaje de misil pequeño"
-
-SMALLFIN:
-  name: "&eAletas de misil pequeñas"
-
-MISSILEBODY:
-  name: "&eCuerpo de misil"
-
-MISSILEFINS:
-  name: "&eAletas de misil"
-
-WARHEAD:
-  name: "&eOjiva de misil"
-
-WARHEADAP:
-  name: "&eOjiva reforzada"
-
-CHLORINE:
-  name: "&eCloro"
-
-CHLORINEPELLET:
-  name: "&ePastilla de cloro"
-
 ADVANCEDMISSILEBODY:
-  name: "&eCuerpo de misil avanzado"
-
-HEAVYWARHEAD:
-  name: "&eOjiva pesada"
-
-ICBMMISSILEBODY:
-  name: "&eCuerpo de ICBM"
-
-MINE:
-  name: "&cMina"
-
-SMALLMISSILE:
-  name: "&eMisil tierra-tierra pequeño"
-
-SMALLMISSILEHE:
-  name: "&eMisil tierra-tierra pequeño HE"
-
-SMALLMISSILELR:
-  name: "&eMisil tierra-tierra pequeño LR"
-
-SMALLMISSILEAC:
-  name: "&eMisil tierra-tierra pequeño AC"
-
+  name: '&eCuerpo de misil avanzado'
+  type:
+  - '&7&oComponente'
 ANTIAIRMISSILE:
-  name: "&eMisil antimisiles"
-
-ANTIELYTRAMISSILE:
-  name: "&eMisil antiélitros"
-
-MISSILE:
-  name: "&eMisil tierra-tierra"
-
-MISSILEHE:
-  name: "&eMisil tierra-tierra HE"
-
-MISSILELR:
-  name: "&eMisil tierra-tierra LR"
-
-MISSILEAC:
-  name: "&eMisil tierra-tierra AC"
-
-MISSILEAPONE:
-  name: "&eMisil tierra-tierra AP"
-
-MISSILEAPTWO:
-  name: "&eMisil tierra-tierra AP"
-
-MISSILEAPTHR:
-  name: "&eMisil tierra-tierra AP"
-
-MISSILEADV:
-  name: "&eMisil tierra-tierra avanzado"
-
-MISSILEHEADV:
-  name: "&eMisil tierra-tierra avanzado HE"
-
-MISSILELRADV:
-  name: "&eMisil tierra-tierra avanzado LR"
-
-MISSILEACADV:
-  name: "&eMisil tierra-tierra avanzado AC"
-
-MISSILEGAS:
-  name: "&cMisil de gas"
-
-MISSILEEXCAV:
-  name: "&cMisil de excavación"
-
-MISSILESTICK:
-  name: "&cMisil pegajoso"
-
-MISSILEICBM:
-  name: "&cMisil ICBM"
-
-MISSILECLUSTER:
-  name: "&cMisil de racimo"
-
-MISSILENAPALM:
-  name: "&cMisil de napalm"
-
-GROUNDLAUNCHER:
-  name: "&6Lanzador de misiles tierra-tierra"
-
-ANTIMISSILELAUNCHER:
-  name: "&6Lanzador antimisiles"
-
+  name: '&eMisil antimisiles'
+  type:
+  - '&7&oArma'
 ANTIELYTRA:
-  name: "&6Lanzador antiélitros"
-
-MISSILERADAR:
-  name: "&eRadar de misiles"
-
+  name: '&6Lanzador antiélitros'
+  type:
+  - '&7&oMáquina'
+ANTIELYTRAMISSILE:
+  name: '&eMisil antiélitros'
+  type:
+  - '&7&oArma'
+ANTIMISSILELAUNCHER:
+  name: '&6Lanzador antimisiles'
+  type:
+  - '&7&oMáquina'
+CHLORINE:
+  name: '&eCloro'
+  type:
+  - '&7&oRecurso'
+CHLORINEPELLET:
+  name: '&ePastilla de cloro'
+  type:
+  - '&7&oRecurso'
+COMPRESSEDEXPLOSIVES:
+  name: '&ePólvora explosiva comprimida'
+  type:
+  - '&7&oRecurso'
+EXPLOSIVEPOWDER:
+  name: '&ePólvora explosiva'
+  type:
+  - '&7&oRecurso'
+GROUNDLAUNCHER:
+  name: '&6Lanzador de misiles tierra-tierra'
+  type:
+  - '&7&oMáquina'
+GUIDEBOOK:
+  name: '&eManual'
+  type:
+  - '&7&oVarios'
+HEAVYWARHEAD:
+  name: '&eOjiva pesada'
+  type:
+  - '&7&oComponente'
+ICBMMISSILEBODY:
+  name: '&eCuerpo de ICBM'
+  type:
+  - '&7&oComponente'
 MANPAD:
-  name: "&6Manpad"
-
+  name: '&6Manpad'
+  type:
+  - '&7&oArma'
+MINE:
+  name: '&cMina'
+  type:
+  - '&7&oAparato'
+MISSILE:
+  name: '&eMisil tierra-tierra'
+  type:
+  - '&7&oArma'
+MISSILEAC:
+  name: '&eMisil tierra-tierra AC'
+  type:
+  - '&7&oArma'
+MISSILEACADV:
+  name: '&eMisil tierra-tierra avanzado AC'
+  type:
+  - '&7&oArma'
+MISSILEADV:
+  name: '&eMisil tierra-tierra avanzado'
+  type:
+  - '&7&oArma'
+MISSILEAPONE:
+  name: '&eMisil tierra-tierra AP'
+  type:
+  - '&7&oArma'
+MISSILEAPTHR:
+  name: '&eMisil tierra-tierra AP'
+  type:
+  - '&7&oArma'
+MISSILEAPTWO:
+  name: '&eMisil tierra-tierra AP'
+  type:
+  - '&7&oArma'
+MISSILEBODY:
+  name: '&eCuerpo de misil'
+  type:
+  - '&7&oComponente'
+MISSILECLUSTER:
+  name: '&cMisil de racimo'
+  type:
+  - '&7&oArma'
+MISSILEEXCAV:
+  name: '&cMisil de excavación'
+  type:
+  - '&7&oArma'
+MISSILEFINS:
+  name: '&eAletas de misil'
+  type:
+  - '&7&oComponente'
+MISSILEGAS:
+  name: '&cMisil de gas'
+  type:
+  - '&7&oArma'
+MISSILEHE:
+  name: '&eMisil tierra-tierra HE'
+  type:
+  - '&7&oArma'
+MISSILEHEADV:
+  name: '&eMisil tierra-tierra avanzado HE'
+  type:
+  - '&7&oArma'
+MISSILEICBM:
+  name: '&cMisil ICBM'
+  type:
+  - '&7&oArma'
+MISSILELR:
+  name: '&eMisil tierra-tierra LR'
+  type:
+  - '&7&oArma'
+MISSILELRADV:
+  name: '&eMisil tierra-tierra avanzado LR'
+  type:
+  - '&7&oArma'
+MISSILENAPALM:
+  name: '&cMisil de napalm'
+  type:
+  - '&7&oArma'
+MISSILERADAR:
+  name: '&eRadar de misiles'
+  type:
+  - '&7&oMáquina'
+MISSILESTICK:
+  name: '&cMisil pegajoso'
+  type:
+  - '&7&oArma'
 PLAYERLIST:
-  name: "&6Lista de jugadores"
+  name: '&6Lista de jugadores'
+  type:
+  - '&7&oVarios'
+RADAR:
+  name: '&eRadar'
+  type:
+  - '&7&oComponente'
+ROCKETFUEL:
+  name: '&eCombustible para cohetes'
+  type:
+  - '&7&oRecurso'
+SIMPLEFLIGHTCOMPUTER:
+  name: '&eComputadora de vuelo simple'
+  type:
+  - '&7&oComponente'
+SMALLBODY:
+  name: '&eFuselaje de misil pequeño'
+  type:
+  - '&7&oComponente'
+SMALLFIN:
+  name: '&eAletas de misil pequeñas'
+  type:
+  - '&7&oComponente'
+SMALLMISSILE:
+  name: '&eMisil tierra-tierra pequeño'
+  type:
+  - '&7&oArma'
+SMALLMISSILEAC:
+  name: '&eMisil tierra-tierra pequeño AC'
+  type:
+  - '&7&oArma'
+SMALLMISSILEHE:
+  name: '&eMisil tierra-tierra pequeño HE'
+  type:
+  - '&7&oArma'
+SMALLMISSILELR:
+  name: '&eMisil tierra-tierra pequeño LR'
+  type:
+  - '&7&oArma'
+SMALLWARHEAD:
+  name: '&eOjiva pequeña'
+  type:
+  - '&7&oComponente'
+SUGARFUEL:
+  name: '&eCombustible de azúcar'
+  type:
+  - '&7&oRecurso'
+ULTRALITE_INGOT:
+  name: '&eLingote UltraLite'
+  type:
+  - '&7&oComponente'
+ULTRALITE_PLATE:
+  name: '&ePlaca UltraLite'
+  type:
+  - '&7&oComponente'
+WARHEAD:
+  name: '&eOjiva de misil'
+  type:
+  - '&7&oComponente'
+WARHEADAP:
+  name: '&eOjiva reforzada'
+  type:
+  - '&7&oComponente'

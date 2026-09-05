@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oKomponent'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oZbraň'
+ANTIELYTRA:
+  type:
+  - '&7&oStroj'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oZbraň'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oStroj'
+CHLORINE:
+  type:
+  - '&7&oSurovina'
+CHLORINEPELLET:
+  type:
+  - '&7&oSurovina'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oSurovina'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oSurovina'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oStroj'
+GUIDEBOOK:
+  type:
+  - '&7&oRôzne'
+HEAVYWARHEAD:
+  type:
+  - '&7&oKomponent'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oKomponent'
+MANPAD:
+  type:
+  - '&7&oZbraň'
+MINE:
+  type:
+  - '&7&oGadget'
+MISSILE:
+  type:
+  - '&7&oZbraň'
+MISSILEAC:
+  type:
+  - '&7&oZbraň'
+MISSILEACADV:
+  type:
+  - '&7&oZbraň'
+MISSILEADV:
+  type:
+  - '&7&oZbraň'
+MISSILEAPONE:
+  type:
+  - '&7&oZbraň'
+MISSILEAPTHR:
+  type:
+  - '&7&oZbraň'
+MISSILEAPTWO:
+  type:
+  - '&7&oZbraň'
+MISSILEBODY:
+  type:
+  - '&7&oKomponent'
+MISSILECLUSTER:
+  type:
+  - '&7&oZbraň'
+MISSILEEXCAV:
+  type:
+  - '&7&oZbraň'
+MISSILEFINS:
+  type:
+  - '&7&oKomponent'
+MISSILEGAS:
+  type:
+  - '&7&oZbraň'
+MISSILEHE:
+  type:
+  - '&7&oZbraň'
+MISSILEHEADV:
+  type:
+  - '&7&oZbraň'
+MISSILEICBM:
+  type:
+  - '&7&oZbraň'
+MISSILELR:
+  type:
+  - '&7&oZbraň'
+MISSILELRADV:
+  type:
+  - '&7&oZbraň'
+MISSILENAPALM:
+  type:
+  - '&7&oZbraň'
+MISSILERADAR:
+  type:
+  - '&7&oStroj'
+MISSILESTICK:
+  type:
+  - '&7&oZbraň'
+PLAYERLIST:
+  type:
+  - '&7&oRôzne'
+RADAR:
+  type:
+  - '&7&oKomponent'
+ROCKETFUEL:
+  type:
+  - '&7&oSurovina'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oKomponent'
+SMALLBODY:
+  type:
+  - '&7&oKomponent'
+SMALLFIN:
+  type:
+  - '&7&oKomponent'
+SMALLMISSILE:
+  type:
+  - '&7&oZbraň'
+SMALLMISSILEAC:
+  type:
+  - '&7&oZbraň'
+SMALLMISSILEHE:
+  type:
+  - '&7&oZbraň'
+SMALLMISSILELR:
+  type:
+  - '&7&oZbraň'
+SMALLWARHEAD:
+  type:
+  - '&7&oKomponent'
+SUGARFUEL:
+  type:
+  - '&7&oSurovina'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oKomponent'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oKomponent'
+WARHEAD:
+  type:
+  - '&7&oKomponent'
+WARHEADAP:
+  type:
+  - '&7&oKomponent'

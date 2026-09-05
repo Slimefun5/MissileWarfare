@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oSastāvdaļa'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oIerocis'
+ANTIELYTRA:
+  type:
+  - '&7&oMašīna'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oIerocis'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oMašīna'
+CHLORINE:
+  type:
+  - '&7&oResurss'
+CHLORINEPELLET:
+  type:
+  - '&7&oResurss'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oResurss'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oResurss'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oMašīna'
+GUIDEBOOK:
+  type:
+  - '&7&oDažādi'
+HEAVYWARHEAD:
+  type:
+  - '&7&oSastāvdaļa'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oSastāvdaļa'
+MANPAD:
+  type:
+  - '&7&oIerocis'
+MINE:
+  type:
+  - '&7&oIerīce'
+MISSILE:
+  type:
+  - '&7&oIerocis'
+MISSILEAC:
+  type:
+  - '&7&oIerocis'
+MISSILEACADV:
+  type:
+  - '&7&oIerocis'
+MISSILEADV:
+  type:
+  - '&7&oIerocis'
+MISSILEAPONE:
+  type:
+  - '&7&oIerocis'
+MISSILEAPTHR:
+  type:
+  - '&7&oIerocis'
+MISSILEAPTWO:
+  type:
+  - '&7&oIerocis'
+MISSILEBODY:
+  type:
+  - '&7&oSastāvdaļa'
+MISSILECLUSTER:
+  type:
+  - '&7&oIerocis'
+MISSILEEXCAV:
+  type:
+  - '&7&oIerocis'
+MISSILEFINS:
+  type:
+  - '&7&oSastāvdaļa'
+MISSILEGAS:
+  type:
+  - '&7&oIerocis'
+MISSILEHE:
+  type:
+  - '&7&oIerocis'
+MISSILEHEADV:
+  type:
+  - '&7&oIerocis'
+MISSILEICBM:
+  type:
+  - '&7&oIerocis'
+MISSILELR:
+  type:
+  - '&7&oIerocis'
+MISSILELRADV:
+  type:
+  - '&7&oIerocis'
+MISSILENAPALM:
+  type:
+  - '&7&oIerocis'
+MISSILERADAR:
+  type:
+  - '&7&oMašīna'
+MISSILESTICK:
+  type:
+  - '&7&oIerocis'
+PLAYERLIST:
+  type:
+  - '&7&oDažādi'
+RADAR:
+  type:
+  - '&7&oSastāvdaļa'
+ROCKETFUEL:
+  type:
+  - '&7&oResurss'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oSastāvdaļa'
+SMALLBODY:
+  type:
+  - '&7&oSastāvdaļa'
+SMALLFIN:
+  type:
+  - '&7&oSastāvdaļa'
+SMALLMISSILE:
+  type:
+  - '&7&oIerocis'
+SMALLMISSILEAC:
+  type:
+  - '&7&oIerocis'
+SMALLMISSILEHE:
+  type:
+  - '&7&oIerocis'
+SMALLMISSILELR:
+  type:
+  - '&7&oIerocis'
+SMALLWARHEAD:
+  type:
+  - '&7&oSastāvdaļa'
+SUGARFUEL:
+  type:
+  - '&7&oResurss'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oSastāvdaļa'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oSastāvdaļa'
+WARHEAD:
+  type:
+  - '&7&oSastāvdaļa'
+WARHEADAP:
+  type:
+  - '&7&oSastāvdaļa'

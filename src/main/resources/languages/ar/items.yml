@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oمكون'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oسلاح'
+ANTIELYTRA:
+  type:
+  - '&7&oآلة'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oسلاح'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oآلة'
+CHLORINE:
+  type:
+  - '&7&oمورد'
+CHLORINEPELLET:
+  type:
+  - '&7&oمورد'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oمورد'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oمورد'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oآلة'
+GUIDEBOOK:
+  type:
+  - '&7&oمتنوع'
+HEAVYWARHEAD:
+  type:
+  - '&7&oمكون'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oمكون'
+MANPAD:
+  type:
+  - '&7&oسلاح'
+MINE:
+  type:
+  - '&7&oجهاز'
+MISSILE:
+  type:
+  - '&7&oسلاح'
+MISSILEAC:
+  type:
+  - '&7&oسلاح'
+MISSILEACADV:
+  type:
+  - '&7&oسلاح'
+MISSILEADV:
+  type:
+  - '&7&oسلاح'
+MISSILEAPONE:
+  type:
+  - '&7&oسلاح'
+MISSILEAPTHR:
+  type:
+  - '&7&oسلاح'
+MISSILEAPTWO:
+  type:
+  - '&7&oسلاح'
+MISSILEBODY:
+  type:
+  - '&7&oمكون'
+MISSILECLUSTER:
+  type:
+  - '&7&oسلاح'
+MISSILEEXCAV:
+  type:
+  - '&7&oسلاح'
+MISSILEFINS:
+  type:
+  - '&7&oمكون'
+MISSILEGAS:
+  type:
+  - '&7&oسلاح'
+MISSILEHE:
+  type:
+  - '&7&oسلاح'
+MISSILEHEADV:
+  type:
+  - '&7&oسلاح'
+MISSILEICBM:
+  type:
+  - '&7&oسلاح'
+MISSILELR:
+  type:
+  - '&7&oسلاح'
+MISSILELRADV:
+  type:
+  - '&7&oسلاح'
+MISSILENAPALM:
+  type:
+  - '&7&oسلاح'
+MISSILERADAR:
+  type:
+  - '&7&oآلة'
+MISSILESTICK:
+  type:
+  - '&7&oسلاح'
+PLAYERLIST:
+  type:
+  - '&7&oمتنوع'
+RADAR:
+  type:
+  - '&7&oمكون'
+ROCKETFUEL:
+  type:
+  - '&7&oمورد'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oمكون'
+SMALLBODY:
+  type:
+  - '&7&oمكون'
+SMALLFIN:
+  type:
+  - '&7&oمكون'
+SMALLMISSILE:
+  type:
+  - '&7&oسلاح'
+SMALLMISSILEAC:
+  type:
+  - '&7&oسلاح'
+SMALLMISSILEHE:
+  type:
+  - '&7&oسلاح'
+SMALLMISSILELR:
+  type:
+  - '&7&oسلاح'
+SMALLWARHEAD:
+  type:
+  - '&7&oمكون'
+SUGARFUEL:
+  type:
+  - '&7&oمورد'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oمكون'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oمكون'
+WARHEAD:
+  type:
+  - '&7&oمكون'
+WARHEADAP:
+  type:
+  - '&7&oمكون'

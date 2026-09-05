@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oAlkatrész'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oFegyver'
+ANTIELYTRA:
+  type:
+  - '&7&oGép'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oFegyver'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oGép'
+CHLORINE:
+  type:
+  - '&7&oNyersanyag'
+CHLORINEPELLET:
+  type:
+  - '&7&oNyersanyag'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oNyersanyag'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oNyersanyag'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oGép'
+GUIDEBOOK:
+  type:
+  - '&7&oEgyéb'
+HEAVYWARHEAD:
+  type:
+  - '&7&oAlkatrész'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oAlkatrész'
+MANPAD:
+  type:
+  - '&7&oFegyver'
+MINE:
+  type:
+  - '&7&oKütyü'
+MISSILE:
+  type:
+  - '&7&oFegyver'
+MISSILEAC:
+  type:
+  - '&7&oFegyver'
+MISSILEACADV:
+  type:
+  - '&7&oFegyver'
+MISSILEADV:
+  type:
+  - '&7&oFegyver'
+MISSILEAPONE:
+  type:
+  - '&7&oFegyver'
+MISSILEAPTHR:
+  type:
+  - '&7&oFegyver'
+MISSILEAPTWO:
+  type:
+  - '&7&oFegyver'
+MISSILEBODY:
+  type:
+  - '&7&oAlkatrész'
+MISSILECLUSTER:
+  type:
+  - '&7&oFegyver'
+MISSILEEXCAV:
+  type:
+  - '&7&oFegyver'
+MISSILEFINS:
+  type:
+  - '&7&oAlkatrész'
+MISSILEGAS:
+  type:
+  - '&7&oFegyver'
+MISSILEHE:
+  type:
+  - '&7&oFegyver'
+MISSILEHEADV:
+  type:
+  - '&7&oFegyver'
+MISSILEICBM:
+  type:
+  - '&7&oFegyver'
+MISSILELR:
+  type:
+  - '&7&oFegyver'
+MISSILELRADV:
+  type:
+  - '&7&oFegyver'
+MISSILENAPALM:
+  type:
+  - '&7&oFegyver'
+MISSILERADAR:
+  type:
+  - '&7&oGép'
+MISSILESTICK:
+  type:
+  - '&7&oFegyver'
+PLAYERLIST:
+  type:
+  - '&7&oEgyéb'
+RADAR:
+  type:
+  - '&7&oAlkatrész'
+ROCKETFUEL:
+  type:
+  - '&7&oNyersanyag'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oAlkatrész'
+SMALLBODY:
+  type:
+  - '&7&oAlkatrész'
+SMALLFIN:
+  type:
+  - '&7&oAlkatrész'
+SMALLMISSILE:
+  type:
+  - '&7&oFegyver'
+SMALLMISSILEAC:
+  type:
+  - '&7&oFegyver'
+SMALLMISSILEHE:
+  type:
+  - '&7&oFegyver'
+SMALLMISSILELR:
+  type:
+  - '&7&oFegyver'
+SMALLWARHEAD:
+  type:
+  - '&7&oAlkatrész'
+SUGARFUEL:
+  type:
+  - '&7&oNyersanyag'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oAlkatrész'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oAlkatrész'
+WARHEAD:
+  type:
+  - '&7&oAlkatrész'
+WARHEADAP:
+  type:
+  - '&7&oAlkatrész'

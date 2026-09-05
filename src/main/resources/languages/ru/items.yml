@@ -1,155 +1,204 @@
-# Русские переводы предметов MissileWarfare. Ключ = ID предмета Slimefun.
-# name = display name with '&' colour codes. Missing items fall back to English.
-
-SUGARFUEL:
-  name: "&eСахарное топливо"
-
-GUIDEBOOK:
-  name: "&eРуководство"
-
-EXPLOSIVEPOWDER:
-  name: "&eВзрывчатый порошок"
-
-COMPRESSEDEXPLOSIVES:
-  name: "&eСжатый взрывчатый порошок"
-
-ULTRALITE_INGOT:
-  name: "&eСлиток UltraLite"
-
-ULTRALITE_PLATE:
-  name: "&eПластина UltraLite"
-
-SIMPLEFLIGHTCOMPUTER:
-  name: "&eПростой полётный компьютер"
-
-RADAR:
-  name: "&eРадар"
-
-ROCKETFUEL:
-  name: "&eРакетное топливо"
-
-SMALLWARHEAD:
-  name: "&eМалая боеголовка"
-
-SMALLBODY:
-  name: "&eМалый корпус ракеты"
-
-SMALLFIN:
-  name: "&eМалые стабилизаторы ракеты"
-
-MISSILEBODY:
-  name: "&eКорпус ракеты"
-
-MISSILEFINS:
-  name: "&eСтабилизаторы ракеты"
-
-WARHEAD:
-  name: "&eБоеголовка ракеты"
-
-WARHEADAP:
-  name: "&eУсиленная боеголовка"
-
-CHLORINE:
-  name: "&eХлор"
-
-CHLORINEPELLET:
-  name: "&eХлорная таблетка"
-
 ADVANCEDMISSILEBODY:
-  name: "&eУлучшенный корпус ракеты"
-
-HEAVYWARHEAD:
-  name: "&eТяжёлая боеголовка"
-
-ICBMMISSILEBODY:
-  name: "&eКорпус МБР"
-
-MINE:
-  name: "&cМина"
-
-SMALLMISSILE:
-  name: "&eМалая ракета земля-земля"
-
-SMALLMISSILEHE:
-  name: "&eМалая ракета земля-земля HE"
-
-SMALLMISSILELR:
-  name: "&eМалая ракета земля-земля LR"
-
-SMALLMISSILEAC:
-  name: "&eМалая ракета земля-земля AC"
-
+  name: '&eУлучшенный корпус ракеты'
+  type:
+  - '&7&oКомпонент'
 ANTIAIRMISSILE:
-  name: "&eПротиворакета"
-
-ANTIELYTRAMISSILE:
-  name: "&eРакета против элитр"
-
-MISSILE:
-  name: "&eРакета земля-земля"
-
-MISSILEHE:
-  name: "&eРакета земля-земля HE"
-
-MISSILELR:
-  name: "&eРакета земля-земля LR"
-
-MISSILEAC:
-  name: "&eРакета земля-земля AC"
-
-MISSILEAPONE:
-  name: "&eРакета земля-земля AP"
-
-MISSILEAPTWO:
-  name: "&eРакета земля-земля AP"
-
-MISSILEAPTHR:
-  name: "&eРакета земля-земля AP"
-
-MISSILEADV:
-  name: "&eУлучшенная ракета земля-земля"
-
-MISSILEHEADV:
-  name: "&eУлучшенная ракета земля-земля HE"
-
-MISSILELRADV:
-  name: "&eУлучшенная ракета земля-земля LR"
-
-MISSILEACADV:
-  name: "&eУлучшенная ракета земля-земля AC"
-
-MISSILEGAS:
-  name: "&cГазовая ракета"
-
-MISSILEEXCAV:
-  name: "&cЗемлеройная ракета"
-
-MISSILESTICK:
-  name: "&cЛипкая ракета"
-
-MISSILEICBM:
-  name: "&cРакета МБР"
-
-MISSILECLUSTER:
-  name: "&cКассетная ракета"
-
-MISSILENAPALM:
-  name: "&cНапалмовая ракета"
-
-GROUNDLAUNCHER:
-  name: "&6Пусковая установка земля-земля"
-
-ANTIMISSILELAUNCHER:
-  name: "&6Противоракетная установка"
-
+  name: '&eПротиворакета'
+  type:
+  - '&7&oОружие'
 ANTIELYTRA:
-  name: "&6Установка против элитр"
-
-MISSILERADAR:
-  name: "&eРакетный радар"
-
+  name: '&6Установка против элитр'
+  type:
+  - '&7&oМашина'
+ANTIELYTRAMISSILE:
+  name: '&eРакета против элитр'
+  type:
+  - '&7&oОружие'
+ANTIMISSILELAUNCHER:
+  name: '&6Противоракетная установка'
+  type:
+  - '&7&oМашина'
+CHLORINE:
+  name: '&eХлор'
+  type:
+  - '&7&oРесурс'
+CHLORINEPELLET:
+  name: '&eХлорная таблетка'
+  type:
+  - '&7&oРесурс'
+COMPRESSEDEXPLOSIVES:
+  name: '&eСжатый взрывчатый порошок'
+  type:
+  - '&7&oРесурс'
+EXPLOSIVEPOWDER:
+  name: '&eВзрывчатый порошок'
+  type:
+  - '&7&oРесурс'
+GROUNDLAUNCHER:
+  name: '&6Пусковая установка земля-земля'
+  type:
+  - '&7&oМашина'
+GUIDEBOOK:
+  name: '&eРуководство'
+  type:
+  - '&7&oРазное'
+HEAVYWARHEAD:
+  name: '&eТяжёлая боеголовка'
+  type:
+  - '&7&oКомпонент'
+ICBMMISSILEBODY:
+  name: '&eКорпус МБР'
+  type:
+  - '&7&oКомпонент'
 MANPAD:
-  name: "&6ПЗРК"
-
+  name: '&6ПЗРК'
+  type:
+  - '&7&oОружие'
+MINE:
+  name: '&cМина'
+  type:
+  - '&7&oГаджет'
+MISSILE:
+  name: '&eРакета земля-земля'
+  type:
+  - '&7&oОружие'
+MISSILEAC:
+  name: '&eРакета земля-земля AC'
+  type:
+  - '&7&oОружие'
+MISSILEACADV:
+  name: '&eУлучшенная ракета земля-земля AC'
+  type:
+  - '&7&oОружие'
+MISSILEADV:
+  name: '&eУлучшенная ракета земля-земля'
+  type:
+  - '&7&oОружие'
+MISSILEAPONE:
+  name: '&eРакета земля-земля AP'
+  type:
+  - '&7&oОружие'
+MISSILEAPTHR:
+  name: '&eРакета земля-земля AP'
+  type:
+  - '&7&oОружие'
+MISSILEAPTWO:
+  name: '&eРакета земля-земля AP'
+  type:
+  - '&7&oОружие'
+MISSILEBODY:
+  name: '&eКорпус ракеты'
+  type:
+  - '&7&oКомпонент'
+MISSILECLUSTER:
+  name: '&cКассетная ракета'
+  type:
+  - '&7&oОружие'
+MISSILEEXCAV:
+  name: '&cЗемлеройная ракета'
+  type:
+  - '&7&oОружие'
+MISSILEFINS:
+  name: '&eСтабилизаторы ракеты'
+  type:
+  - '&7&oКомпонент'
+MISSILEGAS:
+  name: '&cГазовая ракета'
+  type:
+  - '&7&oОружие'
+MISSILEHE:
+  name: '&eРакета земля-земля HE'
+  type:
+  - '&7&oОружие'
+MISSILEHEADV:
+  name: '&eУлучшенная ракета земля-земля HE'
+  type:
+  - '&7&oОружие'
+MISSILEICBM:
+  name: '&cРакета МБР'
+  type:
+  - '&7&oОружие'
+MISSILELR:
+  name: '&eРакета земля-земля LR'
+  type:
+  - '&7&oОружие'
+MISSILELRADV:
+  name: '&eУлучшенная ракета земля-земля LR'
+  type:
+  - '&7&oОружие'
+MISSILENAPALM:
+  name: '&cНапалмовая ракета'
+  type:
+  - '&7&oОружие'
+MISSILERADAR:
+  name: '&eРакетный радар'
+  type:
+  - '&7&oМашина'
+MISSILESTICK:
+  name: '&cЛипкая ракета'
+  type:
+  - '&7&oОружие'
 PLAYERLIST:
-  name: "&6Список игроков"
+  name: '&6Список игроков'
+  type:
+  - '&7&oРазное'
+RADAR:
+  name: '&eРадар'
+  type:
+  - '&7&oКомпонент'
+ROCKETFUEL:
+  name: '&eРакетное топливо'
+  type:
+  - '&7&oРесурс'
+SIMPLEFLIGHTCOMPUTER:
+  name: '&eПростой полётный компьютер'
+  type:
+  - '&7&oКомпонент'
+SMALLBODY:
+  name: '&eМалый корпус ракеты'
+  type:
+  - '&7&oКомпонент'
+SMALLFIN:
+  name: '&eМалые стабилизаторы ракеты'
+  type:
+  - '&7&oКомпонент'
+SMALLMISSILE:
+  name: '&eМалая ракета земля-земля'
+  type:
+  - '&7&oОружие'
+SMALLMISSILEAC:
+  name: '&eМалая ракета земля-земля AC'
+  type:
+  - '&7&oОружие'
+SMALLMISSILEHE:
+  name: '&eМалая ракета земля-земля HE'
+  type:
+  - '&7&oОружие'
+SMALLMISSILELR:
+  name: '&eМалая ракета земля-земля LR'
+  type:
+  - '&7&oОружие'
+SMALLWARHEAD:
+  name: '&eМалая боеголовка'
+  type:
+  - '&7&oКомпонент'
+SUGARFUEL:
+  name: '&eСахарное топливо'
+  type:
+  - '&7&oРесурс'
+ULTRALITE_INGOT:
+  name: '&eСлиток UltraLite'
+  type:
+  - '&7&oКомпонент'
+ULTRALITE_PLATE:
+  name: '&eПластина UltraLite'
+  type:
+  - '&7&oКомпонент'
+WARHEAD:
+  name: '&eБоеголовка ракеты'
+  type:
+  - '&7&oКомпонент'
+WARHEADAP:
+  name: '&eУсиленная боеголовка'
+  type:
+  - '&7&oКомпонент'

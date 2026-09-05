@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oKomponentas'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oGinklas'
+ANTIELYTRA:
+  type:
+  - '&7&oMašina'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oGinklas'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oMašina'
+CHLORINE:
+  type:
+  - '&7&oIšteklius'
+CHLORINEPELLET:
+  type:
+  - '&7&oIšteklius'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oIšteklius'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oIšteklius'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oMašina'
+GUIDEBOOK:
+  type:
+  - '&7&oĮvairūs'
+HEAVYWARHEAD:
+  type:
+  - '&7&oKomponentas'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oKomponentas'
+MANPAD:
+  type:
+  - '&7&oGinklas'
+MINE:
+  type:
+  - '&7&oĮtaisas'
+MISSILE:
+  type:
+  - '&7&oGinklas'
+MISSILEAC:
+  type:
+  - '&7&oGinklas'
+MISSILEACADV:
+  type:
+  - '&7&oGinklas'
+MISSILEADV:
+  type:
+  - '&7&oGinklas'
+MISSILEAPONE:
+  type:
+  - '&7&oGinklas'
+MISSILEAPTHR:
+  type:
+  - '&7&oGinklas'
+MISSILEAPTWO:
+  type:
+  - '&7&oGinklas'
+MISSILEBODY:
+  type:
+  - '&7&oKomponentas'
+MISSILECLUSTER:
+  type:
+  - '&7&oGinklas'
+MISSILEEXCAV:
+  type:
+  - '&7&oGinklas'
+MISSILEFINS:
+  type:
+  - '&7&oKomponentas'
+MISSILEGAS:
+  type:
+  - '&7&oGinklas'
+MISSILEHE:
+  type:
+  - '&7&oGinklas'
+MISSILEHEADV:
+  type:
+  - '&7&oGinklas'
+MISSILEICBM:
+  type:
+  - '&7&oGinklas'
+MISSILELR:
+  type:
+  - '&7&oGinklas'
+MISSILELRADV:
+  type:
+  - '&7&oGinklas'
+MISSILENAPALM:
+  type:
+  - '&7&oGinklas'
+MISSILERADAR:
+  type:
+  - '&7&oMašina'
+MISSILESTICK:
+  type:
+  - '&7&oGinklas'
+PLAYERLIST:
+  type:
+  - '&7&oĮvairūs'
+RADAR:
+  type:
+  - '&7&oKomponentas'
+ROCKETFUEL:
+  type:
+  - '&7&oIšteklius'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oKomponentas'
+SMALLBODY:
+  type:
+  - '&7&oKomponentas'
+SMALLFIN:
+  type:
+  - '&7&oKomponentas'
+SMALLMISSILE:
+  type:
+  - '&7&oGinklas'
+SMALLMISSILEAC:
+  type:
+  - '&7&oGinklas'
+SMALLMISSILEHE:
+  type:
+  - '&7&oGinklas'
+SMALLMISSILELR:
+  type:
+  - '&7&oGinklas'
+SMALLWARHEAD:
+  type:
+  - '&7&oKomponentas'
+SUGARFUEL:
+  type:
+  - '&7&oIšteklius'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oKomponentas'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oKomponentas'
+WARHEAD:
+  type:
+  - '&7&oKomponentas'
+WARHEADAP:
+  type:
+  - '&7&oKomponentas'

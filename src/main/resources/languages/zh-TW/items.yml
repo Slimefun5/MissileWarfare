@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&o元件'
+ANTIAIRMISSILE:
+  type:
+  - '&7&o武器'
+ANTIELYTRA:
+  type:
+  - '&7&o機器'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&o武器'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&o機器'
+CHLORINE:
+  type:
+  - '&7&o資源'
+CHLORINEPELLET:
+  type:
+  - '&7&o資源'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&o資源'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&o資源'
+GROUNDLAUNCHER:
+  type:
+  - '&7&o機器'
+GUIDEBOOK:
+  type:
+  - '&7&o雜項'
+HEAVYWARHEAD:
+  type:
+  - '&7&o元件'
+ICBMMISSILEBODY:
+  type:
+  - '&7&o元件'
+MANPAD:
+  type:
+  - '&7&o武器'
+MINE:
+  type:
+  - '&7&o裝置'
+MISSILE:
+  type:
+  - '&7&o武器'
+MISSILEAC:
+  type:
+  - '&7&o武器'
+MISSILEACADV:
+  type:
+  - '&7&o武器'
+MISSILEADV:
+  type:
+  - '&7&o武器'
+MISSILEAPONE:
+  type:
+  - '&7&o武器'
+MISSILEAPTHR:
+  type:
+  - '&7&o武器'
+MISSILEAPTWO:
+  type:
+  - '&7&o武器'
+MISSILEBODY:
+  type:
+  - '&7&o元件'
+MISSILECLUSTER:
+  type:
+  - '&7&o武器'
+MISSILEEXCAV:
+  type:
+  - '&7&o武器'
+MISSILEFINS:
+  type:
+  - '&7&o元件'
+MISSILEGAS:
+  type:
+  - '&7&o武器'
+MISSILEHE:
+  type:
+  - '&7&o武器'
+MISSILEHEADV:
+  type:
+  - '&7&o武器'
+MISSILEICBM:
+  type:
+  - '&7&o武器'
+MISSILELR:
+  type:
+  - '&7&o武器'
+MISSILELRADV:
+  type:
+  - '&7&o武器'
+MISSILENAPALM:
+  type:
+  - '&7&o武器'
+MISSILERADAR:
+  type:
+  - '&7&o機器'
+MISSILESTICK:
+  type:
+  - '&7&o武器'
+PLAYERLIST:
+  type:
+  - '&7&o雜項'
+RADAR:
+  type:
+  - '&7&o元件'
+ROCKETFUEL:
+  type:
+  - '&7&o資源'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&o元件'
+SMALLBODY:
+  type:
+  - '&7&o元件'
+SMALLFIN:
+  type:
+  - '&7&o元件'
+SMALLMISSILE:
+  type:
+  - '&7&o武器'
+SMALLMISSILEAC:
+  type:
+  - '&7&o武器'
+SMALLMISSILEHE:
+  type:
+  - '&7&o武器'
+SMALLMISSILELR:
+  type:
+  - '&7&o武器'
+SMALLWARHEAD:
+  type:
+  - '&7&o元件'
+SUGARFUEL:
+  type:
+  - '&7&o資源'
+ULTRALITE_INGOT:
+  type:
+  - '&7&o元件'
+ULTRALITE_PLATE:
+  type:
+  - '&7&o元件'
+WARHEAD:
+  type:
+  - '&7&o元件'
+WARHEADAP:
+  type:
+  - '&7&o元件'

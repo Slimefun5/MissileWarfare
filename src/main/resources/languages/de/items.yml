@@ -1,155 +1,204 @@
-# Deutsche Item-Übersetzungen für MissileWarfare. Schlüssel = Slimefun-Item-ID.
-# name = Anzeigename. '&' Farbcodes. Fehlende Items fallen auf Englisch zurück.
-
-SUGARFUEL:
-  name: "&eZuckertreibstoff"
-
-GUIDEBOOK:
-  name: "&eHandbuch"
-
-EXPLOSIVEPOWDER:
-  name: "&eSprengpulver"
-
-COMPRESSEDEXPLOSIVES:
-  name: "&eKomprimiertes Sprengpulver"
-
-ULTRALITE_INGOT:
-  name: "&eUltraLite-Barren"
-
-ULTRALITE_PLATE:
-  name: "&eUltraLite-Platte"
-
-SIMPLEFLIGHTCOMPUTER:
-  name: "&eEinfacher Flugcomputer"
-
-RADAR:
-  name: "&eRadar"
-
-ROCKETFUEL:
-  name: "&eRaketentreibstoff"
-
-SMALLWARHEAD:
-  name: "&eKleiner Sprengkopf"
-
-SMALLBODY:
-  name: "&eKleiner Raketenrumpf"
-
-SMALLFIN:
-  name: "&eKleine Raketenflossen"
-
-MISSILEBODY:
-  name: "&eRaketenrumpf"
-
-MISSILEFINS:
-  name: "&eRaketenflossen"
-
-WARHEAD:
-  name: "&eRaketensprengkopf"
-
-WARHEADAP:
-  name: "&eVerstärkter Sprengkopf"
-
-CHLORINE:
-  name: "&eChlor"
-
-CHLORINEPELLET:
-  name: "&eChlortablette"
-
 ADVANCEDMISSILEBODY:
-  name: "&eFortgeschrittener Raketenrumpf"
-
-HEAVYWARHEAD:
-  name: "&eSchwerer Sprengkopf"
-
-ICBMMISSILEBODY:
-  name: "&eICBM-Rumpf"
-
-MINE:
-  name: "&cMine"
-
-SMALLMISSILE:
-  name: "&eKleine BzB-Rakete"
-
-SMALLMISSILEHE:
-  name: "&eKleine BzB-Rakete HE"
-
-SMALLMISSILELR:
-  name: "&eKleine BzB-Rakete LR"
-
-SMALLMISSILEAC:
-  name: "&eKleine BzB-Rakete AC"
-
+  name: '&eFortgeschrittener Raketenrumpf'
+  type:
+  - '&7&oKomponente'
 ANTIAIRMISSILE:
-  name: "&eAbwehrrakete"
-
-ANTIELYTRAMISSILE:
-  name: "&eAnti-Elytra-Rakete"
-
-MISSILE:
-  name: "&eBzB-Rakete"
-
-MISSILEHE:
-  name: "&eBzB-Rakete HE"
-
-MISSILELR:
-  name: "&eBzB-Rakete LR"
-
-MISSILEAC:
-  name: "&eBzB-Rakete AC"
-
-MISSILEAPONE:
-  name: "&eBzB-Rakete AP"
-
-MISSILEAPTWO:
-  name: "&eBzB-Rakete AP"
-
-MISSILEAPTHR:
-  name: "&eBzB-Rakete AP"
-
-MISSILEADV:
-  name: "&eFortgeschrittene BzB-Rakete"
-
-MISSILEHEADV:
-  name: "&eFortgeschrittene BzB-Rakete HE"
-
-MISSILELRADV:
-  name: "&eFortgeschrittene BzB-Rakete LR"
-
-MISSILEACADV:
-  name: "&eFortgeschrittene BzB-Rakete AC"
-
-MISSILEGAS:
-  name: "&cGasrakete"
-
-MISSILEEXCAV:
-  name: "&cAushubrakete"
-
-MISSILESTICK:
-  name: "&cKleberakete"
-
-MISSILEICBM:
-  name: "&cICBM-Rakete"
-
-MISSILECLUSTER:
-  name: "&cStreurakete"
-
-MISSILENAPALM:
-  name: "&cNapalmrakete"
-
-GROUNDLAUNCHER:
-  name: "&6Boden-zu-Boden-Raketenwerfer"
-
-ANTIMISSILELAUNCHER:
-  name: "&6Raketenabwehrwerfer"
-
+  name: '&eAbwehrrakete'
+  type:
+  - '&7&oWaffe'
 ANTIELYTRA:
-  name: "&6Elytra-Abwehrwerfer"
-
-MISSILERADAR:
-  name: "&eRaketenradar"
-
+  name: '&6Elytra-Abwehrwerfer'
+  type:
+  - '&7&oMaschine'
+ANTIELYTRAMISSILE:
+  name: '&eAnti-Elytra-Rakete'
+  type:
+  - '&7&oWaffe'
+ANTIMISSILELAUNCHER:
+  name: '&6Raketenabwehrwerfer'
+  type:
+  - '&7&oMaschine'
+CHLORINE:
+  name: '&eChlor'
+  type:
+  - '&7&oRohstoff'
+CHLORINEPELLET:
+  name: '&eChlortablette'
+  type:
+  - '&7&oRohstoff'
+COMPRESSEDEXPLOSIVES:
+  name: '&eKomprimiertes Sprengpulver'
+  type:
+  - '&7&oRohstoff'
+EXPLOSIVEPOWDER:
+  name: '&eSprengpulver'
+  type:
+  - '&7&oRohstoff'
+GROUNDLAUNCHER:
+  name: '&6Boden-zu-Boden-Raketenwerfer'
+  type:
+  - '&7&oMaschine'
+GUIDEBOOK:
+  name: '&eHandbuch'
+  type:
+  - '&7&oSonstiges'
+HEAVYWARHEAD:
+  name: '&eSchwerer Sprengkopf'
+  type:
+  - '&7&oKomponente'
+ICBMMISSILEBODY:
+  name: '&eICBM-Rumpf'
+  type:
+  - '&7&oKomponente'
 MANPAD:
-  name: "&6Manpad"
-
+  name: '&6Manpad'
+  type:
+  - '&7&oWaffe'
+MINE:
+  name: '&cMine'
+  type:
+  - '&7&oGadget'
+MISSILE:
+  name: '&eBzB-Rakete'
+  type:
+  - '&7&oWaffe'
+MISSILEAC:
+  name: '&eBzB-Rakete AC'
+  type:
+  - '&7&oWaffe'
+MISSILEACADV:
+  name: '&eFortgeschrittene BzB-Rakete AC'
+  type:
+  - '&7&oWaffe'
+MISSILEADV:
+  name: '&eFortgeschrittene BzB-Rakete'
+  type:
+  - '&7&oWaffe'
+MISSILEAPONE:
+  name: '&eBzB-Rakete AP'
+  type:
+  - '&7&oWaffe'
+MISSILEAPTHR:
+  name: '&eBzB-Rakete AP'
+  type:
+  - '&7&oWaffe'
+MISSILEAPTWO:
+  name: '&eBzB-Rakete AP'
+  type:
+  - '&7&oWaffe'
+MISSILEBODY:
+  name: '&eRaketenrumpf'
+  type:
+  - '&7&oKomponente'
+MISSILECLUSTER:
+  name: '&cStreurakete'
+  type:
+  - '&7&oWaffe'
+MISSILEEXCAV:
+  name: '&cAushubrakete'
+  type:
+  - '&7&oWaffe'
+MISSILEFINS:
+  name: '&eRaketenflossen'
+  type:
+  - '&7&oKomponente'
+MISSILEGAS:
+  name: '&cGasrakete'
+  type:
+  - '&7&oWaffe'
+MISSILEHE:
+  name: '&eBzB-Rakete HE'
+  type:
+  - '&7&oWaffe'
+MISSILEHEADV:
+  name: '&eFortgeschrittene BzB-Rakete HE'
+  type:
+  - '&7&oWaffe'
+MISSILEICBM:
+  name: '&cICBM-Rakete'
+  type:
+  - '&7&oWaffe'
+MISSILELR:
+  name: '&eBzB-Rakete LR'
+  type:
+  - '&7&oWaffe'
+MISSILELRADV:
+  name: '&eFortgeschrittene BzB-Rakete LR'
+  type:
+  - '&7&oWaffe'
+MISSILENAPALM:
+  name: '&cNapalmrakete'
+  type:
+  - '&7&oWaffe'
+MISSILERADAR:
+  name: '&eRaketenradar'
+  type:
+  - '&7&oMaschine'
+MISSILESTICK:
+  name: '&cKleberakete'
+  type:
+  - '&7&oWaffe'
 PLAYERLIST:
-  name: "&6Spielerliste"
+  name: '&6Spielerliste'
+  type:
+  - '&7&oSonstiges'
+RADAR:
+  name: '&eRadar'
+  type:
+  - '&7&oKomponente'
+ROCKETFUEL:
+  name: '&eRaketentreibstoff'
+  type:
+  - '&7&oRohstoff'
+SIMPLEFLIGHTCOMPUTER:
+  name: '&eEinfacher Flugcomputer'
+  type:
+  - '&7&oKomponente'
+SMALLBODY:
+  name: '&eKleiner Raketenrumpf'
+  type:
+  - '&7&oKomponente'
+SMALLFIN:
+  name: '&eKleine Raketenflossen'
+  type:
+  - '&7&oKomponente'
+SMALLMISSILE:
+  name: '&eKleine BzB-Rakete'
+  type:
+  - '&7&oWaffe'
+SMALLMISSILEAC:
+  name: '&eKleine BzB-Rakete AC'
+  type:
+  - '&7&oWaffe'
+SMALLMISSILEHE:
+  name: '&eKleine BzB-Rakete HE'
+  type:
+  - '&7&oWaffe'
+SMALLMISSILELR:
+  name: '&eKleine BzB-Rakete LR'
+  type:
+  - '&7&oWaffe'
+SMALLWARHEAD:
+  name: '&eKleiner Sprengkopf'
+  type:
+  - '&7&oKomponente'
+SUGARFUEL:
+  name: '&eZuckertreibstoff'
+  type:
+  - '&7&oRohstoff'
+ULTRALITE_INGOT:
+  name: '&eUltraLite-Barren'
+  type:
+  - '&7&oKomponente'
+ULTRALITE_PLATE:
+  name: '&eUltraLite-Platte'
+  type:
+  - '&7&oKomponente'
+WARHEAD:
+  name: '&eRaketensprengkopf'
+  type:
+  - '&7&oKomponente'
+WARHEADAP:
+  name: '&eVerstärkter Sprengkopf'
+  type:
+  - '&7&oKomponente'

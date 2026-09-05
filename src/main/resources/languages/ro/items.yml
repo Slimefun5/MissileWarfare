@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oComponentă'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oArmă'
+ANTIELYTRA:
+  type:
+  - '&7&oMașină'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oArmă'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oMașină'
+CHLORINE:
+  type:
+  - '&7&oResursă'
+CHLORINEPELLET:
+  type:
+  - '&7&oResursă'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oResursă'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oResursă'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oMașină'
+GUIDEBOOK:
+  type:
+  - '&7&oDiverse'
+HEAVYWARHEAD:
+  type:
+  - '&7&oComponentă'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oComponentă'
+MANPAD:
+  type:
+  - '&7&oArmă'
+MINE:
+  type:
+  - '&7&oGadget'
+MISSILE:
+  type:
+  - '&7&oArmă'
+MISSILEAC:
+  type:
+  - '&7&oArmă'
+MISSILEACADV:
+  type:
+  - '&7&oArmă'
+MISSILEADV:
+  type:
+  - '&7&oArmă'
+MISSILEAPONE:
+  type:
+  - '&7&oArmă'
+MISSILEAPTHR:
+  type:
+  - '&7&oArmă'
+MISSILEAPTWO:
+  type:
+  - '&7&oArmă'
+MISSILEBODY:
+  type:
+  - '&7&oComponentă'
+MISSILECLUSTER:
+  type:
+  - '&7&oArmă'
+MISSILEEXCAV:
+  type:
+  - '&7&oArmă'
+MISSILEFINS:
+  type:
+  - '&7&oComponentă'
+MISSILEGAS:
+  type:
+  - '&7&oArmă'
+MISSILEHE:
+  type:
+  - '&7&oArmă'
+MISSILEHEADV:
+  type:
+  - '&7&oArmă'
+MISSILEICBM:
+  type:
+  - '&7&oArmă'
+MISSILELR:
+  type:
+  - '&7&oArmă'
+MISSILELRADV:
+  type:
+  - '&7&oArmă'
+MISSILENAPALM:
+  type:
+  - '&7&oArmă'
+MISSILERADAR:
+  type:
+  - '&7&oMașină'
+MISSILESTICK:
+  type:
+  - '&7&oArmă'
+PLAYERLIST:
+  type:
+  - '&7&oDiverse'
+RADAR:
+  type:
+  - '&7&oComponentă'
+ROCKETFUEL:
+  type:
+  - '&7&oResursă'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oComponentă'
+SMALLBODY:
+  type:
+  - '&7&oComponentă'
+SMALLFIN:
+  type:
+  - '&7&oComponentă'
+SMALLMISSILE:
+  type:
+  - '&7&oArmă'
+SMALLMISSILEAC:
+  type:
+  - '&7&oArmă'
+SMALLMISSILEHE:
+  type:
+  - '&7&oArmă'
+SMALLMISSILELR:
+  type:
+  - '&7&oArmă'
+SMALLWARHEAD:
+  type:
+  - '&7&oComponentă'
+SUGARFUEL:
+  type:
+  - '&7&oResursă'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oComponentă'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oComponentă'
+WARHEAD:
+  type:
+  - '&7&oComponentă'
+WARHEADAP:
+  type:
+  - '&7&oComponentă'

@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oBahagi'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oSandata'
+ANTIELYTRA:
+  type:
+  - '&7&oMakina'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oSandata'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oMakina'
+CHLORINE:
+  type:
+  - '&7&oRekurso'
+CHLORINEPELLET:
+  type:
+  - '&7&oRekurso'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oRekurso'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oRekurso'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oMakina'
+GUIDEBOOK:
+  type:
+  - '&7&oIba pa'
+HEAVYWARHEAD:
+  type:
+  - '&7&oBahagi'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oBahagi'
+MANPAD:
+  type:
+  - '&7&oSandata'
+MINE:
+  type:
+  - '&7&oGadyet'
+MISSILE:
+  type:
+  - '&7&oSandata'
+MISSILEAC:
+  type:
+  - '&7&oSandata'
+MISSILEACADV:
+  type:
+  - '&7&oSandata'
+MISSILEADV:
+  type:
+  - '&7&oSandata'
+MISSILEAPONE:
+  type:
+  - '&7&oSandata'
+MISSILEAPTHR:
+  type:
+  - '&7&oSandata'
+MISSILEAPTWO:
+  type:
+  - '&7&oSandata'
+MISSILEBODY:
+  type:
+  - '&7&oBahagi'
+MISSILECLUSTER:
+  type:
+  - '&7&oSandata'
+MISSILEEXCAV:
+  type:
+  - '&7&oSandata'
+MISSILEFINS:
+  type:
+  - '&7&oBahagi'
+MISSILEGAS:
+  type:
+  - '&7&oSandata'
+MISSILEHE:
+  type:
+  - '&7&oSandata'
+MISSILEHEADV:
+  type:
+  - '&7&oSandata'
+MISSILEICBM:
+  type:
+  - '&7&oSandata'
+MISSILELR:
+  type:
+  - '&7&oSandata'
+MISSILELRADV:
+  type:
+  - '&7&oSandata'
+MISSILENAPALM:
+  type:
+  - '&7&oSandata'
+MISSILERADAR:
+  type:
+  - '&7&oMakina'
+MISSILESTICK:
+  type:
+  - '&7&oSandata'
+PLAYERLIST:
+  type:
+  - '&7&oIba pa'
+RADAR:
+  type:
+  - '&7&oBahagi'
+ROCKETFUEL:
+  type:
+  - '&7&oRekurso'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oBahagi'
+SMALLBODY:
+  type:
+  - '&7&oBahagi'
+SMALLFIN:
+  type:
+  - '&7&oBahagi'
+SMALLMISSILE:
+  type:
+  - '&7&oSandata'
+SMALLMISSILEAC:
+  type:
+  - '&7&oSandata'
+SMALLMISSILEHE:
+  type:
+  - '&7&oSandata'
+SMALLMISSILELR:
+  type:
+  - '&7&oSandata'
+SMALLWARHEAD:
+  type:
+  - '&7&oBahagi'
+SUGARFUEL:
+  type:
+  - '&7&oRekurso'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oBahagi'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oBahagi'
+WARHEAD:
+  type:
+  - '&7&oBahagi'
+WARHEADAP:
+  type:
+  - '&7&oBahagi'

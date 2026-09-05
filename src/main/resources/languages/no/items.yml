@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oKomponent'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oVåpen'
+ANTIELYTRA:
+  type:
+  - '&7&oMaskin'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oVåpen'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oMaskin'
+CHLORINE:
+  type:
+  - '&7&oRessurs'
+CHLORINEPELLET:
+  type:
+  - '&7&oRessurs'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oRessurs'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oRessurs'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oMaskin'
+GUIDEBOOK:
+  type:
+  - '&7&oDiverse'
+HEAVYWARHEAD:
+  type:
+  - '&7&oKomponent'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oKomponent'
+MANPAD:
+  type:
+  - '&7&oVåpen'
+MINE:
+  type:
+  - '&7&oDings'
+MISSILE:
+  type:
+  - '&7&oVåpen'
+MISSILEAC:
+  type:
+  - '&7&oVåpen'
+MISSILEACADV:
+  type:
+  - '&7&oVåpen'
+MISSILEADV:
+  type:
+  - '&7&oVåpen'
+MISSILEAPONE:
+  type:
+  - '&7&oVåpen'
+MISSILEAPTHR:
+  type:
+  - '&7&oVåpen'
+MISSILEAPTWO:
+  type:
+  - '&7&oVåpen'
+MISSILEBODY:
+  type:
+  - '&7&oKomponent'
+MISSILECLUSTER:
+  type:
+  - '&7&oVåpen'
+MISSILEEXCAV:
+  type:
+  - '&7&oVåpen'
+MISSILEFINS:
+  type:
+  - '&7&oKomponent'
+MISSILEGAS:
+  type:
+  - '&7&oVåpen'
+MISSILEHE:
+  type:
+  - '&7&oVåpen'
+MISSILEHEADV:
+  type:
+  - '&7&oVåpen'
+MISSILEICBM:
+  type:
+  - '&7&oVåpen'
+MISSILELR:
+  type:
+  - '&7&oVåpen'
+MISSILELRADV:
+  type:
+  - '&7&oVåpen'
+MISSILENAPALM:
+  type:
+  - '&7&oVåpen'
+MISSILERADAR:
+  type:
+  - '&7&oMaskin'
+MISSILESTICK:
+  type:
+  - '&7&oVåpen'
+PLAYERLIST:
+  type:
+  - '&7&oDiverse'
+RADAR:
+  type:
+  - '&7&oKomponent'
+ROCKETFUEL:
+  type:
+  - '&7&oRessurs'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oKomponent'
+SMALLBODY:
+  type:
+  - '&7&oKomponent'
+SMALLFIN:
+  type:
+  - '&7&oKomponent'
+SMALLMISSILE:
+  type:
+  - '&7&oVåpen'
+SMALLMISSILEAC:
+  type:
+  - '&7&oVåpen'
+SMALLMISSILEHE:
+  type:
+  - '&7&oVåpen'
+SMALLMISSILELR:
+  type:
+  - '&7&oVåpen'
+SMALLWARHEAD:
+  type:
+  - '&7&oKomponent'
+SUGARFUEL:
+  type:
+  - '&7&oRessurs'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oKomponent'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oKomponent'
+WARHEAD:
+  type:
+  - '&7&oKomponent'
+WARHEADAP:
+  type:
+  - '&7&oKomponent'

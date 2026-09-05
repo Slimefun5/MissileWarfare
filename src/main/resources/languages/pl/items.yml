@@ -1,155 +1,204 @@
-# Polskie tłumaczenia przedmiotów MissileWarfare. Klucz = ID przedmiotu Slimefun.
-# name = display name with '&' colour codes. Missing items fall back to English.
-
-SUGARFUEL:
-  name: "&ePaliwo cukrowe"
-
-GUIDEBOOK:
-  name: "&ePoradnik"
-
-EXPLOSIVEPOWDER:
-  name: "&eProszek wybuchowy"
-
-COMPRESSEDEXPLOSIVES:
-  name: "&eSprężony proszek wybuchowy"
-
-ULTRALITE_INGOT:
-  name: "&eSztabka UltraLite"
-
-ULTRALITE_PLATE:
-  name: "&ePłyta UltraLite"
-
-SIMPLEFLIGHTCOMPUTER:
-  name: "&eProsty komputer lotu"
-
-RADAR:
-  name: "&eRadar"
-
-ROCKETFUEL:
-  name: "&ePaliwo rakietowe"
-
-SMALLWARHEAD:
-  name: "&eMała głowica"
-
-SMALLBODY:
-  name: "&eMały kadłub pocisku"
-
-SMALLFIN:
-  name: "&eMałe stateczniki pocisku"
-
-MISSILEBODY:
-  name: "&eKorpus pocisku"
-
-MISSILEFINS:
-  name: "&eStateczniki pocisku"
-
-WARHEAD:
-  name: "&eGłowica pocisku"
-
-WARHEADAP:
-  name: "&eWzmocniona głowica"
-
-CHLORINE:
-  name: "&eChlor"
-
-CHLORINEPELLET:
-  name: "&eTabletka chloru"
-
 ADVANCEDMISSILEBODY:
-  name: "&eZaawansowany korpus pocisku"
-
-HEAVYWARHEAD:
-  name: "&eCiężka głowica"
-
-ICBMMISSILEBODY:
-  name: "&eKorpus ICBM"
-
-MINE:
-  name: "&cMina"
-
-SMALLMISSILE:
-  name: "&eMały pocisk ziemia-ziemia"
-
-SMALLMISSILEHE:
-  name: "&eMały pocisk ziemia-ziemia HE"
-
-SMALLMISSILELR:
-  name: "&eMały pocisk ziemia-ziemia LR"
-
-SMALLMISSILEAC:
-  name: "&eMały pocisk ziemia-ziemia AC"
-
+  name: '&eZaawansowany korpus pocisku'
+  type:
+  - '&7&oKomponent'
 ANTIAIRMISSILE:
-  name: "&ePocisk przeciwrakietowy"
-
-ANTIELYTRAMISSILE:
-  name: "&ePocisk przeciw elytrom"
-
-MISSILE:
-  name: "&ePocisk ziemia-ziemia"
-
-MISSILEHE:
-  name: "&ePocisk ziemia-ziemia HE"
-
-MISSILELR:
-  name: "&ePocisk ziemia-ziemia LR"
-
-MISSILEAC:
-  name: "&ePocisk ziemia-ziemia AC"
-
-MISSILEAPONE:
-  name: "&ePocisk ziemia-ziemia AP"
-
-MISSILEAPTWO:
-  name: "&ePocisk ziemia-ziemia AP"
-
-MISSILEAPTHR:
-  name: "&ePocisk ziemia-ziemia AP"
-
-MISSILEADV:
-  name: "&eZaawansowany pocisk ziemia-ziemia"
-
-MISSILEHEADV:
-  name: "&eZaawansowany pocisk ziemia-ziemia HE"
-
-MISSILELRADV:
-  name: "&eZaawansowany pocisk ziemia-ziemia LR"
-
-MISSILEACADV:
-  name: "&eZaawansowany pocisk ziemia-ziemia AC"
-
-MISSILEGAS:
-  name: "&cPocisk gazowy"
-
-MISSILEEXCAV:
-  name: "&cPocisk wykopowy"
-
-MISSILESTICK:
-  name: "&cLepki pocisk"
-
-MISSILEICBM:
-  name: "&cPocisk ICBM"
-
-MISSILECLUSTER:
-  name: "&cPocisk kasetowy"
-
-MISSILENAPALM:
-  name: "&cPocisk napalmowy"
-
-GROUNDLAUNCHER:
-  name: "&6Wyrzutnia pocisków ziemia-ziemia"
-
-ANTIMISSILELAUNCHER:
-  name: "&6Wyrzutnia przeciwrakietowa"
-
+  name: '&ePocisk przeciwrakietowy'
+  type:
+  - '&7&oBroń'
 ANTIELYTRA:
-  name: "&6Wyrzutnia przeciw elytrom"
-
-MISSILERADAR:
-  name: "&eRadar pocisków"
-
+  name: '&6Wyrzutnia przeciw elytrom'
+  type:
+  - '&7&oMaszyna'
+ANTIELYTRAMISSILE:
+  name: '&ePocisk przeciw elytrom'
+  type:
+  - '&7&oBroń'
+ANTIMISSILELAUNCHER:
+  name: '&6Wyrzutnia przeciwrakietowa'
+  type:
+  - '&7&oMaszyna'
+CHLORINE:
+  name: '&eChlor'
+  type:
+  - '&7&oSurowiec'
+CHLORINEPELLET:
+  name: '&eTabletka chloru'
+  type:
+  - '&7&oSurowiec'
+COMPRESSEDEXPLOSIVES:
+  name: '&eSprężony proszek wybuchowy'
+  type:
+  - '&7&oSurowiec'
+EXPLOSIVEPOWDER:
+  name: '&eProszek wybuchowy'
+  type:
+  - '&7&oSurowiec'
+GROUNDLAUNCHER:
+  name: '&6Wyrzutnia pocisków ziemia-ziemia'
+  type:
+  - '&7&oMaszyna'
+GUIDEBOOK:
+  name: '&ePoradnik'
+  type:
+  - '&7&oRóżne'
+HEAVYWARHEAD:
+  name: '&eCiężka głowica'
+  type:
+  - '&7&oKomponent'
+ICBMMISSILEBODY:
+  name: '&eKorpus ICBM'
+  type:
+  - '&7&oKomponent'
 MANPAD:
-  name: "&6Manpad"
-
+  name: '&6Manpad'
+  type:
+  - '&7&oBroń'
+MINE:
+  name: '&cMina'
+  type:
+  - '&7&oGadżet'
+MISSILE:
+  name: '&ePocisk ziemia-ziemia'
+  type:
+  - '&7&oBroń'
+MISSILEAC:
+  name: '&ePocisk ziemia-ziemia AC'
+  type:
+  - '&7&oBroń'
+MISSILEACADV:
+  name: '&eZaawansowany pocisk ziemia-ziemia AC'
+  type:
+  - '&7&oBroń'
+MISSILEADV:
+  name: '&eZaawansowany pocisk ziemia-ziemia'
+  type:
+  - '&7&oBroń'
+MISSILEAPONE:
+  name: '&ePocisk ziemia-ziemia AP'
+  type:
+  - '&7&oBroń'
+MISSILEAPTHR:
+  name: '&ePocisk ziemia-ziemia AP'
+  type:
+  - '&7&oBroń'
+MISSILEAPTWO:
+  name: '&ePocisk ziemia-ziemia AP'
+  type:
+  - '&7&oBroń'
+MISSILEBODY:
+  name: '&eKorpus pocisku'
+  type:
+  - '&7&oKomponent'
+MISSILECLUSTER:
+  name: '&cPocisk kasetowy'
+  type:
+  - '&7&oBroń'
+MISSILEEXCAV:
+  name: '&cPocisk wykopowy'
+  type:
+  - '&7&oBroń'
+MISSILEFINS:
+  name: '&eStateczniki pocisku'
+  type:
+  - '&7&oKomponent'
+MISSILEGAS:
+  name: '&cPocisk gazowy'
+  type:
+  - '&7&oBroń'
+MISSILEHE:
+  name: '&ePocisk ziemia-ziemia HE'
+  type:
+  - '&7&oBroń'
+MISSILEHEADV:
+  name: '&eZaawansowany pocisk ziemia-ziemia HE'
+  type:
+  - '&7&oBroń'
+MISSILEICBM:
+  name: '&cPocisk ICBM'
+  type:
+  - '&7&oBroń'
+MISSILELR:
+  name: '&ePocisk ziemia-ziemia LR'
+  type:
+  - '&7&oBroń'
+MISSILELRADV:
+  name: '&eZaawansowany pocisk ziemia-ziemia LR'
+  type:
+  - '&7&oBroń'
+MISSILENAPALM:
+  name: '&cPocisk napalmowy'
+  type:
+  - '&7&oBroń'
+MISSILERADAR:
+  name: '&eRadar pocisków'
+  type:
+  - '&7&oMaszyna'
+MISSILESTICK:
+  name: '&cLepki pocisk'
+  type:
+  - '&7&oBroń'
 PLAYERLIST:
-  name: "&6Lista graczy"
+  name: '&6Lista graczy'
+  type:
+  - '&7&oRóżne'
+RADAR:
+  name: '&eRadar'
+  type:
+  - '&7&oKomponent'
+ROCKETFUEL:
+  name: '&ePaliwo rakietowe'
+  type:
+  - '&7&oSurowiec'
+SIMPLEFLIGHTCOMPUTER:
+  name: '&eProsty komputer lotu'
+  type:
+  - '&7&oKomponent'
+SMALLBODY:
+  name: '&eMały kadłub pocisku'
+  type:
+  - '&7&oKomponent'
+SMALLFIN:
+  name: '&eMałe stateczniki pocisku'
+  type:
+  - '&7&oKomponent'
+SMALLMISSILE:
+  name: '&eMały pocisk ziemia-ziemia'
+  type:
+  - '&7&oBroń'
+SMALLMISSILEAC:
+  name: '&eMały pocisk ziemia-ziemia AC'
+  type:
+  - '&7&oBroń'
+SMALLMISSILEHE:
+  name: '&eMały pocisk ziemia-ziemia HE'
+  type:
+  - '&7&oBroń'
+SMALLMISSILELR:
+  name: '&eMały pocisk ziemia-ziemia LR'
+  type:
+  - '&7&oBroń'
+SMALLWARHEAD:
+  name: '&eMała głowica'
+  type:
+  - '&7&oKomponent'
+SUGARFUEL:
+  name: '&ePaliwo cukrowe'
+  type:
+  - '&7&oSurowiec'
+ULTRALITE_INGOT:
+  name: '&eSztabka UltraLite'
+  type:
+  - '&7&oKomponent'
+ULTRALITE_PLATE:
+  name: '&ePłyta UltraLite'
+  type:
+  - '&7&oKomponent'
+WARHEAD:
+  name: '&eGłowica pocisku'
+  type:
+  - '&7&oKomponent'
+WARHEADAP:
+  name: '&eWzmocniona głowica'
+  type:
+  - '&7&oKomponent'

@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oසංරචකය'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oආයුධය'
+ANTIELYTRA:
+  type:
+  - '&7&oයන්ත්‍රය'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oආයුධය'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oයන්ත්‍රය'
+CHLORINE:
+  type:
+  - '&7&oසම්පත'
+CHLORINEPELLET:
+  type:
+  - '&7&oසම්පත'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oසම්පත'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oසම්පත'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oයන්ත්‍රය'
+GUIDEBOOK:
+  type:
+  - '&7&oවිවිධ'
+HEAVYWARHEAD:
+  type:
+  - '&7&oසංරචකය'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oසංරචකය'
+MANPAD:
+  type:
+  - '&7&oආයුධය'
+MINE:
+  type:
+  - '&7&oඋපාංගය'
+MISSILE:
+  type:
+  - '&7&oආයුධය'
+MISSILEAC:
+  type:
+  - '&7&oආයුධය'
+MISSILEACADV:
+  type:
+  - '&7&oආයුධය'
+MISSILEADV:
+  type:
+  - '&7&oආයුධය'
+MISSILEAPONE:
+  type:
+  - '&7&oආයුධය'
+MISSILEAPTHR:
+  type:
+  - '&7&oආයුධය'
+MISSILEAPTWO:
+  type:
+  - '&7&oආයුධය'
+MISSILEBODY:
+  type:
+  - '&7&oසංරචකය'
+MISSILECLUSTER:
+  type:
+  - '&7&oආයුධය'
+MISSILEEXCAV:
+  type:
+  - '&7&oආයුධය'
+MISSILEFINS:
+  type:
+  - '&7&oසංරචකය'
+MISSILEGAS:
+  type:
+  - '&7&oආයුධය'
+MISSILEHE:
+  type:
+  - '&7&oආයුධය'
+MISSILEHEADV:
+  type:
+  - '&7&oආයුධය'
+MISSILEICBM:
+  type:
+  - '&7&oආයුධය'
+MISSILELR:
+  type:
+  - '&7&oආයුධය'
+MISSILELRADV:
+  type:
+  - '&7&oආයුධය'
+MISSILENAPALM:
+  type:
+  - '&7&oආයුධය'
+MISSILERADAR:
+  type:
+  - '&7&oයන්ත්‍රය'
+MISSILESTICK:
+  type:
+  - '&7&oආයුධය'
+PLAYERLIST:
+  type:
+  - '&7&oවිවිධ'
+RADAR:
+  type:
+  - '&7&oසංරචකය'
+ROCKETFUEL:
+  type:
+  - '&7&oසම්පත'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oසංරචකය'
+SMALLBODY:
+  type:
+  - '&7&oසංරචකය'
+SMALLFIN:
+  type:
+  - '&7&oසංරචකය'
+SMALLMISSILE:
+  type:
+  - '&7&oආයුධය'
+SMALLMISSILEAC:
+  type:
+  - '&7&oආයුධය'
+SMALLMISSILEHE:
+  type:
+  - '&7&oආයුධය'
+SMALLMISSILELR:
+  type:
+  - '&7&oආයුධය'
+SMALLWARHEAD:
+  type:
+  - '&7&oසංරචකය'
+SUGARFUEL:
+  type:
+  - '&7&oසම්පත'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oසංරචකය'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oසංරචකය'
+WARHEAD:
+  type:
+  - '&7&oසංරචකය'
+WARHEADAP:
+  type:
+  - '&7&oසංරචකය'

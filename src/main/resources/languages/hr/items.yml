@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oKomponenta'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oOružje'
+ANTIELYTRA:
+  type:
+  - '&7&oStroj'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oOružje'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oStroj'
+CHLORINE:
+  type:
+  - '&7&oResurs'
+CHLORINEPELLET:
+  type:
+  - '&7&oResurs'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oResurs'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oResurs'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oStroj'
+GUIDEBOOK:
+  type:
+  - '&7&oRazno'
+HEAVYWARHEAD:
+  type:
+  - '&7&oKomponenta'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oKomponenta'
+MANPAD:
+  type:
+  - '&7&oOružje'
+MINE:
+  type:
+  - '&7&oNaprava'
+MISSILE:
+  type:
+  - '&7&oOružje'
+MISSILEAC:
+  type:
+  - '&7&oOružje'
+MISSILEACADV:
+  type:
+  - '&7&oOružje'
+MISSILEADV:
+  type:
+  - '&7&oOružje'
+MISSILEAPONE:
+  type:
+  - '&7&oOružje'
+MISSILEAPTHR:
+  type:
+  - '&7&oOružje'
+MISSILEAPTWO:
+  type:
+  - '&7&oOružje'
+MISSILEBODY:
+  type:
+  - '&7&oKomponenta'
+MISSILECLUSTER:
+  type:
+  - '&7&oOružje'
+MISSILEEXCAV:
+  type:
+  - '&7&oOružje'
+MISSILEFINS:
+  type:
+  - '&7&oKomponenta'
+MISSILEGAS:
+  type:
+  - '&7&oOružje'
+MISSILEHE:
+  type:
+  - '&7&oOružje'
+MISSILEHEADV:
+  type:
+  - '&7&oOružje'
+MISSILEICBM:
+  type:
+  - '&7&oOružje'
+MISSILELR:
+  type:
+  - '&7&oOružje'
+MISSILELRADV:
+  type:
+  - '&7&oOružje'
+MISSILENAPALM:
+  type:
+  - '&7&oOružje'
+MISSILERADAR:
+  type:
+  - '&7&oStroj'
+MISSILESTICK:
+  type:
+  - '&7&oOružje'
+PLAYERLIST:
+  type:
+  - '&7&oRazno'
+RADAR:
+  type:
+  - '&7&oKomponenta'
+ROCKETFUEL:
+  type:
+  - '&7&oResurs'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oKomponenta'
+SMALLBODY:
+  type:
+  - '&7&oKomponenta'
+SMALLFIN:
+  type:
+  - '&7&oKomponenta'
+SMALLMISSILE:
+  type:
+  - '&7&oOružje'
+SMALLMISSILEAC:
+  type:
+  - '&7&oOružje'
+SMALLMISSILEHE:
+  type:
+  - '&7&oOružje'
+SMALLMISSILELR:
+  type:
+  - '&7&oOružje'
+SMALLWARHEAD:
+  type:
+  - '&7&oKomponenta'
+SUGARFUEL:
+  type:
+  - '&7&oResurs'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oKomponenta'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oKomponenta'
+WARHEAD:
+  type:
+  - '&7&oKomponenta'
+WARHEADAP:
+  type:
+  - '&7&oKomponenta'

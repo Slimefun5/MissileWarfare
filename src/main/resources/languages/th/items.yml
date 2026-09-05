@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oส่วนประกอบ'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oอาวุธ'
+ANTIELYTRA:
+  type:
+  - '&7&oเครื่องจักร'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oอาวุธ'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oเครื่องจักร'
+CHLORINE:
+  type:
+  - '&7&oทรัพยากร'
+CHLORINEPELLET:
+  type:
+  - '&7&oทรัพยากร'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oทรัพยากร'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oทรัพยากร'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oเครื่องจักร'
+GUIDEBOOK:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+HEAVYWARHEAD:
+  type:
+  - '&7&oส่วนประกอบ'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oส่วนประกอบ'
+MANPAD:
+  type:
+  - '&7&oอาวุธ'
+MINE:
+  type:
+  - '&7&oอุปกรณ์'
+MISSILE:
+  type:
+  - '&7&oอาวุธ'
+MISSILEAC:
+  type:
+  - '&7&oอาวุธ'
+MISSILEACADV:
+  type:
+  - '&7&oอาวุธ'
+MISSILEADV:
+  type:
+  - '&7&oอาวุธ'
+MISSILEAPONE:
+  type:
+  - '&7&oอาวุธ'
+MISSILEAPTHR:
+  type:
+  - '&7&oอาวุธ'
+MISSILEAPTWO:
+  type:
+  - '&7&oอาวุธ'
+MISSILEBODY:
+  type:
+  - '&7&oส่วนประกอบ'
+MISSILECLUSTER:
+  type:
+  - '&7&oอาวุธ'
+MISSILEEXCAV:
+  type:
+  - '&7&oอาวุธ'
+MISSILEFINS:
+  type:
+  - '&7&oส่วนประกอบ'
+MISSILEGAS:
+  type:
+  - '&7&oอาวุธ'
+MISSILEHE:
+  type:
+  - '&7&oอาวุธ'
+MISSILEHEADV:
+  type:
+  - '&7&oอาวุธ'
+MISSILEICBM:
+  type:
+  - '&7&oอาวุธ'
+MISSILELR:
+  type:
+  - '&7&oอาวุธ'
+MISSILELRADV:
+  type:
+  - '&7&oอาวุธ'
+MISSILENAPALM:
+  type:
+  - '&7&oอาวุธ'
+MISSILERADAR:
+  type:
+  - '&7&oเครื่องจักร'
+MISSILESTICK:
+  type:
+  - '&7&oอาวุธ'
+PLAYERLIST:
+  type:
+  - '&7&oเบ็ดเตล็ด'
+RADAR:
+  type:
+  - '&7&oส่วนประกอบ'
+ROCKETFUEL:
+  type:
+  - '&7&oทรัพยากร'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oส่วนประกอบ'
+SMALLBODY:
+  type:
+  - '&7&oส่วนประกอบ'
+SMALLFIN:
+  type:
+  - '&7&oส่วนประกอบ'
+SMALLMISSILE:
+  type:
+  - '&7&oอาวุธ'
+SMALLMISSILEAC:
+  type:
+  - '&7&oอาวุธ'
+SMALLMISSILEHE:
+  type:
+  - '&7&oอาวุธ'
+SMALLMISSILELR:
+  type:
+  - '&7&oอาวุธ'
+SMALLWARHEAD:
+  type:
+  - '&7&oส่วนประกอบ'
+SUGARFUEL:
+  type:
+  - '&7&oทรัพยากร'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oส่วนประกอบ'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oส่วนประกอบ'
+WARHEAD:
+  type:
+  - '&7&oส่วนประกอบ'
+WARHEADAP:
+  type:
+  - '&7&oส่วนประกอบ'

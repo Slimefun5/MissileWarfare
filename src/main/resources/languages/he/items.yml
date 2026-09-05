@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oרכיב'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oנשק'
+ANTIELYTRA:
+  type:
+  - '&7&oמכונה'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oנשק'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oמכונה'
+CHLORINE:
+  type:
+  - '&7&oמשאב'
+CHLORINEPELLET:
+  type:
+  - '&7&oמשאב'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oמשאב'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oמשאב'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oמכונה'
+GUIDEBOOK:
+  type:
+  - '&7&oשונות'
+HEAVYWARHEAD:
+  type:
+  - '&7&oרכיב'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oרכיב'
+MANPAD:
+  type:
+  - '&7&oנשק'
+MINE:
+  type:
+  - '&7&oגאדג׳ט'
+MISSILE:
+  type:
+  - '&7&oנשק'
+MISSILEAC:
+  type:
+  - '&7&oנשק'
+MISSILEACADV:
+  type:
+  - '&7&oנשק'
+MISSILEADV:
+  type:
+  - '&7&oנשק'
+MISSILEAPONE:
+  type:
+  - '&7&oנשק'
+MISSILEAPTHR:
+  type:
+  - '&7&oנשק'
+MISSILEAPTWO:
+  type:
+  - '&7&oנשק'
+MISSILEBODY:
+  type:
+  - '&7&oרכיב'
+MISSILECLUSTER:
+  type:
+  - '&7&oנשק'
+MISSILEEXCAV:
+  type:
+  - '&7&oנשק'
+MISSILEFINS:
+  type:
+  - '&7&oרכיב'
+MISSILEGAS:
+  type:
+  - '&7&oנשק'
+MISSILEHE:
+  type:
+  - '&7&oנשק'
+MISSILEHEADV:
+  type:
+  - '&7&oנשק'
+MISSILEICBM:
+  type:
+  - '&7&oנשק'
+MISSILELR:
+  type:
+  - '&7&oנשק'
+MISSILELRADV:
+  type:
+  - '&7&oנשק'
+MISSILENAPALM:
+  type:
+  - '&7&oנשק'
+MISSILERADAR:
+  type:
+  - '&7&oמכונה'
+MISSILESTICK:
+  type:
+  - '&7&oנשק'
+PLAYERLIST:
+  type:
+  - '&7&oשונות'
+RADAR:
+  type:
+  - '&7&oרכיב'
+ROCKETFUEL:
+  type:
+  - '&7&oמשאב'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oרכיב'
+SMALLBODY:
+  type:
+  - '&7&oרכיב'
+SMALLFIN:
+  type:
+  - '&7&oרכיב'
+SMALLMISSILE:
+  type:
+  - '&7&oנשק'
+SMALLMISSILEAC:
+  type:
+  - '&7&oנשק'
+SMALLMISSILEHE:
+  type:
+  - '&7&oנשק'
+SMALLMISSILELR:
+  type:
+  - '&7&oנשק'
+SMALLWARHEAD:
+  type:
+  - '&7&oרכיב'
+SUGARFUEL:
+  type:
+  - '&7&oמשאב'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oרכיב'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oרכיב'
+WARHEAD:
+  type:
+  - '&7&oרכיב'
+WARHEADAP:
+  type:
+  - '&7&oרכיב'

@@ -1,0 +1,153 @@
+ADVANCEDMISSILEBODY:
+  type:
+  - '&7&oКампанент'
+ANTIAIRMISSILE:
+  type:
+  - '&7&oЗброя'
+ANTIELYTRA:
+  type:
+  - '&7&oМашына'
+ANTIELYTRAMISSILE:
+  type:
+  - '&7&oЗброя'
+ANTIMISSILELAUNCHER:
+  type:
+  - '&7&oМашына'
+CHLORINE:
+  type:
+  - '&7&oРэсурс'
+CHLORINEPELLET:
+  type:
+  - '&7&oРэсурс'
+COMPRESSEDEXPLOSIVES:
+  type:
+  - '&7&oРэсурс'
+EXPLOSIVEPOWDER:
+  type:
+  - '&7&oРэсурс'
+GROUNDLAUNCHER:
+  type:
+  - '&7&oМашына'
+GUIDEBOOK:
+  type:
+  - '&7&oРознае'
+HEAVYWARHEAD:
+  type:
+  - '&7&oКампанент'
+ICBMMISSILEBODY:
+  type:
+  - '&7&oКампанент'
+MANPAD:
+  type:
+  - '&7&oЗброя'
+MINE:
+  type:
+  - '&7&oПрылада'
+MISSILE:
+  type:
+  - '&7&oЗброя'
+MISSILEAC:
+  type:
+  - '&7&oЗброя'
+MISSILEACADV:
+  type:
+  - '&7&oЗброя'
+MISSILEADV:
+  type:
+  - '&7&oЗброя'
+MISSILEAPONE:
+  type:
+  - '&7&oЗброя'
+MISSILEAPTHR:
+  type:
+  - '&7&oЗброя'
+MISSILEAPTWO:
+  type:
+  - '&7&oЗброя'
+MISSILEBODY:
+  type:
+  - '&7&oКампанент'
+MISSILECLUSTER:
+  type:
+  - '&7&oЗброя'
+MISSILEEXCAV:
+  type:
+  - '&7&oЗброя'
+MISSILEFINS:
+  type:
+  - '&7&oКампанент'
+MISSILEGAS:
+  type:
+  - '&7&oЗброя'
+MISSILEHE:
+  type:
+  - '&7&oЗброя'
+MISSILEHEADV:
+  type:
+  - '&7&oЗброя'
+MISSILEICBM:
+  type:
+  - '&7&oЗброя'
+MISSILELR:
+  type:
+  - '&7&oЗброя'
+MISSILELRADV:
+  type:
+  - '&7&oЗброя'
+MISSILENAPALM:
+  type:
+  - '&7&oЗброя'
+MISSILERADAR:
+  type:
+  - '&7&oМашына'
+MISSILESTICK:
+  type:
+  - '&7&oЗброя'
+PLAYERLIST:
+  type:
+  - '&7&oРознае'
+RADAR:
+  type:
+  - '&7&oКампанент'
+ROCKETFUEL:
+  type:
+  - '&7&oРэсурс'
+SIMPLEFLIGHTCOMPUTER:
+  type:
+  - '&7&oКампанент'
+SMALLBODY:
+  type:
+  - '&7&oКампанент'
+SMALLFIN:
+  type:
+  - '&7&oКампанент'
+SMALLMISSILE:
+  type:
+  - '&7&oЗброя'
+SMALLMISSILEAC:
+  type:
+  - '&7&oЗброя'
+SMALLMISSILEHE:
+  type:
+  - '&7&oЗброя'
+SMALLMISSILELR:
+  type:
+  - '&7&oЗброя'
+SMALLWARHEAD:
+  type:
+  - '&7&oКампанент'
+SUGARFUEL:
+  type:
+  - '&7&oРэсурс'
+ULTRALITE_INGOT:
+  type:
+  - '&7&oКампанент'
+ULTRALITE_PLATE:
+  type:
+  - '&7&oКампанент'
+WARHEAD:
+  type:
+  - '&7&oКампанент'
+WARHEADAP:
+  type:
+  - '&7&oКампанент'
