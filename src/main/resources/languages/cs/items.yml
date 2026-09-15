@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Vylepšená verze těla střely'
+  name: '&ePokročilé tělo střely'
   type:
   - '&7&oKomponenta'
 ANTIAIRMISSILE:
+  description:
+  - '&7Protistřelová / protielytrová'
+  - '&7Protistřelová varianta'
+  - '&7''Timmyho ohňostroj byl zrušen'''
+  name: '&eProtistřelová střela'
+  stats:
+  - '&8⇨ &7Dosah: &e600 bloků'
+  - '&8⇨ &7Síla: &e4'
+  - '&8⇨ &7Rychlost: &e5'
+  - '&8⇨ &7Přesnost: &eV okruhu 0 bloků'
   type:
   - '&7&oZbraň'
 ANTIELYTRA:
+  description:
+  - '&7Vystřelí střelu na hráče poblíž,'
+  - '&7kteří používají elytru'
+  - '&7Kromě těch, kdo mají'
+  - '&7ID přiřazené tomuto zařízení'
+  name: '&6Protielytrový odpalovač'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePoužij klacek&7 k nastavení ID skupiny'
+  - '&7Potřebuje protielytrové střely'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Protistřelová / protielytrová'
+  - '&7Protistřelová varianta'
+  - '&7''Timmyho ohňostroj byl zrušen'''
+  name: '&eProtielytrová střela'
+  stats:
+  - '&8⇨ &7Dosah: &e700 bloků'
+  - '&8⇨ &7Síla: &e4'
+  - '&8⇨ &7Rychlost: &e6'
+  - '&8⇨ &7Přesnost: &eV okruhu 0 bloků'
   type:
   - '&7&oZbraň'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Zaměřuje a sestřeluje ostatní střely v oblasti.'
+  name: '&6Protistřelový odpalovač'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePoužij redstone&7 k jeho vypnutí'
+  - '&7Musí být postaven na obsidiánu'
+  - '&7Potřebuje protistřelové střely'
 CHLORINE:
+  description:
+  - '&7Jedovatý'
+  - '&7Způsobuje pomalou a bolestivou smrt!'
+  name: '&eChlor'
   type:
   - '&7&oSurovina'
+  usage:
+  - '&ePravý klik&7 udělí efekt Wither'
 CHLORINEPELLET:
+  description:
+  - '&7Kulička chloru'
+  name: '&eChlorová kulička'
   type:
   - '&7&oSurovina'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Stlačený tak silně, že ztuhl'
+  name: '&eStlačený výbušný prášek'
   type:
   - '&7&oSurovina'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Zacházej opatrně!'
+  name: '&eVýbušný prášek'
   type:
   - '&7&oSurovina'
 GROUNDLAUNCHER:
+  description:
+  - '&7Střílí na zadanou oblast na zemi.'
+  name: '&6Odpalovač střel GtG'
+  stats:
+  - '&8⇨ &7Výchozí letová hladina: &eY:120'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePoužij klacek&7 k nastavení souřadnic cíle'
+  - '&eShift s klackem&7 ověří, zda může vystřelit'
+  - '&ePravý klik s ohnivou tyčí&7 nastaví letovou hladinu'
+  - '&7Musí být postaven na 1 bloku zeleného betonu.'
 GUIDEBOOK:
+  description:
+  - '&7Ona tě provede?!?'
+  name: '&ePříručka'
   type:
   - '&7&oRůzné'
+  usage:
+  - '&ePravý klik&7 otevře příručku'
 HEAVYWARHEAD:
+  description:
+  - '&7Hlavice napěchovaná těžkými výbušninami'
+  name: '&eTěžká hlavice'
   type:
   - '&7&oKomponenta'
 ICBMMISSILEBODY:
+  description:
+  - '&7Dokonale zkonstruované, elegantní, smrtící.'
+  - '&7Tělo střely ICBM'
+  name: '&eTělo ICBM'
   type:
   - '&7&oKomponenta'
 MANPAD:
+  description:
+  - '&7Ruční protistřelové zařízení'
+  name: '&6Manpad'
   type:
   - '&7&oZbraň'
+  usage:
+  - '&eShift + pravý klik&7 zahájí sledování'
+  - '&ePusť Shift&7 k výstřelu'
 MINE:
+  description:
+  - '&7Zabere i na tanky?'
+  name: '&cMina'
+  stats:
+  - '&8⇨ &7Síla výbuchu: &e8'
+  - '&8⇨ &7Náhodné poškození: &eAž 10'
   type:
   - '&7&oPomůcka'
+  usage:
+  - '&eUmísti&7 ji na blok a přestrojí se za něj'
 MISSILE:
+  description:
+  - '&7Střela GtG'
+  - '&7Normální varianta'
+  - '&7''Tvoje přátelská střela ze sousedství'''
+  name: '&eStřela GtG'
+  stats:
+  - '&8⇨ &7Dosah: &e1000 bloků'
+  - '&8⇨ &7Síla: &e4.5'
+  - '&8⇨ &7Rychlost: &e2.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 80 bloků'
   type:
   - '&7&oZbraň'
 MISSILEAC:
+  description:
+  - '&7Střela GtG'
+  - '&7Přesná varianta'
+  - '&7''Tvoje přátelská střela na vyklízení místností'''
+  name: '&eStřela GtG AC'
+  stats:
+  - '&8⇨ &7Dosah: &e1250 bloků'
+  - '&8⇨ &7Síla: &e4.5'
+  - '&8⇨ &7Rychlost: &e2.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 16 bloků'
   type:
   - '&7&oZbraň'
 MISSILEACADV:
+  description:
+  - '&7Pokročilé střely GtG'
+  - '&7Přesná varianta'
+  - '&7''Docela přesná, řekl bych'''
+  name: '&ePokročilá střela GtG AC'
+  stats:
+  - '&8⇨ &7Dosah: &e2000 bloků'
+  - '&8⇨ &7Síla: &e4.5'
+  - '&8⇨ &7Rychlost: &e4'
+  - '&8⇨ &7Přesnost: &eV okruhu 20 bloků'
   type:
   - '&7&oZbraň'
 MISSILEADV:
+  description:
+  - '&7Pokročilé střely GtG'
+  - '&7Normální varianta'
+  - '&7''Poháněno umělou inteligencí (technicky vzato)'''
+  name: '&ePokročilá střela GtG'
+  stats:
+  - '&8⇨ &7Dosah: &e2000 bloků'
+  - '&8⇨ &7Síla: &e4'
+  - '&8⇨ &7Rychlost: &e4'
+  - '&8⇨ &7Přesnost: &eV okruhu 40 bloků'
   type:
   - '&7&oZbraň'
 MISSILEAPONE:
+  description:
+  - '&7Průbojná střela GtG'
+  - '&7AP úrovně 1'
+  - '&7''Tvůj sklep už dlouho bezpečný nebude!'''
+  name: '&eStřela GtG AP'
+  stats:
+  - '&8⇨ &7Prorazí 1 blok, než vybuchne'
+  - '&8⇨ &7Neprorazí obsidián'
+  - '&8⇨ &7Dosah: &e1550 bloků'
+  - '&8⇨ &7Síla: &e3.5'
+  - '&8⇨ &7Rychlost: &e2'
+  - '&8⇨ &7Přesnost: &eV okruhu 40 bloků'
   type:
   - '&7&oZbraň'
 MISSILEAPTHR:
+  description:
+  - '&7Průbojná střela GtG'
+  - '&7AP úrovně 3'
+  - '&7''Tvůj bunkr rozhodně už dlouho bezpečný nebude!'''
+  name: '&eStřela GtG AP'
+  stats:
+  - '&8⇨ &7Prorazí 2 bloky, než vybuchne'
+  - '&8⇨ &775% šance na proražení obsidiánu'
+  - '&8⇨ &720% šance na rozbití zasaženého obsidiánu'
+  - '&8⇨ &7Dosah: &e1850 bloků'
+  - '&8⇨ &7Síla: &e4.5'
+  - '&8⇨ &7Rychlost: &e4'
+  - '&8⇨ &7Přesnost: &eV okruhu 10 bloků'
   type:
   - '&7&oZbraň'
 MISSILEAPTWO:
+  description:
+  - '&7Průbojná střela GtG'
+  - '&7AP úrovně 2'
+  - '&7''Tvůj bunkr už dlouho bezpečný nebude!'''
+  name: '&eStřela GtG AP'
+  stats:
+  - '&8⇨ &7Prorazí 1 blok, než vybuchne'
+  - '&8⇨ &750% šance na proražení obsidiánu'
+  - '&8⇨ &710% šance na rozbití zasaženého obsidiánu'
+  - '&8⇨ &7Dosah: &e1700 bloků'
+  - '&8⇨ &7Síla: &e4'
+  - '&8⇨ &7Rychlost: &e2.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 20 bloků'
   type:
   - '&7&oZbraň'
 MISSILEBODY:
+  description:
+  - '&7Tělo střely s letovým počítačem'
+  name: '&eTělo střely'
   type:
   - '&7&oKomponenta'
 MISSILECLUSTER:
+  description:
+  - '&7Kazetová střela, před dopadem vypustí mnoho střel'
+  - '&7''Vymaže vesnice rychleji, než stihneš vykřiknout!'''
+  name: '&cKazetová střela'
+  stats:
+  - '&8⇨ &7Dosah: &e1600 bloků'
+  - '&8⇨ &7Síla: &e4'
+  - '&8⇨ &7Rychlost: &e3.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 90 bloků'
   type:
   - '&7&oZbraň'
 MISSILEEXCAV:
+  description:
+  - '&7Užitková střela'
+  - '&7Má velký okruh výbuchu, ale malé poškození'
+  - '&7Používá se k těžbě'
+  - '&7''Lepší než 100 krumpáčů!'''
+  name: '&cVýkopová střela'
+  stats:
+  - '&8⇨ &7Dosah: &e100 bloků'
+  - '&8⇨ &7Síla: &e14'
+  - '&8⇨ &7Rychlost: &e0.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 50 bloků'
   type:
   - '&7&oZbraň'
 MISSILEFINS:
+  description:
+  - '&7Dokáže střelu lépe nasměrovat'
+  name: '&eStabilizátory střely'
   type:
   - '&7&oKomponenta'
 MISSILEGAS:
+  description:
+  - '&7Čisticí střela'
+  - '&7Po zásahu cíle uvolní jedovatý plyn'
+  - '&7''Spáchej timmycidu.'''
+  name: '&cPlynová střela'
+  stats:
+  - '&8⇨ &7Dosah: &e1600 bloků'
+  - '&8⇨ &7Síla: &e0.5'
+  - '&8⇨ &7Rychlost: &e3'
+  - '&8⇨ &7Přesnost: &eV okruhu 80 bloků'
   type:
   - '&7&oZbraň'
 MISSILEHE:
+  description:
+  - '&7Střela GtG'
+  - '&7Vysoce výbušná varianta'
+  - '&7''Tvoje ne až tak přátelská střela ze sousedství'''
+  name: '&eStřela GtG HE'
+  stats:
+  - '&8⇨ &7Dosah: &e1000 bloků'
+  - '&8⇨ &7Síla: &e5'
+  - '&8⇨ &7Rychlost: &e2'
+  - '&8⇨ &7Přesnost: &eV okruhu 100 bloků'
   type:
   - '&7&oZbraň'
 MISSILEHEADV:
+  description:
+  - '&7Pokročilé střely GtG'
+  - '&7Vysoce výbušná varianta'
+  - '&7''Velmi nebezpečné, nesahat'''
+  name: '&ePokročilá střela GtG HE'
+  stats:
+  - '&8⇨ &7Dosah: &e2000 bloků'
+  - '&8⇨ &7Síla: &e6'
+  - '&8⇨ &7Rychlost: &e3.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 35 bloků'
   type:
   - '&7&oZbraň'
 MISSILEICBM:
+  description:
+  - '&7Dalekonosná střela'
+  - '&7Mezikontinentální balistická střela'
+  - '&7''Nikde není bezpečno.'''
+  name: '&cStřela ICBM'
+  stats:
+  - '&8⇨ &7Dosah: &e7000 bloků'
+  - '&8⇨ &7Síla: &e10'
+  - '&8⇨ &7Rychlost: &e5'
+  - '&8⇨ &7Přesnost: &eV okruhu 50 bloků'
   type:
   - '&7&oZbraň'
 MISSILELR:
+  description:
+  - '&7Střela GtG'
+  - '&7Dalekonosná varianta'
+  - '&7''Tvoje přátelská městská střela'''
+  name: '&eStřela GtG LR'
+  stats:
+  - '&8⇨ &7Dosah: &e1500 bloků'
+  - '&8⇨ &7Síla: &e4.5'
+  - '&8⇨ &7Rychlost: &e2.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 80 bloků'
   type:
   - '&7&oZbraň'
 MISSILELRADV:
+  description:
+  - '&7Pokročilé střely GtG'
+  - '&7Dalekonosná varianta'
+  - '&7''Už mi docházejí nápady na popisky'''
+  name: '&ePokročilá střela GtG LR'
+  stats:
+  - '&8⇨ &7Dosah: &e2500 bloků'
+  - '&8⇨ &7Síla: &e4'
+  - '&8⇨ &7Rychlost: &e4.5'
+  - '&8⇨ &7Přesnost: &eV okruhu 40 bloků'
   type:
   - '&7&oZbraň'
 MISSILENAPALM:
+  description:
+  - '&7Zápalná střela'
+  - '&7Napalmová střela, po zásahu rozmetá oheň všude kolem.'
+  - '&7''Odstraňovač školek! Vyzkoušeno a ověřeno™'''
+  name: '&cNapalmová střela'
+  stats:
+  - '&8⇨ &7Dosah: &e1600 bloků'
+  - '&8⇨ &7Síla: &e2'
+  - '&8⇨ &7Rychlost: &e3'
+  - '&8⇨ &7Přesnost: &eV okruhu 80 bloků'
   type:
   - '&7&oZbraň'
 MISSILERADAR:
+  description:
+  - '&7Vysílá redstone signál, když je střela do 700 bloků'
+  name: '&eRadar střel'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eUmísti&7 redstone na tento blok, abys získal jeho výstup'
+  - '&7K zachycení jednotickového pulzu je potřeba opakovač'
 MISSILESTICK:
+  description:
+  - '&7Střela s pastí'
+  - '&7Malý výbuch, který uvolní pavučiny'
+  - '&7''Neptej se, z čeho je.'''
+  name: '&cLepivá střela'
+  stats:
+  - '&8⇨ &7Dosah: &e1600 bloků'
+  - '&8⇨ &7Síla: &e1'
+  - '&8⇨ &7Rychlost: &e4'
+  - '&8⇨ &7Přesnost: &eV okruhu 70 bloků'
   type:
   - '&7&oZbraň'
 PLAYERLIST:
+  description:
+  - '&7TATO ID JSOU GLOBÁLNÍ'
+  - '&7KDOKOLI JE MŮŽE UPRAVIT,'
+  - '&7POKUD MÁ DANÉ ID'
+  name: '&6Seznam hráčů'
   type:
   - '&7&oRůzné'
+  usage:
+  - '&ePravý klik&7 nastaví hráče pro ID'
 RADAR:
+  description:
+  - '&7Používá se ke sledování střel nebo hráčů k zásahu'
+  name: '&eRadar'
   type:
   - '&7&oKomponenta'
 ROCKETFUEL:
+  description:
+  - '&7Hoří silou 1000 kusů uhlí...'
+  name: '&eRaketové palivo'
   type:
   - '&7&oSurovina'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Jednoduchý počítač schopný navádět střelu'
+  name: '&eJednoduchý letový počítač'
   type:
   - '&7&oKomponenta'
 SMALLBODY:
+  description:
+  - '&7Používá se při výrobě střely'
+  - '&7''Radši to nepromáčkni'''
+  name: '&eMalý trup střely'
   type:
   - '&7&oKomponenta'
 SMALLFIN:
+  description:
+  - '&7Používá se při výrobě střely'
+  name: '&eMalé stabilizátory střely'
   type:
   - '&7&oKomponenta'
 SMALLMISSILE:
+  description:
+  - '&7Malá střela země-země'
+  - '&7Normální varianta'
+  name: '&eMalá střela GtG'
+  stats:
+  - '&8⇨ &7Dosah: &e750 bloků'
+  - '&8⇨ &7Síla: &e3'
+  - '&8⇨ &7Rychlost: &e2'
+  - '&8⇨ &7Přesnost: &eV okruhu 100 bloků'
   type:
   - '&7&oZbraň'
 SMALLMISSILEAC:
+  description:
+  - '&7Malá střela země-země'
+  - '&7Přesná varianta'
+  - '&7''Malý Timmy neměl šanci'''
+  name: '&eMalá střela GtG AC'
+  stats:
+  - '&8⇨ &7Dosah: &e700 bloků'
+  - '&8⇨ &7Síla: &e3'
+  - '&8⇨ &7Rychlost: &e2'
+  - '&8⇨ &7Přesnost: &eV okruhu 60 bloků'
   type:
   - '&7&oZbraň'
 SMALLMISSILEHE:
+  description:
+  - '&7Malá střela země-země'
+  - '&7Vysoce výbušná varianta'
+  name: '&eMalá střela GtG HE'
+  stats:
+  - '&8⇨ &7Dosah: &e600 bloků'
+  - '&8⇨ &7Síla: &e3.5'
+  - '&8⇨ &7Rychlost: &e1'
+  - '&8⇨ &7Přesnost: &eV okruhu 120 bloků'
   type:
   - '&7&oZbraň'
 SMALLMISSILELR:
+  description:
+  - '&7Malá střela země-země'
+  - '&7Dalekonosná varianta'
+  - '&7''Timmy až kdesi daleko neměl šanci'''
+  name: '&eMalá střela GtG LR'
+  stats:
+  - '&8⇨ &7Dosah: &e900 bloků'
+  - '&8⇨ &7Síla: &e3'
+  - '&8⇨ &7Rychlost: &e2'
+  - '&8⇨ &7Přesnost: &eV okruhu 100 bloků'
   type:
   - '&7&oZbraň'
 SMALLWARHEAD:
+  description:
+  - '&7Používá se při výrobě střely.'
+  - '&7''Nesahej na to červené'''
+  name: '&eMalá hlavice'
   type:
   - '&7&oKomponenta'
 SUGARFUEL:
+  description:
+  - '&7Levné, vysoce energetické, ideální pro malé střely.'
+  name: '&eCukrové palivo'
   type:
   - '&7&oSurovina'
 ULTRALITE_INGOT:
+  description:
+  - '&7Super lehký ingot používaný pro střely'
+  name: '&eIngot UltraLite'
   type:
   - '&7&oKomponenta'
 ULTRALITE_PLATE:
+  description:
+  - '&7Super lehká deska pro střely'
+  name: '&eDeska UltraLite'
   type:
   - '&7&oKomponenta'
 WARHEAD:
+  description:
+  - '&7Používá se při výrobě střely.'
+  - '&7''Brambora pryč'''
+  name: '&eHlavice střely'
   type:
   - '&7&oKomponenta'
 WARHEADAP:
+  description:
+  - '&7Používá se k výrobě střel AP'
+  - '&7''Bunkr pryč'''
+  name: '&eZesílená hlavice'
   type:
   - '&7&oKomponenta'
