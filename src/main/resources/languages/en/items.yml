@@ -428,7 +428,7 @@ MISSILEGAS:
     - "&8⇨ &7Accuracy: &eWithin 80 Blocks"
 
 MISSILEEXCAV:
-  name: "&cAushubrakete"
+  name: "&cExcavation Missile"
   type:
     - "&7&oWeapon"
   description:
