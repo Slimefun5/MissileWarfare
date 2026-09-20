@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Nadograđena inačica tijela projektila'
+  name: '&eNapredno tijelo projektila'
   type:
   - '&7&oKomponenta'
 ANTIAIRMISSILE:
+  description:
+  - '&7Protuprojektilni / Protuelitrni'
+  - '&7Protuprojektilna varijanta'
+  - '&7''Timmyjev vatromet je otkazan'''
+  name: '&eProtuprojektilni projektil'
+  stats:
+  - '&8⇨ &7Domet: &e600 blokova'
+  - '&8⇨ &7Snaga: &e4'
+  - '&8⇨ &7Brzina: &e5'
+  - '&8⇨ &7Preciznost: &eUnutar 0 blokova'
   type:
   - '&7&oOružje'
 ANTIELYTRA:
+  description:
+  - '&7Ispaljuje projektil na obližnje igrače'
+  - '&7koji koriste elitre'
+  - '&7Osim onih na'
+  - '&7ID-u dodijeljenom ovome'
+  name: '&6Protuelitrni lanser'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eUpotrijebi štap&7 za postavljanje ID-a grupe'
+  - '&7Treba protuelitrne projektile'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Protuprojektilni / Protuelitrni'
+  - '&7Protuprojektilna varijanta'
+  - '&7''Timmyjev vatromet je otkazan'''
+  name: '&eProtuelitrni projektil'
+  stats:
+  - '&8⇨ &7Domet: &e700 blokova'
+  - '&8⇨ &7Snaga: &e4'
+  - '&8⇨ &7Brzina: &e6'
+  - '&8⇨ &7Preciznost: &eUnutar 0 blokova'
   type:
   - '&7&oOružje'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Cilja i obara druge projektile u području.'
+  name: '&6Protuprojektilni lanser'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eUpotrijebi redstone&7 za isključivanje'
+  - '&7Mora biti izgrađen na opsidijanu'
+  - '&7Treba protuprojektilne projektile'
 CHLORINE:
+  description:
+  - '&7Otrovno'
+  - '&7Uzrokuje sporu i bolnu smrt!'
+  name: '&eKlor'
   type:
   - '&7&oResurs'
+  usage:
+  - '&eDesni klik&7 za primjenu Wither učinka'
 CHLORINEPELLET:
+  description:
+  - '&7Kuglica klora'
+  name: '&eKuglica klora'
   type:
   - '&7&oResurs'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Komprimiran tako jako da je postao krutina'
+  name: '&eKomprimirani eksplozivni prah'
   type:
   - '&7&oResurs'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Rukujte pažljivo!'
+  name: '&eEksplozivni prah'
   type:
   - '&7&oResurs'
 GROUNDLAUNCHER:
+  description:
+  - '&7Gađa zadano područje na tlu.'
+  name: '&6GtG lanser projektila'
+  stats:
+  - '&8⇨ &7Zadana visina leta: &eY:120'
   type:
   - '&7&oStroj'
+  usage:
+  - '&eUpotrijebi štap&7 za postavljanje koordinata cilja'
+  - '&eShift sa štapom&7 za provjeru može li ispaliti'
+  - '&eDesni klik s blaze štapićem&7 za postavljanje visine leta'
+  - '&7Mora biti izgrađen na 1 bloku zelenog betona.'
 GUIDEBOOK:
+  description:
+  - '&7Vodit će te?!?'
+  name: '&eKnjiga vodič'
   type:
   - '&7&oRazno'
+  usage:
+  - '&eDesni klik&7 za otvaranje vodiča'
 HEAVYWARHEAD:
+  description:
+  - '&7Bojeva glava natrpana teškim eksplozivom'
+  name: '&eTeška bojeva glava'
   type:
   - '&7&oKomponenta'
 ICBMMISSILEBODY:
+  description:
+  - '&7Dizajnirano do savršenstva, elegantno, smrtonosno.'
+  - '&7Tijelo ICBM projektila'
+  name: '&eTijelo ICBM-a'
   type:
   - '&7&oKomponenta'
 MANPAD:
+  description:
+  - '&7Ručni protuprojektilni uređaj'
+  name: '&6Ručni lanser'
   type:
   - '&7&oOružje'
+  usage:
+  - '&eShift + desni klik&7 za početak praćenja'
+  - '&eOtpusti Shift&7 za ispaljivanje'
 MINE:
+  description:
+  - '&7Hoće li djelovati na tenkove?'
+  name: '&cMina'
+  stats:
+  - '&8⇨ &7Snaga eksplozije: &e8'
+  - '&8⇨ &7Nasumična šteta: &eDo 10'
   type:
   - '&7&oNaprava'
+  usage:
+  - '&ePostavi&7 uz blok da se prikrije kao taj blok'
 MISSILE:
+  description:
+  - '&7GtG projektil'
+  - '&7Obična varijanta'
+  - '&7''Vaš dobrosusjedski projektil'''
+  name: '&eGtG projektil'
+  stats:
+  - '&8⇨ &7Domet: &e1000 blokova'
+  - '&8⇨ &7Snaga: &e4.5'
+  - '&8⇨ &7Brzina: &e2.5'
+  - '&8⇨ &7Preciznost: &eUnutar 80 blokova'
   type:
   - '&7&oOružje'
 MISSILEAC:
+  description:
+  - '&7GtG projektil'
+  - '&7Precizna varijanta'
+  - '&7''Vaš prijateljski projektil za čišćenje soba'''
+  name: '&eGtG projektil AC'
+  stats:
+  - '&8⇨ &7Domet: &e1250 blokova'
+  - '&8⇨ &7Snaga: &e4.5'
+  - '&8⇨ &7Brzina: &e2.5'
+  - '&8⇨ &7Preciznost: &eUnutar 16 blokova'
   type:
   - '&7&oOružje'
 MISSILEACADV:
+  description:
+  - '&7GtG napredni projektili'
+  - '&7Precizna varijanta'
+  - '&7''Prilično precizan, valjda'''
+  name: '&eGtG napredni projektil AC'
+  stats:
+  - '&8⇨ &7Domet: &e2000 blokova'
+  - '&8⇨ &7Snaga: &e4.5'
+  - '&8⇨ &7Brzina: &e4'
+  - '&8⇨ &7Preciznost: &eUnutar 20 blokova'
   type:
   - '&7&oOružje'
 MISSILEADV:
+  description:
+  - '&7GtG napredni projektili'
+  - '&7Obična varijanta'
+  - '&7''Pokreće ga U.I. (tehnički)'''
+  name: '&eGtG napredni projektil'
+  stats:
+  - '&8⇨ &7Domet: &e2000 blokova'
+  - '&8⇨ &7Snaga: &e4'
+  - '&8⇨ &7Brzina: &e4'
+  - '&8⇨ &7Preciznost: &eUnutar 40 blokova'
   type:
   - '&7&oOružje'
 MISSILEAPONE:
+  description:
+  - '&7GtG projektil za probijanje oklopa'
+  - '&7AP stupanj 1'
+  - '&7''Vaš podrum više nije dugo siguran!'''
+  name: '&eGtG projektil AP'
+  stats:
+  - '&8⇨ &7Probija 1 blok prije eksplozije'
+  - '&8⇨ &7Neće proći kroz opsidijan'
+  - '&8⇨ &7Domet: &e1550 blokova'
+  - '&8⇨ &7Snaga: &e3.5'
+  - '&8⇨ &7Brzina: &e2'
+  - '&8⇨ &7Preciznost: &eUnutar 40 blokova'
   type:
   - '&7&oOružje'
 MISSILEAPTHR:
+  description:
+  - '&7GtG projektil za probijanje oklopa'
+  - '&7AP stupanj 3'
+  - '&7''Vaš bunker definitivno više nije dugo siguran!'''
+  name: '&eGtG projektil AP'
+  stats:
+  - '&8⇨ &7Probija 2 bloka prije eksplozije'
+  - '&8⇨ &775% šanse za prolazak kroz opsidijan'
+  - '&8⇨ &720% šanse za razbijanje pogođenog opsidijana'
+  - '&8⇨ &7Domet: &e1850 blokova'
+  - '&8⇨ &7Snaga: &e4.5'
+  - '&8⇨ &7Brzina: &e4'
+  - '&8⇨ &7Preciznost: &eUnutar 10 blokova'
   type:
   - '&7&oOružje'
 MISSILEAPTWO:
+  description:
+  - '&7GtG projektil za probijanje oklopa'
+  - '&7AP stupanj 2'
+  - '&7''Vaš bunker više nije dugo siguran!'''
+  name: '&eGtG projektil AP'
+  stats:
+  - '&8⇨ &7Probija 1 blok prije eksplozije'
+  - '&8⇨ &750% šanse za prolazak kroz opsidijan'
+  - '&8⇨ &710% šanse za razbijanje pogođenog opsidijana'
+  - '&8⇨ &7Domet: &e1700 blokova'
+  - '&8⇨ &7Snaga: &e4'
+  - '&8⇨ &7Brzina: &e2.5'
+  - '&8⇨ &7Preciznost: &eUnutar 20 blokova'
   type:
   - '&7&oOružje'
 MISSILEBODY:
+  description:
+  - '&7Tijelo projektila koje sadrži letno računalo'
+  name: '&eTijelo projektila'
   type:
   - '&7&oKomponenta'
 MISSILECLUSTER:
+  description:
+  - '&7Kasetni projektil, ispušta mnogo projektila prije pogotka'
+  - '&7''Uklanja sela brže nego što možeš vrisnuti!'''
+  name: '&cKasetni projektil'
+  stats:
+  - '&8⇨ &7Domet: &e1600 blokova'
+  - '&8⇨ &7Snaga: &e4'
+  - '&8⇨ &7Brzina: &e3.5'
+  - '&8⇨ &7Preciznost: &eUnutar 90 blokova'
   type:
   - '&7&oOružje'
 MISSILEEXCAV:
+  description:
+  - '&7Uslužni projektil'
+  - '&7Ima velik radijus eksplozije, ali malu štetu'
+  - '&7Koristi se za rudarenje'
+  - '&7''Bolji od 100 pijuka!'''
+  name: '&cProjektil za iskop'
+  stats:
+  - '&8⇨ &7Domet: &e100 blokova'
+  - '&8⇨ &7Snaga: &e14'
+  - '&8⇨ &7Brzina: &e0.5'
+  - '&8⇨ &7Preciznost: &eUnutar 50 blokova'
   type:
   - '&7&oOružje'
 MISSILEFINS:
+  description:
+  - '&7Može bolje usmjeriti projektil'
+  name: '&eKrilca projektila'
   type:
   - '&7&oKomponenta'
 MISSILEGAS:
+  description:
+  - '&7Projektil za čišćenje'
+  - '&7Ispušta otrovni plin pri pogotku cilja'
+  - '&7''Počini Timmycid.'''
+  name: '&cPlinski projektil'
+  stats:
+  - '&8⇨ &7Domet: &e1600 blokova'
+  - '&8⇨ &7Snaga: &e0.5'
+  - '&8⇨ &7Brzina: &e3'
+  - '&8⇨ &7Preciznost: &eUnutar 80 blokova'
   type:
   - '&7&oOružje'
 MISSILEHE:
+  description:
+  - '&7GtG projektil'
+  - '&7Visokoeksplozivna varijanta'
+  - '&7''Vaš ne baš dobrosusjedski projektil'''
+  name: '&eGtG projektil HE'
+  stats:
+  - '&8⇨ &7Domet: &e1000 blokova'
+  - '&8⇨ &7Snaga: &e5'
+  - '&8⇨ &7Brzina: &e2'
+  - '&8⇨ &7Preciznost: &eUnutar 100 blokova'
   type:
   - '&7&oOružje'
 MISSILEHEADV:
+  description:
+  - '&7GtG napredni projektili'
+  - '&7Visokoeksplozivna varijanta'
+  - '&7''Vrlo opasno, ne dirati'''
+  name: '&eGtG napredni projektil HE'
+  stats:
+  - '&8⇨ &7Domet: &e2000 blokova'
+  - '&8⇨ &7Snaga: &e6'
+  - '&8⇨ &7Brzina: &e3.5'
+  - '&8⇨ &7Preciznost: &eUnutar 35 blokova'
   type:
   - '&7&oOružje'
 MISSILEICBM:
+  description:
+  - '&7Dalekometni projektil'
+  - '&7Interkontinentalni balistički projektil'
+  - '&7''Nigdje nije sigurno.'''
+  name: '&cICBM projektil'
+  stats:
+  - '&8⇨ &7Domet: &e7000 blokova'
+  - '&8⇨ &7Snaga: &e10'
+  - '&8⇨ &7Brzina: &e5'
+  - '&8⇨ &7Preciznost: &eUnutar 50 blokova'
   type:
   - '&7&oOružje'
 MISSILELR:
+  description:
+  - '&7GtG projektil'
+  - '&7Dalekometna varijanta'
+  - '&7''Vaš prijateljski gradski projektil'''
+  name: '&eGtG projektil LR'
+  stats:
+  - '&8⇨ &7Domet: &e1500 blokova'
+  - '&8⇨ &7Snaga: &e4.5'
+  - '&8⇨ &7Brzina: &e2.5'
+  - '&8⇨ &7Preciznost: &eUnutar 80 blokova'
   type:
   - '&7&oOružje'
 MISSILELRADV:
+  description:
+  - '&7GtG napredni projektili'
+  - '&7Dalekometna varijanta'
+  - '&7''Ponestaje mi ideja za priču'''
+  name: '&eGtG napredni projektil LR'
+  stats:
+  - '&8⇨ &7Domet: &e2500 blokova'
+  - '&8⇨ &7Snaga: &e4'
+  - '&8⇨ &7Brzina: &e4.5'
+  - '&8⇨ &7Preciznost: &eUnutar 40 blokova'
   type:
   - '&7&oOružje'
 MISSILENAPALM:
+  description:
+  - '&7Vatreni projektil'
+  - '&7Napalmski projektil, pri pogotku baca vatru posvuda.'
+  - '&7''Uklanjač vrtića! Isprobano i provjereno™'''
+  name: '&cNapalmski projektil'
+  stats:
+  - '&8⇨ &7Domet: &e1600 blokova'
+  - '&8⇨ &7Snaga: &e2'
+  - '&8⇨ &7Brzina: &e3'
+  - '&8⇨ &7Preciznost: &eUnutar 80 blokova'
   type:
   - '&7&oOružje'
 MISSILERADAR:
+  description:
+  - '&7Odašilje redstone signal kada je projektil unutar 700 blokova'
+  name: '&eRadar za projektile'
   type:
   - '&7&oStroj'
+  usage:
+  - '&ePostavi&7 redstone na ovaj blok da dobiješ njegov izlaz'
+  - '&7Potreban je repetitor za dobivanje impulsa od jednog tika'
 MISSILESTICK:
+  description:
+  - '&7Projektil zamka'
+  - '&7Mala eksplozija koja ispušta paučinu'
+  - '&7''Ne pitaj od čega je napravljen.'''
+  name: '&cLjepljivi projektil'
+  stats:
+  - '&8⇨ &7Domet: &e1600 blokova'
+  - '&8⇨ &7Snaga: &e1'
+  - '&8⇨ &7Brzina: &e4'
+  - '&8⇨ &7Preciznost: &eUnutar 70 blokova'
   type:
   - '&7&oOružje'
 PLAYERLIST:
+  description:
+  - '&7OVI ID-OVI SU GLOBALNI'
+  - '&7SVATKO IH MOŽE UREĐIVATI AKO'
+  - '&7IMA ID'
+  name: '&6Popis igrača'
   type:
   - '&7&oRazno'
+  usage:
+  - '&eDesni klik&7 za postavljanje igrača za ID'
 RADAR:
+  description:
+  - '&7Koristi se za praćenje projektila ili igrača koje treba pogoditi'
+  name: '&eRadar'
   type:
   - '&7&oKomponenta'
 ROCKETFUEL:
+  description:
+  - '&7Gori snagom 1000 ugljena...'
+  name: '&eRaketno gorivo'
   type:
   - '&7&oResurs'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Jednostavno računalo sposobno navoditi projektil'
+  name: '&eJednostavno letno računalo'
   type:
   - '&7&oKomponenta'
 SMALLBODY:
+  description:
+  - '&7Koristi se pri izradi projektila'
+  - '&7''Nemoj to udubiti'''
+  name: '&eMali trup projektila'
   type:
   - '&7&oKomponenta'
 SMALLFIN:
+  description:
+  - '&7Koristi se pri izradi projektila'
+  name: '&eMala krilca projektila'
   type:
   - '&7&oKomponenta'
 SMALLMISSILE:
+  description:
+  - '&7Mali projektil zemlja-zemlja'
+  - '&7Obična varijanta'
+  name: '&eMali GtG projektil'
+  stats:
+  - '&8⇨ &7Domet: &e750 blokova'
+  - '&8⇨ &7Snaga: &e3'
+  - '&8⇨ &7Brzina: &e2'
+  - '&8⇨ &7Preciznost: &eUnutar 100 blokova'
   type:
   - '&7&oOružje'
 SMALLMISSILEAC:
+  description:
+  - '&7Mali projektil zemlja-zemlja'
+  - '&7Precizna varijanta'
+  - '&7''Mali Timmy nije imao nikakve šanse'''
+  name: '&eMali GtG projektil AC'
+  stats:
+  - '&8⇨ &7Domet: &e700 blokova'
+  - '&8⇨ &7Snaga: &e3'
+  - '&8⇨ &7Brzina: &e2'
+  - '&8⇨ &7Preciznost: &eUnutar 60 blokova'
   type:
   - '&7&oOružje'
 SMALLMISSILEHE:
+  description:
+  - '&7Mali projektil zemlja-zemlja'
+  - '&7Visokoeksplozivna varijanta'
+  name: '&eMali GtG projektil HE'
+  stats:
+  - '&8⇨ &7Domet: &e600 blokova'
+  - '&8⇨ &7Snaga: &e3.5'
+  - '&8⇨ &7Brzina: &e1'
+  - '&8⇨ &7Preciznost: &eUnutar 120 blokova'
   type:
   - '&7&oOružje'
 SMALLMISSILELR:
+  description:
+  - '&7Mali projektil zemlja-zemlja'
+  - '&7Dalekometna varijanta'
+  - '&7''Timmy vrlo daleko nije imao nikakve šanse'''
+  name: '&eMali GtG projektil LR'
+  stats:
+  - '&8⇨ &7Domet: &e900 blokova'
+  - '&8⇨ &7Snaga: &e3'
+  - '&8⇨ &7Brzina: &e2'
+  - '&8⇨ &7Preciznost: &eUnutar 100 blokova'
   type:
   - '&7&oOružje'
 SMALLWARHEAD:
+  description:
+  - '&7Koristi se pri izradi projektila.'
+  - '&7''Ne diraj crveni dio'''
+  name: '&eMala bojeva glava'
   type:
   - '&7&oKomponenta'
 SUGARFUEL:
+  description:
+  - '&7Jeftino, vrlo energično, savršeno za male projektile.'
+  name: '&eŠećerno gorivo'
   type:
   - '&7&oResurs'
 ULTRALITE_INGOT:
+  description:
+  - '&7Super lagana poluga koja se koristi za projektile'
+  name: '&eUltraLite poluga'
   type:
   - '&7&oKomponenta'
 ULTRALITE_PLATE:
+  description:
+  - '&7Super lagana ploča za projektile'
+  name: '&eUltraLite ploča'
   type:
   - '&7&oKomponenta'
 WARHEAD:
+  description:
+  - '&7Koristi se pri izradi projektila.'
+  - '&7''Zbogom krumpiru'''
+  name: '&eBojeva glava projektila'
   type:
   - '&7&oKomponenta'
 WARHEADAP:
+  description:
+  - '&7Koristi se za izradu AP projektila'
+  - '&7''Zbogom bunkeru'''
+  name: '&eOjačana bojeva glava'
   type:
   - '&7&oKomponenta'
