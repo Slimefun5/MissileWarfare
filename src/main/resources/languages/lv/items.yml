@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Uzlabota raķetes korpusa versija'
+  name: '&eProgresīvs raķetes korpuss'
   type:
   - '&7&oSastāvdaļa'
 ANTIAIRMISSILE:
+  description:
+  - '&7Pretraķešu / pretelitru'
+  - '&7Pretraķešu variants'
+  - '&7''Timija uguņošana ir atcelta'''
+  name: '&ePretraķešu raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e600 bloki'
+  - '&8⇨ &7Spēks: &e4'
+  - '&8⇨ &7Ātrums: &e5'
+  - '&8⇨ &7Precizitāte: &e0 bloku robežās'
   type:
   - '&7&oIerocis'
 ANTIELYTRA:
+  description:
+  - '&7Izšauj raķeti uz tuvumā esošiem spēlētājiem,'
+  - '&7kas lieto elitras'
+  - '&7Izņemot tos, kuriem ir'
+  - '&7šim piešķirtais ID'
+  name: '&6Pretelitru palaidējs'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eIzmanto nūju&7, lai iestatītu grupas ID'
+  - '&7Nepieciešamas pretelitru raķetes'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Pretraķešu / pretelitru'
+  - '&7Pretraķešu variants'
+  - '&7''Timija uguņošana ir atcelta'''
+  name: '&ePretelitru raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e700 bloki'
+  - '&8⇨ &7Spēks: &e4'
+  - '&8⇨ &7Ātrums: &e6'
+  - '&8⇨ &7Precizitāte: &e0 bloku robežās'
   type:
   - '&7&oIerocis'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Notēmē un notriec citas raķetes apgabalā.'
+  name: '&6Pretraķešu palaidējs'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eIzmanto sarkanakmeni&7, lai to atslēgtu'
+  - '&7Jābūvē uz obsidiāna'
+  - '&7Nepieciešamas pretraķešu raķetes'
 CHLORINE:
+  description:
+  - '&7Indīgs'
+  - '&7Izraisa lēnu un sāpīgu nāvi!'
+  name: '&eHlors'
   type:
   - '&7&oResurss'
+  usage:
+  - '&eLabais klikšķis&7, lai uzliktu Wither efektu'
 CHLORINEPELLET:
+  description:
+  - '&7Hlora lodīte'
+  name: '&eHlora lodīte'
   type:
   - '&7&oResurss'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Saspiests tik stipri, ka kļuvis ciets'
+  name: '&eSaspiests sprāgstošais pulveris'
   type:
   - '&7&oResurss'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Rīkojies uzmanīgi!'
+  name: '&eSprāgstošais pulveris'
   type:
   - '&7&oResurss'
 GROUNDLAUNCHER:
+  description:
+  - '&7Šauj uz norādītu apgabalu uz zemes.'
+  name: '&6GtG raķešu palaidējs'
+  stats:
+  - '&8⇨ &7Noklusētais lidojuma augstums: &eY:120'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eIzmanto nūju&7, lai iestatītu mērķa koordinātas'
+  - '&eShift ar nūju&7, lai pārbaudītu, vai var šaut'
+  - '&eLabais klikšķis ar blaze stienīti&7, lai iestatītu lidojuma augstumu'
+  - '&7Jābūvē uz 1 zaļa betona bloka.'
 GUIDEBOOK:
+  description:
+  - '&7Tā tevi vadīs?!?'
+  name: '&eCeļveža grāmata'
   type:
   - '&7&oDažādi'
+  usage:
+  - '&eLabais klikšķis&7, lai atvērtu ceļvedi'
 HEAVYWARHEAD:
+  description:
+  - '&7Kaujas galviņa, pilna ar smagām sprāgstvielām'
+  name: '&eSmaga kaujas galviņa'
   type:
   - '&7&oSastāvdaļa'
 ICBMMISSILEBODY:
+  description:
+  - '&7Izstrādāts līdz pilnībai. Slaids. Nāvējošs.'
+  - '&7ICBM raķetes korpuss'
+  name: '&eICBM korpuss'
   type:
   - '&7&oSastāvdaļa'
 MANPAD:
+  description:
+  - '&7Rokas pretraķešu ierīce'
+  name: '&6Pārnēsājamais raķešu palaidējs'
   type:
   - '&7&oIerocis'
+  usage:
+  - '&eShift + labais klikšķis&7, lai sāktu izsekošanu'
+  - '&eAtlaid Shift&7, lai izšautu'
 MINE:
+  description:
+  - '&7Vai tā darbosies pret tankiem?'
+  name: '&cMīna'
+  stats:
+  - '&8⇨ &7Sprādziena spēks: &e8'
+  - '&8⇨ &7Nejaušs bojājums: &eLīdz 10'
   type:
   - '&7&oIerīce'
+  usage:
+  - '&eNovieto&7 pret bloku, lai to maskētu kā šo bloku'
 MISSILE:
+  description:
+  - '&7GtG raķete'
+  - '&7Parastais variants'
+  - '&7''Tava draudzīgā kaimiņu raķete'''
+  name: '&eGtG raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1000 bloki'
+  - '&8⇨ &7Spēks: &e4.5'
+  - '&8⇨ &7Ātrums: &e2.5'
+  - '&8⇨ &7Precizitāte: &e80 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEAC:
+  description:
+  - '&7GtG raķete'
+  - '&7Precīzais variants'
+  - '&7''Tava draudzīgā istabu tīrītāja raķete'''
+  name: '&eGtG raķete AC'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1250 bloki'
+  - '&8⇨ &7Spēks: &e4.5'
+  - '&8⇨ &7Ātrums: &e2.5'
+  - '&8⇨ &7Precizitāte: &e16 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEACADV:
+  description:
+  - '&7GtG progresīvās raķetes'
+  - '&7Precīzais variants'
+  - '&7''Diezgan precīzi, laikam'''
+  name: '&eGtG progresīvā raķete AC'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e2000 bloki'
+  - '&8⇨ &7Spēks: &e4.5'
+  - '&8⇨ &7Ātrums: &e4'
+  - '&8⇨ &7Precizitāte: &e20 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEADV:
+  description:
+  - '&7GtG progresīvās raķetes'
+  - '&7Parastais variants'
+  - '&7''Darbina MI (tehniski)'''
+  name: '&eGtG progresīvā raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e2000 bloki'
+  - '&8⇨ &7Spēks: &e4'
+  - '&8⇨ &7Ātrums: &e4'
+  - '&8⇨ &7Precizitāte: &e40 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEAPONE:
+  description:
+  - '&7GtG bruņu caursitoša raķete'
+  - '&71. līmeņa AP'
+  - '&7''Tavs pagrabs vairs ilgi nebūs drošs!'''
+  name: '&eGtG raķete AP'
+  stats:
+  - '&8⇨ &7Izsit 1 bloku pirms sprādziena'
+  - '&8⇨ &7Neizsitīs obsidiānu'
+  - '&8⇨ &7Darbības rādiuss: &e1550 bloki'
+  - '&8⇨ &7Spēks: &e3.5'
+  - '&8⇨ &7Ātrums: &e2'
+  - '&8⇨ &7Precizitāte: &e40 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEAPTHR:
+  description:
+  - '&7GtG bruņu caursitoša raķete'
+  - '&73. līmeņa AP'
+  - '&7''Tavs bunkurs noteikti vairs ilgi nebūs drošs!'''
+  name: '&eGtG raķete AP'
+  stats:
+  - '&8⇨ &7Izsit 2 blokus pirms sprādziena'
+  - '&8⇨ &775% iespēja izsist obsidiānu'
+  - '&8⇨ &720% iespēja salauzt trāpīto obsidiānu'
+  - '&8⇨ &7Darbības rādiuss: &e1850 bloki'
+  - '&8⇨ &7Spēks: &e4.5'
+  - '&8⇨ &7Ātrums: &e4'
+  - '&8⇨ &7Precizitāte: &e10 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEAPTWO:
+  description:
+  - '&7GtG bruņu caursitoša raķete'
+  - '&72. līmeņa AP'
+  - '&7''Tavs bunkurs vairs ilgi nebūs drošs!'''
+  name: '&eGtG raķete AP'
+  stats:
+  - '&8⇨ &7Izsit 1 bloku pirms sprādziena'
+  - '&8⇨ &750% iespēja izsist obsidiānu'
+  - '&8⇨ &710% iespēja salauzt trāpīto obsidiānu'
+  - '&8⇨ &7Darbības rādiuss: &e1700 bloki'
+  - '&8⇨ &7Spēks: &e4'
+  - '&8⇨ &7Ātrums: &e2.5'
+  - '&8⇨ &7Precizitāte: &e20 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEBODY:
+  description:
+  - '&7Raķetes korpuss ar lidojuma datoru'
+  name: '&eRaķetes korpuss'
   type:
   - '&7&oSastāvdaļa'
 MISSILECLUSTER:
+  description:
+  - '&7Kasešu raķete, pirms trāpīšanas izmet daudzas raķetes'
+  - '&7''Iznīcina ciemus ātrāk, nekā tu paspēj iekliegties!'''
+  name: '&cKasešu raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1600 bloki'
+  - '&8⇨ &7Spēks: &e4'
+  - '&8⇨ &7Ātrums: &e3.5'
+  - '&8⇨ &7Precizitāte: &e90 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEEXCAV:
+  description:
+  - '&7Palīgraķete'
+  - '&7Liels sprādziena rādiuss, bet mazi bojājumi'
+  - '&7Izmanto ieguvei'
+  - '&7''Labāk nekā 100 cērtes!'''
+  name: '&cRakšanas raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e100 bloki'
+  - '&8⇨ &7Spēks: &e14'
+  - '&8⇨ &7Ātrums: &e0.5'
+  - '&8⇨ &7Precizitāte: &e50 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEFINS:
+  description:
+  - '&7Spēj labāk virzīt raķeti'
+  name: '&eRaķetes stabilizatori'
   type:
   - '&7&oSastāvdaļa'
 MISSILEGAS:
+  description:
+  - '&7Tīrīšanas raķete'
+  - '&7Trāpot mērķī, izlaiž indīgu gāzi'
+  - '&7''Izdari timijcīdu.'''
+  name: '&cGāzes raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1600 bloki'
+  - '&8⇨ &7Spēks: &e0.5'
+  - '&8⇨ &7Ātrums: &e3'
+  - '&8⇨ &7Precizitāte: &e80 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEHE:
+  description:
+  - '&7GtG raķete'
+  - '&7Ļoti sprādzienbīstams variants'
+  - '&7''Tava ne tik draudzīgā kaimiņu raķete'''
+  name: '&eGtG raķete HE'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1000 bloki'
+  - '&8⇨ &7Spēks: &e5'
+  - '&8⇨ &7Ātrums: &e2'
+  - '&8⇨ &7Precizitāte: &e100 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEHEADV:
+  description:
+  - '&7GtG progresīvās raķetes'
+  - '&7Ļoti sprādzienbīstams variants'
+  - '&7''Ļoti bīstams, neaiztiec'''
+  name: '&eGtG progresīvā raķete HE'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e2000 bloki'
+  - '&8⇨ &7Spēks: &e6'
+  - '&8⇨ &7Ātrums: &e3.5'
+  - '&8⇨ &7Precizitāte: &e35 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILEICBM:
+  description:
+  - '&7Tāldarbības raķete'
+  - '&7Starpkontinentālā ballistiskā raķete'
+  - '&7''Nekur nav droši.'''
+  name: '&cICBM raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e7000 bloki'
+  - '&8⇨ &7Spēks: &e10'
+  - '&8⇨ &7Ātrums: &e5'
+  - '&8⇨ &7Precizitāte: &e50 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILELR:
+  description:
+  - '&7GtG raķete'
+  - '&7Tāla darbības rādiusa variants'
+  - '&7''Tava draudzīgā pilsētas raķete'''
+  name: '&eGtG raķete LR'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1500 bloki'
+  - '&8⇨ &7Spēks: &e4.5'
+  - '&8⇨ &7Ātrums: &e2.5'
+  - '&8⇨ &7Precizitāte: &e80 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILELRADV:
+  description:
+  - '&7GtG progresīvās raķetes'
+  - '&7Tāla darbības rādiusa variants'
+  - '&7''Man beidzas idejas aprakstiem'''
+  name: '&eGtG progresīvā raķete LR'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e2500 bloki'
+  - '&8⇨ &7Spēks: &e4'
+  - '&8⇨ &7Ātrums: &e4.5'
+  - '&8⇨ &7Precizitāte: &e40 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILENAPALM:
+  description:
+  - '&7Uguns raķete'
+  - '&7Napalma raķete, trāpot izmet uguni visapkārt.'
+  - '&7''Bērnudārzu likvidētājs! Pārbaudīts un izmēģināts™'''
+  name: '&cNapalma raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1600 bloki'
+  - '&8⇨ &7Spēks: &e2'
+  - '&8⇨ &7Ātrums: &e3'
+  - '&8⇨ &7Precizitāte: &e80 bloku robežās'
   type:
   - '&7&oIerocis'
 MISSILERADAR:
+  description:
+  - '&7Izstaro sarkanakmens signālu, kad raķete ir 700 bloku robežās'
+  name: '&eRaķešu radars'
   type:
   - '&7&oMašīna'
+  usage:
+  - '&eNovieto&7 sarkanakmeni virs šī bloka, lai iegūtu tā izvadi'
+  - '&7Lai iegūtu viena tika impulsu, nepieciešams atkārtotājs'
 MISSILESTICK:
+  description:
+  - '&7Slazdu raķete'
+  - '&7Neliels sprādziens, kas izlaiž zirnekļtīklus'
+  - '&7''Nejautā, no kā tā ir taisīta.'''
+  name: '&cLipīgā raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e1600 bloki'
+  - '&8⇨ &7Spēks: &e1'
+  - '&8⇨ &7Ātrums: &e4'
+  - '&8⇨ &7Precizitāte: &e70 bloku robežās'
   type:
   - '&7&oIerocis'
 PLAYERLIST:
+  description:
+  - '&7ŠIE ID IR GLOBĀLI'
+  - '&7IKVIENS TOS VAR REDIĢĒT, JA'
+  - '&7VIŅAM IR ŠIS ID'
+  name: '&6Spēlētāju saraksts'
   type:
   - '&7&oDažādi'
+  usage:
+  - '&eLabais klikšķis&7, lai iestatītu ID spēlētājus'
 RADAR:
+  description:
+  - '&7Izmanto, lai izsekotu raķetes vai trāpāmos spēlētājus'
+  name: '&eRadars'
   type:
   - '&7&oSastāvdaļa'
 ROCKETFUEL:
+  description:
+  - '&7Deg ar 1000 ogļu spēku...'
+  name: '&eRaķešu degviela'
   type:
   - '&7&oResurss'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Vienkāršs dators, kas spēj vadīt raķeti'
+  name: '&eVienkāršs lidojuma dators'
   type:
   - '&7&oSastāvdaļa'
 SMALLBODY:
+  description:
+  - '&7Izmanto raķetes izveidē'
+  - '&7''Labāk to nesaliec'''
+  name: '&eMazas raķetes korpuss'
   type:
   - '&7&oSastāvdaļa'
 SMALLFIN:
+  description:
+  - '&7Izmanto raķetes izveidē'
+  name: '&eMazas raķetes stabilizatori'
   type:
   - '&7&oSastāvdaļa'
 SMALLMISSILE:
+  description:
+  - '&7Maza zeme-zeme raķete'
+  - '&7Parastais variants'
+  name: '&eMaza GtG raķete'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e750 bloki'
+  - '&8⇨ &7Spēks: &e3'
+  - '&8⇨ &7Ātrums: &e2'
+  - '&8⇨ &7Precizitāte: &e100 bloku robežās'
   type:
   - '&7&oIerocis'
 SMALLMISSILEAC:
+  description:
+  - '&7Maza zeme-zeme raķete'
+  - '&7Precīzais variants'
+  - '&7''Mazajam Timijam nebija ne mazāko izredžu'''
+  name: '&eMaza GtG raķete AC'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e700 bloki'
+  - '&8⇨ &7Spēks: &e3'
+  - '&8⇨ &7Ātrums: &e2'
+  - '&8⇨ &7Precizitāte: &e60 bloku robežās'
   type:
   - '&7&oIerocis'
 SMALLMISSILEHE:
+  description:
+  - '&7Maza zeme-zeme raķete'
+  - '&7Ļoti sprādzienbīstams variants'
+  name: '&eMaza GtG raķete HE'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e600 bloki'
+  - '&8⇨ &7Spēks: &e3.5'
+  - '&8⇨ &7Ātrums: &e1'
+  - '&8⇨ &7Precizitāte: &e120 bloku robežās'
   type:
   - '&7&oIerocis'
 SMALLMISSILELR:
+  description:
+  - '&7Maza zeme-zeme raķete'
+  - '&7Tāla darbības rādiusa variants'
+  - '&7''Ļoti tālajam Timijam nebija ne mazāko izredžu'''
+  name: '&eMaza GtG raķete LR'
+  stats:
+  - '&8⇨ &7Darbības rādiuss: &e900 bloki'
+  - '&8⇨ &7Spēks: &e3'
+  - '&8⇨ &7Ātrums: &e2'
+  - '&8⇨ &7Precizitāte: &e100 bloku robežās'
   type:
   - '&7&oIerocis'
 SMALLWARHEAD:
+  description:
+  - '&7Izmanto raķetes izveidē.'
+  - '&7''Neaiztiec sarkano daļu'''
+  name: '&eMaza kaujas galviņa'
   type:
   - '&7&oSastāvdaļa'
 SUGARFUEL:
+  description:
+  - '&7Lēta, augstas enerģijas, ideāla mazām raķetēm.'
+  name: '&eCukura degviela'
   type:
   - '&7&oResurss'
 ULTRALITE_INGOT:
+  description:
+  - '&7Īpaši viegls lietnis, ko izmanto raķetēm'
+  name: '&eUltraLite lietnis'
   type:
   - '&7&oSastāvdaļa'
 ULTRALITE_PLATE:
+  description:
+  - '&7Īpaši viegla plāksne raķetēm'
+  name: '&eUltraLite plāksne'
   type:
   - '&7&oSastāvdaļa'
 WARHEAD:
+  description:
+  - '&7Izmanto raķetes izveidē.'
+  - '&7''Kartupeļu iznīcinātājs'''
+  name: '&eRaķetes kaujas galviņa'
   type:
   - '&7&oSastāvdaļa'
 WARHEADAP:
+  description:
+  - '&7Izmanto AP raķešu izveidei'
+  - '&7''Bunkuru iznīcinātājs'''
+  name: '&ePastiprināta kaujas galviņa'
   type:
   - '&7&oSastāvdaļa'
