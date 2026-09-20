@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Patobulinta raketos korpuso versija'
+  name: '&ePažangus raketos korpusas'
   type:
   - '&7&oKomponentas'
 ANTIAIRMISSILE:
+  description:
+  - '&7Prieš raketas / prieš elitrus'
+  - '&7Priešraketinis variantas'
+  - '&7''Timmy fejerverkai atšaukti'''
+  name: '&ePriešraketinė raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e600 blokų'
+  - '&8⇨ &7Galia: &e4'
+  - '&8⇨ &7Greitis: &e5'
+  - '&8⇨ &7Tikslumas: &eper 0 blokų'
   type:
   - '&7&oGinklas'
 ANTIELYTRA:
+  description:
+  - '&7Paleidžia raketą į netoliese esančius žaidėjus,'
+  - '&7kurie naudoja elitrus'
+  - '&7Išskyrus tuos, kurie yra'
+  - '&7šiam priskirtame ID'
+  name: '&6Paleidiklis prieš elitrus'
   type:
   - '&7&oMašina'
+  usage:
+  - '&eNaudokite pagalį&7, kad nustatytumėte grupės ID'
+  - '&7Reikia raketų prieš elitrus'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Prieš raketas / prieš elitrus'
+  - '&7Priešraketinis variantas'
+  - '&7''Timmy fejerverkai atšaukti'''
+  name: '&eRaketa prieš elitrus'
+  stats:
+  - '&8⇨ &7Nuotolis: &e700 blokų'
+  - '&8⇨ &7Galia: &e4'
+  - '&8⇨ &7Greitis: &e6'
+  - '&8⇨ &7Tikslumas: &eper 0 blokų'
   type:
   - '&7&oGinklas'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Aptinka ir numuša kitas raketas zonoje.'
+  name: '&6Priešraketinis paleidiklis'
   type:
   - '&7&oMašina'
+  usage:
+  - '&eNaudokite raudonakmenį&7, kad jį išjungtumėte'
+  - '&7Turi būti pastatytas ant obsidiano'
+  - '&7Reikia priešraketinių raketų'
 CHLORINE:
+  description:
+  - '&7Nuodingas'
+  - '&7Sukelia lėtą ir skausmingą mirtį!'
+  name: '&eChloras'
   type:
   - '&7&oIšteklius'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7, kad pritaikytumėte Wither efektą'
 CHLORINEPELLET:
+  description:
+  - '&7Chloro granulė'
+  name: '&eChloro granulė'
   type:
   - '&7&oIšteklius'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Suspausti taip stipriai, kad tapo kietu kūnu'
+  name: '&eSuspausti sprogstamieji milteliai'
   type:
   - '&7&oIšteklius'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Elkitės atsargiai!'
+  name: '&eSprogstamieji milteliai'
   type:
   - '&7&oIšteklius'
 GROUNDLAUNCHER:
+  description:
+  - '&7Šauna į nurodytą vietą ant žemės.'
+  name: '&6GtG raketų paleidiklis'
+  stats:
+  - '&8⇨ &7Numatytasis kreiserinis aukštis: &eY:120'
   type:
   - '&7&oMašina'
+  usage:
+  - '&eNaudokite pagalį&7, kad nustatytumėte taikinio koordinates'
+  - '&eShift su pagaliu&7 patikrina, ar galima šauti'
+  - '&eSpustelėkite dešiniuoju su liepsnos strypu&7, kad nustatytumėte kreiserinį aukštį'
+  - '&7Turi būti pastatytas ant 1 žalio betono bloko.'
 GUIDEBOOK:
+  description:
+  - '&7Ji tave nukreips?!?'
+  name: '&eVadovo knyga'
   type:
   - '&7&oĮvairūs'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7, kad atidarytumėte vadovą'
 HEAVYWARHEAD:
+  description:
+  - '&7Kovinė galvutė, prikimšta sunkiųjų sprogmenų'
+  name: '&eSunki kovinė galvutė'
   type:
   - '&7&oKomponentas'
 ICBMMISSILEBODY:
+  description:
+  - '&7Suprojektuota tobulai. Elegantiška. Mirtina.'
+  - '&7ICBM raketos korpusas'
+  name: '&eICBM korpusas'
   type:
   - '&7&oKomponentas'
 MANPAD:
+  description:
+  - '&7Rankinis priešraketinis įrenginys'
+  name: '&6Nešiojamasis paleidiklis'
   type:
   - '&7&oGinklas'
+  usage:
+  - '&eShift + spustelėjimas dešiniuoju&7 pradeda sekimą'
+  - '&eAtleiskite Shift&7, kad iššautumėte'
 MINE:
+  description:
+  - '&7Ar ji veiks prieš tankus?'
+  name: '&cMina'
+  stats:
+  - '&8⇨ &7Sprogimo galia: &e8'
+  - '&8⇨ &7Atsitiktinė žala: &eiki 10'
   type:
   - '&7&oĮtaisas'
+  usage:
+  - '&ePadėkite&7 prie bloko, kad ji užsimaskuotų kaip tas blokas'
 MISSILE:
+  description:
+  - '&7GtG raketa'
+  - '&7Įprastas variantas'
+  - '&7''Jūsų draugiška kaimynystės raketa'''
+  name: '&eGtG raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1000 blokų'
+  - '&8⇨ &7Galia: &e4.5'
+  - '&8⇨ &7Greitis: &e2.5'
+  - '&8⇨ &7Tikslumas: &eper 80 blokų'
   type:
   - '&7&oGinklas'
 MISSILEAC:
+  description:
+  - '&7GtG raketa'
+  - '&7Tikslus variantas'
+  - '&7''Jūsų draugiška kambarius valanti raketa'''
+  name: '&eGtG raketa AC'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1250 blokų'
+  - '&8⇨ &7Galia: &e4.5'
+  - '&8⇨ &7Greitis: &e2.5'
+  - '&8⇨ &7Tikslumas: &eper 16 blokų'
   type:
   - '&7&oGinklas'
 MISSILEACADV:
+  description:
+  - '&7GtG pažangios raketos'
+  - '&7Tikslus variantas'
+  - '&7''Gana tiksli, manau'''
+  name: '&eGtG pažangi raketa AC'
+  stats:
+  - '&8⇨ &7Nuotolis: &e2000 blokų'
+  - '&8⇨ &7Galia: &e4.5'
+  - '&8⇨ &7Greitis: &e4'
+  - '&8⇨ &7Tikslumas: &eper 20 blokų'
   type:
   - '&7&oGinklas'
 MISSILEADV:
+  description:
+  - '&7GtG pažangios raketos'
+  - '&7Įprastas variantas'
+  - '&7''Varoma DI (techniškai)'''
+  name: '&eGtG pažangi raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e2000 blokų'
+  - '&8⇨ &7Galia: &e4'
+  - '&8⇨ &7Greitis: &e4'
+  - '&8⇨ &7Tikslumas: &eper 40 blokų'
   type:
   - '&7&oGinklas'
 MISSILEAPONE:
+  description:
+  - '&7GtG šarvus pramušanti raketa'
+  - '&71 pakopos AP'
+  - '&7''Jūsų rūsys neilgai bus saugus!'''
+  name: '&eGtG raketa AP'
+  stats:
+  - '&8⇨ &7Prasiskverbia pro 1 bloką prieš sprogdama'
+  - '&8⇨ &7Pro obsidianą nepraeis'
+  - '&8⇨ &7Nuotolis: &e1550 blokų'
+  - '&8⇨ &7Galia: &e3.5'
+  - '&8⇨ &7Greitis: &e2'
+  - '&8⇨ &7Tikslumas: &eper 40 blokų'
   type:
   - '&7&oGinklas'
 MISSILEAPTHR:
+  description:
+  - '&7GtG šarvus pramušanti raketa'
+  - '&73 pakopos AP'
+  - '&7''Jūsų bunkeris tikrai neilgai bus saugus!'''
+  name: '&eGtG raketa AP'
+  stats:
+  - '&8⇨ &7Prasiskverbia pro 2 blokus prieš sprogdama'
+  - '&8⇨ &775% tikimybė prasiskverbti pro obsidianą'
+  - '&8⇨ &720% tikimybė sulaužyti pataikytą obsidianą'
+  - '&8⇨ &7Nuotolis: &e1850 blokų'
+  - '&8⇨ &7Galia: &e4.5'
+  - '&8⇨ &7Greitis: &e4'
+  - '&8⇨ &7Tikslumas: &eper 10 blokų'
   type:
   - '&7&oGinklas'
 MISSILEAPTWO:
+  description:
+  - '&7GtG šarvus pramušanti raketa'
+  - '&72 pakopos AP'
+  - '&7''Jūsų bunkeris neilgai bus saugus!'''
+  name: '&eGtG raketa AP'
+  stats:
+  - '&8⇨ &7Prasiskverbia pro 1 bloką prieš sprogdama'
+  - '&8⇨ &750% tikimybė prasiskverbti pro obsidianą'
+  - '&8⇨ &710% tikimybė sulaužyti pataikytą obsidianą'
+  - '&8⇨ &7Nuotolis: &e1700 blokų'
+  - '&8⇨ &7Galia: &e4'
+  - '&8⇨ &7Greitis: &e2.5'
+  - '&8⇨ &7Tikslumas: &eper 20 blokų'
   type:
   - '&7&oGinklas'
 MISSILEBODY:
+  description:
+  - '&7Raketos korpusas su skrydžio kompiuteriu'
+  name: '&eRaketos korpusas'
   type:
   - '&7&oKomponentas'
 MISSILECLUSTER:
+  description:
+  - '&7Kasetinė raketa. Prieš pataikydama paleidžia daug raketų'
+  - '&7''Naikina kaimus greičiau, nei spėsite surikti!'''
+  name: '&cKasetinė raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1600 blokų'
+  - '&8⇨ &7Galia: &e4'
+  - '&8⇨ &7Greitis: &e3.5'
+  - '&8⇨ &7Tikslumas: &eper 90 blokų'
   type:
   - '&7&oGinklas'
 MISSILEEXCAV:
+  description:
+  - '&7Pagalbinė raketa'
+  - '&7Turi didelį sprogimo spindulį, bet mažą žalą'
+  - '&7Naudojama kasybai'
+  - '&7''Geriau nei 100 kirtiklių!'''
+  name: '&cKasimo raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e100 blokų'
+  - '&8⇨ &7Galia: &e14'
+  - '&8⇨ &7Greitis: &e0.5'
+  - '&8⇨ &7Tikslumas: &eper 50 blokų'
   type:
   - '&7&oGinklas'
 MISSILEFINS:
+  description:
+  - '&7Geba geriau nukreipti raketą'
+  name: '&eRaketos sparneliai'
   type:
   - '&7&oKomponentas'
 MISSILEGAS:
+  description:
+  - '&7Valymo raketa'
+  - '&7Pataikiusi į taikinį paleidžia nuodingas dujas'
+  - '&7''Įvykdyk Timmycidą.'''
+  name: '&cDujų raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1600 blokų'
+  - '&8⇨ &7Galia: &e0.5'
+  - '&8⇨ &7Greitis: &e3'
+  - '&8⇨ &7Tikslumas: &eper 80 blokų'
   type:
   - '&7&oGinklas'
 MISSILEHE:
+  description:
+  - '&7GtG raketa'
+  - '&7Didelio sprogstamumo variantas'
+  - '&7''Jūsų ne tokia draugiška kaimynystės raketa'''
+  name: '&eGtG raketa HE'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1000 blokų'
+  - '&8⇨ &7Galia: &e5'
+  - '&8⇨ &7Greitis: &e2'
+  - '&8⇨ &7Tikslumas: &eper 100 blokų'
   type:
   - '&7&oGinklas'
 MISSILEHEADV:
+  description:
+  - '&7GtG pažangios raketos'
+  - '&7Didelio sprogstamumo variantas'
+  - '&7''Labai pavojinga, nelieskit'''
+  name: '&eGtG pažangi raketa HE'
+  stats:
+  - '&8⇨ &7Nuotolis: &e2000 blokų'
+  - '&8⇨ &7Galia: &e6'
+  - '&8⇨ &7Greitis: &e3.5'
+  - '&8⇨ &7Tikslumas: &eper 35 blokus'
   type:
   - '&7&oGinklas'
 MISSILEICBM:
+  description:
+  - '&7Tolimojo nuotolio raketa'
+  - '&7Tarpžemyninė balistinė raketa'
+  - '&7''Niekur nėra saugu.'''
+  name: '&cICBM raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e7000 blokų'
+  - '&8⇨ &7Galia: &e10'
+  - '&8⇨ &7Greitis: &e5'
+  - '&8⇨ &7Tikslumas: &eper 50 blokų'
   type:
   - '&7&oGinklas'
 MISSILELR:
+  description:
+  - '&7GtG raketa'
+  - '&7Tolimojo nuotolio variantas'
+  - '&7''Jūsų draugiška miesto raketa'''
+  name: '&eGtG raketa LR'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1500 blokų'
+  - '&8⇨ &7Galia: &e4.5'
+  - '&8⇨ &7Greitis: &e2.5'
+  - '&8⇨ &7Tikslumas: &eper 80 blokų'
   type:
   - '&7&oGinklas'
 MISSILELRADV:
+  description:
+  - '&7GtG pažangios raketos'
+  - '&7Tolimojo nuotolio variantas'
+  - '&7''Man baigiasi idėjos aprašymams'''
+  name: '&eGtG pažangi raketa LR'
+  stats:
+  - '&8⇨ &7Nuotolis: &e2500 blokų'
+  - '&8⇨ &7Galia: &e4'
+  - '&8⇨ &7Greitis: &e4.5'
+  - '&8⇨ &7Tikslumas: &eper 40 blokų'
   type:
   - '&7&oGinklas'
 MISSILENAPALM:
+  description:
+  - '&7Ugnies raketa'
+  - '&7Napalmo raketa. Pataikiusi svaido ugnį visur.'
+  - '&7''Darželių naikintojas! Išbandyta ir patikrinta™'''
+  name: '&cNapalmo raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1600 blokų'
+  - '&8⇨ &7Galia: &e2'
+  - '&8⇨ &7Greitis: &e3'
+  - '&8⇨ &7Tikslumas: &eper 80 blokų'
   type:
   - '&7&oGinklas'
 MISSILERADAR:
+  description:
+  - '&7Siunčia raudonakmenio signalą, kai raketa yra 700 blokų atstumu'
+  name: '&eRaketų radaras'
   type:
   - '&7&oMašina'
+  usage:
+  - '&ePadėkite&7 raudonakmenį ant šio bloko, kad gautumėte jo išvestį'
+  - '&7Vieno tiktelėjimo impulsui gauti reikia kartotuvo'
 MISSILESTICK:
+  description:
+  - '&7Spąstų raketa'
+  - '&7Mažas sprogimas, paleidžiantis voratinklius'
+  - '&7''Neklauskite, iš ko ji padaryta.'''
+  name: '&cLipni raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e1600 blokų'
+  - '&8⇨ &7Galia: &e1'
+  - '&8⇨ &7Greitis: &e4'
+  - '&8⇨ &7Tikslumas: &eper 70 blokų'
   type:
   - '&7&oGinklas'
 PLAYERLIST:
+  description:
+  - '&7ŠIE ID YRA GLOBALŪS'
+  - '&7BET KAS GALI JUOS KEISTI,'
+  - '&7JEI TURI ID'
+  name: '&6Žaidėjų sąrašas'
   type:
   - '&7&oĮvairūs'
+  usage:
+  - '&eSpustelėkite dešiniuoju&7, kad nustatytumėte žaidėjus ID'
 RADAR:
+  description:
+  - '&7Naudojamas sekti raketas ar taikinius - žaidėjus'
+  name: '&eRadaras'
   type:
   - '&7&oKomponentas'
 ROCKETFUEL:
+  description:
+  - '&7Dega 1000 anglių galia...'
+  name: '&eRaketinis kuras'
   type:
   - '&7&oIšteklius'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Paprastas kompiuteris, gebantis nukreipti raketą'
+  name: '&ePaprastas skrydžio kompiuteris'
   type:
   - '&7&oKomponentas'
 SMALLBODY:
+  description:
+  - '&7Naudojama kuriant raketą'
+  - '&7''Geriau jo neįlenkite'''
+  name: '&eMažos raketos korpusas'
   type:
   - '&7&oKomponentas'
 SMALLFIN:
+  description:
+  - '&7Naudojama kuriant raketą'
+  name: '&eMažos raketos sparneliai'
   type:
   - '&7&oKomponentas'
 SMALLMISSILE:
+  description:
+  - '&7Maža žemė-žemė raketa'
+  - '&7Įprastas variantas'
+  name: '&eMaža GtG raketa'
+  stats:
+  - '&8⇨ &7Nuotolis: &e750 blokų'
+  - '&8⇨ &7Galia: &e3'
+  - '&8⇨ &7Greitis: &e2'
+  - '&8⇨ &7Tikslumas: &eper 100 blokų'
   type:
   - '&7&oGinklas'
 SMALLMISSILEAC:
+  description:
+  - '&7Maža žemė-žemė raketa'
+  - '&7Tikslus variantas'
+  - '&7''Mažasis Timmy neturėjo jokių šansų'''
+  name: '&eMaža GtG raketa AC'
+  stats:
+  - '&8⇨ &7Nuotolis: &e700 blokų'
+  - '&8⇨ &7Galia: &e3'
+  - '&8⇨ &7Greitis: &e2'
+  - '&8⇨ &7Tikslumas: &eper 60 blokų'
   type:
   - '&7&oGinklas'
 SMALLMISSILEHE:
+  description:
+  - '&7Maža žemė-žemė raketa'
+  - '&7Didelio sprogstamumo variantas'
+  name: '&eMaža GtG raketa HE'
+  stats:
+  - '&8⇨ &7Nuotolis: &e600 blokų'
+  - '&8⇨ &7Galia: &e3.5'
+  - '&8⇨ &7Greitis: &e1'
+  - '&8⇨ &7Tikslumas: &eper 120 blokų'
   type:
   - '&7&oGinklas'
 SMALLMISSILELR:
+  description:
+  - '&7Maža žemė-žemė raketa'
+  - '&7Tolimojo nuotolio variantas'
+  - '&7''Labai toli buvęs Timmy neturėjo jokių šansų'''
+  name: '&eMaža GtG raketa LR'
+  stats:
+  - '&8⇨ &7Nuotolis: &e900 blokų'
+  - '&8⇨ &7Galia: &e3'
+  - '&8⇨ &7Greitis: &e2'
+  - '&8⇨ &7Tikslumas: &eper 100 blokų'
   type:
   - '&7&oGinklas'
 SMALLWARHEAD:
+  description:
+  - '&7Naudojama raketai sukurti.'
+  - '&7''Nelieskite raudonos dalies'''
+  name: '&eMaža kovinė galvutė'
   type:
   - '&7&oKomponentas'
 SUGARFUEL:
+  description:
+  - '&7Pigus, didelės energijos, tobulas mažoms raketoms.'
+  name: '&eCukraus kuras'
   type:
   - '&7&oIšteklius'
 ULTRALITE_INGOT:
+  description:
+  - '&7Itin lengvas luitas, naudojamas raketoms'
+  name: '&eUltraLite luitas'
   type:
   - '&7&oKomponentas'
 ULTRALITE_PLATE:
+  description:
+  - '&7Itin lengva plokštė raketoms'
+  name: '&eUltraLite plokštė'
   type:
   - '&7&oKomponentas'
 WARHEAD:
+  description:
+  - '&7Naudojama raketai sukurti.'
+  - '&7''Bulvių nebelieka'''
+  name: '&eRaketos kovinė galvutė'
   type:
   - '&7&oKomponentas'
 WARHEADAP:
+  description:
+  - '&7Naudojama AP raketoms kurti'
+  - '&7''Bunkerių nebelieka'''
+  name: '&eSustiprinta kovinė galvutė'
   type:
   - '&7&oKomponentas'
