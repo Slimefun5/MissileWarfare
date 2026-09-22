@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7En oppgradert versjon av missilkroppen'
+  name: '&eAvansert missilkropp'
   type:
   - '&7&oKomponent'
 ANTIAIRMISSILE:
+  description:
+  - '&7Antimissil / Antielytra'
+  - '&7Antimissilvariant'
+  - '&7''Timmys fyrverkeri er blitt avlyst'''
+  name: '&eAntimissilmissil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e600 blokker'
+  - '&8⇨ &7Kraft: &e4'
+  - '&8⇨ &7Hastighet: &e5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 0 blokker'
   type:
   - '&7&oVåpen'
 ANTIELYTRA:
+  description:
+  - '&7Skyter et missil mot spillere i nærheten'
+  - '&7som bruker elytra'
+  - '&7Unntatt de som har den'
+  - '&7ID-en denne er tildelt'
+  name: '&6Antielytra-rampe'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eBruk en pinne&7 for å sette gruppe-ID-en'
+  - '&7Trenger antielytra-missiler'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Antimissil / Antielytra'
+  - '&7Antimissilvariant'
+  - '&7''Timmys fyrverkeri er blitt avlyst'''
+  name: '&eAntielytra-missil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e700 blokker'
+  - '&8⇨ &7Kraft: &e4'
+  - '&8⇨ &7Hastighet: &e6'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 0 blokker'
   type:
   - '&7&oVåpen'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Sikter på og skyter ned andre missiler i området.'
+  name: '&6Antimissilrampe'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eBruk redstone&7 for å slå den av'
+  - '&7Må bygges på obsidian'
+  - '&7Trenger antimissilmissiler'
 CHLORINE:
+  description:
+  - '&7Giftig'
+  - '&7Gir en langsom og smertefull død!'
+  name: '&eKlor'
   type:
   - '&7&oRessurs'
+  usage:
+  - '&eHøyreklikk&7 for å gi en Wither-effekt'
 CHLORINEPELLET:
+  description:
+  - '&7En pellet med klor'
+  name: '&eKlorpellet'
   type:
   - '&7&oRessurs'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Presset så hardt at det ble fast stoff'
+  name: '&eKomprimert eksplosivt pulver'
   type:
   - '&7&oRessurs'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Håndteres med forsiktighet!'
+  name: '&eEksplosivt pulver'
   type:
   - '&7&oRessurs'
 GROUNDLAUNCHER:
+  description:
+  - '&7Skyter mot et angitt område på bakken.'
+  name: '&6GtG-missilrampe'
+  stats:
+  - '&8⇨ &7Standard marsjhøyde: &eY:120'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eBruk en pinne&7 for å sette målkoordinatene'
+  - '&eShift med en pinne&7 for å sjekke om den kan skyte'
+  - '&eHøyreklikk med en blaze-stav&7 for å sette marsjhøyden'
+  - '&7Må bygges på 1 grønn betongblokk.'
 GUIDEBOOK:
+  description:
+  - '&7Den vil veilede deg?!?'
+  name: '&eVeiledningsbok'
   type:
   - '&7&oDiverse'
+  usage:
+  - '&eHøyreklikk&7 for å åpne veiledningen'
 HEAVYWARHEAD:
+  description:
+  - '&7Et stridshode fullt av tunge sprengstoffer'
+  name: '&eTungt stridshode'
   type:
   - '&7&oKomponent'
 ICBMMISSILEBODY:
+  description:
+  - '&7Konstruert til perfeksjon, elegant, dødelig.'
+  - '&7Kroppen til ICBM-missilet'
+  name: '&eICBM-kropp'
   type:
   - '&7&oKomponent'
 MANPAD:
+  description:
+  - '&7Håndholdt antimissilenhet'
+  name: '&6Bærbar luftvernrakett'
   type:
   - '&7&oVåpen'
+  usage:
+  - '&eShift + høyreklikk&7 for å begynne å spore'
+  - '&eSlipp Shift&7 for å skyte'
 MINE:
+  description:
+  - '&7Vil den virke mot stridsvogner?'
+  name: '&cLandmine'
+  stats:
+  - '&8⇨ &7Eksplosjonskraft: &e8'
+  - '&8⇨ &7Tilfeldig skade: &eOpptil 10'
   type:
   - '&7&oDings'
+  usage:
+  - '&ePlasser&7 den mot en blokk for å forkle den som den blokken'
 MISSILE:
+  description:
+  - '&7GtG-missil'
+  - '&7Normal variant'
+  - '&7''Ditt vennlige nabolagsmissil'''
+  name: '&eGtG-missil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1000 blokker'
+  - '&8⇨ &7Kraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 80 blokker'
   type:
   - '&7&oVåpen'
 MISSILEAC:
+  description:
+  - '&7GtG-missil'
+  - '&7Nøyaktig variant'
+  - '&7''Ditt vennlige romryddemissil'''
+  name: '&eGtG-missil AC'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1250 blokker'
+  - '&8⇨ &7Kraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 16 blokker'
   type:
   - '&7&oVåpen'
 MISSILEACADV:
+  description:
+  - '&7GtG avanserte missiler'
+  - '&7Nøyaktig variant'
+  - '&7''Ganske nøyaktig, antar jeg'''
+  name: '&eGtG avansert missil AC'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e2000 blokker'
+  - '&8⇨ &7Kraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 20 blokker'
   type:
   - '&7&oVåpen'
 MISSILEADV:
+  description:
+  - '&7GtG avanserte missiler'
+  - '&7Normal variant'
+  - '&7''Drevet av KI (teknisk sett)'''
+  name: '&eGtG avansert missil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e2000 blokker'
+  - '&8⇨ &7Kraft: &e4'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 40 blokker'
   type:
   - '&7&oVåpen'
 MISSILEAPONE:
+  description:
+  - '&7GtG panserbrytende missil'
+  - '&7Nivå 1 AP'
+  - '&7''Kjelleren din er ikke trygg lenge!'''
+  name: '&eGtG-missil AP'
+  stats:
+  - '&8⇨ &7Trenger gjennom 1 blokk før det eksploderer'
+  - '&8⇨ &7Går ikke gjennom obsidian'
+  - '&8⇨ &7Rekkevidde: &e1550 blokker'
+  - '&8⇨ &7Kraft: &e3.5'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 40 blokker'
   type:
   - '&7&oVåpen'
 MISSILEAPTHR:
+  description:
+  - '&7GtG panserbrytende missil'
+  - '&7Nivå 3 AP'
+  - '&7''Bunkeren din er definitivt ikke trygg lenge!'''
+  name: '&eGtG-missil AP'
+  stats:
+  - '&8⇨ &7Trenger gjennom 2 blokker før det eksploderer'
+  - '&8⇨ &775% sjanse for å gå gjennom obsidian'
+  - '&8⇨ &720% sjanse for å knuse obsidianen som treffes'
+  - '&8⇨ &7Rekkevidde: &e1850 blokker'
+  - '&8⇨ &7Kraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 10 blokker'
   type:
   - '&7&oVåpen'
 MISSILEAPTWO:
+  description:
+  - '&7GtG panserbrytende missil'
+  - '&7Nivå 2 AP'
+  - '&7''Bunkeren din er ikke trygg lenge!'''
+  name: '&eGtG-missil AP'
+  stats:
+  - '&8⇨ &7Trenger gjennom 1 blokk før det eksploderer'
+  - '&8⇨ &750% sjanse for å gå gjennom obsidian'
+  - '&8⇨ &710% sjanse for å knuse obsidianen som treffes'
+  - '&8⇨ &7Rekkevidde: &e1700 blokker'
+  - '&8⇨ &7Kraft: &e4'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 20 blokker'
   type:
   - '&7&oVåpen'
 MISSILEBODY:
+  description:
+  - '&7Missilkropp med en flydatamaskin inni'
+  name: '&eMissilkropp'
   type:
   - '&7&oKomponent'
 MISSILECLUSTER:
+  description:
+  - '&7Klasemissil, slipper mange missiler før nedslag'
+  - '&7''Fjerner landsbyer raskere enn du rekker å skrike!'''
+  name: '&cKlasemissil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1600 blokker'
+  - '&8⇨ &7Kraft: &e4'
+  - '&8⇨ &7Hastighet: &e3.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 90 blokker'
   type:
   - '&7&oVåpen'
 MISSILEEXCAV:
+  description:
+  - '&7Nyttemissil'
+  - '&7Har stor eksplosjonsradius, men liten skade'
+  - '&7Brukes til gruvedrift'
+  - '&7''Bedre enn 100 hakker!'''
+  name: '&cGravemissil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e100 blokker'
+  - '&8⇨ &7Kraft: &e14'
+  - '&8⇨ &7Hastighet: &e0.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 50 blokker'
   type:
   - '&7&oVåpen'
 MISSILEFINS:
+  description:
+  - '&7Kan styre missilet bedre'
+  name: '&eMissilfinner'
   type:
   - '&7&oKomponent'
 MISSILEGAS:
+  description:
+  - '&7Rensemissil'
+  - '&7Slipper ut giftig gass når det treffer et mål'
+  - '&7''Begå timmydrap.'''
+  name: '&cGassmissil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1600 blokker'
+  - '&8⇨ &7Kraft: &e0.5'
+  - '&8⇨ &7Hastighet: &e3'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 80 blokker'
   type:
   - '&7&oVåpen'
 MISSILEHE:
+  description:
+  - '&7GtG-missil'
+  - '&7Høyeksplosiv variant'
+  - '&7''Ditt ikke fullt så vennlige nabolagsmissil'''
+  name: '&eGtG-missil HE'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1000 blokker'
+  - '&8⇨ &7Kraft: &e5'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 100 blokker'
   type:
   - '&7&oVåpen'
 MISSILEHEADV:
+  description:
+  - '&7GtG avanserte missiler'
+  - '&7Høyeksplosiv variant'
+  - '&7''Svært farlig, ikke rør'''
+  name: '&eGtG avansert missil HE'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e2000 blokker'
+  - '&8⇨ &7Kraft: &e6'
+  - '&8⇨ &7Hastighet: &e3.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 35 blokker'
   type:
   - '&7&oVåpen'
 MISSILEICBM:
+  description:
+  - '&7Langtrekkende missil'
+  - '&7Interkontinentalt ballistisk missil'
+  - '&7''Ingen steder er trygge.'''
+  name: '&cICBM-missil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e7000 blokker'
+  - '&8⇨ &7Kraft: &e10'
+  - '&8⇨ &7Hastighet: &e5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 50 blokker'
   type:
   - '&7&oVåpen'
 MISSILELR:
+  description:
+  - '&7GtG-missil'
+  - '&7Langtrekkende variant'
+  - '&7''Ditt vennlige bymissil'''
+  name: '&eGtG-missil LR'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1500 blokker'
+  - '&8⇨ &7Kraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 80 blokker'
   type:
   - '&7&oVåpen'
 MISSILELRADV:
+  description:
+  - '&7GtG avanserte missiler'
+  - '&7Langtrekkende variant'
+  - '&7''Jeg går tom for lore-ideer'''
+  name: '&eGtG avansert missil LR'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e2500 blokker'
+  - '&8⇨ &7Kraft: &e4'
+  - '&8⇨ &7Hastighet: &e4.5'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 40 blokker'
   type:
   - '&7&oVåpen'
 MISSILENAPALM:
+  description:
+  - '&7Ildmissil'
+  - '&7Napalmmissil, kaster ild overalt ved nedslag.'
+  - '&7''Barnehagefjerner! Prøvd og testet™'''
+  name: '&cNapalmmissil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1600 blokker'
+  - '&8⇨ &7Kraft: &e2'
+  - '&8⇨ &7Hastighet: &e3'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 80 blokker'
   type:
   - '&7&oVåpen'
 MISSILERADAR:
+  description:
+  - '&7Sender ut et redstone-signal når et missil er innenfor 700 blokker'
+  name: '&eMissilradar'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&ePlasser&7 redstone oppå denne blokken for å få utgangen'
+  - '&7En repeater kreves for å fange opp pulsen på ett tikk'
 MISSILESTICK:
+  description:
+  - '&7Fellemissil'
+  - '&7En liten eksplosjon som slipper ut spindelvev'
+  - '&7''Ikke spør hva det er laget av.'''
+  name: '&cKlebrig missil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e1600 blokker'
+  - '&8⇨ &7Kraft: &e1'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 70 blokker'
   type:
   - '&7&oVåpen'
 PLAYERLIST:
+  description:
+  - '&7DISSE ID-ENE ER GLOBALE'
+  - '&7HVEM SOM HELST KAN ENDRE DEM HVIS'
+  - '&7DE HAR ID-EN'
+  name: '&6Spillerliste'
   type:
   - '&7&oDiverse'
+  usage:
+  - '&eHøyreklikk&7 for å angi spillerne for en ID'
 RADAR:
+  description:
+  - '&7Brukes til å spore missiler eller spillere som skal treffes'
+  name: '&eRadar'
   type:
   - '&7&oKomponent'
 ROCKETFUEL:
+  description:
+  - '&7Brenner med kraften til 1000 kull...'
+  name: '&eRakettdrivstoff'
   type:
   - '&7&oRessurs'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7En enkel datamaskin som kan styre et missil'
+  name: '&eEnkel flydatamaskin'
   type:
   - '&7&oKomponent'
 SMALLBODY:
+  description:
+  - '&7Brukes i lagingen av et missil'
+  - '&7''Du får ikke bulke den'''
+  name: '&eLite missilskrog'
   type:
   - '&7&oKomponent'
 SMALLFIN:
+  description:
+  - '&7Brukes i lagingen av et missil'
+  name: '&eSmå missilfinner'
   type:
   - '&7&oKomponent'
 SMALLMISSILE:
+  description:
+  - '&7Lite bakke-til-bakke-missil'
+  - '&7Normal variant'
+  name: '&eLite GtG-missil'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e750 blokker'
+  - '&8⇨ &7Kraft: &e3'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 100 blokker'
   type:
   - '&7&oVåpen'
 SMALLMISSILEAC:
+  description:
+  - '&7Lite bakke-til-bakke-missil'
+  - '&7Nøyaktig variant'
+  - '&7''Bitte lille Timmy hadde aldri en sjanse'''
+  name: '&eLite GtG-missil AC'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e700 blokker'
+  - '&8⇨ &7Kraft: &e3'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 60 blokker'
   type:
   - '&7&oVåpen'
 SMALLMISSILEHE:
+  description:
+  - '&7Lite bakke-til-bakke-missil'
+  - '&7Høyeksplosiv variant'
+  name: '&eLite GtG-missil HE'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e600 blokker'
+  - '&8⇨ &7Kraft: &e3.5'
+  - '&8⇨ &7Hastighet: &e1'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 120 blokker'
   type:
   - '&7&oVåpen'
 SMALLMISSILELR:
+  description:
+  - '&7Lite bakke-til-bakke-missil'
+  - '&7Langtrekkende variant'
+  - '&7''Timmy langt der borte hadde aldri en sjanse'''
+  name: '&eLite GtG-missil LR'
+  stats:
+  - '&8⇨ &7Rekkevidde: &e900 blokker'
+  - '&8⇨ &7Kraft: &e3'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Nøyaktighet: &eInnenfor 100 blokker'
   type:
   - '&7&oVåpen'
 SMALLWARHEAD:
+  description:
+  - '&7Brukes til å lage et missil.'
+  - '&7''Ikke rør den røde biten'''
+  name: '&eLite stridshode'
   type:
   - '&7&oKomponent'
 SUGARFUEL:
+  description:
+  - '&7Billig, høy energi, perfekt for små missiler.'
+  name: '&eSukkerdrivstoff'
   type:
   - '&7&oRessurs'
 ULTRALITE_INGOT:
+  description:
+  - '&7Superlett barre brukt til missiler'
+  name: '&eUltraLite-barre'
   type:
   - '&7&oKomponent'
 ULTRALITE_PLATE:
+  description:
+  - '&7En superlett plate til missiler'
+  name: '&eUltraLite-plate'
   type:
   - '&7&oKomponent'
 WARHEAD:
+  description:
+  - '&7Brukes til å lage et missil.'
+  - '&7''Potet-vekk'''
+  name: '&eMissilstridshode'
   type:
   - '&7&oKomponent'
 WARHEADAP:
+  description:
+  - '&7Brukes til å lage AP-missiler'
+  - '&7''Bunker-vekk'''
+  name: '&eForsterket stridshode'
   type:
   - '&7&oKomponent'
