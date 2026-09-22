@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Versi naik taraf bagi badan peluru berpandu'
+  name: '&eBadan Peluru Berpandu Lanjutan'
   type:
   - '&7&oKomponen'
 ANTIAIRMISSILE:
+  description:
+  - '&7Anti-Peluru Berpandu / Anti-Elitra'
+  - '&7Varian Anti-Peluru Berpandu'
+  - '&7''Bunga api Timmy telah dibatalkan'''
+  name: '&ePeluru Berpandu Anti-Peluru Berpandu'
+  stats:
+  - '&8⇨ &7Julat: &e600 Blok'
+  - '&8⇨ &7Kuasa: &e4'
+  - '&8⇨ &7Kelajuan: &e5'
+  - '&8⇨ &7Ketepatan: &eDalam 0 Blok'
   type:
   - '&7&oSenjata'
 ANTIELYTRA:
+  description:
+  - '&7Melepaskan peluru berpandu ke arah pemain berdekatan'
+  - '&7yang sedang menggunakan elitra'
+  - '&7Kecuali mereka yang berada pada'
+  - '&7ID yang ditetapkan pada ini'
+  name: '&6Pelancar Anti Elitra'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eGuna kayu&7 untuk menetapkan ID kumpulan'
+  - '&7Memerlukan Peluru Berpandu Anti-Elitra'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Anti-Peluru Berpandu / Anti-Elitra'
+  - '&7Varian Anti-Peluru Berpandu'
+  - '&7''Bunga api Timmy telah dibatalkan'''
+  name: '&ePeluru Berpandu Anti-Elitra'
+  stats:
+  - '&8⇨ &7Julat: &e700 Blok'
+  - '&8⇨ &7Kuasa: &e4'
+  - '&8⇨ &7Kelajuan: &e6'
+  - '&8⇨ &7Ketepatan: &eDalam 0 Blok'
   type:
   - '&7&oSenjata'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Menyasarkan dan menembak jatuh peluru berpandu lain di kawasan itu.'
+  name: '&6Pelancar Anti Peluru Berpandu'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eGuna batu merah&7 untuk melumpuhkannya'
+  - '&7Perlu dibina di atas obsidian'
+  - '&7Memerlukan Peluru Berpandu Anti-Peluru Berpandu'
 CHLORINE:
+  description:
+  - '&7Beracun'
+  - '&7Menyebabkan kematian yang perlahan dan menyakitkan!'
+  name: '&eKlorin'
   type:
   - '&7&oSumber'
+  usage:
+  - '&eKlik Kanan&7 untuk mengenakan kesan Wither'
 CHLORINEPELLET:
+  description:
+  - '&7Sebiji pelet Klorin'
+  name: '&ePelet Klorin'
   type:
   - '&7&oSumber'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Dimampatkan begitu kuat sehingga menjadi pepejal'
+  name: '&eSerbuk Letupan Termampat'
   type:
   - '&7&oSumber'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Kendalikan dengan berhati-hati!'
+  name: '&eSerbuk Letupan'
   type:
   - '&7&oSumber'
 GROUNDLAUNCHER:
+  description:
+  - '&7Menembak kawasan tertentu di atas tanah.'
+  name: '&6Pelancar Peluru Berpandu GtG'
+  stats:
+  - '&8⇨ &7Altitud Layar Lalai: &eY:120'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eGuna kayu&7 untuk menetapkan koordinat sasaran'
+  - '&eShift dengan kayu&7 untuk memeriksa sama ada ia boleh menembak'
+  - '&eKlik kanan dengan rod blaze&7 untuk menetapkan altitud layar'
+  - '&7Perlu dibina di atas 1 blok konkrit hijau.'
 GUIDEBOOK:
+  description:
+  - '&7Ia Akan Memandu Anda?!?'
+  name: '&eBuku Panduan'
   type:
   - '&7&oPelbagai'
+  usage:
+  - '&eKlik Kanan&7 untuk membuka panduan'
 HEAVYWARHEAD:
+  description:
+  - '&7Kepala peledak yang padat dengan bahan letupan berat'
+  name: '&eKepala Peledak Berat'
   type:
   - '&7&oKomponen'
 ICBMMISSILEBODY:
+  description:
+  - '&7Dijuruterakan hingga sempurna, Langsing, Maut.'
+  - '&7Badan peluru berpandu ICBM'
+  name: '&eBadan ICBM'
   type:
   - '&7&oKomponen'
 MANPAD:
+  description:
+  - '&7Peranti anti-peluru berpandu genggam'
+  name: '&6Manpad'
   type:
   - '&7&oSenjata'
+  usage:
+  - '&eShift + Klik Kanan&7 untuk mula menjejak'
+  - '&eLepaskan Shift&7 untuk menembak'
 MINE:
+  description:
+  - '&7Berkesankah ia pada kereta kebal?'
+  name: '&cPeriuk Api'
+  stats:
+  - '&8⇨ &7Kuasa Letupan: &e8'
+  - '&8⇨ &7Kerosakan Rawak: &eSehingga 10'
   type:
   - '&7&oGajet'
+  usage:
+  - '&eLetak&7 pada sesuatu blok untuk menyamarkannya sebagai blok itu'
 MISSILE:
+  description:
+  - '&7Peluru Berpandu GtG'
+  - '&7Varian Biasa'
+  - '&7''Peluru berpandu jiran mesra anda'''
+  name: '&ePeluru Berpandu GtG'
+  stats:
+  - '&8⇨ &7Julat: &e1000 Blok'
+  - '&8⇨ &7Kuasa: &e4.5'
+  - '&8⇨ &7Kelajuan: &e2.5'
+  - '&8⇨ &7Ketepatan: &eDalam 80 Blok'
   type:
   - '&7&oSenjata'
 MISSILEAC:
+  description:
+  - '&7Peluru Berpandu GtG'
+  - '&7Varian Tepat'
+  - '&7''Peluru berpandu mesra pembersih bilik anda'''
+  name: '&ePeluru Berpandu GtG AC'
+  stats:
+  - '&8⇨ &7Julat: &e1250 Blok'
+  - '&8⇨ &7Kuasa: &e4.5'
+  - '&8⇨ &7Kelajuan: &e2.5'
+  - '&8⇨ &7Ketepatan: &eDalam 16 Blok'
   type:
   - '&7&oSenjata'
 MISSILEACADV:
+  description:
+  - '&7Peluru Berpandu Lanjutan GtG'
+  - '&7Varian Tepat'
+  - '&7''Agak tepat rasanya'''
+  name: '&ePeluru Berpandu Lanjutan GtG AC'
+  stats:
+  - '&8⇨ &7Julat: &e2000 Blok'
+  - '&8⇨ &7Kuasa: &e4.5'
+  - '&8⇨ &7Kelajuan: &e4'
+  - '&8⇨ &7Ketepatan: &eDalam 20 Blok'
   type:
   - '&7&oSenjata'
 MISSILEADV:
+  description:
+  - '&7Peluru Berpandu Lanjutan GtG'
+  - '&7Varian Biasa'
+  - '&7''Dikuasakan oleh AI (secara teknikalnya)'''
+  name: '&ePeluru Berpandu Lanjutan GtG'
+  stats:
+  - '&8⇨ &7Julat: &e2000 Blok'
+  - '&8⇨ &7Kuasa: &e4'
+  - '&8⇨ &7Kelajuan: &e4'
+  - '&8⇨ &7Ketepatan: &eDalam 40 Blok'
   type:
   - '&7&oSenjata'
 MISSILEAPONE:
+  description:
+  - '&7Peluru Berpandu Penembus Zirah GtG'
+  - '&7AP Peringkat 1'
+  - '&7''Bilik bawah tanah anda tidak selamat lama lagi!'''
+  name: '&ePeluru Berpandu GtG AP'
+  stats:
+  - '&8⇨ &7Menembusi 1 blok sebelum meletup'
+  - '&8⇨ &7Tidak menembusi obsidian'
+  - '&8⇨ &7Julat: &e1550 Blok'
+  - '&8⇨ &7Kuasa: &e3.5'
+  - '&8⇨ &7Kelajuan: &e2'
+  - '&8⇨ &7Ketepatan: &eDalam 40 Blok'
   type:
   - '&7&oSenjata'
 MISSILEAPTHR:
+  description:
+  - '&7Peluru Berpandu Penembus Zirah GtG'
+  - '&7AP Peringkat 3'
+  - '&7''Kubu anda pasti tidak selamat lama lagi!'''
+  name: '&ePeluru Berpandu GtG AP'
+  stats:
+  - '&8⇨ &7Menembusi 2 blok sebelum meletup'
+  - '&8⇨ &775% peluang menembusi obsidian'
+  - '&8⇨ &720% peluang memecahkan obsidian yang dikenai'
+  - '&8⇨ &7Julat: &e1850 Blok'
+  - '&8⇨ &7Kuasa: &e4.5'
+  - '&8⇨ &7Kelajuan: &e4'
+  - '&8⇨ &7Ketepatan: &eDalam 10 Blok'
   type:
   - '&7&oSenjata'
 MISSILEAPTWO:
+  description:
+  - '&7Peluru Berpandu Penembus Zirah GtG'
+  - '&7AP Peringkat 2'
+  - '&7''Kubu anda tidak selamat lama lagi!'''
+  name: '&ePeluru Berpandu GtG AP'
+  stats:
+  - '&8⇨ &7Menembusi 1 blok sebelum meletup'
+  - '&8⇨ &750% peluang menembusi obsidian'
+  - '&8⇨ &710% peluang memecahkan obsidian yang dikenai'
+  - '&8⇨ &7Julat: &e1700 Blok'
+  - '&8⇨ &7Kuasa: &e4'
+  - '&8⇨ &7Kelajuan: &e2.5'
+  - '&8⇨ &7Ketepatan: &eDalam 20 Blok'
   type:
   - '&7&oSenjata'
 MISSILEBODY:
+  description:
+  - '&7Badan peluru berpandu yang mengandungi komputer penerbangan'
+  name: '&eBadan Peluru Berpandu'
   type:
   - '&7&oKomponen'
 MISSILECLUSTER:
+  description:
+  - '&7Peluru Berpandu Kelompok, melepaskan banyak peluru berpandu sebelum mengenai sasaran'
+  - '&7''Melenyapkan kampung lebih pantas daripada anda menjerit!'''
+  name: '&cPeluru Berpandu Kelompok'
+  stats:
+  - '&8⇨ &7Julat: &e1600 Blok'
+  - '&8⇨ &7Kuasa: &e4'
+  - '&8⇨ &7Kelajuan: &e3.5'
+  - '&8⇨ &7Ketepatan: &eDalam 90 Blok'
   type:
   - '&7&oSenjata'
 MISSILEEXCAV:
+  description:
+  - '&7Peluru Berpandu Kegunaan'
+  - '&7Mempunyai jejari letupan besar tetapi kerosakan kecil'
+  - '&7Digunakan untuk perlombongan'
+  - '&7''Lebih baik daripada 100 Beliung!'''
+  name: '&cPeluru Berpandu Korekan'
+  stats:
+  - '&8⇨ &7Julat: &e100 Blok'
+  - '&8⇨ &7Kuasa: &e14'
+  - '&8⇨ &7Kelajuan: &e0.5'
+  - '&8⇨ &7Ketepatan: &eDalam 50 Blok'
   type:
   - '&7&oSenjata'
 MISSILEFINS:
+  description:
+  - '&7Mampu mengarahkan peluru berpandu dengan lebih baik'
+  name: '&eSirip Peluru Berpandu'
   type:
   - '&7&oKomponen'
 MISSILEGAS:
+  description:
+  - '&7Peluru Berpandu Pembersih'
+  - '&7Melepaskan gas beracun apabila mengenai sasaran'
+  - '&7''Lakukan Timmysid.'''
+  name: '&cPeluru Berpandu Gas'
+  stats:
+  - '&8⇨ &7Julat: &e1600 Blok'
+  - '&8⇨ &7Kuasa: &e0.5'
+  - '&8⇨ &7Kelajuan: &e3'
+  - '&8⇨ &7Ketepatan: &eDalam 80 Blok'
   type:
   - '&7&oSenjata'
 MISSILEHE:
+  description:
+  - '&7Peluru Berpandu GtG'
+  - '&7Varian Letupan Tinggi'
+  - '&7''Peluru berpandu jiran anda yang kurang mesra'''
+  name: '&ePeluru Berpandu GtG HE'
+  stats:
+  - '&8⇨ &7Julat: &e1000 Blok'
+  - '&8⇨ &7Kuasa: &e5'
+  - '&8⇨ &7Kelajuan: &e2'
+  - '&8⇨ &7Ketepatan: &eDalam 100 Blok'
   type:
   - '&7&oSenjata'
 MISSILEHEADV:
+  description:
+  - '&7Peluru Berpandu Lanjutan GtG'
+  - '&7Varian Letupan Tinggi'
+  - '&7''Sangat bahaya, jangan sentuhh'''
+  name: '&ePeluru Berpandu Lanjutan GtG HE'
+  stats:
+  - '&8⇨ &7Julat: &e2000 Blok'
+  - '&8⇨ &7Kuasa: &e6'
+  - '&8⇨ &7Kelajuan: &e3.5'
+  - '&8⇨ &7Ketepatan: &eDalam 35 Blok'
   type:
   - '&7&oSenjata'
 MISSILEICBM:
+  description:
+  - '&7Peluru Berpandu Julat Jauh'
+  - '&7Peluru Berpandu Balistik Antara Benua'
+  - '&7''Tiada tempat yang selamat.'''
+  name: '&cPeluru Berpandu ICBM'
+  stats:
+  - '&8⇨ &7Julat: &e7000 Blok'
+  - '&8⇨ &7Kuasa: &e10'
+  - '&8⇨ &7Kelajuan: &e5'
+  - '&8⇨ &7Ketepatan: &eDalam 50 Blok'
   type:
   - '&7&oSenjata'
 MISSILELR:
+  description:
+  - '&7Peluru Berpandu GtG'
+  - '&7Varian Julat Jauh'
+  - '&7''Peluru berpandu bandar mesra anda'''
+  name: '&ePeluru Berpandu GtG LR'
+  stats:
+  - '&8⇨ &7Julat: &e1500 Blok'
+  - '&8⇨ &7Kuasa: &e4.5'
+  - '&8⇨ &7Kelajuan: &e2.5'
+  - '&8⇨ &7Ketepatan: &eDalam 80 Blok'
   type:
   - '&7&oSenjata'
 MISSILELRADV:
+  description:
+  - '&7Peluru Berpandu Lanjutan GtG'
+  - '&7Varian Julat Jauh'
+  - '&7''Saya kehabisan idea lore'''
+  name: '&ePeluru Berpandu Lanjutan GtG LR'
+  stats:
+  - '&8⇨ &7Julat: &e2500 Blok'
+  - '&8⇨ &7Kuasa: &e4'
+  - '&8⇨ &7Kelajuan: &e4.5'
+  - '&8⇨ &7Ketepatan: &eDalam 40 Blok'
   type:
   - '&7&oSenjata'
 MISSILENAPALM:
+  description:
+  - '&7Peluru Berpandu Api'
+  - '&7Peluru Berpandu Napalm, melontarkan api ke merata tempat apabila mengenai sasaran.'
+  - '&7''Penghapus Tadika! Telah dicuba dan diuji™'''
+  name: '&cPeluru Berpandu Napalm'
+  stats:
+  - '&8⇨ &7Julat: &e1600 Blok'
+  - '&8⇨ &7Kuasa: &e2'
+  - '&8⇨ &7Kelajuan: &e3'
+  - '&8⇨ &7Ketepatan: &eDalam 80 Blok'
   type:
   - '&7&oSenjata'
 MISSILERADAR:
+  description:
+  - '&7Memancarkan isyarat batu merah apabila peluru berpandu berada dalam 700 blok'
+  name: '&eRadar Peluru Berpandu'
   type:
   - '&7&oMesin'
+  usage:
+  - '&eLetak&7 batu merah di atas blok ini untuk mendapatkan keluarannya'
+  - '&7Pengulang diperlukan untuk mendapatkan denyut satu tik'
 MISSILESTICK:
+  description:
+  - '&7Peluru Berpandu Perangkap'
+  - '&7Letupan kecil yang melepaskan sarang labah-labah'
+  - '&7''Jangan tanya ia diperbuat daripada apa.'''
+  name: '&cPeluru Berpandu Melekit'
+  stats:
+  - '&8⇨ &7Julat: &e1600 Blok'
+  - '&8⇨ &7Kuasa: &e1'
+  - '&8⇨ &7Kelajuan: &e4'
+  - '&8⇨ &7Ketepatan: &eDalam 70 Blok'
   type:
   - '&7&oSenjata'
 PLAYERLIST:
+  description:
+  - '&7ID INI ADALAH GLOBAL'
+  - '&7SESIAPA SAHAJA BOLEH MENYUNTINGNYA JIKA'
+  - '&7MEREKA MEMPUNYAI ID ITU'
+  name: '&6Senarai Pemain'
   type:
   - '&7&oPelbagai'
+  usage:
+  - '&eKlik Kanan&7 untuk menetapkan pemain bagi sesuatu ID'
 RADAR:
+  description:
+  - '&7Digunakan untuk menjejak peluru berpandu atau pemain sasaran'
+  name: '&eRadar'
   type:
   - '&7&oKomponen'
 ROCKETFUEL:
+  description:
+  - '&7Membakar dengan kuasa 1000 arang batu...'
+  name: '&eBahan Api Roket'
   type:
   - '&7&oSumber'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Komputer ringkas yang mampu memandu peluru berpandu'
+  name: '&eKomputer Penerbangan Ringkas'
   type:
   - '&7&oKomponen'
 SMALLBODY:
+  description:
+  - '&7Digunakan dalam penciptaan peluru berpandu'
+  - '&7''Jangan sampai kemek benda itu'''
+  name: '&eFiuslaj Peluru Berpandu Kecil'
   type:
   - '&7&oKomponen'
 SMALLFIN:
+  description:
+  - '&7Digunakan dalam penciptaan peluru berpandu'
+  name: '&eSirip Peluru Berpandu Kecil'
   type:
   - '&7&oKomponen'
 SMALLMISSILE:
+  description:
+  - '&7Peluru Berpandu Darat ke Darat Kecil'
+  - '&7Varian Biasa'
+  name: '&ePeluru Berpandu GtG Kecil'
+  stats:
+  - '&8⇨ &7Julat: &e750 Blok'
+  - '&8⇨ &7Kuasa: &e3'
+  - '&8⇨ &7Kelajuan: &e2'
+  - '&8⇨ &7Ketepatan: &eDalam 100 Blok'
   type:
   - '&7&oSenjata'
 SMALLMISSILEAC:
+  description:
+  - '&7Peluru Berpandu Darat ke Darat Kecil'
+  - '&7Varian Tepat'
+  - '&7''Timmy Kecil pun tiada peluang'''
+  name: '&ePeluru Berpandu GtG Kecil AC'
+  stats:
+  - '&8⇨ &7Julat: &e700 Blok'
+  - '&8⇨ &7Kuasa: &e3'
+  - '&8⇨ &7Kelajuan: &e2'
+  - '&8⇨ &7Ketepatan: &eDalam 60 Blok'
   type:
   - '&7&oSenjata'
 SMALLMISSILEHE:
+  description:
+  - '&7Peluru Berpandu Darat ke Darat Kecil'
+  - '&7Varian Letupan Tinggi'
+  name: '&ePeluru Berpandu GtG Kecil HE'
+  stats:
+  - '&8⇨ &7Julat: &e600 Blok'
+  - '&8⇨ &7Kuasa: &e3.5'
+  - '&8⇨ &7Kelajuan: &e1'
+  - '&8⇨ &7Ketepatan: &eDalam 120 Blok'
   type:
   - '&7&oSenjata'
 SMALLMISSILELR:
+  description:
+  - '&7Peluru Berpandu Darat ke Darat Kecil'
+  - '&7Varian Julat Jauh'
+  - '&7''Timmy yang jauh di sana pun tiada peluang'''
+  name: '&ePeluru Berpandu GtG Kecil LR'
+  stats:
+  - '&8⇨ &7Julat: &e900 Blok'
+  - '&8⇨ &7Kuasa: &e3'
+  - '&8⇨ &7Kelajuan: &e2'
+  - '&8⇨ &7Ketepatan: &eDalam 100 Blok'
   type:
   - '&7&oSenjata'
 SMALLWARHEAD:
+  description:
+  - '&7Digunakan dalam penciptaan peluru berpandu.'
+  - '&7''Jangan sentuh bahagian merah itu'''
+  name: '&eKepala Peledak Kecil'
   type:
   - '&7&oKomponen'
 SUGARFUEL:
+  description:
+  - '&7Murah, bertenaga tinggi, sesuai untuk peluru berpandu kecil.'
+  name: '&eBahan Api Gula'
   type:
   - '&7&oSumber'
 ULTRALITE_INGOT:
+  description:
+  - '&7Jongkong super ringan untuk peluru berpandu'
+  name: '&eJongkong UltraLite'
   type:
   - '&7&oKomponen'
 ULTRALITE_PLATE:
+  description:
+  - '&7Plat super ringan untuk peluru berpandu'
+  name: '&ePlat UltraLite'
   type:
   - '&7&oKomponen'
 WARHEAD:
+  description:
+  - '&7Digunakan dalam penciptaan peluru berpandu.'
+  - '&7''Nyah-kentang'''
+  name: '&eKepala Peledak Peluru Berpandu'
   type:
   - '&7&oKomponen'
 WARHEADAP:
+  description:
+  - '&7Digunakan untuk mencipta Peluru Berpandu AP'
+  - '&7''Nyah-kubu'''
+  name: '&eKepala Peledak Diperkukuh'
   type:
   - '&7&oKomponen'
