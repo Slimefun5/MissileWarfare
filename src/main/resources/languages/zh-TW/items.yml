@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7飛彈彈體的升級版本'
+  name: '&e進階飛彈彈體'
   type:
   - '&7&o元件'
 ANTIAIRMISSILE:
+  description:
+  - '&7反飛彈 / 反鞘翅'
+  - '&7反飛彈變體'
+  - '&7「提米的煙火已被取消」'
+  name: '&e反飛彈飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e600 方塊'
+  - '&8⇨ &7威力：&e4'
+  - '&8⇨ &7速度：&e5'
+  - '&8⇨ &7精準度：&e0 方塊內'
   type:
   - '&7&o武器'
 ANTIELYTRA:
+  description:
+  - '&7朝附近正在使用鞘翅的'
+  - '&7玩家發射飛彈'
+  - '&7但不包含使用此裝置'
+  - '&7所指定 ID 的玩家'
+  name: '&6反鞘翅發射器'
   type:
   - '&7&o機器'
+  usage:
+  - '&e使用木棍&7來設定群組 ID'
+  - '&7需要反鞘翅飛彈'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7反飛彈 / 反鞘翅'
+  - '&7反飛彈變體'
+  - '&7「提米的煙火已被取消」'
+  name: '&e反鞘翅飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e700 方塊'
+  - '&8⇨ &7威力：&e4'
+  - '&8⇨ &7速度：&e6'
+  - '&8⇨ &7精準度：&e0 方塊內'
   type:
   - '&7&o武器'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7鎖定並擊落區域內的其他飛彈。'
+  name: '&6反飛彈發射器'
   type:
   - '&7&o機器'
+  usage:
+  - '&e使用紅石&7即可停用它'
+  - '&7必須建造在黑曜石上'
+  - '&7需要反飛彈飛彈'
 CHLORINE:
+  description:
+  - '&7有毒'
+  - '&7會導致緩慢而痛苦的死亡！'
+  name: '&e氯氣'
   type:
   - '&7&o資源'
+  usage:
+  - '&e右鍵點擊&7以施加凋零效果'
 CHLORINEPELLET:
+  description:
+  - '&7一顆氯氣顆粒'
+  name: '&e氯氣顆粒'
   type:
   - '&7&o資源'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7壓縮得太過緊實，已經變成固體'
+  name: '&e壓縮爆炸粉末'
   type:
   - '&7&o資源'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7請小心拿取！'
+  name: '&e爆炸粉末'
   type:
   - '&7&o資源'
 GROUNDLAUNCHER:
+  description:
+  - '&7朝地面上指定的區域發射。'
+  name: '&6GtG 飛彈發射器'
+  stats:
+  - '&8⇨ &7預設巡航高度：&eY:120'
   type:
   - '&7&o機器'
+  usage:
+  - '&e使用木棍&7來設定目標座標'
+  - '&e手持木棍按 Shift&7 可檢查是否能發射'
+  - '&e手持烈焰棒右鍵點擊&7可設定巡航高度'
+  - '&7必須建造在 1 個綠色混凝土方塊上。'
 GUIDEBOOK:
+  description:
+  - '&7它會指引你？！？'
+  name: '&e指南書'
   type:
   - '&7&o雜項'
+  usage:
+  - '&e右鍵點擊&7以開啟指南'
 HEAVYWARHEAD:
+  description:
+  - '&7填滿重型炸藥的彈頭'
+  name: '&e重型彈頭'
   type:
   - '&7&o元件'
 ICBMMISSILEBODY:
+  description:
+  - '&7工藝完美，外型流線，致命無比。'
+  - '&7洲際彈道飛彈的彈體'
+  name: '&e洲際飛彈彈體'
   type:
   - '&7&o元件'
 MANPAD:
+  description:
+  - '&7手持式反飛彈裝置'
+  name: '&6肩射防空飛彈'
   type:
   - '&7&o武器'
+  usage:
+  - '&eShift + 右鍵點擊&7以開始追蹤'
+  - '&e放開 Shift&7 即可發射'
 MINE:
+  description:
+  - '&7它對坦克有效嗎？'
+  name: '&c地雷'
+  stats:
+  - '&8⇨ &7爆炸威力：&e8'
+  - '&8⇨ &7隨機傷害：&e最多 10'
   type:
   - '&7&o裝置'
+  usage:
+  - '&e放置&7在方塊旁即可偽裝成該方塊'
 MISSILE:
+  description:
+  - '&7GtG 飛彈'
+  - '&7一般變體'
+  - '&7「你家附近友善的好鄰居飛彈」'
+  name: '&eGtG 飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1000 方塊'
+  - '&8⇨ &7威力：&e4.5'
+  - '&8⇨ &7速度：&e2.5'
+  - '&8⇨ &7精準度：&e80 方塊內'
   type:
   - '&7&o武器'
 MISSILEAC:
+  description:
+  - '&7GtG 飛彈'
+  - '&7精準變體'
+  - '&7「你友善的清房間飛彈」'
+  name: '&eGtG 精準飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1250 方塊'
+  - '&8⇨ &7威力：&e4.5'
+  - '&8⇨ &7速度：&e2.5'
+  - '&8⇨ &7精準度：&e16 方塊內'
   type:
   - '&7&o武器'
 MISSILEACADV:
+  description:
+  - '&7GtG 進階飛彈'
+  - '&7精準變體'
+  - '&7「我想應該滿準的吧」'
+  name: '&eGtG 進階精準飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e2000 方塊'
+  - '&8⇨ &7威力：&e4.5'
+  - '&8⇨ &7速度：&e4'
+  - '&8⇨ &7精準度：&e20 方塊內'
   type:
   - '&7&o武器'
 MISSILEADV:
+  description:
+  - '&7GtG 進階飛彈'
+  - '&7一般變體'
+  - '&7「由人工智慧驅動（嚴格來說啦）」'
+  name: '&eGtG 進階飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e2000 方塊'
+  - '&8⇨ &7威力：&e4'
+  - '&8⇨ &7速度：&e4'
+  - '&8⇨ &7精準度：&e40 方塊內'
   type:
   - '&7&o武器'
 MISSILEAPONE:
+  description:
+  - '&7GtG 穿甲飛彈'
+  - '&7第 1 階穿甲'
+  - '&7「你的地下室撐不了多久了！」'
+  name: '&eGtG 穿甲飛彈'
+  stats:
+  - '&8⇨ &7貫穿 1 個方塊後才爆炸'
+  - '&8⇨ &7無法穿透黑曜石'
+  - '&8⇨ &7範圍：&e1550 方塊'
+  - '&8⇨ &7威力：&e3.5'
+  - '&8⇨ &7速度：&e2'
+  - '&8⇨ &7精準度：&e40 方塊內'
   type:
   - '&7&o武器'
 MISSILEAPTHR:
+  description:
+  - '&7GtG 穿甲飛彈'
+  - '&7第 3 階穿甲'
+  - '&7「你的碉堡絕對撐不了多久了！」'
+  name: '&eGtG 穿甲飛彈'
+  stats:
+  - '&8⇨ &7貫穿 2 個方塊後才爆炸'
+  - '&8⇨ &775% 機率穿透黑曜石'
+  - '&8⇨ &720% 機率破壞被擊中的黑曜石'
+  - '&8⇨ &7範圍：&e1850 方塊'
+  - '&8⇨ &7威力：&e4.5'
+  - '&8⇨ &7速度：&e4'
+  - '&8⇨ &7精準度：&e10 方塊內'
   type:
   - '&7&o武器'
 MISSILEAPTWO:
+  description:
+  - '&7GtG 穿甲飛彈'
+  - '&7第 2 階穿甲'
+  - '&7「你的碉堡撐不了多久了！」'
+  name: '&eGtG 穿甲飛彈'
+  stats:
+  - '&8⇨ &7貫穿 1 個方塊後才爆炸'
+  - '&8⇨ &750% 機率穿透黑曜石'
+  - '&8⇨ &710% 機率破壞被擊中的黑曜石'
+  - '&8⇨ &7範圍：&e1700 方塊'
+  - '&8⇨ &7威力：&e4'
+  - '&8⇨ &7速度：&e2.5'
+  - '&8⇨ &7精準度：&e20 方塊內'
   type:
   - '&7&o武器'
 MISSILEBODY:
+  description:
+  - '&7內含飛行電腦的飛彈彈體'
+  name: '&e飛彈彈體'
   type:
   - '&7&o元件'
 MISSILECLUSTER:
+  description:
+  - '&7集束飛彈，命中前會釋放出多枚飛彈'
+  - '&7「清除村莊的速度比你尖叫還快！」'
+  name: '&c集束飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1600 方塊'
+  - '&8⇨ &7威力：&e4'
+  - '&8⇨ &7速度：&e3.5'
+  - '&8⇨ &7精準度：&e90 方塊內'
   type:
   - '&7&o武器'
 MISSILEEXCAV:
+  description:
+  - '&7工具型飛彈'
+  - '&7爆炸半徑很大，但傷害很低'
+  - '&7用於採礦'
+  - '&7「比 100 把鎬還好用！」'
+  name: '&c挖掘飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e100 方塊'
+  - '&8⇨ &7威力：&e14'
+  - '&8⇨ &7速度：&e0.5'
+  - '&8⇨ &7精準度：&e50 方塊內'
   type:
   - '&7&o武器'
 MISSILEFINS:
+  description:
+  - '&7能讓飛彈的方向控制更精準'
+  name: '&e飛彈尾翼'
   type:
   - '&7&o元件'
 MISSILEGAS:
+  description:
+  - '&7清場飛彈'
+  - '&7命中目標時釋放有毒氣體'
+  - '&7「執行提米大清洗。」'
+  name: '&c毒氣飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1600 方塊'
+  - '&8⇨ &7威力：&e0.5'
+  - '&8⇨ &7速度：&e3'
+  - '&8⇨ &7精準度：&e80 方塊內'
   type:
   - '&7&o武器'
 MISSILEHE:
+  description:
+  - '&7GtG 飛彈'
+  - '&7高爆變體'
+  - '&7「你家附近不太友善的鄰居飛彈」'
+  name: '&eGtG 高爆飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1000 方塊'
+  - '&8⇨ &7威力：&e5'
+  - '&8⇨ &7速度：&e2'
+  - '&8⇨ &7精準度：&e100 方塊內'
   type:
   - '&7&o武器'
 MISSILEHEADV:
+  description:
+  - '&7GtG 進階飛彈'
+  - '&7高爆變體'
+  - '&7「非常危險，請勿觸摸」'
+  name: '&eGtG 進階高爆飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e2000 方塊'
+  - '&8⇨ &7威力：&e6'
+  - '&8⇨ &7速度：&e3.5'
+  - '&8⇨ &7精準度：&e35 方塊內'
   type:
   - '&7&o武器'
 MISSILEICBM:
+  description:
+  - '&7遠程飛彈'
+  - '&7洲際彈道飛彈'
+  - '&7「無處可躲。」'
+  name: '&c洲際彈道飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e7000 方塊'
+  - '&8⇨ &7威力：&e10'
+  - '&8⇨ &7速度：&e5'
+  - '&8⇨ &7精準度：&e50 方塊內'
   type:
   - '&7&o武器'
 MISSILELR:
+  description:
+  - '&7GtG 飛彈'
+  - '&7遠程變體'
+  - '&7「你友善的城市飛彈」'
+  name: '&eGtG 遠程飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1500 方塊'
+  - '&8⇨ &7威力：&e4.5'
+  - '&8⇨ &7速度：&e2.5'
+  - '&8⇨ &7精準度：&e80 方塊內'
   type:
   - '&7&o武器'
 MISSILELRADV:
+  description:
+  - '&7GtG 進階飛彈'
+  - '&7遠程變體'
+  - '&7「我快想不出說明文字了」'
+  name: '&eGtG 進階遠程飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e2500 方塊'
+  - '&8⇨ &7威力：&e4'
+  - '&8⇨ &7速度：&e4.5'
+  - '&8⇨ &7精準度：&e40 方塊內'
   type:
   - '&7&o武器'
 MISSILENAPALM:
+  description:
+  - '&7火焰飛彈'
+  - '&7凝固汽油飛彈，命中時會四處噴灑火焰。'
+  - '&7「幼稚園清除器！經過實測認證™」'
+  name: '&c凝固汽油飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1600 方塊'
+  - '&8⇨ &7威力：&e2'
+  - '&8⇨ &7速度：&e3'
+  - '&8⇨ &7精準度：&e80 方塊內'
   type:
   - '&7&o武器'
 MISSILERADAR:
+  description:
+  - '&7當飛彈位於 700 方塊內時發出紅石訊號'
+  name: '&e飛彈雷達'
   type:
   - '&7&o機器'
+  usage:
+  - '&e放置&7紅石在此方塊上方即可取得其輸出'
+  - '&7需要中繼器才能取得這段一刻的脈衝'
 MISSILESTICK:
+  description:
+  - '&7陷阱飛彈'
+  - '&7小型爆炸，會釋放出蜘蛛網'
+  - '&7「別問它是用什麼做的。」'
+  name: '&c黏性飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e1600 方塊'
+  - '&8⇨ &7威力：&e1'
+  - '&8⇨ &7速度：&e4'
+  - '&8⇨ &7精準度：&e70 方塊內'
   type:
   - '&7&o武器'
 PLAYERLIST:
+  description:
+  - '&7這些 ID 是全域共用的'
+  - '&7只要有人知道 ID，'
+  - '&7任何人都能編輯它們'
+  name: '&6玩家名單'
   type:
   - '&7&o雜項'
+  usage:
+  - '&e右鍵點擊&7以設定某個 ID 的玩家'
 RADAR:
+  description:
+  - '&7用於追蹤要攻擊的飛彈或玩家'
+  name: '&e雷達'
   type:
   - '&7&o元件'
 ROCKETFUEL:
+  description:
+  - '&7燃燒時擁有 1000 塊煤炭的威力...'
+  name: '&e火箭燃料'
   type:
   - '&7&o資源'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7一台能夠導引飛彈的簡易電腦'
+  name: '&e簡易飛行電腦'
   type:
   - '&7&o元件'
 SMALLBODY:
+  description:
+  - '&7用於製造飛彈'
+  - '&7「你最好別把它弄凹了」'
+  name: '&e小型飛彈機身'
   type:
   - '&7&o元件'
 SMALLFIN:
+  description:
+  - '&7用於製造飛彈'
+  name: '&e小型飛彈尾翼'
   type:
   - '&7&o元件'
 SMALLMISSILE:
+  description:
+  - '&7小型地對地飛彈'
+  - '&7一般變體'
+  name: '&e小型 GtG 飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e750 方塊'
+  - '&8⇨ &7威力：&e3'
+  - '&8⇨ &7速度：&e2'
+  - '&8⇨ &7精準度：&e100 方塊內'
   type:
   - '&7&o武器'
 SMALLMISSILEAC:
+  description:
+  - '&7小型地對地飛彈'
+  - '&7精準變體'
+  - '&7「小提米根本毫無勝算」'
+  name: '&e小型 GtG 精準飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e700 方塊'
+  - '&8⇨ &7威力：&e3'
+  - '&8⇨ &7速度：&e2'
+  - '&8⇨ &7精準度：&e60 方塊內'
   type:
   - '&7&o武器'
 SMALLMISSILEHE:
+  description:
+  - '&7小型地對地飛彈'
+  - '&7高爆變體'
+  name: '&e小型 GtG 高爆飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e600 方塊'
+  - '&8⇨ &7威力：&e3.5'
+  - '&8⇨ &7速度：&e1'
+  - '&8⇨ &7精準度：&e120 方塊內'
   type:
   - '&7&o武器'
 SMALLMISSILELR:
+  description:
+  - '&7小型地對地飛彈'
+  - '&7遠程變體'
+  - '&7「遠在天邊的提米根本毫無勝算」'
+  name: '&e小型 GtG 遠程飛彈'
+  stats:
+  - '&8⇨ &7範圍：&e900 方塊'
+  - '&8⇨ &7威力：&e3'
+  - '&8⇨ &7速度：&e2'
+  - '&8⇨ &7精準度：&e100 方塊內'
   type:
   - '&7&o武器'
 SMALLWARHEAD:
+  description:
+  - '&7用於製造飛彈。'
+  - '&7「別碰那個紅色的部分」'
+  name: '&e小型彈頭'
   type:
   - '&7&o元件'
 SUGARFUEL:
+  description:
+  - '&7便宜、高能量，最適合小型飛彈。'
+  name: '&e糖燃料'
   type:
   - '&7&o資源'
 ULTRALITE_INGOT:
+  description:
+  - '&7用於飛彈的超輕量錠'
+  name: '&e超輕錠'
   type:
   - '&7&o元件'
 ULTRALITE_PLATE:
+  description:
+  - '&7用於飛彈的超輕量板'
+  name: '&e超輕板'
   type:
   - '&7&o元件'
 WARHEAD:
+  description:
+  - '&7用於製造飛彈。'
+  - '&7「馬鈴薯退散」'
+  name: '&e飛彈彈頭'
   type:
   - '&7&o元件'
 WARHEADAP:
+  description:
+  - '&7用於製造穿甲飛彈'
+  - '&7「碉堡退散」'
+  name: '&e強化彈頭'
   type:
   - '&7&o元件'
