@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7''n Opgegradeerde weergawe van die missielromp'
+  name: '&eGevorderde Missielromp'
   type:
   - '&7&oKomponent'
 ANTIAIRMISSILE:
+  description:
+  - '&7Antimissiel / Anti-elytra'
+  - '&7Antimissiel-variant'
+  - '&7''Timmy se vuurwerke is gekanselleer'''
+  name: '&eAntimissiel-missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e600 Blokke'
+  - '&8⇨ &7Krag: &e4'
+  - '&8⇨ &7Spoed: &e5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 0 Blokke'
   type:
   - '&7&oWapen'
 ANTIELYTRA:
+  description:
+  - '&7Vuur ''n missiel op nabygeleë spelers'
+  - '&7wat ''n elytra gebruik'
+  - '&7Uitgesluit diegene op die'
+  - '&7ID wat hieraan toegeken is'
+  name: '&6Anti-elytra-lanseerder'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eGebruik ''n stok&7 om die groep-ID te stel'
+  - '&7Benodig Anti-elytra-missiele'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Antimissiel / Anti-elytra'
+  - '&7Antimissiel-variant'
+  - '&7''Timmy se vuurwerke is gekanselleer'''
+  name: '&eAnti-elytra-missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e700 Blokke'
+  - '&8⇨ &7Krag: &e4'
+  - '&8⇨ &7Spoed: &e6'
+  - '&8⇨ &7Akkuraatheid: &eBinne 0 Blokke'
   type:
   - '&7&oWapen'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Teiken en skiet ander missiele in die gebied af.'
+  name: '&6Antimissiel-lanseerder'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eGebruik rooiklip&7 om dit af te skakel'
+  - '&7Moet op obsidiaan gebou word'
+  - '&7Benodig Antimissiel-missiele'
 CHLORINE:
+  description:
+  - '&7Giftig'
+  - '&7Veroorsaak ''n stadige en pynlike dood!'
+  name: '&eChloor'
   type:
   - '&7&oHulpbron'
+  usage:
+  - '&eRegsklik&7 om ''n Wither-effek toe te pas'
 CHLORINEPELLET:
+  description:
+  - '&7''n Korrel Chloor'
+  name: '&eChloorkorrel'
   type:
   - '&7&oHulpbron'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7So hard saamgepers dat dit ''n vaste stof geword het'
+  name: '&eSaamgeperste Plofpoeier'
   type:
   - '&7&oHulpbron'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Hanteer versigtig!'
+  name: '&ePlofpoeier'
   type:
   - '&7&oHulpbron'
 GROUNDLAUNCHER:
+  description:
+  - '&7Skiet ''n gespesifiseerde gebied op die grond.'
+  name: '&6GtG-missiellanseerder'
+  stats:
+  - '&8⇨ &7Verstek Kruishoogte: &eY:120'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&eGebruik ''n stok&7 om teikenkoördinate te stel'
+  - '&eShift met ''n stok&7 om te kyk of dit kan vuur'
+  - '&eRegsklik met ''n vlamstaaf&7 om kruishoogte te stel'
+  - '&7Moet op 1 groen betonblok gebou word.'
 GUIDEBOOK:
+  description:
+  - '&7Dit Sal Jou Lei?!?'
+  name: '&eGidsboek'
   type:
   - '&7&oAllerlei'
+  usage:
+  - '&eRegsklik&7 om die gids oop te maak'
 HEAVYWARHEAD:
+  description:
+  - '&7''n Plofkop gepak met swaar plofstof'
+  name: '&eSwaar Plofkop'
   type:
   - '&7&oKomponent'
 ICBMMISSILEBODY:
+  description:
+  - '&7Tot volmaaktheid ontwerp, Elegant, Dodelik.'
+  - '&7Die romp van die ICBM-missiel'
+  name: '&eICBM-romp'
   type:
   - '&7&oKomponent'
 MANPAD:
+  description:
+  - '&7Handgehoue antimissiel-toestel'
+  name: '&6Skouerlanseerder'
   type:
   - '&7&oWapen'
+  usage:
+  - '&eShift + Regsklik&7 om te begin opspoor'
+  - '&eLaat Shift los&7 om te vuur'
 MINE:
+  description:
+  - '&7Sal dit op tenks werk?'
+  name: '&cLandmyn'
+  stats:
+  - '&8⇨ &7Ontploffingskrag: &e8'
+  - '&8⇨ &7Willekeurige Skade: &eTot 10'
   type:
   - '&7&oToestel'
+  usage:
+  - '&ePlaas&7 teen ''n blok om dit as daardie blok te vermom'
 MISSILE:
+  description:
+  - '&7GtG-missiel'
+  - '&7Normale Variant'
+  - '&7''Jou vriendelike buurtmissiel'''
+  name: '&eGtG-missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e1000 Blokke'
+  - '&8⇨ &7Krag: &e4.5'
+  - '&8⇨ &7Spoed: &e2.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 80 Blokke'
   type:
   - '&7&oWapen'
 MISSILEAC:
+  description:
+  - '&7GtG-missiel'
+  - '&7Akkurate Variant'
+  - '&7''Jou vriendelike kamerskoonmaakmissiel'''
+  name: '&eGtG-missiel AC'
+  stats:
+  - '&8⇨ &7Bereik: &e1250 Blokke'
+  - '&8⇨ &7Krag: &e4.5'
+  - '&8⇨ &7Spoed: &e2.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 16 Blokke'
   type:
   - '&7&oWapen'
 MISSILEACADV:
+  description:
+  - '&7GtG Gevorderde Missiele'
+  - '&7Akkurate Variant'
+  - '&7''Redelik akkuraat, dink ek'''
+  name: '&eGtG Gevorderde Missiel AC'
+  stats:
+  - '&8⇨ &7Bereik: &e2000 Blokke'
+  - '&8⇨ &7Krag: &e4.5'
+  - '&8⇨ &7Spoed: &e4'
+  - '&8⇨ &7Akkuraatheid: &eBinne 20 Blokke'
   type:
   - '&7&oWapen'
 MISSILEADV:
+  description:
+  - '&7GtG Gevorderde Missiele'
+  - '&7Normale Variant'
+  - '&7''Aangedryf deur KI (tegnies gesproke)'''
+  name: '&eGtG Gevorderde Missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e2000 Blokke'
+  - '&8⇨ &7Krag: &e4'
+  - '&8⇨ &7Spoed: &e4'
+  - '&8⇨ &7Akkuraatheid: &eBinne 40 Blokke'
   type:
   - '&7&oWapen'
 MISSILEAPONE:
+  description:
+  - '&7GtG Pantserdeurdringende Missiel'
+  - '&7Vlak 1 AP'
+  - '&7''Jou kelder is nie lank meer veilig nie!'''
+  name: '&eGtG-missiel AP'
+  stats:
+  - '&8⇨ &7Dring 1 blok binne voor dit ontplof'
+  - '&8⇨ &7Gaan nie deur obsidiaan nie'
+  - '&8⇨ &7Bereik: &e1550 Blokke'
+  - '&8⇨ &7Krag: &e3.5'
+  - '&8⇨ &7Spoed: &e2'
+  - '&8⇨ &7Akkuraatheid: &eBinne 40 Blokke'
   type:
   - '&7&oWapen'
 MISSILEAPTHR:
+  description:
+  - '&7GtG Pantserdeurdringende Missiel'
+  - '&7Vlak 3 AP'
+  - '&7''Jou bunker is beslis nie lank meer veilig nie!'''
+  name: '&eGtG-missiel AP'
+  stats:
+  - '&8⇨ &7Dring 2 blokke binne voor dit ontplof'
+  - '&8⇨ &775% Kans om deur obsidiaan te gaan'
+  - '&8⇨ &720% kans om die getrefde obsidiaan te breek'
+  - '&8⇨ &7Bereik: &e1850 Blokke'
+  - '&8⇨ &7Krag: &e4.5'
+  - '&8⇨ &7Spoed: &e4'
+  - '&8⇨ &7Akkuraatheid: &eBinne 10 Blokke'
   type:
   - '&7&oWapen'
 MISSILEAPTWO:
+  description:
+  - '&7GtG Pantserdeurdringende Missiel'
+  - '&7Vlak 2 AP'
+  - '&7''Jou bunker is nie lank meer veilig nie!'''
+  name: '&eGtG-missiel AP'
+  stats:
+  - '&8⇨ &7Dring 1 blok binne voor dit ontplof'
+  - '&8⇨ &750% Kans om deur obsidiaan te gaan'
+  - '&8⇨ &710% kans om die getrefde obsidiaan te breek'
+  - '&8⇨ &7Bereik: &e1700 Blokke'
+  - '&8⇨ &7Krag: &e4'
+  - '&8⇨ &7Spoed: &e2.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 20 Blokke'
   type:
   - '&7&oWapen'
 MISSILEBODY:
+  description:
+  - '&7Missielromp wat ''n vlugrekenaar bevat'
+  name: '&eMissielromp'
   type:
   - '&7&oKomponent'
 MISSILECLUSTER:
+  description:
+  - '&7Trosmissiel, Stel baie missiele vry voor dit tref'
+  - '&7''Verwyder dorpies vinniger as wat jy kan skree!'''
+  name: '&cTrosmissiel'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 Blokke'
+  - '&8⇨ &7Krag: &e4'
+  - '&8⇨ &7Spoed: &e3.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 90 Blokke'
   type:
   - '&7&oWapen'
 MISSILEEXCAV:
+  description:
+  - '&7Nutsmissiel'
+  - '&7Het ''n groot ontploffingsradius maar min skade'
+  - '&7Word vir mynbou gebruik'
+  - '&7''Beter as 100 Pikhouwele!'''
+  name: '&cUitgrawingsmissiel'
+  stats:
+  - '&8⇨ &7Bereik: &e100 Blokke'
+  - '&8⇨ &7Krag: &e14'
+  - '&8⇨ &7Spoed: &e0.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 50 Blokke'
   type:
   - '&7&oWapen'
 MISSILEFINS:
+  description:
+  - '&7Kan die missiel beter rig'
+  name: '&eMissielvinne'
   type:
   - '&7&oKomponent'
 MISSILEGAS:
+  description:
+  - '&7Skoonmaakmissiel'
+  - '&7Stel giftige gas vry wanneer dit ''n teiken tref'
+  - '&7''Pleeg Timmymoord.'''
+  name: '&cGasmissiel'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 Blokke'
+  - '&8⇨ &7Krag: &e0.5'
+  - '&8⇨ &7Spoed: &e3'
+  - '&8⇨ &7Akkuraatheid: &eBinne 80 Blokke'
   type:
   - '&7&oWapen'
 MISSILEHE:
+  description:
+  - '&7GtG-missiel'
+  - '&7Hoëplofstof-variant'
+  - '&7''Jou nie-so-vriendelike buurtmissiel'''
+  name: '&eGtG-missiel HE'
+  stats:
+  - '&8⇨ &7Bereik: &e1000 Blokke'
+  - '&8⇨ &7Krag: &e5'
+  - '&8⇨ &7Spoed: &e2'
+  - '&8⇨ &7Akkuraatheid: &eBinne 100 Blokke'
   type:
   - '&7&oWapen'
 MISSILEHEADV:
+  description:
+  - '&7GtG Gevorderde Missiele'
+  - '&7Hoëplofstof-variant'
+  - '&7''Baie gevaarlik, moenie raak nie'''
+  name: '&eGtG Gevorderde Missiel HE'
+  stats:
+  - '&8⇨ &7Bereik: &e2000 Blokke'
+  - '&8⇨ &7Krag: &e6'
+  - '&8⇨ &7Spoed: &e3.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 35 Blokke'
   type:
   - '&7&oWapen'
 MISSILEICBM:
+  description:
+  - '&7Langafstandmissiel'
+  - '&7Interkontinentale Ballistiese Missiel'
+  - '&7''Nêrens is veilig nie.'''
+  name: '&cICBM-missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e7000 Blokke'
+  - '&8⇨ &7Krag: &e10'
+  - '&8⇨ &7Spoed: &e5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 50 Blokke'
   type:
   - '&7&oWapen'
 MISSILELR:
+  description:
+  - '&7GtG-missiel'
+  - '&7Langafstand-variant'
+  - '&7''Jou vriendelike stadsmissiel'''
+  name: '&eGtG-missiel LR'
+  stats:
+  - '&8⇨ &7Bereik: &e1500 Blokke'
+  - '&8⇨ &7Krag: &e4.5'
+  - '&8⇨ &7Spoed: &e2.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 80 Blokke'
   type:
   - '&7&oWapen'
 MISSILELRADV:
+  description:
+  - '&7GtG Gevorderde Missiele'
+  - '&7Langafstand-variant'
+  - '&7''Ek raak sonder oorleweringsidees'''
+  name: '&eGtG Gevorderde Missiel LR'
+  stats:
+  - '&8⇨ &7Bereik: &e2500 Blokke'
+  - '&8⇨ &7Krag: &e4'
+  - '&8⇨ &7Spoed: &e4.5'
+  - '&8⇨ &7Akkuraatheid: &eBinne 40 Blokke'
   type:
   - '&7&oWapen'
 MISSILENAPALM:
+  description:
+  - '&7Vuurmissiel'
+  - '&7Napalmmissiel, Gooi vuur oral wanneer dit tref.'
+  - '&7''Kleuterskoolverwyderaar! Beproef en getoets™'''
+  name: '&cNapalmmissiel'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 Blokke'
+  - '&8⇨ &7Krag: &e2'
+  - '&8⇨ &7Spoed: &e3'
+  - '&8⇨ &7Akkuraatheid: &eBinne 80 Blokke'
   type:
   - '&7&oWapen'
 MISSILERADAR:
+  description:
+  - '&7Stuur ''n rooiklipsein uit wanneer ''n missiel binne 700 blokke is'
+  name: '&eMissielradar'
   type:
   - '&7&oMasjien'
+  usage:
+  - '&ePlaas&7 rooiklip bo-op hierdie blok om sy uitset te kry'
+  - '&7''n Herhaler is nodig om die een-tik-puls te kry'
 MISSILESTICK:
+  description:
+  - '&7Lokvalmissiel'
+  - '&7''n Klein ontploffing wat spinnerakke vrystel'
+  - '&7''Moenie vra waarvan dit gemaak is nie.'''
+  name: '&cKlewerige Missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 Blokke'
+  - '&8⇨ &7Krag: &e1'
+  - '&8⇨ &7Spoed: &e4'
+  - '&8⇨ &7Akkuraatheid: &eBinne 70 Blokke'
   type:
   - '&7&oWapen'
 PLAYERLIST:
+  description:
+  - '&7HIERDIE ID''S IS GLOBAAL'
+  - '&7ENIGIEMAND KAN HULLE WYSIG AS'
+  - '&7HULLE DIE ID HET'
+  name: '&6Spelerlys'
   type:
   - '&7&oAllerlei'
+  usage:
+  - '&eRegsklik&7 om die spelers vir ''n ID te stel'
 RADAR:
+  description:
+  - '&7Gebruik om missiele of spelers op te spoor om te tref'
+  name: '&eRadar'
   type:
   - '&7&oKomponent'
 ROCKETFUEL:
+  description:
+  - '&7Brand met die krag van 1000 steenkool...'
+  name: '&eVuurpylbrandstof'
   type:
   - '&7&oHulpbron'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7''n Eenvoudige rekenaar wat ''n missiel kan lei'
+  name: '&eEenvoudige Vlugrekenaar'
   type:
   - '&7&oKomponent'
 SMALLBODY:
+  description:
+  - '&7Gebruik in die skepping van ''n missiel'
+  - '&7''Jy moet dit liewer nie duik nie'''
+  name: '&eKlein Missielromp'
   type:
   - '&7&oKomponent'
 SMALLFIN:
+  description:
+  - '&7Gebruik in die skepping van ''n missiel'
+  name: '&eKlein Missielvinne'
   type:
   - '&7&oKomponent'
 SMALLMISSILE:
+  description:
+  - '&7Klein Grond-tot-Grond-missiel'
+  - '&7Normale Variant'
+  name: '&eKlein GtG-missiel'
+  stats:
+  - '&8⇨ &7Bereik: &e750 Blokke'
+  - '&8⇨ &7Krag: &e3'
+  - '&8⇨ &7Spoed: &e2'
+  - '&8⇨ &7Akkuraatheid: &eBinne 100 Blokke'
   type:
   - '&7&oWapen'
 SMALLMISSILEAC:
+  description:
+  - '&7Klein Grond-tot-Grond-missiel'
+  - '&7Akkurate Variant'
+  - '&7''Klein Timmy het nooit ''n kans gestaan nie'''
+  name: '&eKlein GtG-missiel AC'
+  stats:
+  - '&8⇨ &7Bereik: &e700 Blokke'
+  - '&8⇨ &7Krag: &e3'
+  - '&8⇨ &7Spoed: &e2'
+  - '&8⇨ &7Akkuraatheid: &eBinne 60 Blokke'
   type:
   - '&7&oWapen'
 SMALLMISSILEHE:
+  description:
+  - '&7Klein Grond-tot-Grond-missiel'
+  - '&7Hoëplofstof-variant'
+  name: '&eKlein GtG-missiel HE'
+  stats:
+  - '&8⇨ &7Bereik: &e600 Blokke'
+  - '&8⇨ &7Krag: &e3.5'
+  - '&8⇨ &7Spoed: &e1'
+  - '&8⇨ &7Akkuraatheid: &eBinne 120 Blokke'
   type:
   - '&7&oWapen'
 SMALLMISSILELR:
+  description:
+  - '&7Klein Grond-tot-Grond-missiel'
+  - '&7Langafstand-variant'
+  - '&7''Timmy daar ver weg het nooit ''n kans gestaan nie'''
+  name: '&eKlein GtG-missiel LR'
+  stats:
+  - '&8⇨ &7Bereik: &e900 Blokke'
+  - '&8⇨ &7Krag: &e3'
+  - '&8⇨ &7Spoed: &e2'
+  - '&8⇨ &7Akkuraatheid: &eBinne 100 Blokke'
   type:
   - '&7&oWapen'
 SMALLWARHEAD:
+  description:
+  - '&7Gebruik in die skepping van ''n missiel.'
+  - '&7''Moenie aan die rooi deel raak nie'''
+  name: '&eKlein Plofkop'
   type:
   - '&7&oKomponent'
 SUGARFUEL:
+  description:
+  - '&7Goedkoop, hoë energie, perfek vir klein missiele.'
+  name: '&eSuikerbrandstof'
   type:
   - '&7&oHulpbron'
 ULTRALITE_INGOT:
+  description:
+  - '&7Super liggewig staaf wat vir missiele gebruik word'
+  name: '&eUltraLite-staaf'
   type:
   - '&7&oKomponent'
 ULTRALITE_PLATE:
+  description:
+  - '&7''n Super liggewig plaat vir missiele'
+  name: '&eUltraLite-plaat'
   type:
   - '&7&oKomponent'
 WARHEAD:
+  description:
+  - '&7Gebruik in die skepping van ''n missiel.'
+  - '&7''Aartappel-weg-wees'''
+  name: '&eMissielplofkop'
   type:
   - '&7&oKomponent'
 WARHEADAP:
+  description:
+  - '&7Gebruik om AP-missiele te skep'
+  - '&7''Bunker-weg-wees'''
+  name: '&eVersterkte Plofkop'
   type:
   - '&7&oKomponent'
