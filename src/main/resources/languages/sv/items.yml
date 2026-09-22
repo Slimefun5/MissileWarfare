@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7En uppgraderad version av missilkroppen'
+  name: '&eAvancerad missilkropp'
   type:
   - '&7&oKomponent'
 ANTIAIRMISSILE:
+  description:
+  - '&7Antimissil / Antielytra'
+  - '&7Antimissilvariant'
+  - '&7''Timmys fyrverkerier är inställda'''
+  name: '&eAntimissilmissil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e600 block'
+  - '&8⇨ &7Sprängkraft: &e4'
+  - '&8⇨ &7Hastighet: &e5'
+  - '&8⇨ &7Precision: &eInom 0 block'
   type:
   - '&7&oVapen'
 ANTIELYTRA:
+  description:
+  - '&7Avfyrar en missil mot närliggande spelare'
+  - '&7som använder en elytra'
+  - '&7Förutom de som har det'
+  - '&7ID som tilldelats denna'
+  name: '&6Antielytraramp'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eAnvänd en pinne&7 för att sätta grupp-ID'
+  - '&7Behöver antielytramissiler'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Antimissil / Antielytra'
+  - '&7Antimissilvariant'
+  - '&7''Timmys fyrverkerier är inställda'''
+  name: '&eAntielytramissil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e700 block'
+  - '&8⇨ &7Sprängkraft: &e4'
+  - '&8⇨ &7Hastighet: &e6'
+  - '&8⇨ &7Precision: &eInom 0 block'
   type:
   - '&7&oVapen'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Siktar på och skjuter ner andra missiler i området.'
+  name: '&6Antimissilramp'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eAnvänd rödsten&7 för att stänga av den'
+  - '&7Måste byggas på obsidian'
+  - '&7Behöver antimissilmissiler'
 CHLORINE:
+  description:
+  - '&7Giftigt'
+  - '&7Orsakar en långsam och smärtsam död!'
+  name: '&eKlor'
   type:
   - '&7&oRåmaterial'
+  usage:
+  - '&eHögerklicka&7 för att ge en Wither-effekt'
 CHLORINEPELLET:
+  description:
+  - '&7En pellet av klor'
+  name: '&eKlorpellet'
   type:
   - '&7&oRåmaterial'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Så hårt komprimerat att det blev fast'
+  name: '&eKomprimerat explosivt pulver'
   type:
   - '&7&oRåmaterial'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Hanteras varsamt!'
+  name: '&eExplosivt pulver'
   type:
   - '&7&oRåmaterial'
 GROUNDLAUNCHER:
+  description:
+  - '&7Skjuter mot ett angivet område på marken.'
+  name: '&6GtG-missilramp'
+  stats:
+  - '&8⇨ &7Standardmarschhöjd: &eY:120'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&eAnvänd en pinne&7 för att sätta målkoordinater'
+  - '&eShift med en pinne&7 för att se om den kan avfyras'
+  - '&eHögerklicka med en blazestav&7 för att sätta marschhöjd'
+  - '&7Måste byggas på 1 grönt betongblock.'
 GUIDEBOOK:
+  description:
+  - '&7Den Kommer Att Vägleda Dig?!?'
+  name: '&eGuidebok'
   type:
   - '&7&oDiverse'
+  usage:
+  - '&eHögerklicka&7 för att öppna guiden'
 HEAVYWARHEAD:
+  description:
+  - '&7En stridsspets fullpackad med tunga sprängmedel'
+  name: '&eTung stridsspets'
   type:
   - '&7&oKomponent'
 ICBMMISSILEBODY:
+  description:
+  - '&7Konstruerad till perfektion, slimmad, dödlig.'
+  - '&7Kroppen till ICBM-missilen'
+  name: '&eICBM-kropp'
   type:
   - '&7&oKomponent'
 MANPAD:
+  description:
+  - '&7Handhållen antimissilanordning'
+  name: '&6Manpad'
   type:
   - '&7&oVapen'
+  usage:
+  - '&eShift + högerklick&7 för att börja spåra'
+  - '&eSläpp Shift&7 för att avfyra'
 MINE:
+  description:
+  - '&7Fungerar den mot stridsvagnar?'
+  name: '&cMina'
+  stats:
+  - '&8⇨ &7Sprängkraft: &e8'
+  - '&8⇨ &7Slumpmässig skada: &eUpp till 10'
   type:
   - '&7&oPryl'
+  usage:
+  - '&ePlacera&7 den mot ett block för att maskera den som det blocket'
 MISSILE:
+  description:
+  - '&7GtG-missil'
+  - '&7Normal variant'
+  - '&7''Din vänliga grannskapsmissil'''
+  name: '&eGtG-missil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1000 block'
+  - '&8⇨ &7Sprängkraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Precision: &eInom 80 block'
   type:
   - '&7&oVapen'
 MISSILEAC:
+  description:
+  - '&7GtG-missil'
+  - '&7Precis variant'
+  - '&7''Din vänliga rumsrensande missil'''
+  name: '&eGtG-missil AC'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1250 block'
+  - '&8⇨ &7Sprängkraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Precision: &eInom 16 block'
   type:
   - '&7&oVapen'
 MISSILEACADV:
+  description:
+  - '&7GtG avancerade missiler'
+  - '&7Precis variant'
+  - '&7''Ganska precis antar jag'''
+  name: '&eGtG avancerad missil AC'
+  stats:
+  - '&8⇨ &7Räckvidd: &e2000 block'
+  - '&8⇨ &7Sprängkraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Precision: &eInom 20 block'
   type:
   - '&7&oVapen'
 MISSILEADV:
+  description:
+  - '&7GtG avancerade missiler'
+  - '&7Normal variant'
+  - '&7''Driven av AI (tekniskt sett)'''
+  name: '&eGtG avancerad missil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e2000 block'
+  - '&8⇨ &7Sprängkraft: &e4'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Precision: &eInom 40 block'
   type:
   - '&7&oVapen'
 MISSILEAPONE:
+  description:
+  - '&7GtG pansarbrytande missil'
+  - '&7Nivå 1 AP'
+  - '&7''Din källare är inte säker länge till!'''
+  name: '&eGtG-missil AP'
+  stats:
+  - '&8⇨ &7Tränger igenom 1 block innan den exploderar'
+  - '&8⇨ &7Går inte igenom obsidian'
+  - '&8⇨ &7Räckvidd: &e1550 block'
+  - '&8⇨ &7Sprängkraft: &e3.5'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Precision: &eInom 40 block'
   type:
   - '&7&oVapen'
 MISSILEAPTHR:
+  description:
+  - '&7GtG pansarbrytande missil'
+  - '&7Nivå 3 AP'
+  - '&7''Din bunker är definitivt inte säker länge till!'''
+  name: '&eGtG-missil AP'
+  stats:
+  - '&8⇨ &7Tränger igenom 2 block innan den exploderar'
+  - '&8⇨ &775% chans att gå igenom obsidian'
+  - '&8⇨ &720% chans att bryta den träffade obsidianen'
+  - '&8⇨ &7Räckvidd: &e1850 block'
+  - '&8⇨ &7Sprängkraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Precision: &eInom 10 block'
   type:
   - '&7&oVapen'
 MISSILEAPTWO:
+  description:
+  - '&7GtG pansarbrytande missil'
+  - '&7Nivå 2 AP'
+  - '&7''Din bunker är inte säker länge till!'''
+  name: '&eGtG-missil AP'
+  stats:
+  - '&8⇨ &7Tränger igenom 1 block innan den exploderar'
+  - '&8⇨ &750% chans att gå igenom obsidian'
+  - '&8⇨ &710% chans att bryta den träffade obsidianen'
+  - '&8⇨ &7Räckvidd: &e1700 block'
+  - '&8⇨ &7Sprängkraft: &e4'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Precision: &eInom 20 block'
   type:
   - '&7&oVapen'
 MISSILEBODY:
+  description:
+  - '&7Missilkropp som innehåller en flygdator'
+  name: '&eMissilkropp'
   type:
   - '&7&oKomponent'
 MISSILECLUSTER:
+  description:
+  - '&7Klustermissil, sprider många missiler före träffen'
+  - '&7''Tar bort byar snabbare än du hinner skrika!'''
+  name: '&cKlustermissil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1600 block'
+  - '&8⇨ &7Sprängkraft: &e4'
+  - '&8⇨ &7Hastighet: &e3.5'
+  - '&8⇨ &7Precision: &eInom 90 block'
   type:
   - '&7&oVapen'
 MISSILEEXCAV:
+  description:
+  - '&7Nyttomissil'
+  - '&7Har stor sprängradie men liten skada'
+  - '&7Används för brytning'
+  - '&7''Bättre än 100 hackor!'''
+  name: '&cSchaktmissil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e100 block'
+  - '&8⇨ &7Sprängkraft: &e14'
+  - '&8⇨ &7Hastighet: &e0.5'
+  - '&8⇨ &7Precision: &eInom 50 block'
   type:
   - '&7&oVapen'
 MISSILEFINS:
+  description:
+  - '&7Kan styra missilen bättre'
+  name: '&eMissilfenor'
   type:
   - '&7&oKomponent'
 MISSILEGAS:
+  description:
+  - '&7Rensningsmissil'
+  - '&7Sprider giftig gas när den träffar ett mål'
+  - '&7''Begå timmycid.'''
+  name: '&cGasmissil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1600 block'
+  - '&8⇨ &7Sprängkraft: &e0.5'
+  - '&8⇨ &7Hastighet: &e3'
+  - '&8⇨ &7Precision: &eInom 80 block'
   type:
   - '&7&oVapen'
 MISSILEHE:
+  description:
+  - '&7GtG-missil'
+  - '&7Högexplosiv variant'
+  - '&7''Din inte så vänliga grannskapsmissil'''
+  name: '&eGtG-missil HE'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1000 block'
+  - '&8⇨ &7Sprängkraft: &e5'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Precision: &eInom 100 block'
   type:
   - '&7&oVapen'
 MISSILEHEADV:
+  description:
+  - '&7GtG avancerade missiler'
+  - '&7Högexplosiv variant'
+  - '&7''Mycket farlig, rör ej'''
+  name: '&eGtG avancerad missil HE'
+  stats:
+  - '&8⇨ &7Räckvidd: &e2000 block'
+  - '&8⇨ &7Sprängkraft: &e6'
+  - '&8⇨ &7Hastighet: &e3.5'
+  - '&8⇨ &7Precision: &eInom 35 block'
   type:
   - '&7&oVapen'
 MISSILEICBM:
+  description:
+  - '&7Långdistansmissil'
+  - '&7Interkontinental ballistisk missil'
+  - '&7''Ingenstans är säkert.'''
+  name: '&cICBM-missil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e7000 block'
+  - '&8⇨ &7Sprängkraft: &e10'
+  - '&8⇨ &7Hastighet: &e5'
+  - '&8⇨ &7Precision: &eInom 50 block'
   type:
   - '&7&oVapen'
 MISSILELR:
+  description:
+  - '&7GtG-missil'
+  - '&7Långdistansvariant'
+  - '&7''Din vänliga stadsmissil'''
+  name: '&eGtG-missil LR'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1500 block'
+  - '&8⇨ &7Sprängkraft: &e4.5'
+  - '&8⇨ &7Hastighet: &e2.5'
+  - '&8⇨ &7Precision: &eInom 80 block'
   type:
   - '&7&oVapen'
 MISSILELRADV:
+  description:
+  - '&7GtG avancerade missiler'
+  - '&7Långdistansvariant'
+  - '&7''Jag börjar få slut på lore-idéer'''
+  name: '&eGtG avancerad missil LR'
+  stats:
+  - '&8⇨ &7Räckvidd: &e2500 block'
+  - '&8⇨ &7Sprängkraft: &e4'
+  - '&8⇨ &7Hastighet: &e4.5'
+  - '&8⇨ &7Precision: &eInom 40 block'
   type:
   - '&7&oVapen'
 MISSILENAPALM:
+  description:
+  - '&7Eldmissil'
+  - '&7Napalmmissil, kastar eld överallt vid träff.'
+  - '&7''Dagisborttagare! Beprövad och testad™'''
+  name: '&cNapalmmissil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1600 block'
+  - '&8⇨ &7Sprängkraft: &e2'
+  - '&8⇨ &7Hastighet: &e3'
+  - '&8⇨ &7Precision: &eInom 80 block'
   type:
   - '&7&oVapen'
 MISSILERADAR:
+  description:
+  - '&7Avger en rödstenssignal när en missil är inom 700 block'
+  name: '&eMissilradar'
   type:
   - '&7&oMaskin'
+  usage:
+  - '&ePlacera&7 rödsten ovanpå detta block för att få dess utgång'
+  - '&7En repeterare krävs för att fånga pulsen på ett tick'
 MISSILESTICK:
+  description:
+  - '&7Fällmissil'
+  - '&7En liten explosion som släpper ut spindelväv'
+  - '&7''Fråga inte vad den är gjord av.'''
+  name: '&cKlibbig missil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e1600 block'
+  - '&8⇨ &7Sprängkraft: &e1'
+  - '&8⇨ &7Hastighet: &e4'
+  - '&8⇨ &7Precision: &eInom 70 block'
   type:
   - '&7&oVapen'
 PLAYERLIST:
+  description:
+  - '&7DESSA ID:N ÄR GLOBALA'
+  - '&7VEM SOM HELST KAN ÄNDRA DEM OM'
+  - '&7DE HAR ID:T'
+  name: '&6Spellista'
   type:
   - '&7&oDiverse'
+  usage:
+  - '&eHögerklicka&7 för att ange spelarna för ett ID'
 RADAR:
+  description:
+  - '&7Används för att spåra missiler eller spelare att träffa'
+  name: '&eRadar'
   type:
   - '&7&oKomponent'
 ROCKETFUEL:
+  description:
+  - '&7Brinner med kraften av 1000 kol...'
+  name: '&eRaketbränsle'
   type:
   - '&7&oRåmaterial'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7En enkel dator som kan styra en missil'
+  name: '&eEnkel flygdator'
   type:
   - '&7&oKomponent'
 SMALLBODY:
+  description:
+  - '&7Används vid tillverkningen av en missil'
+  - '&7''Du får inte buckla den'''
+  name: '&eLiten missilkropp'
   type:
   - '&7&oKomponent'
 SMALLFIN:
+  description:
+  - '&7Används vid tillverkningen av en missil'
+  name: '&eSmå missilfenor'
   type:
   - '&7&oKomponent'
 SMALLMISSILE:
+  description:
+  - '&7Liten mark-till-mark-missil'
+  - '&7Normal variant'
+  name: '&eLiten GtG-missil'
+  stats:
+  - '&8⇨ &7Räckvidd: &e750 block'
+  - '&8⇨ &7Sprängkraft: &e3'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Precision: &eInom 100 block'
   type:
   - '&7&oVapen'
 SMALLMISSILEAC:
+  description:
+  - '&7Liten mark-till-mark-missil'
+  - '&7Precis variant'
+  - '&7''Lille Timmy hade aldrig en chans'''
+  name: '&eLiten GtG-missil AC'
+  stats:
+  - '&8⇨ &7Räckvidd: &e700 block'
+  - '&8⇨ &7Sprängkraft: &e3'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Precision: &eInom 60 block'
   type:
   - '&7&oVapen'
 SMALLMISSILEHE:
+  description:
+  - '&7Liten mark-till-mark-missil'
+  - '&7Högexplosiv variant'
+  name: '&eLiten GtG-missil HE'
+  stats:
+  - '&8⇨ &7Räckvidd: &e600 block'
+  - '&8⇨ &7Sprängkraft: &e3.5'
+  - '&8⇨ &7Hastighet: &e1'
+  - '&8⇨ &7Precision: &eInom 120 block'
   type:
   - '&7&oVapen'
 SMALLMISSILELR:
+  description:
+  - '&7Liten mark-till-mark-missil'
+  - '&7Långdistansvariant'
+  - '&7''Timmy där långt borta hade aldrig en chans'''
+  name: '&eLiten GtG-missil LR'
+  stats:
+  - '&8⇨ &7Räckvidd: &e900 block'
+  - '&8⇨ &7Sprängkraft: &e3'
+  - '&8⇨ &7Hastighet: &e2'
+  - '&8⇨ &7Precision: &eInom 100 block'
   type:
   - '&7&oVapen'
 SMALLWARHEAD:
+  description:
+  - '&7Används vid tillverkning av en missil.'
+  - '&7''Rör inte den röda biten'''
+  name: '&eLiten stridsspets'
   type:
   - '&7&oKomponent'
 SUGARFUEL:
+  description:
+  - '&7Billigt, energirikt, perfekt för små missiler.'
+  name: '&eSockerbränsle'
   type:
   - '&7&oRåmaterial'
 ULTRALITE_INGOT:
+  description:
+  - '&7Superlätt tacka som används till missiler'
+  name: '&eUltraLite-tacka'
   type:
   - '&7&oKomponent'
 ULTRALITE_PLATE:
+  description:
+  - '&7En superlätt platta för missiler'
+  name: '&eUltraLite-platta'
   type:
   - '&7&oKomponent'
 WARHEAD:
+  description:
+  - '&7Används vid tillverkning av en missil.'
+  - '&7''Potatis-försvinn'''
+  name: '&eMissilstridsspets'
   type:
   - '&7&oKomponent'
 WARHEADAP:
+  description:
+  - '&7Används för att skapa AP-missiler'
+  - '&7''Bunker-försvinn'''
+  name: '&eFörstärkt stridsspets'
   type:
   - '&7&oKomponent'
