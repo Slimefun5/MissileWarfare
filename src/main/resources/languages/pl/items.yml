@@ -1,204 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Ulepszona wersja kadłuba pocisku'
   name: '&eZaawansowany korpus pocisku'
   type:
   - '&7&oKomponent'
 ANTIAIRMISSILE:
+  description:
+  - '&7Przeciwpociskowy / Przeciwelytrowy'
+  - '&7Wariant przeciwpociskowy'
+  - '&7''Fajerwerki Timmy''ego zostały odwołane'''
   name: '&ePocisk przeciwrakietowy'
+  stats:
+  - '&8⇨ &7Zasięg: &e600 bloków'
+  - '&8⇨ &7Siła: &e4'
+  - '&8⇨ &7Prędkość: &e5'
+  - '&8⇨ &7Dokładność: &eW promieniu 0 bloków'
   type:
   - '&7&oBroń'
 ANTIELYTRA:
+  description:
+  - '&7Wystrzeliwuje pocisk w pobliskich graczy'
+  - '&7którzy używają elytry'
+  - '&7Z wyjątkiem tych z'
+  - '&7ID przypisanym do tego urządzenia'
   name: '&6Wyrzutnia przeciw elytrom'
   type:
   - '&7&oMaszyna'
+  usage:
+  - '&eUżyj patyka&7 aby ustawić ID grupy'
+  - '&7Wymaga Pocisków przeciwelytrowych'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Przeciwpociskowy / Przeciwelytrowy'
+  - '&7Wariant przeciwpociskowy'
+  - '&7''Fajerwerki Timmy''ego zostały odwołane'''
   name: '&ePocisk przeciw elytrom'
+  stats:
+  - '&8⇨ &7Zasięg: &e700 bloków'
+  - '&8⇨ &7Siła: &e4'
+  - '&8⇨ &7Prędkość: &e6'
+  - '&8⇨ &7Dokładność: &eW promieniu 0 bloków'
   type:
   - '&7&oBroń'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Namierza i zestrzeliwuje inne pociski w okolicy.'
   name: '&6Wyrzutnia przeciwrakietowa'
   type:
   - '&7&oMaszyna'
+  usage:
+  - '&eUżyj czerwonego kamienia&7 aby go wyłączyć'
+  - '&7Musi być zbudowany na obsydianie'
+  - '&7Wymaga Pocisków przeciwpociskowych'
 CHLORINE:
+  description:
+  - '&7Trujący'
+  - '&7Powoduje powolną i bolesną śmierć!'
   name: '&eChlor'
   type:
   - '&7&oSurowiec'
+  usage:
+  - '&eKliknij prawym&7 aby nałożyć efekt Withera'
 CHLORINEPELLET:
+  description:
+  - '&7Granulka chloru'
   name: '&eTabletka chloru'
   type:
   - '&7&oSurowiec'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Sprasowane tak mocno, że stały się ciałem stałym'
   name: '&eSprężony proszek wybuchowy'
   type:
   - '&7&oSurowiec'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Obchodź się ostrożnie!'
   name: '&eProszek wybuchowy'
   type:
   - '&7&oSurowiec'
 GROUNDLAUNCHER:
+  description:
+  - '&7Ostrzeliwuje wskazany obszar na ziemi.'
   name: '&6Wyrzutnia pocisków ziemia-ziemia'
+  stats:
+  - '&8⇨ &7Domyślna wysokość przelotowa: &eY:120'
   type:
   - '&7&oMaszyna'
+  usage:
+  - '&eUżyj patyka&7 aby ustawić współrzędne celu'
+  - '&eShift z patykiem&7 aby sprawdzić, czy może wystrzelić'
+  - '&eKliknij prawym różdżką płomyka&7 aby ustawić wysokość przelotową'
+  - '&7Musi być zbudowany na 1 bloku zielonego betonu.'
 GUIDEBOOK:
+  description:
+  - '&7Poprowadzi cię?!?'
   name: '&ePoradnik'
   type:
   - '&7&oRóżne'
+  usage:
+  - '&eKliknij prawym&7 aby otworzyć przewodnik'
 HEAVYWARHEAD:
+  description:
+  - '&7Głowica wypełniona ciężkimi materiałami wybuchowymi'
   name: '&eCiężka głowica'
   type:
   - '&7&oKomponent'
 ICBMMISSILEBODY:
+  description:
+  - '&7Dopracowany do perfekcji, smukły, śmiercionośny.'
+  - '&7Kadłub pocisku ICBM'
   name: '&eKorpus ICBM'
   type:
   - '&7&oKomponent'
 MANPAD:
+  description:
+  - '&7Podręczne urządzenie przeciwpociskowe'
   name: '&6Manpad'
   type:
   - '&7&oBroń'
+  usage:
+  - '&eShift i kliknij prawym&7 aby rozpocząć namierzanie'
+  - '&ePuść Shift&7 aby wystrzelić'
 MINE:
+  description:
+  - '&7Czy zadziała na czołgi?'
   name: '&cMina'
+  stats:
+  - '&8⇨ &7Siła wybuchu: &e8'
+  - '&8⇨ &7Losowe obrażenia: &eDo 10'
   type:
   - '&7&oGadżet'
+  usage:
+  - '&eUmieść&7 przy bloku, aby upodobnić ją do tego bloku'
 MISSILE:
+  description:
+  - '&7Pocisk GtG'
+  - '&7Wariant zwykły'
+  - '&7''Twój przyjazny sąsiedzki pocisk'''
   name: '&ePocisk ziemia-ziemia'
+  stats:
+  - '&8⇨ &7Zasięg: &e1000 bloków'
+  - '&8⇨ &7Siła: &e4.5'
+  - '&8⇨ &7Prędkość: &e2.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 80 bloków'
   type:
   - '&7&oBroń'
 MISSILEAC:
+  description:
+  - '&7Pocisk GtG'
+  - '&7Wariant celny'
+  - '&7''Twój przyjazny pocisk do czyszczenia pokoi'''
   name: '&ePocisk ziemia-ziemia AC'
+  stats:
+  - '&8⇨ &7Zasięg: &e1250 bloków'
+  - '&8⇨ &7Siła: &e4.5'
+  - '&8⇨ &7Prędkość: &e2.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 16 bloków'
   type:
   - '&7&oBroń'
 MISSILEACADV:
+  description:
+  - '&7Zaawansowane pociski GtG'
+  - '&7Wariant celny'
+  - '&7''Całkiem celny, chyba'''
   name: '&eZaawansowany pocisk ziemia-ziemia AC'
+  stats:
+  - '&8⇨ &7Zasięg: &e2000 bloków'
+  - '&8⇨ &7Siła: &e4.5'
+  - '&8⇨ &7Prędkość: &e4'
+  - '&8⇨ &7Dokładność: &eW promieniu 20 bloków'
   type:
   - '&7&oBroń'
 MISSILEADV:
+  description:
+  - '&7Zaawansowane pociski GtG'
+  - '&7Wariant zwykły'
+  - '&7''Napędzany przez SI (technicznie)'''
   name: '&eZaawansowany pocisk ziemia-ziemia'
+  stats:
+  - '&8⇨ &7Zasięg: &e2000 bloków'
+  - '&8⇨ &7Siła: &e4'
+  - '&8⇨ &7Prędkość: &e4'
+  - '&8⇨ &7Dokładność: &eW promieniu 40 bloków'
   type:
   - '&7&oBroń'
 MISSILEAPONE:
+  description:
+  - '&7Pocisk przeciwpancerny GtG'
+  - '&7Poziom 1 przeciwpancerny'
+  - '&7''Twoja piwnica długo nie będzie bezpieczna!'''
   name: '&ePocisk ziemia-ziemia AP'
+  stats:
+  - '&8⇨ &7Przebija 1 blok przed wybuchem'
+  - '&8⇨ &7Nie przebije obsydianu'
+  - '&8⇨ &7Zasięg: &e1550 bloków'
+  - '&8⇨ &7Siła: &e3.5'
+  - '&8⇨ &7Prędkość: &e2'
+  - '&8⇨ &7Dokładność: &eW promieniu 40 bloków'
   type:
   - '&7&oBroń'
 MISSILEAPTHR:
+  description:
+  - '&7Pocisk przeciwpancerny GtG'
+  - '&7Poziom 3 przeciwpancerny'
+  - '&7''Twój bunkier zdecydowanie długo nie będzie bezpieczny!'''
   name: '&ePocisk ziemia-ziemia AP'
+  stats:
+  - '&8⇨ &7Przebija 2 bloki przed wybuchem'
+  - '&8⇨ &775% szansy na przebicie obsydianu'
+  - '&8⇨ &720% szansy na rozbicie trafionego obsydianu'
+  - '&8⇨ &7Zasięg: &e1850 bloków'
+  - '&8⇨ &7Siła: &e4.5'
+  - '&8⇨ &7Prędkość: &e4'
+  - '&8⇨ &7Dokładność: &eW promieniu 10 bloków'
   type:
   - '&7&oBroń'
 MISSILEAPTWO:
+  description:
+  - '&7Pocisk przeciwpancerny GtG'
+  - '&7Poziom 2 przeciwpancerny'
+  - '&7''Twój bunkier długo nie będzie bezpieczny!'''
   name: '&ePocisk ziemia-ziemia AP'
+  stats:
+  - '&8⇨ &7Przebija 1 blok przed wybuchem'
+  - '&8⇨ &750% szansy na przebicie obsydianu'
+  - '&8⇨ &710% szansy na rozbicie trafionego obsydianu'
+  - '&8⇨ &7Zasięg: &e1700 bloków'
+  - '&8⇨ &7Siła: &e4'
+  - '&8⇨ &7Prędkość: &e2.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 20 bloków'
   type:
   - '&7&oBroń'
 MISSILEBODY:
+  description:
+  - '&7Kadłub pocisku z komputerem pokładowym'
   name: '&eKorpus pocisku'
   type:
   - '&7&oKomponent'
 MISSILECLUSTER:
+  description:
+  - '&7Pocisk kasetowy, wypuszcza wiele pocisków przed trafieniem'
+  - '&7''Usuwa wioski szybciej, niż zdążysz krzyknąć!'''
   name: '&cPocisk kasetowy'
+  stats:
+  - '&8⇨ &7Zasięg: &e1600 bloków'
+  - '&8⇨ &7Siła: &e4'
+  - '&8⇨ &7Prędkość: &e3.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 90 bloków'
   type:
   - '&7&oBroń'
 MISSILEEXCAV:
+  description:
+  - '&7Pocisk użytkowy'
+  - '&7Ma duży promień wybuchu, ale małe obrażenia'
+  - '&7Używany do wydobycia'
+  - '&7''Lepszy niż 100 kilofów!'''
   name: '&cPocisk wykopowy'
+  stats:
+  - '&8⇨ &7Zasięg: &e100 bloków'
+  - '&8⇨ &7Siła: &e14'
+  - '&8⇨ &7Prędkość: &e0.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 50 bloków'
   type:
   - '&7&oBroń'
 MISSILEFINS:
+  description:
+  - '&7Pozwalają lepiej kierować pociskiem'
   name: '&eStateczniki pocisku'
   type:
   - '&7&oKomponent'
 MISSILEGAS:
+  description:
+  - '&7Pocisk oczyszczający'
+  - '&7Uwalnia trujący gaz po trafieniu w cel'
+  - '&7''Popełnij timmycyd.'''
   name: '&cPocisk gazowy'
+  stats:
+  - '&8⇨ &7Zasięg: &e1600 bloków'
+  - '&8⇨ &7Siła: &e0.5'
+  - '&8⇨ &7Prędkość: &e3'
+  - '&8⇨ &7Dokładność: &eW promieniu 80 bloków'
   type:
   - '&7&oBroń'
 MISSILEHE:
+  description:
+  - '&7Pocisk GtG'
+  - '&7Wariant wysoko wybuchowy'
+  - '&7''Twój niezbyt przyjazny sąsiedzki pocisk'''
   name: '&ePocisk ziemia-ziemia HE'
+  stats:
+  - '&8⇨ &7Zasięg: &e1000 bloków'
+  - '&8⇨ &7Siła: &e5'
+  - '&8⇨ &7Prędkość: &e2'
+  - '&8⇨ &7Dokładność: &eW promieniu 100 bloków'
   type:
   - '&7&oBroń'
 MISSILEHEADV:
+  description:
+  - '&7Zaawansowane pociski GtG'
+  - '&7Wariant wysoko wybuchowy'
+  - '&7''Bardzo niebezpieczne, nie dotykać'''
   name: '&eZaawansowany pocisk ziemia-ziemia HE'
+  stats:
+  - '&8⇨ &7Zasięg: &e2000 bloków'
+  - '&8⇨ &7Siła: &e6'
+  - '&8⇨ &7Prędkość: &e3.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 35 bloków'
   type:
   - '&7&oBroń'
 MISSILEICBM:
+  description:
+  - '&7Pocisk dalekiego zasięgu'
+  - '&7Międzykontynentalny pocisk balistyczny'
+  - '&7''Nigdzie nie jest bezpiecznie.'''
   name: '&cPocisk ICBM'
+  stats:
+  - '&8⇨ &7Zasięg: &e7000 bloków'
+  - '&8⇨ &7Siła: &e10'
+  - '&8⇨ &7Prędkość: &e5'
+  - '&8⇨ &7Dokładność: &eW promieniu 50 bloków'
   type:
   - '&7&oBroń'
 MISSILELR:
+  description:
+  - '&7Pocisk GtG'
+  - '&7Wariant dalekiego zasięgu'
+  - '&7''Twój przyjazny miejski pocisk'''
   name: '&ePocisk ziemia-ziemia LR'
+  stats:
+  - '&8⇨ &7Zasięg: &e1500 bloków'
+  - '&8⇨ &7Siła: &e4.5'
+  - '&8⇨ &7Prędkość: &e2.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 80 bloków'
   type:
   - '&7&oBroń'
 MISSILELRADV:
+  description:
+  - '&7Zaawansowane pociski GtG'
+  - '&7Wariant dalekiego zasięgu'
+  - '&7''Kończą mi się pomysły na opisy'''
   name: '&eZaawansowany pocisk ziemia-ziemia LR'
+  stats:
+  - '&8⇨ &7Zasięg: &e2500 bloków'
+  - '&8⇨ &7Siła: &e4'
+  - '&8⇨ &7Prędkość: &e4.5'
+  - '&8⇨ &7Dokładność: &eW promieniu 40 bloków'
   type:
   - '&7&oBroń'
 MISSILENAPALM:
+  description:
+  - '&7Pocisk ogniowy'
+  - '&7Pocisk napalmowy, po trafieniu rozrzuca ogień wszędzie.'
+  - '&7''Usuwacz przedszkoli! Sprawdzony i przetestowany™'''
   name: '&cPocisk napalmowy'
+  stats:
+  - '&8⇨ &7Zasięg: &e1600 bloków'
+  - '&8⇨ &7Siła: &e2'
+  - '&8⇨ &7Prędkość: &e3'
+  - '&8⇨ &7Dokładność: &eW promieniu 80 bloków'
   type:
   - '&7&oBroń'
 MISSILERADAR:
+  description:
+  - '&7Wysyła sygnał czerwonego kamienia, gdy pocisk jest w promieniu 700 bloków'
   name: '&eRadar pocisków'
   type:
   - '&7&oMaszyna'
+  usage:
+  - '&eUmieść&7 czerwony kamień na tym bloku, aby odczytać jego sygnał'
+  - '&7Do odebrania impulsu jednego ticka potrzebny jest przekaźnik'
 MISSILESTICK:
+  description:
+  - '&7Pocisk pułapkowy'
+  - '&7Mały wybuch, który uwalnia pajęczyny'
+  - '&7''Nie pytaj, z czego jest zrobiony.'''
   name: '&cLepki pocisk'
+  stats:
+  - '&8⇨ &7Zasięg: &e1600 bloków'
+  - '&8⇨ &7Siła: &e1'
+  - '&8⇨ &7Prędkość: &e4'
+  - '&8⇨ &7Dokładność: &eW promieniu 70 bloków'
   type:
   - '&7&oBroń'
 PLAYERLIST:
+  description:
+  - '&7TE IDENTYFIKATORY SĄ GLOBALNE'
+  - '&7KAŻDY MOŻE JE ZMIENIĆ, JEŚLI'
+  - '&7ZNA DANE ID'
   name: '&6Lista graczy'
   type:
   - '&7&oRóżne'
+  usage:
+  - '&eKliknij prawym&7 aby przypisać graczy do ID'
 RADAR:
+  description:
+  - '&7Służy do śledzenia pocisków lub graczy do trafienia'
   name: '&eRadar'
   type:
   - '&7&oKomponent'
 ROCKETFUEL:
+  description:
+  - '&7Płonie z mocą 1000 węgla...'
   name: '&ePaliwo rakietowe'
   type:
   - '&7&oSurowiec'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Prosty komputer zdolny naprowadzać pocisk'
   name: '&eProsty komputer lotu'
   type:
   - '&7&oKomponent'
 SMALLBODY:
+  description:
+  - '&7Używany przy tworzeniu pocisku'
+  - '&7''Lepiej tego nie wgnieć'''
   name: '&eMały kadłub pocisku'
   type:
   - '&7&oKomponent'
 SMALLFIN:
+  description:
+  - '&7Używany przy tworzeniu pocisku'
   name: '&eMałe stateczniki pocisku'
   type:
   - '&7&oKomponent'
 SMALLMISSILE:
+  description:
+  - '&7Mały pocisk ziemia-ziemia'
+  - '&7Wariant zwykły'
   name: '&eMały pocisk ziemia-ziemia'
+  stats:
+  - '&8⇨ &7Zasięg: &e750 bloków'
+  - '&8⇨ &7Siła: &e3'
+  - '&8⇨ &7Prędkość: &e2'
+  - '&8⇨ &7Dokładność: &eW promieniu 100 bloków'
   type:
   - '&7&oBroń'
 SMALLMISSILEAC:
+  description:
+  - '&7Mały pocisk ziemia-ziemia'
+  - '&7Wariant celny'
+  - '&7''Mały Timmy nie miał żadnych szans'''
   name: '&eMały pocisk ziemia-ziemia AC'
+  stats:
+  - '&8⇨ &7Zasięg: &e700 bloków'
+  - '&8⇨ &7Siła: &e3'
+  - '&8⇨ &7Prędkość: &e2'
+  - '&8⇨ &7Dokładność: &eW promieniu 60 bloków'
   type:
   - '&7&oBroń'
 SMALLMISSILEHE:
+  description:
+  - '&7Mały pocisk ziemia-ziemia'
+  - '&7Wariant wysoko wybuchowy'
   name: '&eMały pocisk ziemia-ziemia HE'
+  stats:
+  - '&8⇨ &7Zasięg: &e600 bloków'
+  - '&8⇨ &7Siła: &e3.5'
+  - '&8⇨ &7Prędkość: &e1'
+  - '&8⇨ &7Dokładność: &eW promieniu 120 bloków'
   type:
   - '&7&oBroń'
 SMALLMISSILELR:
+  description:
+  - '&7Mały pocisk ziemia-ziemia'
+  - '&7Wariant dalekiego zasięgu'
+  - '&7''Bardzo daleki timmy nie miał żadnych szans'''
   name: '&eMały pocisk ziemia-ziemia LR'
+  stats:
+  - '&8⇨ &7Zasięg: &e900 bloków'
+  - '&8⇨ &7Siła: &e3'
+  - '&8⇨ &7Prędkość: &e2'
+  - '&8⇨ &7Dokładność: &eW promieniu 100 bloków'
   type:
   - '&7&oBroń'
 SMALLWARHEAD:
+  description:
+  - '&7Używana przy tworzeniu pocisku.'
+  - '&7''Nie dotykaj czerwonej części'''
   name: '&eMała głowica'
   type:
   - '&7&oKomponent'
 SUGARFUEL:
+  description:
+  - '&7Tanie, bardzo energetyczne, idealne do małych pocisków.'
   name: '&ePaliwo cukrowe'
   type:
   - '&7&oSurowiec'
 ULTRALITE_INGOT:
+  description:
+  - '&7Superlekka sztabka używana do pocisków'
   name: '&eSztabka UltraLite'
   type:
   - '&7&oKomponent'
 ULTRALITE_PLATE:
+  description:
+  - '&7Superlekka płyta do pocisków'
   name: '&ePłyta UltraLite'
   type:
   - '&7&oKomponent'
 WARHEAD:
+  description:
+  - '&7Używana przy tworzeniu pocisku.'
+  - '&7''Precz z ziemniakami'''
   name: '&eGłowica pocisku'
   type:
   - '&7&oKomponent'
 WARHEADAP:
+  description:
+  - '&7Służy do tworzenia Pocisków przeciwpancernych'
+  - '&7''Precz z bunkrami'''
   name: '&eWzmocniona głowica'
   type:
   - '&7&oKomponent'
