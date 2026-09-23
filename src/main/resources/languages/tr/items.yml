@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Füze gövdesinin yükseltilmiş sürümü'
+  name: '&eGelişmiş Füze Gövdesi'
   type:
   - '&7&oBileşen'
 ANTIAIRMISSILE:
+  description:
+  - '&7Füze Savar / Elytra Savar'
+  - '&7Füze Savar Varyant'
+  - '&7''Timmy''nin havai fişekleri iptal edildi'''
+  name: '&eFüze Savar Füze'
+  stats:
+  - '&8⇨ &7Menzil: &e600 Blok'
+  - '&8⇨ &7Güç: &e4'
+  - '&8⇨ &7Hız: &e5'
+  - '&8⇨ &7İsabet: &e0 Blok İçinde'
   type:
   - '&7&oSilah'
 ANTIELYTRA:
+  description:
+  - '&7Yakındaki elytra kullanan'
+  - '&7oyunculara füze ateşler'
+  - '&7Buna atanmış kimlikte'
+  - '&7olanlar hariç tutulur'
+  name: '&6Elytra Savar Rampası'
   type:
   - '&7&oMakine'
+  usage:
+  - '&eBir çubuk kullan&7 grup kimliğini ayarlamak için'
+  - '&7Elytra Savar Füzeler gerektirir'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Füze Savar / Elytra Savar'
+  - '&7Füze Savar Varyant'
+  - '&7''Timmy''nin havai fişekleri iptal edildi'''
+  name: '&eElytra Savar Füze'
+  stats:
+  - '&8⇨ &7Menzil: &e700 Blok'
+  - '&8⇨ &7Güç: &e4'
+  - '&8⇨ &7Hız: &e6'
+  - '&8⇨ &7İsabet: &e0 Blok İçinde'
   type:
   - '&7&oSilah'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Alandaki diğer füzeleri hedefleyip düşürür.'
+  name: '&6Füze Savar Rampası'
   type:
   - '&7&oMakine'
+  usage:
+  - '&eKızıltaş kullan&7 devre dışı bırakmak için'
+  - '&7Obsidyen üzerine kurulmalı'
+  - '&7Füze Savar Füzeler gerektirir'
 CHLORINE:
+  description:
+  - '&7Zehirli'
+  - '&7Yavaş ve acılı bir ölüme yol açar!'
+  name: '&eKlor'
   type:
   - '&7&oKaynak'
+  usage:
+  - '&eSağ Tıkla&7 Wither etkisi uygulamak için'
 CHLORINEPELLET:
+  description:
+  - '&7Bir Klor peleti'
+  name: '&eKlor Peleti'
   type:
   - '&7&oKaynak'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7O kadar sıkıştırıldı ki katılaştı'
+  name: '&eSıkıştırılmış Patlayıcı Toz'
   type:
   - '&7&oKaynak'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Dikkatli taşıyın!'
+  name: '&ePatlayıcı Toz'
   type:
   - '&7&oKaynak'
 GROUNDLAUNCHER:
+  description:
+  - '&7Yerde belirtilen bir alanı vurur.'
+  name: '&6GtG Füze Rampası'
+  stats:
+  - '&8⇨ &7Varsayılan Seyir Yüksekliği: &eY:120'
   type:
   - '&7&oMakine'
+  usage:
+  - '&eBir çubuk kullan&7 hedef koordinatlarını ayarlamak için'
+  - '&eÇubukla Shift yap&7 ateşleyip ateşleyemeyeceğini görmek için'
+  - '&eBlaze çubuğuyla sağ tıkla&7 seyir yüksekliğini ayarlamak için'
+  - '&71 yeşil beton bloğu üzerine kurulmalı.'
 GUIDEBOOK:
+  description:
+  - '&7Size Yol Gösterecek?!?'
+  name: '&eRehber Kitap'
   type:
   - '&7&oÇeşitli'
+  usage:
+  - '&eSağ Tıkla&7 rehberi açmak için'
 HEAVYWARHEAD:
+  description:
+  - '&7Ağır patlayıcılarla dolu bir savaş başlığı'
+  name: '&eAğır Savaş Başlığı'
   type:
   - '&7&oBileşen'
 ICBMMISSILEBODY:
+  description:
+  - '&7Kusursuz tasarlanmış, Zarif, Ölümcül.'
+  - '&7ICBM füzesinin gövdesi'
+  name: '&eICBM Gövdesi'
   type:
   - '&7&oBileşen'
 MANPAD:
+  description:
+  - '&7El tipi füze savar cihaz'
+  name: '&6Omuzdan Atışlı Füze'
   type:
   - '&7&oSilah'
+  usage:
+  - '&eShift + Sağ Tık&7 ile takibi başlat'
+  - '&eShift''i bırak&7 ateşlemek için'
 MINE:
+  description:
+  - '&7Tanklarda işe yarar mı?'
+  name: '&cMayın'
+  stats:
+  - '&8⇨ &7Patlama Gücü: &e8'
+  - '&8⇨ &7Rastgele Hasar: &eEn fazla 10'
   type:
   - '&7&oCihaz'
+  usage:
+  - '&eYerleştir&7 bir bloğa dayayarak o blok gibi görünmesini sağla'
 MISSILE:
+  description:
+  - '&7GtG Füzesi'
+  - '&7Normal Varyant'
+  - '&7''Mahallenizin cana yakın füzesi'''
+  name: '&eGtG Füzesi'
+  stats:
+  - '&8⇨ &7Menzil: &e1000 Blok'
+  - '&8⇨ &7Güç: &e4.5'
+  - '&8⇨ &7Hız: &e2.5'
+  - '&8⇨ &7İsabet: &e80 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEAC:
+  description:
+  - '&7GtG Füzesi'
+  - '&7İsabetli Varyant'
+  - '&7''Cana yakın oda temizleyici füzeniz'''
+  name: '&eGtG Füzesi AC'
+  stats:
+  - '&8⇨ &7Menzil: &e1250 Blok'
+  - '&8⇨ &7Güç: &e4.5'
+  - '&8⇨ &7Hız: &e2.5'
+  - '&8⇨ &7İsabet: &e16 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEACADV:
+  description:
+  - '&7GtG Gelişmiş Füzeler'
+  - '&7İsabetli Varyant'
+  - '&7''Sanırım oldukça isabetli'''
+  name: '&eGtG Gelişmiş Füze AC'
+  stats:
+  - '&8⇨ &7Menzil: &e2000 Blok'
+  - '&8⇨ &7Güç: &e4.5'
+  - '&8⇨ &7Hız: &e4'
+  - '&8⇨ &7İsabet: &e20 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEADV:
+  description:
+  - '&7GtG Gelişmiş Füzeler'
+  - '&7Normal Varyant'
+  - '&7''Yapay zeka ile çalışır (teknik olarak)'''
+  name: '&eGtG Gelişmiş Füze'
+  stats:
+  - '&8⇨ &7Menzil: &e2000 Blok'
+  - '&8⇨ &7Güç: &e4'
+  - '&8⇨ &7Hız: &e4'
+  - '&8⇨ &7İsabet: &e40 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEAPONE:
+  description:
+  - '&7GtG Zırh Delici Füze'
+  - '&7Kademe 1 AP'
+  - '&7''Bodrumunuz uzun süre güvenli kalmayacak!'''
+  name: '&eGtG Füzesi AP'
+  stats:
+  - '&8⇨ &7Patlamadan önce 1 bloğu deler'
+  - '&8⇨ &7Obsidyeni geçemez'
+  - '&8⇨ &7Menzil: &e1550 Blok'
+  - '&8⇨ &7Güç: &e3.5'
+  - '&8⇨ &7Hız: &e2'
+  - '&8⇨ &7İsabet: &e40 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEAPTHR:
+  description:
+  - '&7GtG Zırh Delici Füze'
+  - '&7Kademe 3 AP'
+  - '&7''Sığınağınız kesinlikle uzun süre güvenli kalmayacak!'''
+  name: '&eGtG Füzesi AP'
+  stats:
+  - '&8⇨ &7Patlamadan önce 2 bloğu deler'
+  - '&8⇨ &7Obsidyeni geçme şansı %75'
+  - '&8⇨ &7Vurulan obsidyeni kırma şansı %20'
+  - '&8⇨ &7Menzil: &e1850 Blok'
+  - '&8⇨ &7Güç: &e4.5'
+  - '&8⇨ &7Hız: &e4'
+  - '&8⇨ &7İsabet: &e10 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEAPTWO:
+  description:
+  - '&7GtG Zırh Delici Füze'
+  - '&7Kademe 2 AP'
+  - '&7''Sığınağınız uzun süre güvenli kalmayacak!'''
+  name: '&eGtG Füzesi AP'
+  stats:
+  - '&8⇨ &7Patlamadan önce 1 bloğu deler'
+  - '&8⇨ &7Obsidyeni geçme şansı %50'
+  - '&8⇨ &7Vurulan obsidyeni kırma şansı %10'
+  - '&8⇨ &7Menzil: &e1700 Blok'
+  - '&8⇨ &7Güç: &e4'
+  - '&8⇨ &7Hız: &e2.5'
+  - '&8⇨ &7İsabet: &e20 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEBODY:
+  description:
+  - '&7Uçuş bilgisayarı içeren füze gövdesi'
+  name: '&eFüze Gövdesi'
   type:
   - '&7&oBileşen'
 MISSILECLUSTER:
+  description:
+  - '&7Misket Füze, çarpmadan önce birçok füze salar'
+  - '&7''Köyleri çığlık atamadan yok eder!'''
+  name: '&cMisket Füze'
+  stats:
+  - '&8⇨ &7Menzil: &e1600 Blok'
+  - '&8⇨ &7Güç: &e4'
+  - '&8⇨ &7Hız: &e3.5'
+  - '&8⇨ &7İsabet: &e90 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEEXCAV:
+  description:
+  - '&7Yardımcı Füze'
+  - '&7Geniş bir patlama yarıçapı var ama az hasar verir'
+  - '&7Madencilik için kullanılır'
+  - '&7''100 Kazmadan daha iyi!'''
+  name: '&cKazı Füzesi'
+  stats:
+  - '&8⇨ &7Menzil: &e100 Blok'
+  - '&8⇨ &7Güç: &e14'
+  - '&8⇨ &7Hız: &e0.5'
+  - '&8⇨ &7İsabet: &e50 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEFINS:
+  description:
+  - '&7Füzeyi daha iyi yönlendirebilir'
+  name: '&eFüze Kanatçıkları'
   type:
   - '&7&oBileşen'
 MISSILEGAS:
+  description:
+  - '&7Temizleyici Füze'
+  - '&7Hedefe çarpınca zehirli gaz yayar'
+  - '&7''Timmy katliamı yap.'''
+  name: '&cGaz Füzesi'
+  stats:
+  - '&8⇨ &7Menzil: &e1600 Blok'
+  - '&8⇨ &7Güç: &e0.5'
+  - '&8⇨ &7Hız: &e3'
+  - '&8⇨ &7İsabet: &e80 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEHE:
+  description:
+  - '&7GtG Füzesi'
+  - '&7Yüksek Patlayıcı Varyant'
+  - '&7''Mahallenizin pek de cana yakın olmayan füzesi'''
+  name: '&eGtG Füzesi HE'
+  stats:
+  - '&8⇨ &7Menzil: &e1000 Blok'
+  - '&8⇨ &7Güç: &e5'
+  - '&8⇨ &7Hız: &e2'
+  - '&8⇨ &7İsabet: &e100 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEHEADV:
+  description:
+  - '&7GtG Gelişmiş Füzeler'
+  - '&7Yüksek Patlayıcı Varyant'
+  - '&7''Çok tehlikeli, dokunmayın'''
+  name: '&eGtG Gelişmiş Füze HE'
+  stats:
+  - '&8⇨ &7Menzil: &e2000 Blok'
+  - '&8⇨ &7Güç: &e6'
+  - '&8⇨ &7Hız: &e3.5'
+  - '&8⇨ &7İsabet: &e35 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILEICBM:
+  description:
+  - '&7Uzun Menzilli Füze'
+  - '&7Kıtalararası Balistik Füze'
+  - '&7''Hiçbir yer güvenli değil.'''
+  name: '&cICBM Füzesi'
+  stats:
+  - '&8⇨ &7Menzil: &e7000 Blok'
+  - '&8⇨ &7Güç: &e10'
+  - '&8⇨ &7Hız: &e5'
+  - '&8⇨ &7İsabet: &e50 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILELR:
+  description:
+  - '&7GtG Füzesi'
+  - '&7Uzun Menzil Varyantı'
+  - '&7''Cana yakın şehir füzeniz'''
+  name: '&eGtG Füzesi LR'
+  stats:
+  - '&8⇨ &7Menzil: &e1500 Blok'
+  - '&8⇨ &7Güç: &e4.5'
+  - '&8⇨ &7Hız: &e2.5'
+  - '&8⇨ &7İsabet: &e80 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILELRADV:
+  description:
+  - '&7GtG Gelişmiş Füzeler'
+  - '&7Uzun Menzil Varyantı'
+  - '&7''Hikaye fikirlerim tükeniyor'''
+  name: '&eGtG Gelişmiş Füze LR'
+  stats:
+  - '&8⇨ &7Menzil: &e2500 Blok'
+  - '&8⇨ &7Güç: &e4'
+  - '&8⇨ &7Hız: &e4.5'
+  - '&8⇨ &7İsabet: &e40 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILENAPALM:
+  description:
+  - '&7Ateş Füzesi'
+  - '&7Napalm Füzesi, çarpınca her yere ateş saçar.'
+  - '&7''Anaokulu Sökücü! Denenmiş ve onaylanmış™'''
+  name: '&cNapalm Füzesi'
+  stats:
+  - '&8⇨ &7Menzil: &e1600 Blok'
+  - '&8⇨ &7Güç: &e2'
+  - '&8⇨ &7Hız: &e3'
+  - '&8⇨ &7İsabet: &e80 Blok İçinde'
   type:
   - '&7&oSilah'
 MISSILERADAR:
+  description:
+  - '&7Bir füze 700 blok içindeyken kızıltaş sinyali verir'
+  name: '&eFüze Radarı'
   type:
   - '&7&oMakine'
+  usage:
+  - '&eYerleştir&7 bu bloğun üstüne kızıltaş, çıkışını almak için'
+  - '&7Tek tik darbesini almak için bir tekrarlayıcı gerekir'
 MISSILESTICK:
+  description:
+  - '&7Tuzak Füzesi'
+  - '&7Örümcek ağı yayan küçük bir patlama'
+  - '&7''Neyden yapıldığını sorma.'''
+  name: '&cYapışkan Füze'
+  stats:
+  - '&8⇨ &7Menzil: &e1600 Blok'
+  - '&8⇨ &7Güç: &e1'
+  - '&8⇨ &7Hız: &e4'
+  - '&8⇨ &7İsabet: &e70 Blok İçinde'
   type:
   - '&7&oSilah'
 PLAYERLIST:
+  description:
+  - '&7BU KİMLİKLER KÜRESELDİR'
+  - '&7KİMLİĞE SAHİP OLAN HERKES'
+  - '&7ONLARI DÜZENLEYEBİLİR'
+  name: '&6Oyuncu Listesi'
   type:
   - '&7&oÇeşitli'
+  usage:
+  - '&eSağ Tıkla&7 bir kimlik için oyuncuları belirlemek üzere'
 RADAR:
+  description:
+  - '&7Vurulacak füzeleri veya oyuncuları izlemek için kullanılır'
+  name: '&eRadar'
   type:
   - '&7&oBileşen'
 ROCKETFUEL:
+  description:
+  - '&71000 kömürün gücüyle yanar...'
+  name: '&eRoket Yakıtı'
   type:
   - '&7&oKaynak'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Bir füzeyi yönlendirebilen basit bir bilgisayar'
+  name: '&eBasit Uçuş Bilgisayarı'
   type:
   - '&7&oBileşen'
 SMALLBODY:
+  description:
+  - '&7Bir füzenin yapımında kullanılır'
+  - '&7''Sakın onu göçürme'''
+  name: '&eKüçük Füze Gövdesi'
   type:
   - '&7&oBileşen'
 SMALLFIN:
+  description:
+  - '&7Bir füzenin yapımında kullanılır'
+  name: '&eKüçük Füze Kanatçıkları'
   type:
   - '&7&oBileşen'
 SMALLMISSILE:
+  description:
+  - '&7Küçük Yerden Yere Füze'
+  - '&7Normal Varyant'
+  name: '&eKüçük GtG Füzesi'
+  stats:
+  - '&8⇨ &7Menzil: &e750 Blok'
+  - '&8⇨ &7Güç: &e3'
+  - '&8⇨ &7Hız: &e2'
+  - '&8⇨ &7İsabet: &e100 Blok İçinde'
   type:
   - '&7&oSilah'
 SMALLMISSILEAC:
+  description:
+  - '&7Küçük Yerden Yere Füze'
+  - '&7İsabetli Varyant'
+  - '&7''Minik Timmy hiç şans bulamadı'''
+  name: '&eKüçük GtG Füzesi AC'
+  stats:
+  - '&8⇨ &7Menzil: &e700 Blok'
+  - '&8⇨ &7Güç: &e3'
+  - '&8⇨ &7Hız: &e2'
+  - '&8⇨ &7İsabet: &e60 Blok İçinde'
   type:
   - '&7&oSilah'
 SMALLMISSILEHE:
+  description:
+  - '&7Küçük Yerden Yere Füze'
+  - '&7Yüksek Patlayıcı Varyant'
+  name: '&eKüçük GtG Füzesi HE'
+  stats:
+  - '&8⇨ &7Menzil: &e600 Blok'
+  - '&8⇨ &7Güç: &e3.5'
+  - '&8⇨ &7Hız: &e1'
+  - '&8⇨ &7İsabet: &e120 Blok İçinde'
   type:
   - '&7&oSilah'
 SMALLMISSILELR:
+  description:
+  - '&7Küçük Yerden Yere Füze'
+  - '&7Uzun Menzil Varyantı'
+  - '&7''Çok uzaktaki timmy hiç şans bulamadı'''
+  name: '&eKüçük GtG Füzesi LR'
+  stats:
+  - '&8⇨ &7Menzil: &e900 Blok'
+  - '&8⇨ &7Güç: &e3'
+  - '&8⇨ &7Hız: &e2'
+  - '&8⇨ &7İsabet: &e100 Blok İçinde'
   type:
   - '&7&oSilah'
 SMALLWARHEAD:
+  description:
+  - '&7Bir füze yapımında kullanılır.'
+  - '&7''Kırmızı kısma dokunma'''
+  name: '&eKüçük Savaş Başlığı'
   type:
   - '&7&oBileşen'
 SUGARFUEL:
+  description:
+  - '&7Ucuz, yüksek enerjili, küçük füzeler için mükemmel.'
+  name: '&eŞeker Yakıtı'
   type:
   - '&7&oKaynak'
 ULTRALITE_INGOT:
+  description:
+  - '&7Füzeler için kullanılan süper hafif külçe'
+  name: '&eUltraLite Külçe'
   type:
   - '&7&oBileşen'
 ULTRALITE_PLATE:
+  description:
+  - '&7Füzeler için süper hafif bir plaka'
+  name: '&eUltraLite Plaka'
   type:
   - '&7&oBileşen'
 WARHEAD:
+  description:
+  - '&7Bir füze yapımında kullanılır.'
+  - '&7''Patates-yok-olsun'''
+  name: '&eFüze Savaş Başlığı'
   type:
   - '&7&oBileşen'
 WARHEADAP:
+  description:
+  - '&7AP Füzeleri yapmak için kullanılır'
+  - '&7''Sığınak-yok-olsun'''
+  name: '&eTakviyeli Savaş Başlığı'
   type:
   - '&7&oBileşen'
