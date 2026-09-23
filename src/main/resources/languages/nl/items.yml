@@ -1,204 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Een verbeterde versie van de raketromp'
   name: '&eGeavanceerde raketromp'
   type:
   - '&7&oOnderdeel'
 ANTIAIRMISSILE:
+  description:
+  - '&7Antiraket / anti-elytra'
+  - '&7Antiraketvariant'
+  - '&7''Timmy''s vuurwerk is afgelast'''
   name: '&eAntiraketraket'
+  stats:
+  - '&8⇨ &7Bereik: &e600 blokken'
+  - '&8⇨ &7Kracht: &e4'
+  - '&8⇨ &7Snelheid: &e5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 0 blokken'
   type:
   - '&7&oWapen'
 ANTIELYTRA:
+  description:
+  - '&7Vuurt een raket af op nabijgelegen spelers'
+  - '&7die een elytra gebruiken'
+  - '&7Behalve degenen met de'
+  - '&7ID die hieraan is toegewezen'
   name: '&6Anti-elytralanceerinrichting'
   type:
   - '&7&oMachine'
+  usage:
+  - '&eGebruik een stok&7 om de groeps-ID in te stellen'
+  - '&7Heeft anti-elytraraketten nodig'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Antiraket / anti-elytra'
+  - '&7Antiraketvariant'
+  - '&7''Timmy''s vuurwerk is afgelast'''
   name: '&eAnti-elytraraket'
+  stats:
+  - '&8⇨ &7Bereik: &e700 blokken'
+  - '&8⇨ &7Kracht: &e4'
+  - '&8⇨ &7Snelheid: &e6'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 0 blokken'
   type:
   - '&7&oWapen'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Richt op andere raketten in het gebied en schiet ze neer.'
   name: '&6Antiraketlanceerinrichting'
   type:
   - '&7&oMachine'
+  usage:
+  - '&eGebruik redstone&7 om hem uit te schakelen'
+  - '&7Moet op obsidiaan gebouwd worden'
+  - '&7Heeft antiraketraketten nodig'
 CHLORINE:
+  description:
+  - '&7Giftig'
+  - '&7Veroorzaakt een langzame en pijnlijke dood!'
   name: '&eChloor'
   type:
   - '&7&oGrondstof'
+  usage:
+  - '&eRechtsklik&7 om een Withereffect toe te passen'
 CHLORINEPELLET:
+  description:
+  - '&7Een korrel chloor'
   name: '&eChloortablet'
   type:
   - '&7&oGrondstof'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Zo hard samengeperst dat het vast werd'
   name: '&eSamengeperst explosief poeder'
   type:
   - '&7&oGrondstof'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Voorzichtig mee omgaan!'
   name: '&eExplosief poeder'
   type:
   - '&7&oGrondstof'
 GROUNDLAUNCHER:
+  description:
+  - '&7Beschiet een opgegeven gebied op de grond.'
   name: '&6Grond-grondraketlanceerinrichting'
+  stats:
+  - '&8⇨ &7Standaard kruishoogte: &eY:120'
   type:
   - '&7&oMachine'
+  usage:
+  - '&eGebruik een stok&7 om de doelcoördinaten in te stellen'
+  - '&eShift met een stok&7 om te controleren of hij kan vuren'
+  - '&eRechtsklik met een blazestaaf&7 om de kruishoogte in te stellen'
+  - '&7Moet op 1 groen betonblok gebouwd worden.'
 GUIDEBOOK:
+  description:
+  - '&7Het zal je leiden?!?'
   name: '&eHandboek'
   type:
   - '&7&oOverig'
+  usage:
+  - '&eRechtsklik&7 om de gids te openen'
 HEAVYWARHEAD:
+  description:
+  - '&7Een kernkop volgepakt met zware explosieven'
   name: '&eZware kernkop'
   type:
   - '&7&oOnderdeel'
 ICBMMISSILEBODY:
+  description:
+  - '&7Tot in de perfectie ontworpen. Strak. Dodelijk.'
+  - '&7De romp van de ICBM-raket'
   name: '&eICBM-romp'
   type:
   - '&7&oOnderdeel'
 MANPAD:
+  description:
+  - '&7Handzaam antiraketapparaat'
   name: '&6Manpad'
   type:
   - '&7&oWapen'
+  usage:
+  - '&eShift + Rechtsklik&7 om te beginnen met volgen'
+  - '&eLaat Shift los&7 om te vuren'
 MINE:
+  description:
+  - '&7Zou het op tanks werken?'
   name: '&cMijn'
+  stats:
+  - '&8⇨ &7Explosiekracht: &e8'
+  - '&8⇨ &7Willekeurige schade: &eTot 10'
   type:
   - '&7&oGadget'
+  usage:
+  - '&ePlaats&7 tegen een blok om het als dat blok te vermommen'
 MISSILE:
+  description:
+  - '&7GtG-raket'
+  - '&7Normale variant'
+  - '&7''Je vriendelijke buurtraket'''
   name: '&eGrond-grondraket'
+  stats:
+  - '&8⇨ &7Bereik: &e1000 blokken'
+  - '&8⇨ &7Kracht: &e4.5'
+  - '&8⇨ &7Snelheid: &e2.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 80 blokken'
   type:
   - '&7&oWapen'
 MISSILEAC:
+  description:
+  - '&7GtG-raket'
+  - '&7Nauwkeurige variant'
+  - '&7''Je vriendelijke kameropruimende raket'''
   name: '&eGrond-grondraket AC'
+  stats:
+  - '&8⇨ &7Bereik: &e1250 blokken'
+  - '&8⇨ &7Kracht: &e4.5'
+  - '&8⇨ &7Snelheid: &e2.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 16 blokken'
   type:
   - '&7&oWapen'
 MISSILEACADV:
+  description:
+  - '&7GtG geavanceerde raketten'
+  - '&7Nauwkeurige variant'
+  - '&7''Best nauwkeurig denk ik'''
   name: '&eGeavanceerde grond-grondraket AC'
+  stats:
+  - '&8⇨ &7Bereik: &e2000 blokken'
+  - '&8⇨ &7Kracht: &e4.5'
+  - '&8⇨ &7Snelheid: &e4'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 20 blokken'
   type:
   - '&7&oWapen'
 MISSILEADV:
+  description:
+  - '&7GtG geavanceerde raketten'
+  - '&7Normale variant'
+  - '&7''Aangedreven door AI (technisch gezien)'''
   name: '&eGeavanceerde grond-grondraket'
+  stats:
+  - '&8⇨ &7Bereik: &e2000 blokken'
+  - '&8⇨ &7Kracht: &e4'
+  - '&8⇨ &7Snelheid: &e4'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 40 blokken'
   type:
   - '&7&oWapen'
 MISSILEAPONE:
+  description:
+  - '&7GtG pantserdoorborende raket'
+  - '&7Rang 1 AP'
+  - '&7''Je kelder is niet lang meer veilig!'''
   name: '&eGrond-grondraket AP'
+  stats:
+  - '&8⇨ &7Dringt 1 blok binnen voordat hij ontploft'
+  - '&8⇨ &7Gaat niet door obsidiaan'
+  - '&8⇨ &7Bereik: &e1550 blokken'
+  - '&8⇨ &7Kracht: &e3.5'
+  - '&8⇨ &7Snelheid: &e2'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 40 blokken'
   type:
   - '&7&oWapen'
 MISSILEAPTHR:
+  description:
+  - '&7GtG pantserdoorborende raket'
+  - '&7Rang 3 AP'
+  - '&7''Je bunker is echt niet lang meer veilig!'''
   name: '&eGrond-grondraket AP'
+  stats:
+  - '&8⇨ &7Dringt 2 blokken binnen voordat hij ontploft'
+  - '&8⇨ &775% kans om door obsidiaan te gaan'
+  - '&8⇨ &720% kans om het geraakte obsidiaan te breken'
+  - '&8⇨ &7Bereik: &e1850 blokken'
+  - '&8⇨ &7Kracht: &e4.5'
+  - '&8⇨ &7Snelheid: &e4'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 10 blokken'
   type:
   - '&7&oWapen'
 MISSILEAPTWO:
+  description:
+  - '&7GtG pantserdoorborende raket'
+  - '&7Rang 2 AP'
+  - '&7''Je bunker is niet lang meer veilig!'''
   name: '&eGrond-grondraket AP'
+  stats:
+  - '&8⇨ &7Dringt 1 blok binnen voordat hij ontploft'
+  - '&8⇨ &750% kans om door obsidiaan te gaan'
+  - '&8⇨ &710% kans om het geraakte obsidiaan te breken'
+  - '&8⇨ &7Bereik: &e1700 blokken'
+  - '&8⇨ &7Kracht: &e4'
+  - '&8⇨ &7Snelheid: &e2.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 20 blokken'
   type:
   - '&7&oWapen'
 MISSILEBODY:
+  description:
+  - '&7Raketromp met een vluchtcomputer erin'
   name: '&eRaketromp'
   type:
   - '&7&oOnderdeel'
 MISSILECLUSTER:
+  description:
+  - '&7Clusterraket, laat vlak voor de inslag vele raketten los'
+  - '&7''Ruimt dorpen sneller op dan jij kunt schreeuwen!'''
   name: '&cClusterraket'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 blokken'
+  - '&8⇨ &7Kracht: &e4'
+  - '&8⇨ &7Snelheid: &e3.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 90 blokken'
   type:
   - '&7&oWapen'
 MISSILEEXCAV:
+  description:
+  - '&7Hulpraket'
+  - '&7Heeft een grote explosiestraal maar weinig schade'
+  - '&7Gebruikt om te mijnen'
+  - '&7''Beter dan 100 houwelen!'''
   name: '&cGraafraket'
+  stats:
+  - '&8⇨ &7Bereik: &e100 blokken'
+  - '&8⇨ &7Kracht: &e14'
+  - '&8⇨ &7Snelheid: &e0.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 50 blokken'
   type:
   - '&7&oWapen'
 MISSILEFINS:
+  description:
+  - '&7Kan de raket beter sturen'
   name: '&eRaketvinnen'
   type:
   - '&7&oOnderdeel'
 MISSILEGAS:
+  description:
+  - '&7Schoonmaakraket'
+  - '&7Laat giftig gas vrij bij het raken van een doel'
+  - '&7''Pleeg Timmycide.'''
   name: '&cGasraket'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 blokken'
+  - '&8⇨ &7Kracht: &e0.5'
+  - '&8⇨ &7Snelheid: &e3'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 80 blokken'
   type:
   - '&7&oWapen'
 MISSILEHE:
+  description:
+  - '&7GtG-raket'
+  - '&7Brisante variant'
+  - '&7''Je niet zo vriendelijke buurtraket'''
   name: '&eGrond-grondraket HE'
+  stats:
+  - '&8⇨ &7Bereik: &e1000 blokken'
+  - '&8⇨ &7Kracht: &e5'
+  - '&8⇨ &7Snelheid: &e2'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 100 blokken'
   type:
   - '&7&oWapen'
 MISSILEHEADV:
+  description:
+  - '&7GtG geavanceerde raketten'
+  - '&7Brisante variant'
+  - '&7''Zeer gevaarlijk, niet aanrake'''
   name: '&eGeavanceerde grond-grondraket HE'
+  stats:
+  - '&8⇨ &7Bereik: &e2000 blokken'
+  - '&8⇨ &7Kracht: &e6'
+  - '&8⇨ &7Snelheid: &e3.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 35 blokken'
   type:
   - '&7&oWapen'
 MISSILEICBM:
+  description:
+  - '&7Langeafstandsraket'
+  - '&7Intercontinentale ballistische raket'
+  - '&7''Nergens is veilig.'''
   name: '&cICBM-raket'
+  stats:
+  - '&8⇨ &7Bereik: &e7000 blokken'
+  - '&8⇨ &7Kracht: &e10'
+  - '&8⇨ &7Snelheid: &e5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 50 blokken'
   type:
   - '&7&oWapen'
 MISSILELR:
+  description:
+  - '&7GtG-raket'
+  - '&7Langeafstandsvariant'
+  - '&7''Je vriendelijke stadsraket'''
   name: '&eGrond-grondraket LR'
+  stats:
+  - '&8⇨ &7Bereik: &e1500 blokken'
+  - '&8⇨ &7Kracht: &e4.5'
+  - '&8⇨ &7Snelheid: &e2.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 80 blokken'
   type:
   - '&7&oWapen'
 MISSILELRADV:
+  description:
+  - '&7GtG geavanceerde raketten'
+  - '&7Langeafstandsvariant'
+  - '&7''Ik raak door mijn ideeën voor beschrijvingen heen'''
   name: '&eGeavanceerde grond-grondraket LR'
+  stats:
+  - '&8⇨ &7Bereik: &e2500 blokken'
+  - '&8⇨ &7Kracht: &e4'
+  - '&8⇨ &7Snelheid: &e4.5'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 40 blokken'
   type:
   - '&7&oWapen'
 MISSILENAPALM:
+  description:
+  - '&7Vuurraket'
+  - '&7Napalmraket, werpt bij inslag overal vuur.'
+  - '&7''Kleuterschoolverwijderaar! Beproefd en getest™'''
   name: '&cNapalmraket'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 blokken'
+  - '&8⇨ &7Kracht: &e2'
+  - '&8⇨ &7Snelheid: &e3'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 80 blokken'
   type:
   - '&7&oWapen'
 MISSILERADAR:
+  description:
+  - '&7Zendt een redstonesignaal uit als een raket binnen 700 blokken is'
   name: '&eRaketradar'
   type:
   - '&7&oMachine'
+  usage:
+  - '&ePlaats&7 redstone boven op dit blok om zijn uitvoer te krijgen'
+  - '&7Een repeater is nodig om de puls van één tick te krijgen'
 MISSILESTICK:
+  description:
+  - '&7Valstrikraket'
+  - '&7Een kleine explosie die spinnenwebben verspreidt'
+  - '&7''Vraag niet waar hij van gemaakt is.'''
   name: '&cPlakkerige raket'
+  stats:
+  - '&8⇨ &7Bereik: &e1600 blokken'
+  - '&8⇨ &7Kracht: &e1'
+  - '&8⇨ &7Snelheid: &e4'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 70 blokken'
   type:
   - '&7&oWapen'
 PLAYERLIST:
+  description:
+  - '&7DEZE ID''S ZIJN GLOBAAL'
+  - '&7IEDEREEN KAN ZE BEWERKEN ALS'
+  - '&7ZE DE ID HEBBEN'
   name: '&6Spelerslijst'
   type:
   - '&7&oOverig'
+  usage:
+  - '&eRechtsklik&7 om de spelers voor een ID in te stellen'
 RADAR:
+  description:
+  - '&7Gebruikt om raketten of te raken spelers te volgen'
   name: '&eRadar'
   type:
   - '&7&oOnderdeel'
 ROCKETFUEL:
+  description:
+  - '&7Brandt met de kracht van 1000 steenkool...'
   name: '&eRaketbrandstof'
   type:
   - '&7&oGrondstof'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Een eenvoudige computer die een raket kan sturen'
   name: '&eEenvoudige vluchtcomputer'
   type:
   - '&7&oOnderdeel'
 SMALLBODY:
+  description:
+  - '&7Gebruikt bij het maken van een raket'
+  - '&7''Waag het niet daar een deuk in te maken'''
   name: '&eKleine raketromp'
   type:
   - '&7&oOnderdeel'
 SMALLFIN:
+  description:
+  - '&7Gebruikt bij het maken van een raket'
   name: '&eKleine raketvinnen'
   type:
   - '&7&oOnderdeel'
 SMALLMISSILE:
+  description:
+  - '&7Kleine grond-grondraket'
+  - '&7Normale variant'
   name: '&eKleine grond-grondraket'
+  stats:
+  - '&8⇨ &7Bereik: &e750 blokken'
+  - '&8⇨ &7Kracht: &e3'
+  - '&8⇨ &7Snelheid: &e2'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 100 blokken'
   type:
   - '&7&oWapen'
 SMALLMISSILEAC:
+  description:
+  - '&7Kleine grond-grondraket'
+  - '&7Nauwkeurige variant'
+  - '&7''Kleine Timmy maakte geen schijn van kans'''
   name: '&eKleine grond-grondraket AC'
+  stats:
+  - '&8⇨ &7Bereik: &e700 blokken'
+  - '&8⇨ &7Kracht: &e3'
+  - '&8⇨ &7Snelheid: &e2'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 60 blokken'
   type:
   - '&7&oWapen'
 SMALLMISSILEHE:
+  description:
+  - '&7Kleine grond-grondraket'
+  - '&7Brisante variant'
   name: '&eKleine grond-grondraket HE'
+  stats:
+  - '&8⇨ &7Bereik: &e600 blokken'
+  - '&8⇨ &7Kracht: &e3.5'
+  - '&8⇨ &7Snelheid: &e1'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 120 blokken'
   type:
   - '&7&oWapen'
 SMALLMISSILELR:
+  description:
+  - '&7Kleine grond-grondraket'
+  - '&7Langeafstandsvariant'
+  - '&7''Timmy daar in de verte maakte geen schijn van kans'''
   name: '&eKleine grond-grondraket LR'
+  stats:
+  - '&8⇨ &7Bereik: &e900 blokken'
+  - '&8⇨ &7Kracht: &e3'
+  - '&8⇨ &7Snelheid: &e2'
+  - '&8⇨ &7Nauwkeurigheid: &eBinnen 100 blokken'
   type:
   - '&7&oWapen'
 SMALLWARHEAD:
+  description:
+  - '&7Gebruikt bij het maken van een raket.'
+  - '&7''Niet aan het rode stukje komen'''
   name: '&eKleine kernkop'
   type:
   - '&7&oOnderdeel'
 SUGARFUEL:
+  description:
+  - '&7Goedkoop, veel energie, perfect voor kleine raketten.'
   name: '&eSuikerbrandstof'
   type:
   - '&7&oGrondstof'
 ULTRALITE_INGOT:
+  description:
+  - '&7Superlichte staaf voor raketten'
   name: '&eUltraLite-staaf'
   type:
   - '&7&oOnderdeel'
 ULTRALITE_PLATE:
+  description:
+  - '&7Een superlichte plaat voor raketten'
   name: '&eUltraLite-plaat'
   type:
   - '&7&oOnderdeel'
 WARHEAD:
+  description:
+  - '&7Gebruikt bij het maken van een raket.'
+  - '&7''Aardappel-weg-ermee'''
   name: '&eRaketkernkop'
   type:
   - '&7&oOnderdeel'
 WARHEADAP:
+  description:
+  - '&7Gebruikt om AP-raketten te maken'
+  - '&7''Bunker-weg-ermee'''
   name: '&eVersterkte kernkop'
   type:
   - '&7&oOnderdeel'
