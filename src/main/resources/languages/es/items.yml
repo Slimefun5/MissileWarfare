@@ -1,204 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Una versión mejorada del cuerpo del misil'
   name: '&eCuerpo de misil avanzado'
   type:
   - '&7&oComponente'
 ANTIAIRMISSILE:
+  description:
+  - '&7Antimisil / Antiélitros'
+  - '&7Variante Antimisil'
+  - '&7''Los fuegos artificiales de Timmy han sido cancelados'''
   name: '&eMisil antimisiles'
+  stats:
+  - '&8⇨ &7Alcance: &e600 Bloques'
+  - '&8⇨ &7Potencia: &e4'
+  - '&8⇨ &7Velocidad: &e5'
+  - '&8⇨ &7Precisión: &eDentro de 0 Bloques'
   type:
   - '&7&oArma'
 ANTIELYTRA:
+  description:
+  - '&7Dispara un misil a los jugadores cercanos'
+  - '&7que estén usando élitros'
+  - '&7Excluyendo a los que estén en el'
+  - '&7ID asignado a este'
   name: '&6Lanzador antiélitros'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eUsa un palo&7 para fijar el ID del grupo'
+  - '&7Necesita Misiles Antiélitros'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Antimisil / Antiélitros'
+  - '&7Variante Antimisil'
+  - '&7''Los fuegos artificiales de Timmy han sido cancelados'''
   name: '&eMisil antiélitros'
+  stats:
+  - '&8⇨ &7Alcance: &e700 Bloques'
+  - '&8⇨ &7Potencia: &e4'
+  - '&8⇨ &7Velocidad: &e6'
+  - '&8⇨ &7Precisión: &eDentro de 0 Bloques'
   type:
   - '&7&oArma'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Apunta y derriba otros misiles en el área.'
   name: '&6Lanzador antimisiles'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eUsa redstone&7 para desactivarlo'
+  - '&7Debe construirse sobre obsidiana'
+  - '&7Necesita Misiles Antimisil'
 CHLORINE:
+  description:
+  - '&7Venenoso'
+  - '&7¡Provoca una muerte lenta y dolorosa!'
   name: '&eCloro'
   type:
   - '&7&oRecurso'
+  usage:
+  - '&eClic derecho&7 para aplicar un efecto Wither'
 CHLORINEPELLET:
+  description:
+  - '&7Una bolita de Cloro'
   name: '&ePastilla de cloro'
   type:
   - '&7&oRecurso'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Comprimido tan fuerte que se volvió sólido'
   name: '&ePólvora explosiva comprimida'
   type:
   - '&7&oRecurso'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7¡Manipular con cuidado!'
   name: '&ePólvora explosiva'
   type:
   - '&7&oRecurso'
 GROUNDLAUNCHER:
+  description:
+  - '&7Dispara a un área concreta del suelo.'
   name: '&6Lanzador de misiles tierra-tierra'
+  stats:
+  - '&8⇨ &7Altitud de Crucero Predeterminada: &eY:120'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eUsa un palo&7 para fijar las coordenadas del objetivo'
+  - '&eShift con un palo&7 para comprobar si puede disparar'
+  - '&eClic derecho con una vara de blaze&7 para fijar la altitud de crucero'
+  - '&7Debe construirse sobre 1 bloque de hormigón verde.'
 GUIDEBOOK:
+  description:
+  - '&7¿¡¿Te guiará?!?'
   name: '&eManual'
   type:
   - '&7&oVarios'
+  usage:
+  - '&eClic derecho&7 para abrir la guía'
 HEAVYWARHEAD:
+  description:
+  - '&7Una ojiva cargada de explosivos pesados'
   name: '&eOjiva pesada'
   type:
   - '&7&oComponente'
 ICBMMISSILEBODY:
+  description:
+  - '&7Diseñado a la perfección. Elegante. Letal.'
+  - '&7El cuerpo del misil ICBM'
   name: '&eCuerpo de ICBM'
   type:
   - '&7&oComponente'
 MANPAD:
+  description:
+  - '&7Dispositivo antimisil de mano'
   name: '&6Manpad'
   type:
   - '&7&oArma'
+  usage:
+  - '&eShift + Clic derecho&7 para empezar a rastrear'
+  - '&eSuelta Shift&7 para disparar'
 MINE:
+  description:
+  - '&7¿Funcionará con tanques?'
   name: '&cMina'
+  stats:
+  - '&8⇨ &7Potencia de Explosión: &e8'
+  - '&8⇨ &7Daño Aleatorio: &eHasta 10'
   type:
   - '&7&oAparato'
+  usage:
+  - '&eColócala&7 contra un bloque para camuflarla como ese bloque'
 MISSILE:
+  description:
+  - '&7Misil GtG'
+  - '&7Variante Normal'
+  - '&7''Tu misil amistoso de barrio'''
   name: '&eMisil tierra-tierra'
+  stats:
+  - '&8⇨ &7Alcance: &e1000 Bloques'
+  - '&8⇨ &7Potencia: &e4.5'
+  - '&8⇨ &7Velocidad: &e2.5'
+  - '&8⇨ &7Precisión: &eDentro de 80 Bloques'
   type:
   - '&7&oArma'
 MISSILEAC:
+  description:
+  - '&7Misil GtG'
+  - '&7Variante de Precisión'
+  - '&7''Tu amistoso misil despeja-habitaciones'''
   name: '&eMisil tierra-tierra AC'
+  stats:
+  - '&8⇨ &7Alcance: &e1250 Bloques'
+  - '&8⇨ &7Potencia: &e4.5'
+  - '&8⇨ &7Velocidad: &e2.5'
+  - '&8⇨ &7Precisión: &eDentro de 16 Bloques'
   type:
   - '&7&oArma'
 MISSILEACADV:
+  description:
+  - '&7Misiles Avanzados GtG'
+  - '&7Variante de Precisión'
+  - '&7''Bastante preciso, supongo'''
   name: '&eMisil tierra-tierra avanzado AC'
+  stats:
+  - '&8⇨ &7Alcance: &e2000 Bloques'
+  - '&8⇨ &7Potencia: &e4.5'
+  - '&8⇨ &7Velocidad: &e4'
+  - '&8⇨ &7Precisión: &eDentro de 20 Bloques'
   type:
   - '&7&oArma'
 MISSILEADV:
+  description:
+  - '&7Misiles Avanzados GtG'
+  - '&7Variante Normal'
+  - '&7''Impulsado por IA (técnicamente)'''
   name: '&eMisil tierra-tierra avanzado'
+  stats:
+  - '&8⇨ &7Alcance: &e2000 Bloques'
+  - '&8⇨ &7Potencia: &e4'
+  - '&8⇨ &7Velocidad: &e4'
+  - '&8⇨ &7Precisión: &eDentro de 40 Bloques'
   type:
   - '&7&oArma'
 MISSILEAPONE:
+  description:
+  - '&7Misil Perforante GtG'
+  - '&7AP de Nivel 1'
+  - '&7''¡Tu sótano no estará a salvo por mucho tiempo!'''
   name: '&eMisil tierra-tierra AP'
+  stats:
+  - '&8⇨ &7Penetra 1 bloque antes de explotar'
+  - '&8⇨ &7No atravesará la obsidiana'
+  - '&8⇨ &7Alcance: &e1550 Bloques'
+  - '&8⇨ &7Potencia: &e3.5'
+  - '&8⇨ &7Velocidad: &e2'
+  - '&8⇨ &7Precisión: &eDentro de 40 Bloques'
   type:
   - '&7&oArma'
 MISSILEAPTHR:
+  description:
+  - '&7Misil Perforante GtG'
+  - '&7AP de Nivel 3'
+  - '&7''¡Tu búnker desde luego no estará a salvo por mucho tiempo!'''
   name: '&eMisil tierra-tierra AP'
+  stats:
+  - '&8⇨ &7Penetra 2 bloques antes de explotar'
+  - '&8⇨ &775% de probabilidad de atravesar la obsidiana'
+  - '&8⇨ &720% de probabilidad de romper la obsidiana golpeada'
+  - '&8⇨ &7Alcance: &e1850 Bloques'
+  - '&8⇨ &7Potencia: &e4.5'
+  - '&8⇨ &7Velocidad: &e4'
+  - '&8⇨ &7Precisión: &eDentro de 10 Bloques'
   type:
   - '&7&oArma'
 MISSILEAPTWO:
+  description:
+  - '&7Misil Perforante GtG'
+  - '&7AP de Nivel 2'
+  - '&7''¡Tu búnker no estará a salvo por mucho tiempo!'''
   name: '&eMisil tierra-tierra AP'
+  stats:
+  - '&8⇨ &7Penetra 1 bloque antes de explotar'
+  - '&8⇨ &750% de probabilidad de atravesar la obsidiana'
+  - '&8⇨ &710% de probabilidad de romper la obsidiana golpeada'
+  - '&8⇨ &7Alcance: &e1700 Bloques'
+  - '&8⇨ &7Potencia: &e4'
+  - '&8⇨ &7Velocidad: &e2.5'
+  - '&8⇨ &7Precisión: &eDentro de 20 Bloques'
   type:
   - '&7&oArma'
 MISSILEBODY:
+  description:
+  - '&7Cuerpo de misil que contiene un ordenador de vuelo'
   name: '&eCuerpo de misil'
   type:
   - '&7&oComponente'
 MISSILECLUSTER:
+  description:
+  - '&7Misil de racimo. Despliega muchos misiles antes de impactar'
+  - '&7''¡Borra aldeas más rápido de lo que puedes gritar!'''
   name: '&cMisil de racimo'
+  stats:
+  - '&8⇨ &7Alcance: &e1600 Bloques'
+  - '&8⇨ &7Potencia: &e4'
+  - '&8⇨ &7Velocidad: &e3.5'
+  - '&8⇨ &7Precisión: &eDentro de 90 Bloques'
   type:
   - '&7&oArma'
 MISSILEEXCAV:
+  description:
+  - '&7Misil Utilitario'
+  - '&7Tiene un gran radio de explosión pero poco daño'
+  - '&7Se usa para minar'
+  - '&7''¡Mejor que 100 Picos!'''
   name: '&cMisil de excavación'
+  stats:
+  - '&8⇨ &7Alcance: &e100 Bloques'
+  - '&8⇨ &7Potencia: &e14'
+  - '&8⇨ &7Velocidad: &e0.5'
+  - '&8⇨ &7Precisión: &eDentro de 50 Bloques'
   type:
   - '&7&oArma'
 MISSILEFINS:
+  description:
+  - '&7Capaz de dirigir mejor el misil'
   name: '&eAletas de misil'
   type:
   - '&7&oComponente'
 MISSILEGAS:
+  description:
+  - '&7Misil de Limpieza'
+  - '&7Despliega gas venenoso al alcanzar un objetivo'
+  - '&7''Comete Timmicidio.'''
   name: '&cMisil de gas'
+  stats:
+  - '&8⇨ &7Alcance: &e1600 Bloques'
+  - '&8⇨ &7Potencia: &e0.5'
+  - '&8⇨ &7Velocidad: &e3'
+  - '&8⇨ &7Precisión: &eDentro de 80 Bloques'
   type:
   - '&7&oArma'
 MISSILEHE:
+  description:
+  - '&7Misil GtG'
+  - '&7Variante Altamente Explosiva'
+  - '&7''Tu misil no-tan-amistoso de barrio'''
   name: '&eMisil tierra-tierra HE'
+  stats:
+  - '&8⇨ &7Alcance: &e1000 Bloques'
+  - '&8⇨ &7Potencia: &e5'
+  - '&8⇨ &7Velocidad: &e2'
+  - '&8⇨ &7Precisión: &eDentro de 100 Bloques'
   type:
   - '&7&oArma'
 MISSILEHEADV:
+  description:
+  - '&7Misiles Avanzados GtG'
+  - '&7Variante Altamente Explosiva'
+  - '&7''Muy peligroso, no tocar'''
   name: '&eMisil tierra-tierra avanzado HE'
+  stats:
+  - '&8⇨ &7Alcance: &e2000 Bloques'
+  - '&8⇨ &7Potencia: &e6'
+  - '&8⇨ &7Velocidad: &e3.5'
+  - '&8⇨ &7Precisión: &eDentro de 35 Bloques'
   type:
   - '&7&oArma'
 MISSILEICBM:
+  description:
+  - '&7Misil de Largo Alcance'
+  - '&7Misil Balístico Intercontinental'
+  - '&7''Ningún lugar es seguro.'''
   name: '&cMisil ICBM'
+  stats:
+  - '&8⇨ &7Alcance: &e7000 Bloques'
+  - '&8⇨ &7Potencia: &e10'
+  - '&8⇨ &7Velocidad: &e5'
+  - '&8⇨ &7Precisión: &eDentro de 50 Bloques'
   type:
   - '&7&oArma'
 MISSILELR:
+  description:
+  - '&7Misil GtG'
+  - '&7Variante de Largo Alcance'
+  - '&7''Tu misil urbano amistoso'''
   name: '&eMisil tierra-tierra LR'
+  stats:
+  - '&8⇨ &7Alcance: &e1500 Bloques'
+  - '&8⇨ &7Potencia: &e4.5'
+  - '&8⇨ &7Velocidad: &e2.5'
+  - '&8⇨ &7Precisión: &eDentro de 80 Bloques'
   type:
   - '&7&oArma'
 MISSILELRADV:
+  description:
+  - '&7Misiles Avanzados GtG'
+  - '&7Variante de Largo Alcance'
+  - '&7''Se me acaban las ideas para las descripciones'''
   name: '&eMisil tierra-tierra avanzado LR'
+  stats:
+  - '&8⇨ &7Alcance: &e2500 Bloques'
+  - '&8⇨ &7Potencia: &e4'
+  - '&8⇨ &7Velocidad: &e4.5'
+  - '&8⇨ &7Precisión: &eDentro de 40 Bloques'
   type:
   - '&7&oArma'
 MISSILENAPALM:
+  description:
+  - '&7Misil Incendiario'
+  - '&7Misil de napalm. Lanza fuego por todas partes al impactar.'
+  - '&7''¡Eliminador de guarderías! Probado y comprobado™'''
   name: '&cMisil de napalm'
+  stats:
+  - '&8⇨ &7Alcance: &e1600 Bloques'
+  - '&8⇨ &7Potencia: &e2'
+  - '&8⇨ &7Velocidad: &e3'
+  - '&8⇨ &7Precisión: &eDentro de 80 Bloques'
   type:
   - '&7&oArma'
 MISSILERADAR:
+  description:
+  - '&7Emite una señal de redstone cuando un misil está a menos de 700 bloques'
   name: '&eRadar de misiles'
   type:
   - '&7&oMáquina'
+  usage:
+  - '&eColoca&7 redstone encima de este bloque para obtener su salida'
+  - '&7Se necesita un repetidor para captar el pulso de un tick'
 MISSILESTICK:
+  description:
+  - '&7Misil Trampa'
+  - '&7Una pequeña explosión que libera telarañas'
+  - '&7''No preguntes de qué está hecho.'''
   name: '&cMisil pegajoso'
+  stats:
+  - '&8⇨ &7Alcance: &e1600 Bloques'
+  - '&8⇨ &7Potencia: &e1'
+  - '&8⇨ &7Velocidad: &e4'
+  - '&8⇨ &7Precisión: &eDentro de 70 Bloques'
   type:
   - '&7&oArma'
 PLAYERLIST:
+  description:
+  - '&7ESTOS ID SON GLOBALES'
+  - '&7CUALQUIERA PUEDE EDITARLOS SI'
+  - '&7TIENE EL ID'
   name: '&6Lista de jugadores'
   type:
   - '&7&oVarios'
+  usage:
+  - '&eClic derecho&7 para asignar los jugadores a un ID'
 RADAR:
+  description:
+  - '&7Se usa para rastrear misiles o jugadores a los que golpear'
   name: '&eRadar'
   type:
   - '&7&oComponente'
 ROCKETFUEL:
+  description:
+  - '&7Arde con la fuerza de 1000 carbones...'
   name: '&eCombustible para cohetes'
   type:
   - '&7&oRecurso'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Un ordenador simple capaz de guiar un misil'
   name: '&eComputadora de vuelo simple'
   type:
   - '&7&oComponente'
 SMALLBODY:
+  description:
+  - '&7Se usa en la creación de un misil'
+  - '&7''Más te vale no abollar eso'''
   name: '&eFuselaje de misil pequeño'
   type:
   - '&7&oComponente'
 SMALLFIN:
+  description:
+  - '&7Se usa en la creación de un misil'
   name: '&eAletas de misil pequeñas'
   type:
   - '&7&oComponente'
 SMALLMISSILE:
+  description:
+  - '&7Misil Tierra-Tierra Pequeño'
+  - '&7Variante Normal'
   name: '&eMisil tierra-tierra pequeño'
+  stats:
+  - '&8⇨ &7Alcance: &e750 Bloques'
+  - '&8⇨ &7Potencia: &e3'
+  - '&8⇨ &7Velocidad: &e2'
+  - '&8⇨ &7Precisión: &eDentro de 100 Bloques'
   type:
   - '&7&oArma'
 SMALLMISSILEAC:
+  description:
+  - '&7Misil Tierra-Tierra Pequeño'
+  - '&7Variante de Precisión'
+  - '&7''El pequeño Timmy nunca tuvo ninguna oportunidad'''
   name: '&eMisil tierra-tierra pequeño AC'
+  stats:
+  - '&8⇨ &7Alcance: &e700 Bloques'
+  - '&8⇨ &7Potencia: &e3'
+  - '&8⇨ &7Velocidad: &e2'
+  - '&8⇨ &7Precisión: &eDentro de 60 Bloques'
   type:
   - '&7&oArma'
 SMALLMISSILEHE:
+  description:
+  - '&7Misil Tierra-Tierra Pequeño'
+  - '&7Variante Altamente Explosiva'
   name: '&eMisil tierra-tierra pequeño HE'
+  stats:
+  - '&8⇨ &7Alcance: &e600 Bloques'
+  - '&8⇨ &7Potencia: &e3.5'
+  - '&8⇨ &7Velocidad: &e1'
+  - '&8⇨ &7Precisión: &eDentro de 120 Bloques'
   type:
   - '&7&oArma'
 SMALLMISSILELR:
+  description:
+  - '&7Misil Tierra-Tierra Pequeño'
+  - '&7Variante de Largo Alcance'
+  - '&7''El lejano Timmy nunca tuvo ninguna oportunidad'''
   name: '&eMisil tierra-tierra pequeño LR'
+  stats:
+  - '&8⇨ &7Alcance: &e900 Bloques'
+  - '&8⇨ &7Potencia: &e3'
+  - '&8⇨ &7Velocidad: &e2'
+  - '&8⇨ &7Precisión: &eDentro de 100 Bloques'
   type:
   - '&7&oArma'
 SMALLWARHEAD:
+  description:
+  - '&7Se usa en la creación de un misil.'
+  - '&7''No toques la parte roja'''
   name: '&eOjiva pequeña'
   type:
   - '&7&oComponente'
 SUGARFUEL:
+  description:
+  - '&7Barato, de alta energía, perfecto para misiles pequeños.'
   name: '&eCombustible de azúcar'
   type:
   - '&7&oRecurso'
 ULTRALITE_INGOT:
+  description:
+  - '&7Lingote súper ligero usado para misiles'
   name: '&eLingote UltraLite'
   type:
   - '&7&oComponente'
 ULTRALITE_PLATE:
+  description:
+  - '&7Una placa súper ligera para misiles'
   name: '&ePlaca UltraLite'
   type:
   - '&7&oComponente'
 WARHEAD:
+  description:
+  - '&7Se usa en la creación de un misil.'
+  - '&7''Adiós-a-la-patata'''
   name: '&eOjiva de misil'
   type:
   - '&7&oComponente'
 WARHEADAP:
+  description:
+  - '&7Se usa para crear Misiles AP'
+  - '&7''Adiós-al-búnker'''
   name: '&eOjiva reforzada'
   type:
   - '&7&oComponente'
