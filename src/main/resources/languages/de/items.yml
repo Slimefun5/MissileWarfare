@@ -1,204 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Eine verbesserte Version des Raketenkörpers'
   name: '&eFortgeschrittener Raketenrumpf'
   type:
   - '&7&oKomponente'
 ANTIAIRMISSILE:
+  description:
+  - '&7Anti-Raketen / Anti-Elytren'
+  - '&7Anti-Raketen-Variante'
+  - '&7''Timmys Feuerwerk wurde abgesagt'''
   name: '&eAbwehrrakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e600 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4'
+  - '&8⇨ &7Geschwindigkeit: &e5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 0 Blöcken'
   type:
   - '&7&oWaffe'
 ANTIELYTRA:
+  description:
+  - '&7Feuert eine Rakete auf Spieler in der Nähe,'
+  - '&7die eine Elytra benutzen'
+  - '&7Ausgenommen sind jene mit der'
+  - '&7ID, die hier zugewiesen ist'
   name: '&6Elytra-Abwehrwerfer'
   type:
   - '&7&oMaschine'
+  usage:
+  - '&eBenutze einen Stock&7, um die Gruppen-ID zu setzen'
+  - '&7Benötigt Anti-Elytren-Raketen'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Anti-Raketen / Anti-Elytren'
+  - '&7Anti-Raketen-Variante'
+  - '&7''Timmys Feuerwerk wurde abgesagt'''
   name: '&eAnti-Elytra-Rakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e700 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4'
+  - '&8⇨ &7Geschwindigkeit: &e6'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 0 Blöcken'
   type:
   - '&7&oWaffe'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Erfasst und schießt andere Raketen im Bereich ab.'
   name: '&6Raketenabwehrwerfer'
   type:
   - '&7&oMaschine'
+  usage:
+  - '&eBenutze Redstone&7, um ihn zu deaktivieren'
+  - '&7Muss auf Obsidian gebaut werden'
+  - '&7Benötigt Anti-Raketen-Raketen'
 CHLORINE:
+  description:
+  - '&7Giftig'
+  - '&7Verursacht einen langsamen und schmerzhaften Tod!'
   name: '&eChlor'
   type:
   - '&7&oRohstoff'
+  usage:
+  - '&eRechtsklick&7, um einen Wither-Effekt anzuwenden'
 CHLORINEPELLET:
+  description:
+  - '&7Ein Kügelchen Chlor'
   name: '&eChlortablette'
   type:
   - '&7&oRohstoff'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7So stark komprimiert, dass es fest wurde'
   name: '&eKomprimiertes Sprengpulver'
   type:
   - '&7&oRohstoff'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Mit Vorsicht behandeln!'
   name: '&eSprengpulver'
   type:
   - '&7&oRohstoff'
 GROUNDLAUNCHER:
+  description:
+  - '&7Beschießt einen festgelegten Bereich am Boden.'
   name: '&6Boden-zu-Boden-Raketenwerfer'
+  stats:
+  - '&8⇨ &7Standard-Reiseflughöhe: &eY:120'
   type:
   - '&7&oMaschine'
+  usage:
+  - '&eBenutze einen Stock&7, um die Zielkoordinaten zu setzen'
+  - '&eShift mit einem Stock&7, um zu prüfen, ob er feuern kann'
+  - '&eRechtsklick mit einer Lohenrute&7, um die Reiseflughöhe zu setzen'
+  - '&7Muss auf 1 grünen Betonblock gebaut werden.'
 GUIDEBOOK:
+  description:
+  - '&7Es wird dich führen?!?'
   name: '&eHandbuch'
   type:
   - '&7&oSonstiges'
+  usage:
+  - '&eRechtsklick&7, um das Handbuch zu öffnen'
 HEAVYWARHEAD:
+  description:
+  - '&7Ein Sprengkopf voller schwerer Sprengstoffe'
   name: '&eSchwerer Sprengkopf'
   type:
   - '&7&oKomponente'
 ICBMMISSILEBODY:
+  description:
+  - '&7Zur Perfektion konstruiert, elegant, tödlich.'
+  - '&7Der Körper der ICBM-Rakete'
   name: '&eICBM-Rumpf'
   type:
   - '&7&oKomponente'
 MANPAD:
+  description:
+  - '&7Handliches Anti-Raketen-Gerät'
   name: '&6Manpad'
   type:
   - '&7&oWaffe'
+  usage:
+  - '&eShift + Rechtsklick&7, um mit dem Verfolgen zu beginnen'
+  - '&eShift loslassen&7, um zu feuern'
 MINE:
+  description:
+  - '&7Ob das wohl bei Panzern wirkt?'
   name: '&cMine'
+  stats:
+  - '&8⇨ &7Sprengkraft: &e8'
+  - '&8⇨ &7Zufallsschaden: &eBis zu 10'
   type:
   - '&7&oGadget'
+  usage:
+  - '&ePlatziere&7 sie an einem Block, um sie als diesen Block zu tarnen'
 MISSILE:
+  description:
+  - '&7GtG-Rakete'
+  - '&7Normale Variante'
+  - '&7''Deine freundliche Rakete von nebenan'''
   name: '&eBzB-Rakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e1000 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4.5'
+  - '&8⇨ &7Geschwindigkeit: &e2.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 80 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEAC:
+  description:
+  - '&7GtG-Rakete'
+  - '&7Präzise Variante'
+  - '&7''Deine freundliche raumräumende Rakete'''
   name: '&eBzB-Rakete AC'
+  stats:
+  - '&8⇨ &7Reichweite: &e1250 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4.5'
+  - '&8⇨ &7Geschwindigkeit: &e2.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 16 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEACADV:
+  description:
+  - '&7Fortgeschrittene GtG-Raketen'
+  - '&7Präzise Variante'
+  - '&7''Ziemlich genau, schätze ich'''
   name: '&eFortgeschrittene BzB-Rakete AC'
+  stats:
+  - '&8⇨ &7Reichweite: &e2000 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4.5'
+  - '&8⇨ &7Geschwindigkeit: &e4'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 20 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEADV:
+  description:
+  - '&7Fortgeschrittene GtG-Raketen'
+  - '&7Normale Variante'
+  - '&7''Angetrieben von KI (technisch gesehen)'''
   name: '&eFortgeschrittene BzB-Rakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e2000 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4'
+  - '&8⇨ &7Geschwindigkeit: &e4'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 40 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEAPONE:
+  description:
+  - '&7Panzerbrechende GtG-Rakete'
+  - '&7AP Stufe 1'
+  - '&7''Dein Keller ist nicht mehr lange sicher!'''
   name: '&eBzB-Rakete AP'
+  stats:
+  - '&8⇨ &7Durchschlägt 1 Block vor der Explosion'
+  - '&8⇨ &7Kommt nicht durch Obsidian'
+  - '&8⇨ &7Reichweite: &e1550 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e3.5'
+  - '&8⇨ &7Geschwindigkeit: &e2'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 40 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEAPTHR:
+  description:
+  - '&7Panzerbrechende GtG-Rakete'
+  - '&7AP Stufe 3'
+  - '&7''Dein Bunker ist definitiv nicht mehr lange sicher!'''
   name: '&eBzB-Rakete AP'
+  stats:
+  - '&8⇨ &7Durchschlägt 2 Blöcke vor der Explosion'
+  - '&8⇨ &775% Chance, durch Obsidian zu kommen'
+  - '&8⇨ &720% Chance, den getroffenen Obsidian zu zerbrechen'
+  - '&8⇨ &7Reichweite: &e1850 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4.5'
+  - '&8⇨ &7Geschwindigkeit: &e4'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 10 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEAPTWO:
+  description:
+  - '&7Panzerbrechende GtG-Rakete'
+  - '&7AP Stufe 2'
+  - '&7''Dein Bunker ist nicht mehr lange sicher!'''
   name: '&eBzB-Rakete AP'
+  stats:
+  - '&8⇨ &7Durchschlägt 1 Block vor der Explosion'
+  - '&8⇨ &750% Chance, durch Obsidian zu kommen'
+  - '&8⇨ &710% Chance, den getroffenen Obsidian zu zerbrechen'
+  - '&8⇨ &7Reichweite: &e1700 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4'
+  - '&8⇨ &7Geschwindigkeit: &e2.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 20 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEBODY:
+  description:
+  - '&7Raketenkörper mit einem Flugcomputer darin'
   name: '&eRaketenrumpf'
   type:
   - '&7&oKomponente'
 MISSILECLUSTER:
+  description:
+  - '&7Streurakete, setzt vor dem Einschlag viele Raketen frei'
+  - '&7''Entfernt Dörfer schneller, als du schreien kannst!'''
   name: '&cStreurakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e1600 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4'
+  - '&8⇨ &7Geschwindigkeit: &e3.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 90 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEEXCAV:
+  description:
+  - '&7Nutzrakete'
+  - '&7Hat einen großen Explosionsradius, aber wenig Schaden'
+  - '&7Wird zum Abbauen verwendet'
+  - '&7''Besser als 100 Spitzhacken!'''
   name: '&cAushubrakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e100 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e14'
+  - '&8⇨ &7Geschwindigkeit: &e0.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 50 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEFINS:
+  description:
+  - '&7Kann die Rakete besser lenken'
   name: '&eRaketenflossen'
   type:
   - '&7&oKomponente'
 MISSILEGAS:
+  description:
+  - '&7Reinigungsrakete'
+  - '&7Setzt beim Treffen eines Ziels Giftgas frei'
+  - '&7''Begehe Timmyzid.'''
   name: '&cGasrakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e1600 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e0.5'
+  - '&8⇨ &7Geschwindigkeit: &e3'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 80 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEHE:
+  description:
+  - '&7GtG-Rakete'
+  - '&7Hochexplosive Variante'
+  - '&7''Deine nicht ganz so freundliche Rakete von nebenan'''
   name: '&eBzB-Rakete HE'
+  stats:
+  - '&8⇨ &7Reichweite: &e1000 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e5'
+  - '&8⇨ &7Geschwindigkeit: &e2'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 100 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEHEADV:
+  description:
+  - '&7Fortgeschrittene GtG-Raketen'
+  - '&7Hochexplosive Variante'
+  - '&7''Sehr gefährlich, nicht berühren'''
   name: '&eFortgeschrittene BzB-Rakete HE'
+  stats:
+  - '&8⇨ &7Reichweite: &e2000 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e6'
+  - '&8⇨ &7Geschwindigkeit: &e3.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 35 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILEICBM:
+  description:
+  - '&7Langstreckenrakete'
+  - '&7Interkontinentale Ballistische Rakete'
+  - '&7''Nirgends ist es sicher.'''
   name: '&cICBM-Rakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e7000 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e10'
+  - '&8⇨ &7Geschwindigkeit: &e5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 50 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILELR:
+  description:
+  - '&7GtG-Rakete'
+  - '&7Weitreichende Variante'
+  - '&7''Deine freundliche Stadtrakete'''
   name: '&eBzB-Rakete LR'
+  stats:
+  - '&8⇨ &7Reichweite: &e1500 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4.5'
+  - '&8⇨ &7Geschwindigkeit: &e2.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 80 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILELRADV:
+  description:
+  - '&7Fortgeschrittene GtG-Raketen'
+  - '&7Weitreichende Variante'
+  - '&7''Mir gehen die Ideen für Sprüche aus'''
   name: '&eFortgeschrittene BzB-Rakete LR'
+  stats:
+  - '&8⇨ &7Reichweite: &e2500 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e4'
+  - '&8⇨ &7Geschwindigkeit: &e4.5'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 40 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILENAPALM:
+  description:
+  - '&7Feuerrakete'
+  - '&7Napalmrakete, schleudert beim Treffer überall Feuer.'
+  - '&7''Kindergarten-Entferner! Erprobt und bewährt™'''
   name: '&cNapalmrakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e1600 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e2'
+  - '&8⇨ &7Geschwindigkeit: &e3'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 80 Blöcken'
   type:
   - '&7&oWaffe'
 MISSILERADAR:
+  description:
+  - '&7Sendet ein Redstone-Signal, wenn eine Rakete innerhalb von 700 Blöcken ist'
   name: '&eRaketenradar'
   type:
   - '&7&oMaschine'
+  usage:
+  - '&ePlatziere&7 Redstone auf diesem Block, um sein Ausgangssignal zu erhalten'
+  - '&7Ein Verstärker wird benötigt, um den Ein-Tick-Impuls zu erhalten'
 MISSILESTICK:
+  description:
+  - '&7Fallenrakete'
+  - '&7Eine kleine Explosion, die Spinnweben freisetzt'
+  - '&7''Frag nicht, woraus sie besteht.'''
   name: '&cKleberakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e1600 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e1'
+  - '&8⇨ &7Geschwindigkeit: &e4'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 70 Blöcken'
   type:
   - '&7&oWaffe'
 PLAYERLIST:
+  description:
+  - '&7DIESE IDS SIND GLOBAL'
+  - '&7JEDER KANN SIE BEARBEITEN, WENN'
+  - '&7ER DIE ID HAT'
   name: '&6Spielerliste'
   type:
   - '&7&oSonstiges'
+  usage:
+  - '&eRechtsklick&7, um die Spieler für eine ID festzulegen'
 RADAR:
+  description:
+  - '&7Dient zum Verfolgen von Raketen oder zu treffenden Spielern'
   name: '&eRadar'
   type:
   - '&7&oKomponente'
 ROCKETFUEL:
+  description:
+  - '&7Brennt mit der Kraft von 1000 Kohle...'
   name: '&eRaketentreibstoff'
   type:
   - '&7&oRohstoff'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Ein einfacher Computer, der eine Rakete lenken kann'
   name: '&eEinfacher Flugcomputer'
   type:
   - '&7&oKomponente'
 SMALLBODY:
+  description:
+  - '&7Wird bei der Erschaffung einer Rakete verwendet'
+  - '&7''Mach da bloß keine Delle rein'''
   name: '&eKleiner Raketenrumpf'
   type:
   - '&7&oKomponente'
 SMALLFIN:
+  description:
+  - '&7Wird bei der Erschaffung einer Rakete verwendet'
   name: '&eKleine Raketenflossen'
   type:
   - '&7&oKomponente'
 SMALLMISSILE:
+  description:
+  - '&7Kleine Boden-Boden-Rakete'
+  - '&7Normale Variante'
   name: '&eKleine BzB-Rakete'
+  stats:
+  - '&8⇨ &7Reichweite: &e750 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e3'
+  - '&8⇨ &7Geschwindigkeit: &e2'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 100 Blöcken'
   type:
   - '&7&oWaffe'
 SMALLMISSILEAC:
+  description:
+  - '&7Kleine Boden-Boden-Rakete'
+  - '&7Präzise Variante'
+  - '&7''Der kleine Timmy hatte nie eine Chance'''
   name: '&eKleine BzB-Rakete AC'
+  stats:
+  - '&8⇨ &7Reichweite: &e700 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e3'
+  - '&8⇨ &7Geschwindigkeit: &e2'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 60 Blöcken'
   type:
   - '&7&oWaffe'
 SMALLMISSILEHE:
+  description:
+  - '&7Kleine Boden-Boden-Rakete'
+  - '&7Hochexplosive Variante'
   name: '&eKleine BzB-Rakete HE'
+  stats:
+  - '&8⇨ &7Reichweite: &e600 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e3.5'
+  - '&8⇨ &7Geschwindigkeit: &e1'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 120 Blöcken'
   type:
   - '&7&oWaffe'
 SMALLMISSILELR:
+  description:
+  - '&7Kleine Boden-Boden-Rakete'
+  - '&7Weitreichende Variante'
+  - '&7''Der weit entfernte Timmy hatte nie eine Chance'''
   name: '&eKleine BzB-Rakete LR'
+  stats:
+  - '&8⇨ &7Reichweite: &e900 Blöcke'
+  - '&8⇨ &7Sprengkraft: &e3'
+  - '&8⇨ &7Geschwindigkeit: &e2'
+  - '&8⇨ &7Genauigkeit: &eInnerhalb von 100 Blöcken'
   type:
   - '&7&oWaffe'
 SMALLWARHEAD:
+  description:
+  - '&7Wird bei der Erschaffung einer Rakete verwendet.'
+  - '&7''Fass das rote Teil nicht an'''
   name: '&eKleiner Sprengkopf'
   type:
   - '&7&oKomponente'
 SUGARFUEL:
+  description:
+  - '&7Billig, energiereich, perfekt für kleine Raketen.'
   name: '&eZuckertreibstoff'
   type:
   - '&7&oRohstoff'
 ULTRALITE_INGOT:
+  description:
+  - '&7Superleichter Barren für Raketen'
   name: '&eUltraLite-Barren'
   type:
   - '&7&oKomponente'
 ULTRALITE_PLATE:
+  description:
+  - '&7Eine superleichte Platte für Raketen'
   name: '&eUltraLite-Platte'
   type:
   - '&7&oKomponente'
 WARHEAD:
+  description:
+  - '&7Wird bei der Erschaffung einer Rakete verwendet.'
+  - '&7''Kartoffel-ade'''
   name: '&eRaketensprengkopf'
   type:
   - '&7&oKomponente'
 WARHEADAP:
+  description:
+  - '&7Dient zur Herstellung von AP-Raketen'
+  - '&7''Bunker-ade'''
   name: '&eVerstärkter Sprengkopf'
   type:
   - '&7&oKomponente'
