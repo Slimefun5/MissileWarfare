@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7O versiune îmbunătățită a corpului de rachetă'
+  name: '&eCorp de Rachetă Avansat'
   type:
   - '&7&oComponentă'
 ANTIAIRMISSILE:
+  description:
+  - '&7Anti-Rachetă / Anti-Elytra'
+  - '&7Variantă Anti-Rachetă'
+  - '&7''Artificiile lui Timmy au fost anulate'''
+  name: '&eRachetă Anti-Rachetă'
+  stats:
+  - '&8⇨ &7Rază: &e600 Blocuri'
+  - '&8⇨ &7Putere: &e4'
+  - '&8⇨ &7Viteză: &e5'
+  - '&8⇨ &7Precizie: &eÎn 0 Blocuri'
   type:
   - '&7&oArmă'
 ANTIELYTRA:
+  description:
+  - '&7Trage o rachetă către jucătorii din apropiere'
+  - '&7care folosesc o elytra'
+  - '&7Exceptându-i pe cei cu'
+  - '&7ID-ul atribuit acestuia'
+  name: '&6Lansator Anti-Elytra'
   type:
   - '&7&oMașină'
+  usage:
+  - '&eFolosește un băț&7 pentru a seta ID-ul grupului'
+  - '&7Necesită Rachete Anti-Elytra'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Anti-Rachetă / Anti-Elytra'
+  - '&7Variantă Anti-Rachetă'
+  - '&7''Artificiile lui Timmy au fost anulate'''
+  name: '&eRachetă Anti-Elytra'
+  stats:
+  - '&8⇨ &7Rază: &e700 Blocuri'
+  - '&8⇨ &7Putere: &e4'
+  - '&8⇨ &7Viteză: &e6'
+  - '&8⇨ &7Precizie: &eÎn 0 Blocuri'
   type:
   - '&7&oArmă'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Țintește și doboară alte rachete din zonă.'
+  name: '&6Lansator Anti-Rachetă'
   type:
   - '&7&oMașină'
+  usage:
+  - '&eFolosește redstone&7 pentru a-l dezactiva'
+  - '&7Trebuie construit pe obsidian'
+  - '&7Necesită Rachete Anti-Rachetă'
 CHLORINE:
+  description:
+  - '&7Otrăvitor'
+  - '&7Provoacă o moarte lentă și dureroasă!'
+  name: '&eClor'
   type:
   - '&7&oResursă'
+  usage:
+  - '&eClic dreapta&7 pentru a aplica un efect Wither'
 CHLORINEPELLET:
+  description:
+  - '&7O granulă de Clor'
+  name: '&eGranulă de Clor'
   type:
   - '&7&oResursă'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Comprimată atât de tare că a devenit solidă'
+  name: '&ePulbere Explozivă Comprimată'
   type:
   - '&7&oResursă'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Manipulează cu grijă!'
+  name: '&ePulbere Explozivă'
   type:
   - '&7&oResursă'
 GROUNDLAUNCHER:
+  description:
+  - '&7Trage asupra unei zone specificate de la sol.'
+  name: '&6Lansator de Rachete GtG'
+  stats:
+  - '&8⇨ &7Altitudine de Croazieră Implicită: &eY:120'
   type:
   - '&7&oMașină'
+  usage:
+  - '&eFolosește un băț&7 pentru a seta coordonatele țintei'
+  - '&eShift cu un băț&7 pentru a verifica dacă poate trage'
+  - '&eClic-dreapta cu o tijă de blaze&7 pentru a seta altitudinea de croazieră'
+  - '&7Trebuie construit pe 1 bloc de beton verde.'
 GUIDEBOOK:
+  description:
+  - '&7Te Va Ghida?!?'
+  name: '&eCarte Ghid'
   type:
   - '&7&oDiverse'
+  usage:
+  - '&eClic dreapta&7 pentru a deschide ghidul'
 HEAVYWARHEAD:
+  description:
+  - '&7O ogivă încărcată cu explozivi grei'
+  name: '&eOgivă Grea'
   type:
   - '&7&oComponentă'
 ICBMMISSILEBODY:
+  description:
+  - '&7Proiectat la perfecțiune, elegant, mortal.'
+  - '&7Corpul rachetei ICBM'
+  name: '&eCorp ICBM'
   type:
   - '&7&oComponentă'
 MANPAD:
+  description:
+  - '&7Dispozitiv anti-rachetă de mână'
+  name: '&6Manpad'
   type:
   - '&7&oArmă'
+  usage:
+  - '&eShift + Clic dreapta&7 pentru a începe urmărirea'
+  - '&eEliberează Shift&7 pentru a trage'
 MINE:
+  description:
+  - '&7Oare va funcționa pe tancuri?'
+  name: '&cMină'
+  stats:
+  - '&8⇨ &7Putere de Explozie: &e8'
+  - '&8⇨ &7Daune Aleatorii: &ePână la 10'
   type:
   - '&7&oGadget'
+  usage:
+  - '&ePlasează&7 lângă un bloc pentru a o deghiza în acel bloc'
 MISSILE:
+  description:
+  - '&7Rachetă GtG'
+  - '&7Variantă Normală'
+  - '&7''Racheta ta prietenoasă din cartier'''
+  name: '&eRachetă GtG'
+  stats:
+  - '&8⇨ &7Rază: &e1000 Blocuri'
+  - '&8⇨ &7Putere: &e4.5'
+  - '&8⇨ &7Viteză: &e2.5'
+  - '&8⇨ &7Precizie: &eÎn 80 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEAC:
+  description:
+  - '&7Rachetă GtG'
+  - '&7Variantă Precisă'
+  - '&7''Racheta ta prietenoasă care golește camere'''
+  name: '&eRachetă GtG AC'
+  stats:
+  - '&8⇨ &7Rază: &e1250 Blocuri'
+  - '&8⇨ &7Putere: &e4.5'
+  - '&8⇨ &7Viteză: &e2.5'
+  - '&8⇨ &7Precizie: &eÎn 16 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEACADV:
+  description:
+  - '&7Rachete GtG Avansate'
+  - '&7Variantă Precisă'
+  - '&7''Destul de precisă, cred'''
+  name: '&eRachetă GtG Avansată AC'
+  stats:
+  - '&8⇨ &7Rază: &e2000 Blocuri'
+  - '&8⇨ &7Putere: &e4.5'
+  - '&8⇨ &7Viteză: &e4'
+  - '&8⇨ &7Precizie: &eÎn 20 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEADV:
+  description:
+  - '&7Rachete GtG Avansate'
+  - '&7Variantă Normală'
+  - '&7''Alimentată de AI (tehnic vorbind)'''
+  name: '&eRachetă GtG Avansată'
+  stats:
+  - '&8⇨ &7Rază: &e2000 Blocuri'
+  - '&8⇨ &7Putere: &e4'
+  - '&8⇨ &7Viteză: &e4'
+  - '&8⇨ &7Precizie: &eÎn 40 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEAPONE:
+  description:
+  - '&7Rachetă GtG Perforantă'
+  - '&7AP Nivel 1'
+  - '&7''Pivnița ta nu mai e sigură pentru mult timp!'''
+  name: '&eRachetă GtG AP'
+  stats:
+  - '&8⇨ &7Penetrează 1 bloc înainte de a exploda'
+  - '&8⇨ &7Nu trece prin obsidian'
+  - '&8⇨ &7Rază: &e1550 Blocuri'
+  - '&8⇨ &7Putere: &e3.5'
+  - '&8⇨ &7Viteză: &e2'
+  - '&8⇨ &7Precizie: &eÎn 40 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEAPTHR:
+  description:
+  - '&7Rachetă GtG Perforantă'
+  - '&7AP Nivel 3'
+  - '&7''Buncărul tău chiar nu mai e sigur pentru mult timp!'''
+  name: '&eRachetă GtG AP'
+  stats:
+  - '&8⇨ &7Penetrează 2 blocuri înainte de a exploda'
+  - '&8⇨ &775% Șansă să treacă prin obsidian'
+  - '&8⇨ &720% șansă să spargă obsidianul lovit'
+  - '&8⇨ &7Rază: &e1850 Blocuri'
+  - '&8⇨ &7Putere: &e4.5'
+  - '&8⇨ &7Viteză: &e4'
+  - '&8⇨ &7Precizie: &eÎn 10 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEAPTWO:
+  description:
+  - '&7Rachetă GtG Perforantă'
+  - '&7AP Nivel 2'
+  - '&7''Buncărul tău nu mai e sigur pentru mult timp!'''
+  name: '&eRachetă GtG AP'
+  stats:
+  - '&8⇨ &7Penetrează 1 bloc înainte de a exploda'
+  - '&8⇨ &750% Șansă să treacă prin obsidian'
+  - '&8⇨ &710% șansă să spargă obsidianul lovit'
+  - '&8⇨ &7Rază: &e1700 Blocuri'
+  - '&8⇨ &7Putere: &e4'
+  - '&8⇨ &7Viteză: &e2.5'
+  - '&8⇨ &7Precizie: &eÎn 20 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEBODY:
+  description:
+  - '&7Corp de rachetă care conține un computer de zbor'
+  name: '&eCorp de Rachetă'
   type:
   - '&7&oComponentă'
 MISSILECLUSTER:
+  description:
+  - '&7Rachetă cu dispersie, eliberează multe rachete înainte de impact'
+  - '&7''Șterge sate mai repede decât poți țipa!'''
+  name: '&cRachetă cu Dispersie'
+  stats:
+  - '&8⇨ &7Rază: &e1600 Blocuri'
+  - '&8⇨ &7Putere: &e4'
+  - '&8⇨ &7Viteză: &e3.5'
+  - '&8⇨ &7Precizie: &eÎn 90 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEEXCAV:
+  description:
+  - '&7Rachetă Utilitară'
+  - '&7Are o rază mare de explozie, dar daune mici'
+  - '&7Folosită pentru minerit'
+  - '&7''Mai bună decât 100 de Târnăcoape!'''
+  name: '&cRachetă de Excavare'
+  stats:
+  - '&8⇨ &7Rază: &e100 Blocuri'
+  - '&8⇨ &7Putere: &e14'
+  - '&8⇨ &7Viteză: &e0.5'
+  - '&8⇨ &7Precizie: &eÎn 50 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEFINS:
+  description:
+  - '&7Capabile să direcționeze racheta mai bine'
+  name: '&eAripioare de Rachetă'
   type:
   - '&7&oComponentă'
 MISSILEGAS:
+  description:
+  - '&7Rachetă de Curățare'
+  - '&7Eliberează gaz otrăvitor la lovirea unei ținte'
+  - '&7''Comite timmycid.'''
+  name: '&cRachetă cu Gaz'
+  stats:
+  - '&8⇨ &7Rază: &e1600 Blocuri'
+  - '&8⇨ &7Putere: &e0.5'
+  - '&8⇨ &7Viteză: &e3'
+  - '&8⇨ &7Precizie: &eÎn 80 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEHE:
+  description:
+  - '&7Rachetă GtG'
+  - '&7Variantă cu Exploziv Puternic'
+  - '&7''Racheta ta nu-chiar-prietenoasă din cartier'''
+  name: '&eRachetă GtG HE'
+  stats:
+  - '&8⇨ &7Rază: &e1000 Blocuri'
+  - '&8⇨ &7Putere: &e5'
+  - '&8⇨ &7Viteză: &e2'
+  - '&8⇨ &7Precizie: &eÎn 100 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEHEADV:
+  description:
+  - '&7Rachete GtG Avansate'
+  - '&7Variantă cu Exploziv Puternic'
+  - '&7''Foarte periculoasă, a nu se atinge'''
+  name: '&eRachetă GtG Avansată HE'
+  stats:
+  - '&8⇨ &7Rază: &e2000 Blocuri'
+  - '&8⇨ &7Putere: &e6'
+  - '&8⇨ &7Viteză: &e3.5'
+  - '&8⇨ &7Precizie: &eÎn 35 Blocuri'
   type:
   - '&7&oArmă'
 MISSILEICBM:
+  description:
+  - '&7Rachetă cu Rază Lungă'
+  - '&7Rachetă Balistică Intercontinentală'
+  - '&7''Niciun loc nu e sigur.'''
+  name: '&cRachetă ICBM'
+  stats:
+  - '&8⇨ &7Rază: &e7000 Blocuri'
+  - '&8⇨ &7Putere: &e10'
+  - '&8⇨ &7Viteză: &e5'
+  - '&8⇨ &7Precizie: &eÎn 50 Blocuri'
   type:
   - '&7&oArmă'
 MISSILELR:
+  description:
+  - '&7Rachetă GtG'
+  - '&7Variantă cu Rază Lungă'
+  - '&7''Racheta ta prietenoasă de oraș'''
+  name: '&eRachetă GtG LR'
+  stats:
+  - '&8⇨ &7Rază: &e1500 Blocuri'
+  - '&8⇨ &7Putere: &e4.5'
+  - '&8⇨ &7Viteză: &e2.5'
+  - '&8⇨ &7Precizie: &eÎn 80 Blocuri'
   type:
   - '&7&oArmă'
 MISSILELRADV:
+  description:
+  - '&7Rachete GtG Avansate'
+  - '&7Variantă cu Rază Lungă'
+  - '&7''Mi se termină ideile de descrieri'''
+  name: '&eRachetă GtG Avansată LR'
+  stats:
+  - '&8⇨ &7Rază: &e2500 Blocuri'
+  - '&8⇨ &7Putere: &e4'
+  - '&8⇨ &7Viteză: &e4.5'
+  - '&8⇨ &7Precizie: &eÎn 40 Blocuri'
   type:
   - '&7&oArmă'
 MISSILENAPALM:
+  description:
+  - '&7Rachetă Incendiară'
+  - '&7Rachetă cu napalm, împrăștie foc peste tot la impact.'
+  - '&7''Eliminator de grădinițe! Testat și verificat™'''
+  name: '&cRachetă cu Napalm'
+  stats:
+  - '&8⇨ &7Rază: &e1600 Blocuri'
+  - '&8⇨ &7Putere: &e2'
+  - '&8⇨ &7Viteză: &e3'
+  - '&8⇨ &7Precizie: &eÎn 80 Blocuri'
   type:
   - '&7&oArmă'
 MISSILERADAR:
+  description:
+  - '&7Emite un semnal redstone când o rachetă e în 700 blocuri'
+  name: '&eRadar de Rachete'
   type:
   - '&7&oMașină'
+  usage:
+  - '&ePlasează&7 redstone deasupra acestui bloc pentru a-i obține ieșirea'
+  - '&7Este nevoie de un repetor pentru a obține pulsul de un tick'
 MISSILESTICK:
+  description:
+  - '&7Rachetă-Capcană'
+  - '&7O explozie mică ce eliberează pânze de păianjen'
+  - '&7''Nu întreba din ce e făcută.'''
+  name: '&cRachetă Lipicioasă'
+  stats:
+  - '&8⇨ &7Rază: &e1600 Blocuri'
+  - '&8⇨ &7Putere: &e1'
+  - '&8⇨ &7Viteză: &e4'
+  - '&8⇨ &7Precizie: &eÎn 70 Blocuri'
   type:
   - '&7&oArmă'
 PLAYERLIST:
+  description:
+  - '&7ACESTE ID-URI SUNT GLOBALE'
+  - '&7ORICINE LE POATE EDITA DACĂ'
+  - '&7ARE ID-UL'
+  name: '&6Listă de Jucători'
   type:
   - '&7&oDiverse'
+  usage:
+  - '&eClic dreapta&7 pentru a seta jucătorii pentru un ID'
 RADAR:
+  description:
+  - '&7Folosit pentru a urmări rachete sau jucători de lovit'
+  name: '&eRadar'
   type:
   - '&7&oComponentă'
 ROCKETFUEL:
+  description:
+  - '&7Arde cu puterea a 1000 de cărbuni...'
+  name: '&eCombustibil de Rachetă'
   type:
   - '&7&oResursă'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Un computer simplu capabil să ghideze o rachetă'
+  name: '&eComputer de Zbor Simplu'
   type:
   - '&7&oComponentă'
 SMALLBODY:
+  description:
+  - '&7Folosit la crearea unei rachete'
+  - '&7''Să nu îl îndoi'''
+  name: '&eFuzelaj de Rachetă Mică'
   type:
   - '&7&oComponentă'
 SMALLFIN:
+  description:
+  - '&7Folosit la crearea unei rachete'
+  name: '&eAripioare de Rachetă Mică'
   type:
   - '&7&oComponentă'
 SMALLMISSILE:
+  description:
+  - '&7Rachetă Mică Sol-Sol'
+  - '&7Variantă Normală'
+  name: '&eRachetă GtG Mică'
+  stats:
+  - '&8⇨ &7Rază: &e750 Blocuri'
+  - '&8⇨ &7Putere: &e3'
+  - '&8⇨ &7Viteză: &e2'
+  - '&8⇨ &7Precizie: &eÎn 100 Blocuri'
   type:
   - '&7&oArmă'
 SMALLMISSILEAC:
+  description:
+  - '&7Rachetă Mică Sol-Sol'
+  - '&7Variantă Precisă'
+  - '&7''Micul Timmy n-a avut nicio șansă'''
+  name: '&eRachetă GtG Mică AC'
+  stats:
+  - '&8⇨ &7Rază: &e700 Blocuri'
+  - '&8⇨ &7Putere: &e3'
+  - '&8⇨ &7Viteză: &e2'
+  - '&8⇨ &7Precizie: &eÎn 60 Blocuri'
   type:
   - '&7&oArmă'
 SMALLMISSILEHE:
+  description:
+  - '&7Rachetă Mică Sol-Sol'
+  - '&7Variantă cu Exploziv Puternic'
+  name: '&eRachetă GtG Mică HE'
+  stats:
+  - '&8⇨ &7Rază: &e600 Blocuri'
+  - '&8⇨ &7Putere: &e3.5'
+  - '&8⇨ &7Viteză: &e1'
+  - '&8⇨ &7Precizie: &eÎn 120 Blocuri'
   type:
   - '&7&oArmă'
 SMALLMISSILELR:
+  description:
+  - '&7Rachetă Mică Sol-Sol'
+  - '&7Variantă cu Rază Lungă'
+  - '&7''Timmy de foarte departe n-a avut nicio șansă'''
+  name: '&eRachetă GtG Mică LR'
+  stats:
+  - '&8⇨ &7Rază: &e900 Blocuri'
+  - '&8⇨ &7Putere: &e3'
+  - '&8⇨ &7Viteză: &e2'
+  - '&8⇨ &7Precizie: &eÎn 100 Blocuri'
   type:
   - '&7&oArmă'
 SMALLWARHEAD:
+  description:
+  - '&7Folosită la crearea unei rachete.'
+  - '&7''Nu atinge partea roșie'''
+  name: '&eOgivă Mică'
   type:
   - '&7&oComponentă'
 SUGARFUEL:
+  description:
+  - '&7Ieftin, energie mare, perfect pentru rachete mici.'
+  name: '&eCombustibil din Zahăr'
   type:
   - '&7&oResursă'
 ULTRALITE_INGOT:
+  description:
+  - '&7Lingou super ușor folosit pentru rachete'
+  name: '&eLingou UltraLite'
   type:
   - '&7&oComponentă'
 ULTRALITE_PLATE:
+  description:
+  - '&7O placă super ușoară pentru rachete'
+  name: '&ePlacă UltraLite'
   type:
   - '&7&oComponentă'
 WARHEAD:
+  description:
+  - '&7Folosită la crearea unei rachete.'
+  - '&7''Adio-cartofi'''
+  name: '&eOgivă de Rachetă'
   type:
   - '&7&oComponentă'
 WARHEADAP:
+  description:
+  - '&7Folosită pentru a crea Rachete AP'
+  - '&7''Adio-buncăr'''
+  name: '&eOgivă Întărită'
   type:
   - '&7&oComponentă'
