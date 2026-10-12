@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Isang pinahusay na bersyon ng katawan ng misil'
+  name: '&eAbanseng Katawan ng Misil'
   type:
   - '&7&oBahagi'
 ANTIAIRMISSILE:
+  description:
+  - '&7Kontra-Misil / Kontra-Elytra'
+  - '&7Baryanteng Kontra-Misil'
+  - '&7''Nakansela na ang mga paputok ni Timmy'''
+  name: '&eMisil Kontra-Misil'
+  stats:
+  - '&8⇨ &7Abot: &e600 Bloke'
+  - '&8⇨ &7Lakas: &e4'
+  - '&8⇨ &7Bilis: &e5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 0 Bloke'
   type:
   - '&7&oSandata'
 ANTIELYTRA:
+  description:
+  - '&7Nagpapaputok ng misil sa malapit na manlalaro'
+  - '&7na gumagamit ng elytra'
+  - '&7Maliban sa mga nasa'
+  - '&7ID na nakatakda dito'
+  name: '&6Pantudla Kontra-Elytra'
   type:
   - '&7&oMakina'
+  usage:
+  - '&eGumamit ng patpat&7 upang itakda ang ID ng grupo'
+  - '&7Kailangan ng mga Misil Kontra-Elytra'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Kontra-Misil / Kontra-Elytra'
+  - '&7Baryanteng Kontra-Misil'
+  - '&7''Nakansela na ang mga paputok ni Timmy'''
+  name: '&eMisil Kontra-Elytra'
+  stats:
+  - '&8⇨ &7Abot: &e700 Bloke'
+  - '&8⇨ &7Lakas: &e4'
+  - '&8⇨ &7Bilis: &e6'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 0 Bloke'
   type:
   - '&7&oSandata'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Tinutudla at binabaril ang iba pang misil sa lugar.'
+  name: '&6Pantudla Kontra-Misil'
   type:
   - '&7&oMakina'
+  usage:
+  - '&eGumamit ng redstone&7 upang patayin ito'
+  - '&7Kailangang itayo sa obsidiana'
+  - '&7Kailangan ng mga Misil Kontra-Misil'
 CHLORINE:
+  description:
+  - '&7Nakalalason'
+  - '&7Nagdudulot ng mabagal at masakit na kamatayan!'
+  name: '&eKlorin'
   type:
   - '&7&oRekurso'
+  usage:
+  - '&eKanang Pindot&7 upang maglapat ng epekto ng Wither'
 CHLORINEPELLET:
+  description:
+  - '&7Isang butil ng Klorin'
+  name: '&eButil ng Klorin'
   type:
   - '&7&oRekurso'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Napakasiksik kaya naging solido'
+  name: '&eSiksik na Pampasabog na Pulbos'
   type:
   - '&7&oRekurso'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Hawakan nang may pag-iingat!'
+  name: '&ePampasabog na Pulbos'
   type:
   - '&7&oRekurso'
 GROUNDLAUNCHER:
+  description:
+  - '&7Tinutudla ang isang tinukoy na lugar sa lupa.'
+  name: '&6GtG Pantudla ng Misil'
+  stats:
+  - '&8⇨ &7Likas na Taas ng Paglalayag: &eY:120'
   type:
   - '&7&oMakina'
+  usage:
+  - '&eGumamit ng patpat&7 upang itakda ang koordinada ng target'
+  - '&eShift kasama ang patpat&7 upang tingnan kung kaya nitong magpaputok'
+  - '&eKanang pindot gamit ang blaze rod&7 upang itakda ang taas ng paglalayag'
+  - '&7Kailangang itayo sa 1 berdeng bloke ng konkreto.'
 GUIDEBOOK:
+  description:
+  - '&7Gagabayan Ka Nito?!?'
+  name: '&eLibrong Gabay'
   type:
   - '&7&oIba pa'
+  usage:
+  - '&eKanang Pindot&7 upang buksan ang gabay'
 HEAVYWARHEAD:
+  description:
+  - '&7Isang pampasabog na ulo na siksik sa mabibigat na pampasabog'
+  name: '&eMabigat na Pampasabog na Ulo'
   type:
   - '&7&oBahagi'
 ICBMMISSILEBODY:
+  description:
+  - '&7Likhang-ganap, Makinis, Mapanganib.'
+  - '&7Ang katawan ng misil na ICBM'
+  name: '&eKatawan ng ICBM'
   type:
   - '&7&oBahagi'
 MANPAD:
+  description:
+  - '&7Hawak-kamay na kasangkapang kontra-misil'
+  name: '&6Manpad'
   type:
   - '&7&oSandata'
+  usage:
+  - '&eShift + Kanang Pindot&7 upang magsimulang sumubaybay'
+  - '&eBitawan ang Shift&7 upang magpaputok'
 MINE:
+  description:
+  - '&7Gagana kaya ito sa mga tangke?'
+  name: '&cMina'
+  stats:
+  - '&8⇨ &7Lakas ng Pagsabog: &e8'
+  - '&8⇨ &7Pabago-bagong Pinsala: &eHanggang 10'
   type:
   - '&7&oGadyet'
+  usage:
+  - '&eIlagay&7 sa isang bloke upang magmukha itong blokeng iyon'
 MISSILE:
+  description:
+  - '&7GtG Misil'
+  - '&7Karaniwang Baryante'
+  - '&7''Ang misil ng kapitbahay mong mabait'''
+  name: '&eGtG Misil'
+  stats:
+  - '&8⇨ &7Abot: &e1000 Bloke'
+  - '&8⇨ &7Lakas: &e4.5'
+  - '&8⇨ &7Bilis: &e2.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 80 Bloke'
   type:
   - '&7&oSandata'
 MISSILEAC:
+  description:
+  - '&7GtG Misil'
+  - '&7Baryanteng Tumpak'
+  - '&7''Ang misil mong mabait na naglilinis ng kuwarto'''
+  name: '&eGtG Misil AC'
+  stats:
+  - '&8⇨ &7Abot: &e1250 Bloke'
+  - '&8⇨ &7Lakas: &e4.5'
+  - '&8⇨ &7Bilis: &e2.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 16 Bloke'
   type:
   - '&7&oSandata'
 MISSILEACADV:
+  description:
+  - '&7Mga GtG Abanseng Misil'
+  - '&7Baryanteng Tumpak'
+  - '&7''Medyo tumpak sa palagay ko'''
+  name: '&eGtG Abanseng Misil AC'
+  stats:
+  - '&8⇨ &7Abot: &e2000 Bloke'
+  - '&8⇨ &7Lakas: &e4.5'
+  - '&8⇨ &7Bilis: &e4'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 20 Bloke'
   type:
   - '&7&oSandata'
 MISSILEADV:
+  description:
+  - '&7Mga GtG Abanseng Misil'
+  - '&7Karaniwang Baryante'
+  - '&7''Pinapagana ng AI (sa teknikal na usapan)'''
+  name: '&eGtG Abanseng Misil'
+  stats:
+  - '&8⇨ &7Abot: &e2000 Bloke'
+  - '&8⇨ &7Lakas: &e4'
+  - '&8⇨ &7Bilis: &e4'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 40 Bloke'
   type:
   - '&7&oSandata'
 MISSILEAPONE:
+  description:
+  - '&7GtG Misil na Pambutas ng Baluti'
+  - '&7Baitang 1 AP'
+  - '&7''Hindi magtatagal na magiging delikado ang silong mo!'''
+  name: '&eGtG Misil AP'
+  stats:
+  - '&8⇨ &7Tumatagos ng 1 bloke bago sumabog'
+  - '&8⇨ &7Hindi tatagos sa obsidiana'
+  - '&8⇨ &7Abot: &e1550 Bloke'
+  - '&8⇨ &7Lakas: &e3.5'
+  - '&8⇨ &7Bilis: &e2'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 40 Bloke'
   type:
   - '&7&oSandata'
 MISSILEAPTHR:
+  description:
+  - '&7GtG Misil na Pambutas ng Baluti'
+  - '&7Baitang 3 AP'
+  - '&7''Tiyak na hindi magtatagal na magiging delikado ang bunker mo!'''
+  name: '&eGtG Misil AP'
+  stats:
+  - '&8⇨ &7Tumatagos ng 2 bloke bago sumabog'
+  - '&8⇨ &775% na Tsansang tumagos sa obsidiana'
+  - '&8⇨ &720% na tsansang mabasag ang tinamaang obsidiana'
+  - '&8⇨ &7Abot: &e1850 Bloke'
+  - '&8⇨ &7Lakas: &e4.5'
+  - '&8⇨ &7Bilis: &e4'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 10 Bloke'
   type:
   - '&7&oSandata'
 MISSILEAPTWO:
+  description:
+  - '&7GtG Misil na Pambutas ng Baluti'
+  - '&7Baitang 2 AP'
+  - '&7''Hindi magtatagal na magiging delikado ang bunker mo!'''
+  name: '&eGtG Misil AP'
+  stats:
+  - '&8⇨ &7Tumatagos ng 1 bloke bago sumabog'
+  - '&8⇨ &750% na Tsansang tumagos sa obsidiana'
+  - '&8⇨ &710% na tsansang mabasag ang tinamaang obsidiana'
+  - '&8⇨ &7Abot: &e1700 Bloke'
+  - '&8⇨ &7Lakas: &e4'
+  - '&8⇨ &7Bilis: &e2.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 20 Bloke'
   type:
   - '&7&oSandata'
 MISSILEBODY:
+  description:
+  - '&7Katawan ng misil na may kompyuter ng paglipad'
+  name: '&eKatawan ng Misil'
   type:
   - '&7&oBahagi'
 MISSILECLUSTER:
+  description:
+  - '&7Misil na Pangkumpol, nagpapakawala ng maraming misil bago tumama'
+  - '&7''Nag-aalis ng mga nayon nang mas mabilis pa sa pagsigaw mo!'''
+  name: '&cMisil na Pangkumpol'
+  stats:
+  - '&8⇨ &7Abot: &e1600 Bloke'
+  - '&8⇨ &7Lakas: &e4'
+  - '&8⇨ &7Bilis: &e3.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 90 Bloke'
   type:
   - '&7&oSandata'
 MISSILEEXCAV:
+  description:
+  - '&7Misil Pangkagamitan'
+  - '&7May malaking radyus ng pagsabog ngunit kaunting pinsala'
+  - '&7Ginagamit sa pagmimina'
+  - '&7''Mas mabuti pa sa 100 Piko!'''
+  name: '&cMisil Panghukay'
+  stats:
+  - '&8⇨ &7Abot: &e100 Bloke'
+  - '&8⇨ &7Lakas: &e14'
+  - '&8⇨ &7Bilis: &e0.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 50 Bloke'
   type:
   - '&7&oSandata'
 MISSILEFINS:
+  description:
+  - '&7Kayang gabayan nang mas maayos ang misil'
+  name: '&ePalikpik ng Misil'
   type:
   - '&7&oBahagi'
 MISSILEGAS:
+  description:
+  - '&7Misil Panlinis'
+  - '&7Nagpapakawala ng nakalalasong gas kapag tumama sa target'
+  - '&7''Gumawa ng Timmycide.'''
+  name: '&cMisil ng Gas'
+  stats:
+  - '&8⇨ &7Abot: &e1600 Bloke'
+  - '&8⇨ &7Lakas: &e0.5'
+  - '&8⇨ &7Bilis: &e3'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 80 Bloke'
   type:
   - '&7&oSandata'
 MISSILEHE:
+  description:
+  - '&7GtG Misil'
+  - '&7Baryanteng Mataas na Pampasabog'
+  - '&7''Ang misil ng kapitbahay mong hindi gaanong mabait'''
+  name: '&eGtG Misil HE'
+  stats:
+  - '&8⇨ &7Abot: &e1000 Bloke'
+  - '&8⇨ &7Lakas: &e5'
+  - '&8⇨ &7Bilis: &e2'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 100 Bloke'
   type:
   - '&7&oSandata'
 MISSILEHEADV:
+  description:
+  - '&7Mga GtG Abanseng Misil'
+  - '&7Baryanteng Mataas na Pampasabog'
+  - '&7''Napakadelikado, wag hawakan'''
+  name: '&eGtG Abanseng Misil HE'
+  stats:
+  - '&8⇨ &7Abot: &e2000 Bloke'
+  - '&8⇨ &7Lakas: &e6'
+  - '&8⇨ &7Bilis: &e3.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 35 Bloke'
   type:
   - '&7&oSandata'
 MISSILEICBM:
+  description:
+  - '&7Misil na Malayong Abot'
+  - '&7Misil Balistiko Pagitan-ng-Kontinente'
+  - '&7''Walang lugar na ligtas.'''
+  name: '&cMisil na ICBM'
+  stats:
+  - '&8⇨ &7Abot: &e7000 Bloke'
+  - '&8⇨ &7Lakas: &e10'
+  - '&8⇨ &7Bilis: &e5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 50 Bloke'
   type:
   - '&7&oSandata'
 MISSILELR:
+  description:
+  - '&7GtG Misil'
+  - '&7Baryanteng Malayong Abot'
+  - '&7''Ang misil mong mabait sa lungsod'''
+  name: '&eGtG Misil LR'
+  stats:
+  - '&8⇨ &7Abot: &e1500 Bloke'
+  - '&8⇨ &7Lakas: &e4.5'
+  - '&8⇨ &7Bilis: &e2.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 80 Bloke'
   type:
   - '&7&oSandata'
 MISSILELRADV:
+  description:
+  - '&7Mga GtG Abanseng Misil'
+  - '&7Baryanteng Malayong Abot'
+  - '&7''Naubusan na ako ng ideya sa kuwento'''
+  name: '&eGtG Abanseng Misil LR'
+  stats:
+  - '&8⇨ &7Abot: &e2500 Bloke'
+  - '&8⇨ &7Lakas: &e4'
+  - '&8⇨ &7Bilis: &e4.5'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 40 Bloke'
   type:
   - '&7&oSandata'
 MISSILENAPALM:
+  description:
+  - '&7Misil ng Apoy'
+  - '&7Misil na Napalm, nagsasabog ng apoy sa lahat ng dako kapag tumama.'
+  - '&7''Pang-alis ng Kindergarten! Subok at nasuri™'''
+  name: '&cMisil na Napalm'
+  stats:
+  - '&8⇨ &7Abot: &e1600 Bloke'
+  - '&8⇨ &7Lakas: &e2'
+  - '&8⇨ &7Bilis: &e3'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 80 Bloke'
   type:
   - '&7&oSandata'
 MISSILERADAR:
+  description:
+  - '&7Naglalabas ng senyas ng redstone kapag may misil sa loob ng 700 bloke'
+  name: '&eRadar ng Misil'
   type:
   - '&7&oMakina'
+  usage:
+  - '&eIlagay&7 ang redstone sa ibabaw ng blokeng ito upang makuha ang paglabas nito'
+  - '&7Kailangan ng repeater upang makuha ang isang tik na pulso'
 MISSILESTICK:
+  description:
+  - '&7Misil Pambitag'
+  - '&7Isang maliit na pagsabog na nagpapakawala ng mga sapot'
+  - '&7''Wag mong itanong kung saan ito gawa.'''
+  name: '&cMalagkit na Misil'
+  stats:
+  - '&8⇨ &7Abot: &e1600 Bloke'
+  - '&8⇨ &7Lakas: &e1'
+  - '&8⇨ &7Bilis: &e4'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 70 Bloke'
   type:
   - '&7&oSandata'
 PLAYERLIST:
+  description:
+  - '&7ANG MGA ID NA ITO AY PANDAIGDIG'
+  - '&7KAYANG BAGUHIN NG SINUMAN KUNG'
+  - '&7MAYROON SILANG ID'
+  name: '&6Listahan ng Manlalaro'
   type:
   - '&7&oIba pa'
+  usage:
+  - '&eKanang Pindot&7 upang itakda ang mga manlalaro para sa isang ID'
 RADAR:
+  description:
+  - '&7Ginagamit upang subaybayan ang mga misil o manlalarong tatamaan'
+  name: '&eRadar'
   type:
   - '&7&oBahagi'
 ROCKETFUEL:
+  description:
+  - '&7Nagliliyab na kasinglakas ng 1000 uling...'
+  name: '&eGatong ng Rakete'
   type:
   - '&7&oRekurso'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Isang payak na kompyuter na kayang gabayan ang misil'
+  name: '&ePayak na Kompyuter ng Paglipad'
   type:
   - '&7&oBahagi'
 SMALLBODY:
+  description:
+  - '&7Ginagamit sa paggawa ng misil'
+  - '&7''Mabuti pang wag mong yupiin iyan'''
+  name: '&eMaliit na Katawan ng Misil'
   type:
   - '&7&oBahagi'
 SMALLFIN:
+  description:
+  - '&7Ginagamit sa paggawa ng misil'
+  name: '&eMaliliit na Palikpik ng Misil'
   type:
   - '&7&oBahagi'
 SMALLMISSILE:
+  description:
+  - '&7Maliit na Misil na Lupa-sa-Lupa'
+  - '&7Karaniwang Baryante'
+  name: '&eMaliit na GtG Misil'
+  stats:
+  - '&8⇨ &7Abot: &e750 Bloke'
+  - '&8⇨ &7Lakas: &e3'
+  - '&8⇨ &7Bilis: &e2'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 100 Bloke'
   type:
   - '&7&oSandata'
 SMALLMISSILEAC:
+  description:
+  - '&7Maliit na Misil na Lupa-sa-Lupa'
+  - '&7Baryanteng Tumpak'
+  - '&7''Walang pag-asa ang maliit na Timmy'''
+  name: '&eMaliit na GtG Misil AC'
+  stats:
+  - '&8⇨ &7Abot: &e700 Bloke'
+  - '&8⇨ &7Lakas: &e3'
+  - '&8⇨ &7Bilis: &e2'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 60 Bloke'
   type:
   - '&7&oSandata'
 SMALLMISSILEHE:
+  description:
+  - '&7Maliit na Misil na Lupa-sa-Lupa'
+  - '&7Baryanteng Mataas na Pampasabog'
+  name: '&eMaliit na GtG Misil HE'
+  stats:
+  - '&8⇨ &7Abot: &e600 Bloke'
+  - '&8⇨ &7Lakas: &e3.5'
+  - '&8⇨ &7Bilis: &e1'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 120 Bloke'
   type:
   - '&7&oSandata'
 SMALLMISSILELR:
+  description:
+  - '&7Maliit na Misil na Lupa-sa-Lupa'
+  - '&7Baryanteng Malayong Abot'
+  - '&7''Walang pag-asa ang napakalayong timmy'''
+  name: '&eMaliit na GtG Misil LR'
+  stats:
+  - '&8⇨ &7Abot: &e900 Bloke'
+  - '&8⇨ &7Lakas: &e3'
+  - '&8⇨ &7Bilis: &e2'
+  - '&8⇨ &7Katumpakan: &eSa loob ng 100 Bloke'
   type:
   - '&7&oSandata'
 SMALLWARHEAD:
+  description:
+  - '&7Ginagamit sa paggawa ng misil.'
+  - '&7''Wag mong hawakan ang pulang bahagi'''
+  name: '&eMaliit na Pampasabog na Ulo'
   type:
   - '&7&oBahagi'
 SUGARFUEL:
+  description:
+  - '&7Mura, mataas ang enerhiya, sakto para sa maliliit na misil.'
+  name: '&eGatong na Asukal'
   type:
   - '&7&oRekurso'
 ULTRALITE_INGOT:
+  description:
+  - '&7Super magaang bareta na ginagamit para sa mga misil'
+  name: '&eBareta ng UltraLite'
   type:
   - '&7&oBahagi'
 ULTRALITE_PLATE:
+  description:
+  - '&7Isang super magaang plaka para sa mga misil'
+  name: '&ePlaka ng UltraLite'
   type:
   - '&7&oBahagi'
 WARHEAD:
+  description:
+  - '&7Ginagamit sa paggawa ng misil.'
+  - '&7''Paalam-patatas'''
+  name: '&ePampasabog na Ulo ng Misil'
   type:
   - '&7&oBahagi'
 WARHEADAP:
+  description:
+  - '&7Ginagamit upang gumawa ng mga Misil na AP'
+  - '&7''Paalam-bunker'''
+  name: '&ePinatibay na Pampasabog na Ulo'
   type:
   - '&7&oBahagi'
