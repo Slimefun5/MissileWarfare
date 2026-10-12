@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7A rakétatest fejlesztett változata'
+  name: '&eFejlett Rakétatest'
   type:
   - '&7&oAlkatrész'
 ANTIAIRMISSILE:
+  description:
+  - '&7Rakétaelhárító / Elytraelhárító'
+  - '&7Rakétaelhárító Változat'
+  - '&7''Timi tűzijátéka el lett törölve'''
+  name: '&eRakétaelhárító Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e600 Blokk'
+  - '&8⇨ &7Erő: &e4'
+  - '&8⇨ &7Sebesség: &e5'
+  - '&8⇨ &7Pontosság: &e0 blokkon belül'
   type:
   - '&7&oFegyver'
 ANTIELYTRA:
+  description:
+  - '&7Rakétát lő a közeli játékosokra,'
+  - '&7akik elytrát használnak'
+  - '&7Kivéve azokat, akik az ehhez'
+  - '&7rendelt ID-n vannak'
+  name: '&6Elytraelhárító Kilövő'
   type:
   - '&7&oGép'
+  usage:
+  - '&eHasználj egy botot&7 a csoport ID beállításához'
+  - '&7Elytraelhárító Rakéták kellenek hozzá'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Rakétaelhárító / Elytraelhárító'
+  - '&7Rakétaelhárító Változat'
+  - '&7''Timi tűzijátéka el lett törölve'''
+  name: '&eElytraelhárító Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e700 Blokk'
+  - '&8⇨ &7Erő: &e4'
+  - '&8⇨ &7Sebesség: &e6'
+  - '&8⇨ &7Pontosság: &e0 blokkon belül'
   type:
   - '&7&oFegyver'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Bemér és lelő más rakétákat a területen.'
+  name: '&6Rakétaelhárító Kilövő'
   type:
   - '&7&oGép'
+  usage:
+  - '&eHasználj redstone-t&7 a kikapcsolásához'
+  - '&7Obszidiánra kell építeni'
+  - '&7Rakétaelhárító Rakéták kellenek hozzá'
 CHLORINE:
+  description:
+  - '&7Mérgező'
+  - '&7Lassú és fájdalmas halált okoz!'
+  name: '&eKlór'
   type:
   - '&7&oNyersanyag'
+  usage:
+  - '&eJobb Klikk&7 a Wither hatás kiváltásához'
 CHLORINEPELLET:
+  description:
+  - '&7Egy pellet klór'
+  name: '&eKlór Pellet'
   type:
   - '&7&oNyersanyag'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Annyira tömörítve, hogy szilárddá vált'
+  name: '&eTömörített Robbanó Por'
   type:
   - '&7&oNyersanyag'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Óvatosan vele!'
+  name: '&eRobbanó Por'
   type:
   - '&7&oNyersanyag'
 GROUNDLAUNCHER:
+  description:
+  - '&7Egy megadott földi területre tüzel.'
+  name: '&6GtG Rakétakilövő'
+  stats:
+  - '&8⇨ &7Alapértelmezett utazómagasság: &eY:120'
   type:
   - '&7&oGép'
+  usage:
+  - '&eHasználj egy botot&7 a célkoordináták beállításához'
+  - '&eShift bottal&7, hogy ellenőrizd, tud-e tüzelni'
+  - '&eJobb klikk blaze rúddal&7 az utazómagasság beállításához'
+  - '&71 zöld betonblokkra kell építeni.'
 GUIDEBOOK:
+  description:
+  - '&7Útba Fog Igazítani?!?'
+  name: '&eÚtmutató Könyv'
   type:
   - '&7&oEgyéb'
+  usage:
+  - '&eJobb Klikk&7 az útmutató megnyitásához'
 HEAVYWARHEAD:
+  description:
+  - '&7Nehéz robbanóanyaggal töltött robbanófej'
+  name: '&eNehéz Robbanófej'
   type:
   - '&7&oAlkatrész'
 ICBMMISSILEBODY:
+  description:
+  - '&7Tökéletesre tervezve, áramvonalas, halálos.'
+  - '&7Az ICBM rakéta teste'
+  name: '&eICBM Test'
   type:
   - '&7&oAlkatrész'
 MANPAD:
+  description:
+  - '&7Kézi rakétaelhárító eszköz'
+  name: '&6Kézi Rakétaelhárító'
   type:
   - '&7&oFegyver'
+  usage:
+  - '&eShift + Jobb Klikk&7 a követés megkezdéséhez'
+  - '&eEngedd el a Shiftet&7 a tüzeléshez'
 MINE:
+  description:
+  - '&7Vajon működik tankokon is?'
+  name: '&cAkna'
+  stats:
+  - '&8⇨ &7Robbanóerő: &e8'
+  - '&8⇨ &7Véletlen sebzés: &eLegfeljebb 10'
   type:
   - '&7&oKütyü'
+  usage:
+  - '&eHelyezd&7 egy blokkhoz, hogy annak a blokknak tűnjön'
 MISSILE:
+  description:
+  - '&7GtG Rakéta'
+  - '&7Normál Változat'
+  - '&7''A kedves szomszéd rakétád'''
+  name: '&eGtG Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1000 Blokk'
+  - '&8⇨ &7Erő: &e4.5'
+  - '&8⇨ &7Sebesség: &e2.5'
+  - '&8⇨ &7Pontosság: &e80 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEAC:
+  description:
+  - '&7GtG Rakéta'
+  - '&7Pontos Változat'
+  - '&7''A kedves szobatakarító rakétád'''
+  name: '&eGtG Rakéta AC'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1250 Blokk'
+  - '&8⇨ &7Erő: &e4.5'
+  - '&8⇨ &7Sebesség: &e2.5'
+  - '&8⇨ &7Pontosság: &e16 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEACADV:
+  description:
+  - '&7GtG Fejlett Rakéták'
+  - '&7Pontos Változat'
+  - '&7''Elég pontos, azt hiszem'''
+  name: '&eGtG Fejlett Rakéta AC'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e2000 Blokk'
+  - '&8⇨ &7Erő: &e4.5'
+  - '&8⇨ &7Sebesség: &e4'
+  - '&8⇨ &7Pontosság: &e20 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEADV:
+  description:
+  - '&7GtG Fejlett Rakéták'
+  - '&7Normál Változat'
+  - '&7''AI hajtja (technikailag)'''
+  name: '&eGtG Fejlett Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e2000 Blokk'
+  - '&8⇨ &7Erő: &e4'
+  - '&8⇨ &7Sebesség: &e4'
+  - '&8⇨ &7Pontosság: &e40 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEAPONE:
+  description:
+  - '&7GtG Páncéltörő Rakéta'
+  - '&71. szintű AP'
+  - '&7''A pincéd sem marad sokáig biztonságos!'''
+  name: '&eGtG Rakéta AP'
+  stats:
+  - '&8⇨ &7Felrobbanás előtt 1 blokkot átüt'
+  - '&8⇨ &7Obszidiánon nem megy át'
+  - '&8⇨ &7Hatótávolság: &e1550 Blokk'
+  - '&8⇨ &7Erő: &e3.5'
+  - '&8⇨ &7Sebesség: &e2'
+  - '&8⇨ &7Pontosság: &e40 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEAPTHR:
+  description:
+  - '&7GtG Páncéltörő Rakéta'
+  - '&73. szintű AP'
+  - '&7''A bunkered biztosan nem marad sokáig biztonságos!'''
+  name: '&eGtG Rakéta AP'
+  stats:
+  - '&8⇨ &7Felrobbanás előtt 2 blokkot átüt'
+  - '&8⇨ &775% esély, hogy átmegy az obszidiánon'
+  - '&8⇨ &720% esély, hogy eltöri a talált obszidiánt'
+  - '&8⇨ &7Hatótávolság: &e1850 Blokk'
+  - '&8⇨ &7Erő: &e4.5'
+  - '&8⇨ &7Sebesség: &e4'
+  - '&8⇨ &7Pontosság: &e10 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEAPTWO:
+  description:
+  - '&7GtG Páncéltörő Rakéta'
+  - '&72. szintű AP'
+  - '&7''A bunkered sem marad sokáig biztonságos!'''
+  name: '&eGtG Rakéta AP'
+  stats:
+  - '&8⇨ &7Felrobbanás előtt 1 blokkot átüt'
+  - '&8⇨ &750% esély, hogy átmegy az obszidiánon'
+  - '&8⇨ &710% esély, hogy eltöri a talált obszidiánt'
+  - '&8⇨ &7Hatótávolság: &e1700 Blokk'
+  - '&8⇨ &7Erő: &e4'
+  - '&8⇨ &7Sebesség: &e2.5'
+  - '&8⇨ &7Pontosság: &e20 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEBODY:
+  description:
+  - '&7Rakétatest fedélzeti számítógéppel'
+  name: '&eRakétatest'
   type:
   - '&7&oAlkatrész'
 MISSILECLUSTER:
+  description:
+  - '&7Kazettás rakéta, találat előtt sok rakétát bocsát ki'
+  - '&7''Falvakat töröl el, mielőtt felkiálthatnál!'''
+  name: '&cKazettás Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1600 Blokk'
+  - '&8⇨ &7Erő: &e4'
+  - '&8⇨ &7Sebesség: &e3.5'
+  - '&8⇨ &7Pontosság: &e90 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEEXCAV:
+  description:
+  - '&7Segédrakéta'
+  - '&7Nagy robbanási sugara van, de kevés sebzése'
+  - '&7Bányászatra használatos'
+  - '&7''Jobb, mint 100 Csákány!'''
+  name: '&cKotró Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e100 Blokk'
+  - '&8⇨ &7Erő: &e14'
+  - '&8⇨ &7Sebesség: &e0.5'
+  - '&8⇨ &7Pontosság: &e50 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEFINS:
+  description:
+  - '&7Jobban képes irányítani a rakétát'
+  name: '&eRakétaszárnyak'
   type:
   - '&7&oAlkatrész'
 MISSILEGAS:
+  description:
+  - '&7Tisztító Rakéta'
+  - '&7Mérgező gázt bocsát ki a célba találáskor'
+  - '&7''Kövess el Timigyilkosságot.'''
+  name: '&cGázrakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1600 Blokk'
+  - '&8⇨ &7Erő: &e0.5'
+  - '&8⇨ &7Sebesség: &e3'
+  - '&8⇨ &7Pontosság: &e80 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEHE:
+  description:
+  - '&7GtG Rakéta'
+  - '&7Nagy Robbanóerejű Változat'
+  - '&7''A nem is olyan kedves szomszéd rakétád'''
+  name: '&eGtG Rakéta HE'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1000 Blokk'
+  - '&8⇨ &7Erő: &e5'
+  - '&8⇨ &7Sebesség: &e2'
+  - '&8⇨ &7Pontosság: &e100 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEHEADV:
+  description:
+  - '&7GtG Fejlett Rakéták'
+  - '&7Nagy Robbanóerejű Változat'
+  - '&7''Nagyon veszélyes, nem hozzáérni'''
+  name: '&eGtG Fejlett Rakéta HE'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e2000 Blokk'
+  - '&8⇨ &7Erő: &e6'
+  - '&8⇨ &7Sebesség: &e3.5'
+  - '&8⇨ &7Pontosság: &e35 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILEICBM:
+  description:
+  - '&7Nagy Hatótávolságú Rakéta'
+  - '&7Interkontinentális Ballisztikus Rakéta'
+  - '&7''Sehol sem vagy biztonságban.'''
+  name: '&cICBM Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e7000 Blokk'
+  - '&8⇨ &7Erő: &e10'
+  - '&8⇨ &7Sebesség: &e5'
+  - '&8⇨ &7Pontosság: &e50 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILELR:
+  description:
+  - '&7GtG Rakéta'
+  - '&7Nagy Hatótávolságú Változat'
+  - '&7''A kedves városi rakétád'''
+  name: '&eGtG Rakéta LR'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1500 Blokk'
+  - '&8⇨ &7Erő: &e4.5'
+  - '&8⇨ &7Sebesség: &e2.5'
+  - '&8⇨ &7Pontosság: &e80 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILELRADV:
+  description:
+  - '&7GtG Fejlett Rakéták'
+  - '&7Nagy Hatótávolságú Változat'
+  - '&7''Kifogyok a leírásötletekből'''
+  name: '&eGtG Fejlett Rakéta LR'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e2500 Blokk'
+  - '&8⇨ &7Erő: &e4'
+  - '&8⇨ &7Sebesség: &e4.5'
+  - '&8⇨ &7Pontosság: &e40 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILENAPALM:
+  description:
+  - '&7Tűzrakéta'
+  - '&7Napalmrakéta, találatkor mindenhová tüzet szór.'
+  - '&7''Óvoda-eltávolító! Kipróbált és bevált™'''
+  name: '&cNapalmrakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1600 Blokk'
+  - '&8⇨ &7Erő: &e2'
+  - '&8⇨ &7Sebesség: &e3'
+  - '&8⇨ &7Pontosság: &e80 blokkon belül'
   type:
   - '&7&oFegyver'
 MISSILERADAR:
+  description:
+  - '&7Redstone jelet ad, ha egy rakéta 700 blokkon belül van'
+  name: '&eRakétaradar'
   type:
   - '&7&oGép'
+  usage:
+  - '&eHelyezz&7 redstone-t a blokk tetejére a kimenetéhez'
+  - '&7Egy repeater kell az egy tickes impulzushoz'
 MISSILESTICK:
+  description:
+  - '&7Csapdarakéta'
+  - '&7Kis robbanás, amely pókhálót szór szét'
+  - '&7''Ne kérdezd, miből van.'''
+  name: '&cTapadó Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e1600 Blokk'
+  - '&8⇨ &7Erő: &e1'
+  - '&8⇨ &7Sebesség: &e4'
+  - '&8⇨ &7Pontosság: &e70 blokkon belül'
   type:
   - '&7&oFegyver'
 PLAYERLIST:
+  description:
+  - '&7EZEK AZ ID-K GLOBÁLISAK'
+  - '&7BÁRKI MÓDOSÍTHATJA ŐKET,'
+  - '&7AKINEK MEGVAN AZ ID'
+  name: '&6Játékoslista'
   type:
   - '&7&oEgyéb'
+  usage:
+  - '&eJobb Klikk&7 egy ID játékosainak beállításához'
 RADAR:
+  description:
+  - '&7Rakéták vagy eltalálandó játékosok követésére'
+  name: '&eRadar'
   type:
   - '&7&oAlkatrész'
 ROCKETFUEL:
+  description:
+  - '&71000 szén erejével ég...'
+  name: '&eRakéta Üzemanyag'
   type:
   - '&7&oNyersanyag'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Egyszerű számítógép, amely rakétát tud vezetni'
+  name: '&eEgyszerű Fedélzeti Számítógép'
   type:
   - '&7&oAlkatrész'
 SMALLBODY:
+  description:
+  - '&7Rakéta készítése során használatos'
+  - '&7''Jobb, ha nem horpasztod be'''
+  name: '&eKis Rakétatörzs'
   type:
   - '&7&oAlkatrész'
 SMALLFIN:
+  description:
+  - '&7Rakéta készítése során használatos'
+  name: '&eKis Rakétaszárnyak'
   type:
   - '&7&oAlkatrész'
 SMALLMISSILE:
+  description:
+  - '&7Kis föld-föld rakéta'
+  - '&7Normál Változat'
+  name: '&eKis GtG Rakéta'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e750 Blokk'
+  - '&8⇨ &7Erő: &e3'
+  - '&8⇨ &7Sebesség: &e2'
+  - '&8⇨ &7Pontosság: &e100 blokkon belül'
   type:
   - '&7&oFegyver'
 SMALLMISSILEAC:
+  description:
+  - '&7Kis föld-föld rakéta'
+  - '&7Pontos Változat'
+  - '&7''Pici Timinek semmi esélye nem volt'''
+  name: '&eKis GtG Rakéta AC'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e700 Blokk'
+  - '&8⇨ &7Erő: &e3'
+  - '&8⇨ &7Sebesség: &e2'
+  - '&8⇨ &7Pontosság: &e60 blokkon belül'
   type:
   - '&7&oFegyver'
 SMALLMISSILEHE:
+  description:
+  - '&7Kis föld-föld rakéta'
+  - '&7Nagy Robbanóerejű Változat'
+  name: '&eKis GtG Rakéta HE'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e600 Blokk'
+  - '&8⇨ &7Erő: &e3.5'
+  - '&8⇨ &7Sebesség: &e1'
+  - '&8⇨ &7Pontosság: &e120 blokkon belül'
   type:
   - '&7&oFegyver'
 SMALLMISSILELR:
+  description:
+  - '&7Kis föld-föld rakéta'
+  - '&7Nagy Hatótávolságú Változat'
+  - '&7''A messzi Timinek semmi esélye nem volt'''
+  name: '&eKis GtG Rakéta LR'
+  stats:
+  - '&8⇨ &7Hatótávolság: &e900 Blokk'
+  - '&8⇨ &7Erő: &e3'
+  - '&8⇨ &7Sebesség: &e2'
+  - '&8⇨ &7Pontosság: &e100 blokkon belül'
   type:
   - '&7&oFegyver'
 SMALLWARHEAD:
+  description:
+  - '&7Rakéta készítéséhez használatos.'
+  - '&7''Ne érj a piros részhez'''
+  name: '&eKis Robbanófej'
   type:
   - '&7&oAlkatrész'
 SUGARFUEL:
+  description:
+  - '&7Olcsó, nagy energiájú, kis rakétákhoz ideális.'
+  name: '&eCukor Üzemanyag'
   type:
   - '&7&oNyersanyag'
 ULTRALITE_INGOT:
+  description:
+  - '&7Szuper könnyű rúd rakétákhoz'
+  name: '&eUltraLite Rúd'
   type:
   - '&7&oAlkatrész'
 ULTRALITE_PLATE:
+  description:
+  - '&7Szuper könnyű lemez rakétákhoz'
+  name: '&eUltraLite Lemez'
   type:
   - '&7&oAlkatrész'
 WARHEAD:
+  description:
+  - '&7Rakéta készítéséhez használatos.'
+  - '&7''Krumpli-eltűnő'''
+  name: '&eRakéta Robbanófej'
   type:
   - '&7&oAlkatrész'
 WARHEADAP:
+  description:
+  - '&7AP Rakéták készítéséhez használatos'
+  - '&7''Bunker-eltűnő'''
+  name: '&eMegerősített Robbanófej'
   type:
   - '&7&oAlkatrész'
