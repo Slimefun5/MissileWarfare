@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Một phiên bản nâng cấp của thân tên lửa'
+  name: '&eThân Tên lửa Nâng cao'
   type:
   - '&7&oThành Phần'
 ANTIAIRMISSILE:
+  description:
+  - '&7Chống Tên lửa / Chống Elytra'
+  - '&7Biến thể Chống Tên lửa'
+  - '&7''Màn pháo hoa của Timmy đã bị hủy'''
+  name: '&eTên lửa Chống Tên lửa'
+  stats:
+  - '&8⇨ &7Phạm vi: &e600 Khối'
+  - '&8⇨ &7Sức nổ: &e4'
+  - '&8⇨ &7Tốc độ: &e5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 0 Khối'
   type:
   - '&7&oVũ Khí'
 ANTIELYTRA:
+  description:
+  - '&7Bắn một tên lửa vào người chơi gần đó'
+  - '&7đang dùng elytra'
+  - '&7Trừ những người thuộc'
+  - '&7ID được gán cho cái này'
+  name: '&6Bệ phóng Chống Elytra'
   type:
   - '&7&oMáy Móc'
+  usage:
+  - '&eDùng một cái gậy&7 để đặt ID nhóm'
+  - '&7Cần Tên lửa Chống Elytra'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Chống Tên lửa / Chống Elytra'
+  - '&7Biến thể Chống Tên lửa'
+  - '&7''Màn pháo hoa của Timmy đã bị hủy'''
+  name: '&eTên lửa Chống Elytra'
+  stats:
+  - '&8⇨ &7Phạm vi: &e700 Khối'
+  - '&8⇨ &7Sức nổ: &e4'
+  - '&8⇨ &7Tốc độ: &e6'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 0 Khối'
   type:
   - '&7&oVũ Khí'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Nhắm và bắn hạ các tên lửa khác trong khu vực.'
+  name: '&6Bệ phóng Chống Tên lửa'
   type:
   - '&7&oMáy Móc'
+  usage:
+  - '&eDùng đá đỏ&7 để vô hiệu hóa nó'
+  - '&7Cần được xây trên obsidian'
+  - '&7Cần Tên lửa Chống Tên lửa'
 CHLORINE:
+  description:
+  - '&7Độc hại'
+  - '&7Gây ra cái chết chậm và đau đớn!'
+  name: '&eClo'
   type:
   - '&7&oTài Nguyên'
+  usage:
+  - '&eChuột phải&7 để gây hiệu ứng Wither'
 CHLORINEPELLET:
+  description:
+  - '&7Một viên Clo'
+  name: '&eViên Clo'
   type:
   - '&7&oTài Nguyên'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Nén mạnh đến mức trở thành chất rắn'
+  name: '&eBột Nổ Nén'
   type:
   - '&7&oTài Nguyên'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Hãy cẩn thận khi cầm!'
+  name: '&eBột Nổ'
   type:
   - '&7&oTài Nguyên'
 GROUNDLAUNCHER:
+  description:
+  - '&7Bắn vào một khu vực xác định trên mặt đất.'
+  name: '&6Bệ phóng Tên lửa GtG'
+  stats:
+  - '&8⇨ &7Độ cao Bay Mặc định: &eY:120'
   type:
   - '&7&oMáy Móc'
+  usage:
+  - '&eDùng một cái gậy&7 để đặt tọa độ mục tiêu'
+  - '&eShift với một cái gậy&7 để kiểm tra xem có bắn được không'
+  - '&eChuột phải với một thanh lửa&7 để đặt độ cao bay'
+  - '&7Cần được xây trên 1 khối bê tông xanh lá.'
 GUIDEBOOK:
+  description:
+  - '&7Nó sẽ hướng dẫn bạn?!?'
+  name: '&eSách Hướng dẫn'
   type:
   - '&7&oLinh Tinh'
+  usage:
+  - '&eChuột phải&7 để mở sách hướng dẫn'
 HEAVYWARHEAD:
+  description:
+  - '&7Một đầu đạn nhồi đầy thuốc nổ hạng nặng'
+  name: '&eĐầu đạn Hạng nặng'
   type:
   - '&7&oThành Phần'
 ICBMMISSILEBODY:
+  description:
+  - '&7Được chế tạo hoàn hảo, Thanh thoát, Chết người.'
+  - '&7Thân của tên lửa ICBM'
+  name: '&eThân ICBM'
   type:
   - '&7&oThành Phần'
 MANPAD:
+  description:
+  - '&7Thiết bị chống tên lửa cầm tay'
+  name: '&6Manpad'
   type:
   - '&7&oVũ Khí'
+  usage:
+  - '&eShift + Chuột phải&7 để bắt đầu theo dõi'
+  - '&eNhả Shift&7 để bắn'
 MINE:
+  description:
+  - '&7Nó có hiệu quả với xe tăng không?'
+  name: '&cMìn'
+  stats:
+  - '&8⇨ &7Sức nổ: &e8'
+  - '&8⇨ &7Sát thương Ngẫu nhiên: &eTối đa 10'
   type:
   - '&7&oThiết Bị'
+  usage:
+  - '&eĐặt&7 áp vào một khối để ngụy trang thành khối đó'
 MISSILE:
+  description:
+  - '&7Tên lửa GtG'
+  - '&7Biến thể Thường'
+  - '&7''Tên lửa láng giềng thân thiện của bạn'''
+  name: '&eTên lửa GtG'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1000 Khối'
+  - '&8⇨ &7Sức nổ: &e4.5'
+  - '&8⇨ &7Tốc độ: &e2.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 80 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEAC:
+  description:
+  - '&7Tên lửa GtG'
+  - '&7Biến thể Chính xác'
+  - '&7''Tên lửa thân thiện dọn sạch cả phòng của bạn'''
+  name: '&eTên lửa GtG AC'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1250 Khối'
+  - '&8⇨ &7Sức nổ: &e4.5'
+  - '&8⇨ &7Tốc độ: &e2.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 16 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEACADV:
+  description:
+  - '&7Tên lửa Nâng cao GtG'
+  - '&7Biến thể Chính xác'
+  - '&7''Khá chính xác tôi nghĩ vậy'''
+  name: '&eTên lửa Nâng cao GtG AC'
+  stats:
+  - '&8⇨ &7Phạm vi: &e2000 Khối'
+  - '&8⇨ &7Sức nổ: &e4.5'
+  - '&8⇨ &7Tốc độ: &e4'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 20 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEADV:
+  description:
+  - '&7Tên lửa Nâng cao GtG'
+  - '&7Biến thể Thường'
+  - '&7''Vận hành bởi AI (về mặt kỹ thuật)'''
+  name: '&eTên lửa Nâng cao GtG'
+  stats:
+  - '&8⇨ &7Phạm vi: &e2000 Khối'
+  - '&8⇨ &7Sức nổ: &e4'
+  - '&8⇨ &7Tốc độ: &e4'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 40 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEAPONE:
+  description:
+  - '&7Tên lửa Xuyên giáp GtG'
+  - '&7Xuyên giáp Bậc 1'
+  - '&7''Tầng hầm của bạn sẽ không an toàn được lâu!'''
+  name: '&eTên lửa GtG Xuyên giáp'
+  stats:
+  - '&8⇨ &7Xuyên qua 1 khối trước khi phát nổ'
+  - '&8⇨ &7Không xuyên được obsidian'
+  - '&8⇨ &7Phạm vi: &e1550 Khối'
+  - '&8⇨ &7Sức nổ: &e3.5'
+  - '&8⇨ &7Tốc độ: &e2'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 40 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEAPTHR:
+  description:
+  - '&7Tên lửa Xuyên giáp GtG'
+  - '&7Xuyên giáp Bậc 3'
+  - '&7''Hầm trú của bạn chắc chắn không an toàn được lâu!'''
+  name: '&eTên lửa GtG Xuyên giáp'
+  stats:
+  - '&8⇨ &7Xuyên qua 2 khối trước khi phát nổ'
+  - '&8⇨ &775% cơ hội xuyên qua obsidian'
+  - '&8⇨ &720% cơ hội phá vỡ khối obsidian bị trúng'
+  - '&8⇨ &7Phạm vi: &e1850 Khối'
+  - '&8⇨ &7Sức nổ: &e4.5'
+  - '&8⇨ &7Tốc độ: &e4'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 10 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEAPTWO:
+  description:
+  - '&7Tên lửa Xuyên giáp GtG'
+  - '&7Xuyên giáp Bậc 2'
+  - '&7''Hầm trú của bạn sẽ không an toàn được lâu!'''
+  name: '&eTên lửa GtG Xuyên giáp'
+  stats:
+  - '&8⇨ &7Xuyên qua 1 khối trước khi phát nổ'
+  - '&8⇨ &750% cơ hội xuyên qua obsidian'
+  - '&8⇨ &710% cơ hội phá vỡ khối obsidian bị trúng'
+  - '&8⇨ &7Phạm vi: &e1700 Khối'
+  - '&8⇨ &7Sức nổ: &e4'
+  - '&8⇨ &7Tốc độ: &e2.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 20 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEBODY:
+  description:
+  - '&7Thân tên lửa chứa một máy tính bay'
+  name: '&eThân Tên lửa'
   type:
   - '&7&oThành Phần'
 MISSILECLUSTER:
+  description:
+  - '&7Tên lửa Chùm, phun ra nhiều tên lửa trước khi trúng đích'
+  - '&7''Xóa sổ làng mạc nhanh hơn cả tiếng bạn gào lên!'''
+  name: '&cTên lửa Chùm'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1600 Khối'
+  - '&8⇨ &7Sức nổ: &e4'
+  - '&8⇨ &7Tốc độ: &e3.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 90 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEEXCAV:
+  description:
+  - '&7Tên lửa Tiện dụng'
+  - '&7Có bán kính nổ lớn nhưng ít sát thương'
+  - '&7Dùng để khai thác'
+  - '&7''Tốt hơn cả 100 cái Cúp!'''
+  name: '&cTên lửa Đào đất'
+  stats:
+  - '&8⇨ &7Phạm vi: &e100 Khối'
+  - '&8⇨ &7Sức nổ: &e14'
+  - '&8⇨ &7Tốc độ: &e0.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 50 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEFINS:
+  description:
+  - '&7Có thể dẫn hướng tên lửa tốt hơn'
+  name: '&eCánh Tên lửa'
   type:
   - '&7&oThành Phần'
 MISSILEGAS:
+  description:
+  - '&7Tên lửa Dọn dẹp'
+  - '&7Phun khí độc khi trúng mục tiêu'
+  - '&7''Hạ sát Timmy.'''
+  name: '&cTên lửa Khí'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1600 Khối'
+  - '&8⇨ &7Sức nổ: &e0.5'
+  - '&8⇨ &7Tốc độ: &e3'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 80 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEHE:
+  description:
+  - '&7Tên lửa GtG'
+  - '&7Biến thể Nổ Mạnh'
+  - '&7''Tên lửa láng giềng không-mấy-thân-thiện của bạn'''
+  name: '&eTên lửa GtG HE'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1000 Khối'
+  - '&8⇨ &7Sức nổ: &e5'
+  - '&8⇨ &7Tốc độ: &e2'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 100 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEHEADV:
+  description:
+  - '&7Tên lửa Nâng cao GtG'
+  - '&7Biến thể Nổ Mạnh'
+  - '&7''Rất nguy hiểm, đừng có chạm vào'''
+  name: '&eTên lửa Nâng cao GtG HE'
+  stats:
+  - '&8⇨ &7Phạm vi: &e2000 Khối'
+  - '&8⇨ &7Sức nổ: &e6'
+  - '&8⇨ &7Tốc độ: &e3.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 35 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILEICBM:
+  description:
+  - '&7Tên lửa Tầm xa'
+  - '&7Tên lửa Đạn đạo Liên lục địa'
+  - '&7''Không nơi nào an toàn.'''
+  name: '&cTên lửa ICBM'
+  stats:
+  - '&8⇨ &7Phạm vi: &e7000 Khối'
+  - '&8⇨ &7Sức nổ: &e10'
+  - '&8⇨ &7Tốc độ: &e5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 50 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILELR:
+  description:
+  - '&7Tên lửa GtG'
+  - '&7Biến thể Tầm xa'
+  - '&7''Tên lửa thân thiện dành cho thành phố của bạn'''
+  name: '&eTên lửa GtG LR'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1500 Khối'
+  - '&8⇨ &7Sức nổ: &e4.5'
+  - '&8⇨ &7Tốc độ: &e2.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 80 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILELRADV:
+  description:
+  - '&7Tên lửa Nâng cao GtG'
+  - '&7Biến thể Tầm xa'
+  - '&7''Tôi hết ý tưởng viết lời giới thiệu rồi'''
+  name: '&eTên lửa Nâng cao GtG LR'
+  stats:
+  - '&8⇨ &7Phạm vi: &e2500 Khối'
+  - '&8⇨ &7Sức nổ: &e4'
+  - '&8⇨ &7Tốc độ: &e4.5'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 40 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILENAPALM:
+  description:
+  - '&7Tên lửa Lửa'
+  - '&7Tên lửa Napalm, rải lửa khắp nơi khi trúng đích.'
+  - '&7''Máy xóa sổ Nhà trẻ! Đã thử và kiểm nghiệm™'''
+  name: '&cTên lửa Napalm'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1600 Khối'
+  - '&8⇨ &7Sức nổ: &e2'
+  - '&8⇨ &7Tốc độ: &e3'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 80 Khối'
   type:
   - '&7&oVũ Khí'
 MISSILERADAR:
+  description:
+  - '&7Phát ra tín hiệu đá đỏ khi có tên lửa trong vòng 700 khối'
+  name: '&eRa đa Tên lửa'
   type:
   - '&7&oMáy Móc'
+  usage:
+  - '&eĐặt&7 đá đỏ lên trên khối này để lấy đầu ra của nó'
+  - '&7Cần một bộ lặp để lấy được xung một tick'
 MISSILESTICK:
+  description:
+  - '&7Tên lửa Bẫy'
+  - '&7Một vụ nổ nhỏ giải phóng ra mạng nhện'
+  - '&7''Đừng hỏi nó được làm từ gì.'''
+  name: '&cTên lửa Dính'
+  stats:
+  - '&8⇨ &7Phạm vi: &e1600 Khối'
+  - '&8⇨ &7Sức nổ: &e1'
+  - '&8⇨ &7Tốc độ: &e4'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 70 Khối'
   type:
   - '&7&oVũ Khí'
 PLAYERLIST:
+  description:
+  - '&7CÁC ID NÀY LÀ TOÀN CỤC'
+  - '&7BẤT KỲ AI CŨNG CÓ THỂ SỬA CHÚNG NẾU'
+  - '&7HỌ CÓ ID ĐÓ'
+  name: '&6Danh sách Người chơi'
   type:
   - '&7&oLinh Tinh'
+  usage:
+  - '&eChuột phải&7 để đặt người chơi cho một ID'
 RADAR:
+  description:
+  - '&7Dùng để theo dõi tên lửa hoặc người chơi cần bắn'
+  name: '&eRa đa'
   type:
   - '&7&oThành Phần'
 ROCKETFUEL:
+  description:
+  - '&7Cháy với sức mạnh của 1000 than đá...'
+  name: '&eNhiên liệu Tên lửa đẩy'
   type:
   - '&7&oTài Nguyên'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Một máy tính đơn giản có thể dẫn đường cho tên lửa'
+  name: '&eMáy tính Bay Đơn giản'
   type:
   - '&7&oThành Phần'
 SMALLBODY:
+  description:
+  - '&7Dùng để tạo ra một tên lửa'
+  - '&7''Tốt nhất là đừng làm móp nó'''
+  name: '&eKhung Tên lửa Nhỏ'
   type:
   - '&7&oThành Phần'
 SMALLFIN:
+  description:
+  - '&7Dùng để tạo ra một tên lửa'
+  name: '&eCánh Tên lửa Nhỏ'
   type:
   - '&7&oThành Phần'
 SMALLMISSILE:
+  description:
+  - '&7Tên lửa Đất-đối-Đất Nhỏ'
+  - '&7Biến thể Thường'
+  name: '&eTên lửa GtG Nhỏ'
+  stats:
+  - '&8⇨ &7Phạm vi: &e750 Khối'
+  - '&8⇨ &7Sức nổ: &e3'
+  - '&8⇨ &7Tốc độ: &e2'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 100 Khối'
   type:
   - '&7&oVũ Khí'
 SMALLMISSILEAC:
+  description:
+  - '&7Tên lửa Đất-đối-Đất Nhỏ'
+  - '&7Biến thể Chính xác'
+  - '&7''Timmy bé nhỏ chẳng có cơ hội nào'''
+  name: '&eTên lửa GtG Nhỏ AC'
+  stats:
+  - '&8⇨ &7Phạm vi: &e700 Khối'
+  - '&8⇨ &7Sức nổ: &e3'
+  - '&8⇨ &7Tốc độ: &e2'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 60 Khối'
   type:
   - '&7&oVũ Khí'
 SMALLMISSILEHE:
+  description:
+  - '&7Tên lửa Đất-đối-Đất Nhỏ'
+  - '&7Biến thể Nổ Mạnh'
+  name: '&eTên lửa GtG Nhỏ HE'
+  stats:
+  - '&8⇨ &7Phạm vi: &e600 Khối'
+  - '&8⇨ &7Sức nổ: &e3.5'
+  - '&8⇨ &7Tốc độ: &e1'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 120 Khối'
   type:
   - '&7&oVũ Khí'
 SMALLMISSILELR:
+  description:
+  - '&7Tên lửa Đất-đối-Đất Nhỏ'
+  - '&7Biến thể Tầm xa'
+  - '&7''Timmy ở rất xa cũng chẳng có cơ hội nào'''
+  name: '&eTên lửa GtG Nhỏ LR'
+  stats:
+  - '&8⇨ &7Phạm vi: &e900 Khối'
+  - '&8⇨ &7Sức nổ: &e3'
+  - '&8⇨ &7Tốc độ: &e2'
+  - '&8⇨ &7Độ chính xác: &eTrong phạm vi 100 Khối'
   type:
   - '&7&oVũ Khí'
 SMALLWARHEAD:
+  description:
+  - '&7Dùng để tạo ra một tên lửa.'
+  - '&7''Đừng chạm vào phần màu đỏ'''
+  name: '&eĐầu đạn Nhỏ'
   type:
   - '&7&oThành Phần'
 SUGARFUEL:
+  description:
+  - '&7Rẻ, năng lượng cao, hoàn hảo cho tên lửa nhỏ.'
+  name: '&eNhiên liệu Đường'
   type:
   - '&7&oTài Nguyên'
 ULTRALITE_INGOT:
+  description:
+  - '&7Thỏi siêu nhẹ dùng cho tên lửa'
+  name: '&eThỏi UltraLite'
   type:
   - '&7&oThành Phần'
 ULTRALITE_PLATE:
+  description:
+  - '&7Một tấm siêu nhẹ dành cho tên lửa'
+  name: '&eTấm UltraLite'
   type:
   - '&7&oThành Phần'
 WARHEAD:
+  description:
+  - '&7Dùng để tạo ra một tên lửa.'
+  - '&7''Hết đời khoai tây'''
+  name: '&eĐầu đạn Tên lửa'
   type:
   - '&7&oThành Phần'
 WARHEADAP:
+  description:
+  - '&7Dùng để tạo ra Tên lửa Xuyên giáp'
+  - '&7''Hết đời hầm trú'''
+  name: '&eĐầu đạn Gia cố'
   type:
   - '&7&oThành Phần'
