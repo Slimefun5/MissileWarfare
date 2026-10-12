@@ -1,153 +1,515 @@
 ADVANCEDMISSILEBODY:
+  description:
+  - '&7Päivitetty versio ohjuksen rungosta'
+  name: '&eKehittynyt ohjuksen runko'
   type:
   - '&7&oKomponentti'
 ANTIAIRMISSILE:
+  description:
+  - '&7Ohjuksentorjunta / Elytrantorjunta'
+  - '&7Ohjuksentorjuntavariantti'
+  - '&7''Timmyn ilotulitteet on peruttu'''
+  name: '&eOhjuksentorjuntaohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e600 palikkaa'
+  - '&8⇨ &7Voima: &e4'
+  - '&8⇨ &7Nopeus: &e5'
+  - '&8⇨ &7Tarkkuus: &e0 palikan sisällä'
   type:
   - '&7&oAse'
 ANTIELYTRA:
+  description:
+  - '&7Laukaisee ohjuksen lähellä oleviin pelaajiin'
+  - '&7jotka käyttävät elytraa'
+  - '&7Lukuun ottamatta niitä, joilla on'
+  - '&7tälle määritetty tunnus'
+  name: '&6Elytrantorjuntalaukaisin'
   type:
   - '&7&oKone'
+  usage:
+  - '&eKäytä keppiä&7 asettaaksesi ryhmätunnuksen'
+  - '&7Tarvitsee elytrantorjuntaohjuksia'
 ANTIELYTRAMISSILE:
+  description:
+  - '&7Ohjuksentorjunta / Elytrantorjunta'
+  - '&7Ohjuksentorjuntavariantti'
+  - '&7''Timmyn ilotulitteet on peruttu'''
+  name: '&eElytrantorjuntaohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e700 palikkaa'
+  - '&8⇨ &7Voima: &e4'
+  - '&8⇨ &7Nopeus: &e6'
+  - '&8⇨ &7Tarkkuus: &e0 palikan sisällä'
   type:
   - '&7&oAse'
 ANTIMISSILELAUNCHER:
+  description:
+  - '&7Kohdistaa ja ampuu alas muita ohjuksia alueella.'
+  name: '&6Ohjuksentorjuntalaukaisin'
   type:
   - '&7&oKone'
+  usage:
+  - '&eKäytä punakiveä&7 kytkeäksesi sen pois'
+  - '&7Täytyy rakentaa obsidiaanin päälle'
+  - '&7Tarvitsee ohjuksentorjuntaohjuksia'
 CHLORINE:
+  description:
+  - '&7Myrkyllistä'
+  - '&7Aiheuttaa hitaan ja tuskallisen kuoleman!'
+  name: '&eKloori'
   type:
   - '&7&oResurssi'
+  usage:
+  - '&eNapsauta oikealla&7 lisätäksesi Wither-vaikutuksen'
 CHLORINEPELLET:
+  description:
+  - '&7Kloorista tehty pelletti'
+  name: '&eKlooripelletti'
   type:
   - '&7&oResurssi'
 COMPRESSEDEXPLOSIVES:
+  description:
+  - '&7Puristettu niin lujaa, että siitä tuli kiinteää'
+  name: '&ePuristettu räjähtävä jauhe'
   type:
   - '&7&oResurssi'
 EXPLOSIVEPOWDER:
+  description:
+  - '&7Käsittele varoen!'
+  name: '&eRäjähtävä jauhe'
   type:
   - '&7&oResurssi'
 GROUNDLAUNCHER:
+  description:
+  - '&7Ampuu määritettyyn kohtaan maassa.'
+  name: '&6GtG-ohjuksen laukaisin'
+  stats:
+  - '&8⇨ &7Oletuslentokorkeus: &eY:120'
   type:
   - '&7&oKone'
+  usage:
+  - '&eKäytä keppiä&7 asettaaksesi kohdekoordinaatit'
+  - '&eShift kepillä&7 tarkistaaksesi, voiko se laukaista'
+  - '&eNapsauta oikealla blaze-sauvalla&7 asettaaksesi lentokorkeuden'
+  - '&7Täytyy rakentaa 1 vihreän betonipalikan päälle.'
 GUIDEBOOK:
+  description:
+  - '&7Se opastaa sinua?!?'
+  name: '&eOpaskirja'
   type:
   - '&7&oSekalainen'
+  usage:
+  - '&eNapsauta oikealla&7 avataksesi oppaan'
 HEAVYWARHEAD:
+  description:
+  - '&7Taistelukärki täynnä raskaita räjähteitä'
+  name: '&eRaskas taistelukärki'
   type:
   - '&7&oKomponentti'
 ICBMMISSILEBODY:
+  description:
+  - '&7Suunniteltu täydelliseksi, virtaviivainen, tappava.'
+  - '&7ICBM-ohjuksen runko'
+  name: '&eICBM-runko'
   type:
   - '&7&oKomponentti'
 MANPAD:
+  description:
+  - '&7Kädessä pidettävä ohjuksentorjuntalaite'
+  name: '&6Olkalaukaisin'
   type:
   - '&7&oAse'
+  usage:
+  - '&eShift + oikea napsautus&7 aloittaaksesi jäljityksen'
+  - '&eVapauta Shift&7 laukaistaksesi'
 MINE:
+  description:
+  - '&7Toimiiko se panssarivaunuihin?'
+  name: '&cMiina'
+  stats:
+  - '&8⇨ &7Räjähdysvoima: &e8'
+  - '&8⇨ &7Satunnainen vahinko: &eEnintään 10'
   type:
   - '&7&oGadgetti'
+  usage:
+  - '&eAseta&7 palikkaa vasten naamioidaksesi sen kyseiseksi palikaksi'
 MISSILE:
+  description:
+  - '&7GtG-ohjus'
+  - '&7Normaali variantti'
+  - '&7''Ystävällinen naapuruston ohjuksesi'''
+  name: '&eGtG-ohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e1000 palikkaa'
+  - '&8⇨ &7Voima: &e4.5'
+  - '&8⇨ &7Nopeus: &e2.5'
+  - '&8⇨ &7Tarkkuus: &e80 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEAC:
+  description:
+  - '&7GtG-ohjus'
+  - '&7Tarkka variantti'
+  - '&7''Ystävällinen huoneentyhjentäjäohjuksesi'''
+  name: '&eGtG-ohjus AC'
+  stats:
+  - '&8⇨ &7Kantama: &e1250 palikkaa'
+  - '&8⇨ &7Voima: &e4.5'
+  - '&8⇨ &7Nopeus: &e2.5'
+  - '&8⇨ &7Tarkkuus: &e16 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEACADV:
+  description:
+  - '&7GtG kehittyneet ohjukset'
+  - '&7Tarkka variantti'
+  - '&7''Kohtalaisen tarkka kaiketi'''
+  name: '&eGtG kehittynyt ohjus AC'
+  stats:
+  - '&8⇨ &7Kantama: &e2000 palikkaa'
+  - '&8⇨ &7Voima: &e4.5'
+  - '&8⇨ &7Nopeus: &e4'
+  - '&8⇨ &7Tarkkuus: &e20 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEADV:
+  description:
+  - '&7GtG kehittyneet ohjukset'
+  - '&7Normaali variantti'
+  - '&7''Tekoälyn voimalla (teknisesti)'''
+  name: '&eGtG kehittynyt ohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e2000 palikkaa'
+  - '&8⇨ &7Voima: &e4'
+  - '&8⇨ &7Nopeus: &e4'
+  - '&8⇨ &7Tarkkuus: &e40 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEAPONE:
+  description:
+  - '&7GtG-panssarinläpäisyohjus'
+  - '&7Taso 1 AP'
+  - '&7''Kellarisi ei ole kauan turvassa!'''
+  name: '&eGtG-ohjus AP'
+  stats:
+  - '&8⇨ &7Läpäisee 1 palikan ennen räjähtämistä'
+  - '&8⇨ &7Ei läpäise obsidiaania'
+  - '&8⇨ &7Kantama: &e1550 palikkaa'
+  - '&8⇨ &7Voima: &e3.5'
+  - '&8⇨ &7Nopeus: &e2'
+  - '&8⇨ &7Tarkkuus: &e40 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEAPTHR:
+  description:
+  - '&7GtG-panssarinläpäisyohjus'
+  - '&7Taso 3 AP'
+  - '&7''Bunkkerisi ei todellakaan ole kauan turvassa!'''
+  name: '&eGtG-ohjus AP'
+  stats:
+  - '&8⇨ &7Läpäisee 2 palikkaa ennen räjähtämistä'
+  - '&8⇨ &775% mahdollisuus läpäistä obsidiaani'
+  - '&8⇨ &720% mahdollisuus rikkoa osuttu obsidiaani'
+  - '&8⇨ &7Kantama: &e1850 palikkaa'
+  - '&8⇨ &7Voima: &e4.5'
+  - '&8⇨ &7Nopeus: &e4'
+  - '&8⇨ &7Tarkkuus: &e10 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEAPTWO:
+  description:
+  - '&7GtG-panssarinläpäisyohjus'
+  - '&7Taso 2 AP'
+  - '&7''Bunkkerisi ei ole kauan turvassa!'''
+  name: '&eGtG-ohjus AP'
+  stats:
+  - '&8⇨ &7Läpäisee 1 palikan ennen räjähtämistä'
+  - '&8⇨ &750% mahdollisuus läpäistä obsidiaani'
+  - '&8⇨ &710% mahdollisuus rikkoa osuttu obsidiaani'
+  - '&8⇨ &7Kantama: &e1700 palikkaa'
+  - '&8⇨ &7Voima: &e4'
+  - '&8⇨ &7Nopeus: &e2.5'
+  - '&8⇨ &7Tarkkuus: &e20 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEBODY:
+  description:
+  - '&7Ohjuksen runko, jossa on lentotietokone'
+  name: '&eOhjuksen runko'
   type:
   - '&7&oKomponentti'
 MISSILECLUSTER:
+  description:
+  - '&7Rypäleohjus, vapauttaa monta ohjusta ennen osumaa'
+  - '&7''Poistaa kyliä nopeammin kuin ehdit huutaa!'''
+  name: '&cRypäleohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e1600 palikkaa'
+  - '&8⇨ &7Voima: &e4'
+  - '&8⇨ &7Nopeus: &e3.5'
+  - '&8⇨ &7Tarkkuus: &e90 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEEXCAV:
+  description:
+  - '&7Hyötyohjus'
+  - '&7Suuri räjähdyssäde mutta vähän vahinkoa'
+  - '&7Käytetään louhintaan'
+  - '&7''Parempi kuin 100 hakkua!'''
+  name: '&cKaivuuohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e100 palikkaa'
+  - '&8⇨ &7Voima: &e14'
+  - '&8⇨ &7Nopeus: &e0.5'
+  - '&8⇨ &7Tarkkuus: &e50 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEFINS:
+  description:
+  - '&7Ohjaa ohjusta paremmin'
+  name: '&eOhjuksen siivekkeet'
   type:
   - '&7&oKomponentti'
 MISSILEGAS:
+  description:
+  - '&7Siivousohjus'
+  - '&7Levittää myrkyllistä kaasua osuessaan kohteeseen'
+  - '&7''Tee timmymurha.'''
+  name: '&cKaasuohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e1600 palikkaa'
+  - '&8⇨ &7Voima: &e0.5'
+  - '&8⇨ &7Nopeus: &e3'
+  - '&8⇨ &7Tarkkuus: &e80 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEHE:
+  description:
+  - '&7GtG-ohjus'
+  - '&7Voimakkaasti räjähtävä variantti'
+  - '&7''Ei niin ystävällinen naapuruston ohjuksesi'''
+  name: '&eGtG-ohjus HE'
+  stats:
+  - '&8⇨ &7Kantama: &e1000 palikkaa'
+  - '&8⇨ &7Voima: &e5'
+  - '&8⇨ &7Nopeus: &e2'
+  - '&8⇨ &7Tarkkuus: &e100 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEHEADV:
+  description:
+  - '&7GtG kehittyneet ohjukset'
+  - '&7Voimakkaasti räjähtävä variantti'
+  - '&7''Erittäin vaarallinen, älä koske'''
+  name: '&eGtG kehittynyt ohjus HE'
+  stats:
+  - '&8⇨ &7Kantama: &e2000 palikkaa'
+  - '&8⇨ &7Voima: &e6'
+  - '&8⇨ &7Nopeus: &e3.5'
+  - '&8⇨ &7Tarkkuus: &e35 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILEICBM:
+  description:
+  - '&7Pitkän kantaman ohjus'
+  - '&7Mannertenvälinen ballistinen ohjus'
+  - '&7''Missään ei ole turvallista.'''
+  name: '&cICBM-ohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e7000 palikkaa'
+  - '&8⇨ &7Voima: &e10'
+  - '&8⇨ &7Nopeus: &e5'
+  - '&8⇨ &7Tarkkuus: &e50 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILELR:
+  description:
+  - '&7GtG-ohjus'
+  - '&7Pitkän kantaman variantti'
+  - '&7''Ystävällinen kaupunkiohjuksesi'''
+  name: '&eGtG-ohjus LR'
+  stats:
+  - '&8⇨ &7Kantama: &e1500 palikkaa'
+  - '&8⇨ &7Voima: &e4.5'
+  - '&8⇨ &7Nopeus: &e2.5'
+  - '&8⇨ &7Tarkkuus: &e80 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILELRADV:
+  description:
+  - '&7GtG kehittyneet ohjukset'
+  - '&7Pitkän kantaman variantti'
+  - '&7''Tarinaideat alkavat loppua'''
+  name: '&eGtG kehittynyt ohjus LR'
+  stats:
+  - '&8⇨ &7Kantama: &e2500 palikkaa'
+  - '&8⇨ &7Voima: &e4'
+  - '&8⇨ &7Nopeus: &e4.5'
+  - '&8⇨ &7Tarkkuus: &e40 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILENAPALM:
+  description:
+  - '&7Tuliohjus'
+  - '&7Napalmiohjus, heittää tulta kaikkialle osuessaan.'
+  - '&7''Päiväkotien poistaja! Testattu ja todettu™'''
+  name: '&cNapalmiohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e1600 palikkaa'
+  - '&8⇨ &7Voima: &e2'
+  - '&8⇨ &7Nopeus: &e3'
+  - '&8⇨ &7Tarkkuus: &e80 palikan sisällä'
   type:
   - '&7&oAse'
 MISSILERADAR:
+  description:
+  - '&7Lähettää punakivisignaalin, kun ohjus on 700 palikan sisällä'
+  name: '&eOhjustutka'
   type:
   - '&7&oKone'
+  usage:
+  - '&eAseta&7 punakiveä tämän palikan päälle saadaksesi ulostulon'
+  - '&7Toistin tarvitaan yhden tikin pulssin saamiseen'
 MISSILESTICK:
+  description:
+  - '&7Ansaohjus'
+  - '&7Pieni räjähdys, joka vapauttaa hämähäkinseittejä'
+  - '&7''Älä kysy, mistä se on tehty.'''
+  name: '&cTarttuva ohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e1600 palikkaa'
+  - '&8⇨ &7Voima: &e1'
+  - '&8⇨ &7Nopeus: &e4'
+  - '&8⇨ &7Tarkkuus: &e70 palikan sisällä'
   type:
   - '&7&oAse'
 PLAYERLIST:
+  description:
+  - '&7NÄMÄ TUNNUKSET OVAT GLOBAALEJA'
+  - '&7KUKA TAHANSA VOI MUOKATA NIITÄ,'
+  - '&7JOS HÄNELLÄ ON TUNNUS'
+  name: '&6Pelaajalista'
   type:
   - '&7&oSekalainen'
+  usage:
+  - '&eNapsauta oikealla&7 asettaaksesi tunnuksen pelaajat'
 RADAR:
+  description:
+  - '&7Käytetään ohjusten tai kohdepelaajien jäljittämiseen'
+  name: '&eTutka'
   type:
   - '&7&oKomponentti'
 ROCKETFUEL:
+  description:
+  - '&7Palaa 1000 kivihiilen voimalla...'
+  name: '&eRakettipolttoaine'
   type:
   - '&7&oResurssi'
 SIMPLEFLIGHTCOMPUTER:
+  description:
+  - '&7Yksinkertainen tietokone, joka osaa ohjata ohjusta'
+  name: '&eYksinkertainen lentotietokone'
   type:
   - '&7&oKomponentti'
 SMALLBODY:
+  description:
+  - '&7Käytetään ohjuksen rakentamisessa'
+  - '&7''Parasta olla kolhimatta sitä'''
+  name: '&ePienen ohjuksen runko'
   type:
   - '&7&oKomponentti'
 SMALLFIN:
+  description:
+  - '&7Käytetään ohjuksen rakentamisessa'
+  name: '&ePienen ohjuksen siivekkeet'
   type:
   - '&7&oKomponentti'
 SMALLMISSILE:
+  description:
+  - '&7Pieni maasta maahan -ohjus'
+  - '&7Normaali variantti'
+  name: '&ePieni GtG-ohjus'
+  stats:
+  - '&8⇨ &7Kantama: &e750 palikkaa'
+  - '&8⇨ &7Voima: &e3'
+  - '&8⇨ &7Nopeus: &e2'
+  - '&8⇨ &7Tarkkuus: &e100 palikan sisällä'
   type:
   - '&7&oAse'
 SMALLMISSILEAC:
+  description:
+  - '&7Pieni maasta maahan -ohjus'
+  - '&7Tarkka variantti'
+  - '&7''Pikku Timmyllä ei ollut mahdollisuuksia'''
+  name: '&ePieni GtG-ohjus AC'
+  stats:
+  - '&8⇨ &7Kantama: &e700 palikkaa'
+  - '&8⇨ &7Voima: &e3'
+  - '&8⇨ &7Nopeus: &e2'
+  - '&8⇨ &7Tarkkuus: &e60 palikan sisällä'
   type:
   - '&7&oAse'
 SMALLMISSILEHE:
+  description:
+  - '&7Pieni maasta maahan -ohjus'
+  - '&7Voimakkaasti räjähtävä variantti'
+  name: '&ePieni GtG-ohjus HE'
+  stats:
+  - '&8⇨ &7Kantama: &e600 palikkaa'
+  - '&8⇨ &7Voima: &e3.5'
+  - '&8⇨ &7Nopeus: &e1'
+  - '&8⇨ &7Tarkkuus: &e120 palikan sisällä'
   type:
   - '&7&oAse'
 SMALLMISSILELR:
+  description:
+  - '&7Pieni maasta maahan -ohjus'
+  - '&7Pitkän kantaman variantti'
+  - '&7''Kaukana asuvalla timmyllä ei ollut mahdollisuuksia'''
+  name: '&ePieni GtG-ohjus LR'
+  stats:
+  - '&8⇨ &7Kantama: &e900 palikkaa'
+  - '&8⇨ &7Voima: &e3'
+  - '&8⇨ &7Nopeus: &e2'
+  - '&8⇨ &7Tarkkuus: &e100 palikan sisällä'
   type:
   - '&7&oAse'
 SMALLWARHEAD:
+  description:
+  - '&7Käytetään ohjuksen valmistuksessa.'
+  - '&7''Älä koske punaiseen osaan'''
+  name: '&ePieni taistelukärki'
   type:
   - '&7&oKomponentti'
 SUGARFUEL:
+  description:
+  - '&7Halpaa, korkeaenergistä, täydellistä pienille ohjuksille.'
+  name: '&eSokeripolttoaine'
   type:
   - '&7&oResurssi'
 ULTRALITE_INGOT:
+  description:
+  - '&7Superkevyt harkko ohjuksiin'
+  name: '&eUltraLite-harkko'
   type:
   - '&7&oKomponentti'
 ULTRALITE_PLATE:
+  description:
+  - '&7Superkevyt levy ohjuksiin'
+  name: '&eUltraLite-levy'
   type:
   - '&7&oKomponentti'
 WARHEAD:
+  description:
+  - '&7Käytetään ohjuksen valmistuksessa.'
+  - '&7''Perunat pois'''
+  name: '&eOhjuksen taistelukärki'
   type:
   - '&7&oKomponentti'
 WARHEADAP:
+  description:
+  - '&7Käytetään AP-ohjusten valmistukseen'
+  - '&7''Bunkkerit pois'''
+  name: '&eVahvistettu taistelukärki'
   type:
   - '&7&oKomponentti'
