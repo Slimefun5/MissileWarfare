@@ -12,7 +12,7 @@ import io.github.thebusybiscuit.slimefun5.libraries.dough.items.ItemUtils;
 import me.kaiyan.missilewarfare.MissileWarfare;
 import me.kaiyan.missilewarfare.missiles.ElytraMissileController;
 import me.kaiyan.missilewarfare.util.PlayerID;
-import me.kaiyan.missilewarfare.util.Translations;
+import me.kaiyan.missilewarfare.util.Messages;
 import me.kaiyan.missilewarfare.util.VariantsAPI;
 import me.mrCookieSlime.CSCoreLibPlugin.Configuration.Config;
 import me.mrCookieSlime.Slimefun.Objects.handlers.BlockTicker;
@@ -74,9 +74,9 @@ public class AntiElytraLauncher extends SlimefunItem {
                 BlockDataCompat.setFacing(event.getBlockPlaced(), BlockFace.UP);
                 Block block = event.getBlockPlaced();
                 if (correctlyBuilt(block)) {
-                    event.getPlayer().sendMessage(Translations.get("messages.launchers.createantielytra.success"));
+                    Messages.send(event.getPlayer(), "launcher.antielytra-created", "Created Anti Elytra Launcher");
                 } else {
-                    event.getPlayer().sendMessage(Translations.get("messages.launchers.createantielytra.failure"));
+                    Messages.send(event.getPlayer(), "launcher.antielytra-failure", "Missing Obsidian Below Launcher");
                 }
             }
         };
@@ -123,7 +123,7 @@ public class AntiElytraLauncher extends SlimefunItem {
                         PlayerID.targets.add(MissileWarfare.getInstance().getServer().getPlayer(playerUUID));
 
                         Player finalLocked = locked;
-                        finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Translations.get("messages.elytraattack.locking")).color(ChatColor.RED).create());
+                        finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Messages.get(finalLocked, "elytra.locking", "!!!MISSILE LOCKING ON!!!")).color(ChatColor.RED).create());
                         new BukkitRunnable() {
                             @Override
                             public void run() {
@@ -133,11 +133,11 @@ public class AntiElytraLauncher extends SlimefunItem {
                                     return;
                                 }
                                 if (player.isGliding()) {
-                                    finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Translations.get("messages.elytraattack.locked")).color(ChatColor.DARK_RED).create());
+                                    finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Messages.get(finalLocked, "elytra.locked", "!!!MISSILE LOCKED ON!!!")).color(ChatColor.DARK_RED).create());
                                     fireMissile((Dispenser) block.getState(), MissileWarfare.getInstance().getServer().getPlayer(playerUUID));
                                 } else if (player.isInsideVehicle()) {
                                     if (!player.getVehicle().isOnGround()) {
-                                        finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Translations.get("messages.elytraattack.locked")).color(ChatColor.DARK_RED).create());
+                                        finalLocked.spigot().sendMessage(ChatMessageType.ACTION_BAR, new ComponentBuilder(Messages.get(finalLocked, "elytra.locked", "!!!MISSILE LOCKED ON!!!")).color(ChatColor.DARK_RED).create());
                                         fireMissile((Dispenser) block.getState(), MissileWarfare.getInstance().getServer().getPlayer(playerUUID));
                                     }
                                 }

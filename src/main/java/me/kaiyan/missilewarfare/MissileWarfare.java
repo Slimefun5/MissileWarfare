@@ -15,6 +15,7 @@ import me.kaiyan.missilewarfare.missiles.MissileController;
 import me.kaiyan.missilewarfare.integrations.TownyLoader;
 import me.kaiyan.missilewarfare.integrations.WorldGuardLoader;
 import me.kaiyan.missilewarfare.util.PlayerID;
+import me.kaiyan.missilewarfare.util.Messages;
 import me.kaiyan.missilewarfare.util.Translations;
 import org.bstats.bukkit.Metrics;
 import org.bstats.charts.SingleLineChart;
@@ -85,6 +86,7 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
         }
         try {
             Translations.setup(new Config(getDataFolder() + "/lang/" + cfg.getString("translation-pack") + ".yml"));
+            Messages.setup();
             PlayerID.loadPlayers(saveFile);
             MissileConfig.setup(cfg);
             CustomItems.setup();
@@ -135,6 +137,7 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
         getServer().getPluginManager().registerEvents(new ExplosionEventListener(), this);
 
         Slimefun.getItemTranslationService().registerTranslations(this);
+        Slimefun.getAddonMessageService().registerTranslations(this);
 
         // Register this addon's own in-game wiki page (core does not auto-generate addon wikis).
         registerWiki();

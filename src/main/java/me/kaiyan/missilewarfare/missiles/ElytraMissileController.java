@@ -8,6 +8,7 @@ import net.md_5.bungee.api.chat.ComponentBuilder;
 import org.bukkit.Material;
 import org.bukkit.Particle;
 import org.bukkit.World;
+import me.kaiyan.missilewarfare.util.Messages;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.Damageable;
@@ -163,15 +164,15 @@ public class ElytraMissileController {
         if (!player.isGliding()) {
             ComponentBuilder builder = new ComponentBuilder("");
             if (loosetime <= System.currentTimeMillis()) {
-                builder.append("!!! LOST MISSILE !!!").color(ChatColor.DARK_GREEN);
+                builder.append(Messages.get(player, "elytra.missile-lost", "!!! LOST MISSILE !!!")).color(ChatColor.DARK_GREEN);
             } else {
-                builder.append("Losing Missile...").color(ChatColor.GREEN);
+                builder.append(Messages.get(player, "elytra.missile-losing", "Losing Missile...")).color(ChatColor.GREEN);
             }
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR, builder.create());
         } else {
             ComponentBuilder builder = new ComponentBuilder("");
 
-            builder.append("!! MISSILE INCOMING !!").bold(true).color(ChatColor.DARK_RED);
+            builder.append(Messages.get(player, "elytra.missile-incoming", "!! MISSILE INCOMING !!")).bold(true).color(ChatColor.DARK_RED);
 
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR, builder.create());
         }

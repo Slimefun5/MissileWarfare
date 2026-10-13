@@ -8,7 +8,7 @@ import io.github.thebusybiscuit.slimefun5.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import me.kaiyan.missilewarfare.MissileWarfare;
 import me.kaiyan.missilewarfare.missiles.MissileController;
-import me.kaiyan.missilewarfare.util.Translations;
+import me.kaiyan.missilewarfare.util.Messages;
 import me.kaiyan.missilewarfare.util.VariantsAPI;
 import net.md_5.bungee.api.ChatColor;
 import net.md_5.bungee.api.ChatMessageType;
@@ -53,7 +53,7 @@ public class ManPad extends SlimefunItem {
     private void itemUse(PlayerRightClickEvent event) {
         SlimefunItem manpad = event.getSlimefunItem().get();
         if (event.getPlayer().isSneaking() && !active.contains(event.getPlayer())) {
-            event.getPlayer().sendMessage(Translations.get("messages.manpad.locking"));
+            Messages.send(event.getPlayer(), "manpad.locking", "Engaging Targeting Mode...");
             active.add(event.getPlayer());
             new BukkitRunnable() {
                 public int scanLinepos = 0;
@@ -62,9 +62,9 @@ public class ManPad extends SlimefunItem {
                 @Override
                 public void run() {
                     if (!event.getSlimefunItem().isPresent()) {
-                        event.getPlayer().sendMessage(Translations.get("messages.manpad.itemchanged"));
+                        Messages.send(event.getPlayer(), "manpad.item-changed", "Failed: Changed item");
                     } else if (event.getSlimefunItem().get() != manpad) {
-                        event.getPlayer().sendMessage(Translations.get("messages.manpad.itemchanged"));
+                        Messages.send(event.getPlayer(), "manpad.item-changed", "Failed: Changed item");
                     }
                     MissileController lockedmissile = null;
                     List<MissileController> missiles = new ArrayList<>();
@@ -119,11 +119,13 @@ public class ManPad extends SlimefunItem {
                         }
                         scanline.append("]").color(ChatColor.WHITE);
                     } else {
-                        scanline.append("MissileType: " + VariantsAPI.getStrVariantFromInt(lockedmissile.type)).color(ChatColor.GOLD);
+                        scanline.append(Messages.get(event.getPlayer(), "manpad.missile-type", "MissileType: ")
+                                + VariantsAPI.getStrVariantFromInt(lockedmissile.type)).color(ChatColor.GOLD);
                         scanline.append("[");
                         scanline.append("XXX").color(ChatColor.RED);
                         scanline.append("]").color(ChatColor.WHITE);
-                        scanline.append("Dist: " + Math.round(event.getPlayer().getLocation().distance(lockedmissile.pos.toLocation(event.getPlayer().getWorld())))).color(ChatColor.GOLD);
+                        scanline.append(Messages.get(event.getPlayer(), "manpad.distance", "Dist: ")
+                                + Math.round(event.getPlayer().getLocation().distance(lockedmissile.pos.toLocation(event.getPlayer().getWorld())))).color(ChatColor.GOLD);
                         event.getPlayer().playNote(event.getPlayer().getLocation(), Instrument.STICKS, Note.flat(1, Note.Tone.E));
                         event.getPlayer().playNote(event.getPlayer().getLocation(), Instrument.GUITAR, Note.flat(1, Note.Tone.F));
                         event.getPlayer().playNote(event.getPlayer().getLocation(), Instrument.FLUTE, Note.flat(1, Note.Tone.E));
@@ -134,7 +136,7 @@ public class ManPad extends SlimefunItem {
                     if (!event.getPlayer().isSneaking()) {
                         if (lockedmissile == null) {
                             active.remove(event.getPlayer());
-                            event.getPlayer().sendMessage(Translations.get("messages.manpad.notarget"));
+                            Messages.send(event.getPlayer(), "manpad.no-target", "Failed to fire: No Target");
                             this.cancel();
                         } else {
                             active.remove(event.getPlayer());

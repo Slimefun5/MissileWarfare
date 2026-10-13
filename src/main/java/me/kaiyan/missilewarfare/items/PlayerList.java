@@ -9,7 +9,7 @@ import io.github.thebusybiscuit.slimefun5.core.handlers.ItemDropHandler;
 import io.github.thebusybiscuit.slimefun5.core.handlers.ItemUseHandler;
 import me.kaiyan.missilewarfare.MissileWarfare;
 import me.kaiyan.missilewarfare.util.PlayerID;
-import me.kaiyan.missilewarfare.util.Translations;
+import me.kaiyan.missilewarfare.util.Messages;
 import org.bukkit.NamespacedKey;
 import org.bukkit.OfflinePlayer;
 import org.bukkit.conversations.Conversation;
@@ -68,7 +68,7 @@ public class PlayerList extends SlimefunItem {
             PersistentDataContainer cont = meta.getPersistentDataContainer();
 
             cont.remove(key);
-            player.sendMessage(Translations.get("messages.playerlist.resetkey"));
+            Messages.send(player, "playerlist.reset-id", "Reset Key");
             return false;
         }
         return true;
@@ -82,19 +82,22 @@ public class PlayerList extends SlimefunItem {
         try {
             if (event.getSlimefunBlock().isPresent()) {
                 if (event.getSlimefunBlock().get().getId().equals("ANTIELYTRALAUNCHER")) {
-                    event.getPlayer().sendMessage(Translations.get("messages.playerlist.addedkey") + cont.get(key, PersistentDataType.STRING) + "");
+                    Messages.send(event.getPlayer(), "playerlist.added-id", "Added ID ",
+                            line -> line + cont.get(key, PersistentDataType.STRING));
                     return;
                 }
             }
         } catch (NullPointerException e) {
-            event.getPlayer().sendMessage(Translations.get("messages.playerlist.noid"));
+            Messages.send(event.getPlayer(), "playerlist.no-id",
+                    "Couldn't add ID to the launcher, No ID assigned to this PlayerList");
             return;
         }
         if (!event.getSlimefunBlock().isPresent()) {
             Prompt askToWrite = new StringPrompt() {
                 @Override
                 public String getPromptText(ConversationContext conversationContext) {
-                    return Translations.get("messages.playerlist.askwriteprompt");
+                    return Messages.get(Messages.viewer(conversationContext.getForWhom()),
+                            "playerlist.ask-add", "What player would you like to add? Say exit to exit");
                 }
 
                 @Override
@@ -103,11 +106,12 @@ public class PlayerList extends SlimefunItem {
                         List<OfflinePlayer> players = PlayerID.players.get(cont.get(key, PersistentDataType.STRING));
                         players.add(MissileWarfare.getInstance().getServer().getPlayerExact(s));
                         PlayerID.players.put(cont.get(key, PersistentDataType.STRING), players);
-                        conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.addedplayer") + MissileWarfare.getInstance().getServer().getPlayerExact(s));
+                        Messages.sendRaw(conversationContext.getForWhom(), "playerlist.added-player", "Added player ",
+                                line -> line + MissileWarfare.getInstance().getServer().getPlayerExact(s));
                         return END_OF_CONVERSATION;
                     } catch (NullPointerException e) {
                         e.printStackTrace();
-                        conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.invalidplayer"));
+                        Messages.sendRaw(conversationContext.getForWhom(), "playerlist.invalid-player", "INVALID PLAYER");
                         return END_OF_CONVERSATION;
                     }
                 }
@@ -115,7 +119,8 @@ public class PlayerList extends SlimefunItem {
             Prompt askToRemove = new StringPrompt() {
                 @Override
                 public String getPromptText(ConversationContext conversationContext) {
-                    return Translations.get("messages.playerlist.removeplayer");
+                    return Messages.get(Messages.viewer(conversationContext.getForWhom()),
+                            "playerlist.ask-remove", "What player would you like to remove?");
                 }
 
                 @Override
@@ -124,11 +129,12 @@ public class PlayerList extends SlimefunItem {
                         List<OfflinePlayer> players = PlayerID.players.get(cont.get(key, PersistentDataType.STRING));
                         players.remove(MissileWarfare.getInstance().getServer().getPlayerExact(s));
                         PlayerID.players.put(cont.get(key, PersistentDataType.STRING), players);
-                        conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.removedplayer") + MissileWarfare.getInstance().getServer().getPlayerExact(s));
+                        Messages.sendRaw(conversationContext.getForWhom(), "playerlist.removed-player", "Removed Player ",
+                                line -> line + MissileWarfare.getInstance().getServer().getPlayerExact(s));
                         return END_OF_CONVERSATION;
                     } catch (NullPointerException e) {
                         e.printStackTrace();
-                        conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.removeplayer"));
+                        Messages.sendRaw(conversationContext.getForWhom(), "playerlist.ask-remove", "What player would you like to remove?");
                         return END_OF_CONVERSATION;
                     }
                 }
@@ -137,16 +143,19 @@ public class PlayerList extends SlimefunItem {
             Prompt askToRead = new StringPrompt() {
                 @Override
                 public String getPromptText(ConversationContext conversationContext) {
-                    return Translations.get("messages.playerlist.asktoread");
+                    Player viewer = Messages.viewer(conversationContext.getForWhom());
+                    return Messages.get(viewer, "playerlist.ask-action",
+                            "Say '%read%' to see the players associated with this ID, Say '%add%' to add a player, Say '%remove%' to remove a player, Say 'exit' to exit")
+                            .replace("%read%", Messages.get(viewer, "playerlist.input-read", "read"))
+                            .replace("%add%", Messages.get(viewer, "playerlist.input-add", "add"))
+                            .replace("%remove%", Messages.get(viewer, "playerlist.input-remove", "remove"));
                 }
 
                 @Override
                 public Prompt acceptInput(ConversationContext conversationContext, String s) {
-                    String read = Translations.get("messages.playerlist.inputs.read");
-                    String add = Translations.get("messages.playerlist.inputs.add");
-                    String remove = Translations.get("messages.playerlist.inputs.remove");
-                    if (s.equals(read)) {
-                        String out = "Players: ";
+                    Player viewer = Messages.viewer(conversationContext.getForWhom());
+                    if (Messages.matchesInput(viewer, s, "playerlist.input-read", "read")) {
+                        String out = Messages.get(viewer, "playerlist.players", "Players: ");
                         List<String> players = new ArrayList<>();
                         for (OfflinePlayer player : PlayerID.players.get(cont.get(key, PersistentDataType.STRING))) {
                             players.add(player.getName());
@@ -154,12 +163,12 @@ public class PlayerList extends SlimefunItem {
                         out += players;
                         conversationContext.getForWhom().sendRawMessage(out);
                         return END_OF_CONVERSATION;
-                    } else if (s.equals(add)) {
+                    } else if (Messages.matchesInput(viewer, s, "playerlist.input-add", "add")) {
                         return askToWrite;
-                    } else if (s.equals(remove)) {
+                    } else if (Messages.matchesInput(viewer, s, "playerlist.input-remove", "remove")) {
                         return askToRemove;
                     }
-                    conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.incorrectinput"));
+                    Messages.sendRaw(conversationContext.getForWhom(), "playerlist.incorrect-input", "Incorrect Input");
                     return END_OF_CONVERSATION;
                 }
             };
@@ -167,7 +176,8 @@ public class PlayerList extends SlimefunItem {
             Prompt askForID = new StringPrompt() {
                 @Override
                 public String getPromptText(ConversationContext conversationContext) {
-                    return Translations.get("messages.playerlist.askinputid");
+                    return Messages.get(Messages.viewer(conversationContext.getForWhom()),
+                            "playerlist.ask-id", "Input ID to create, say exit to leave");
                 }
 
                 @Override
@@ -177,12 +187,13 @@ public class PlayerList extends SlimefunItem {
                     }
                     if (PlayerID.players.get(s) == null) {
                         PlayerID.players.put(s, new ArrayList<>());
-                        conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.createdid").replace("{id}", s));
+                        Messages.sendRaw(conversationContext.getForWhom(), "playerlist.created-id",
+                                "Created ID : {id}, You can now write to it", line -> line.replace("{id}", s));
                         cont.set(key, PersistentDataType.STRING, s);
                         event.getItem().setItemMeta(meta);
                         return END_OF_CONVERSATION;
                     } else {
-                        conversationContext.getForWhom().sendRawMessage(Translations.get("messages.playerlist.gottenid"));
+                        Messages.sendRaw(conversationContext.getForWhom(), "playerlist.got-id", "Gotten ID");
                         cont.set(key, PersistentDataType.STRING, s);
                         List<String> lore = meta.getLore() != null ? meta.getLore() : new ArrayList<>();
                         lore.add("ID: " + s);
