@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Yenmez Şeker'
+  explosives: 'Patlayıcı İshal'
+  chlorine: 'Daha Temiz Havuzlar!'
+  groundlauncher: 'Kara Füze Rampası'
+  antimissilelauncher: 'Demir Kubbe.'
+  antielytramissilelauncher: 'Ender Kubbe?'
+  smallgmissileparts: 'Fazladan adımlı füze'
+  gmissileparts: 'Fazladan adımlı füze'
+  smallgmissile: 'Grinin 5 Tonu'
+  advancedfuel: 'Gelişmiş (ve daha da yenmez) Yakıtlar!'
+  missileparts: 'Daha da fazla adımlı füze'

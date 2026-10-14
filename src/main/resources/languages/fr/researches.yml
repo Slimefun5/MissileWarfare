@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Sucre immangeable'
+  explosives: 'Diarrhée explosive'
+  chlorine: 'Des piscines plus propres !'
+  groundlauncher: 'Lanceur de missiles sol-sol'
+  antimissilelauncher: 'Dôme de fer.'
+  antielytramissilelauncher: 'Dôme de l''Ender ?'
+  smallgmissileparts: 'Missile avec étapes en plus'
+  gmissileparts: 'Missile avec étapes en plus'
+  smallgmissile: '5 nuances de gris'
+  advancedfuel: 'Carburants avancés (et encore moins comestibles) !'
+  missileparts: 'Missile avec encore plus d''étapes'

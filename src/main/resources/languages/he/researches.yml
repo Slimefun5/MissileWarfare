@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'סוכר לא אכיל'
+  explosives: 'שלשול נפיץ'
+  chlorine: 'בריכות נקיות יותר!'
+  groundlauncher: 'משגר טילי קרקע'
+  antimissilelauncher: 'כיפת ברזל.'
+  antielytramissilelauncher: 'כיפת אנדר?'
+  smallgmissileparts: 'טיל עם שלבים נוספים'
+  gmissileparts: 'טיל עם שלבים נוספים'
+  smallgmissile: '5 גוונים של אפור'
+  advancedfuel: 'דלקים מתקדמים (ועוד פחות אכילים)!'
+  missileparts: 'טיל עם עוד יותר שלבים'

@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Неядомы цукар'
+  explosives: 'Выбуховая дыярэя'
+  chlorine: 'Чысцейшыя басейны!'
+  groundlauncher: 'Наземная пускавая ўстаноўка'
+  antimissilelauncher: 'Жалезны купал.'
+  antielytramissilelauncher: 'Эндар-купал?'
+  smallgmissileparts: 'Ракета, толькі складаней'
+  gmissileparts: 'Ракета, толькі складаней'
+  smallgmissile: '5 адценняў шэрага'
+  advancedfuel: 'Прасунутае (і яшчэ менш ядомае) паліва!'
+  missileparts: 'Ракета, яшчэ складаней'

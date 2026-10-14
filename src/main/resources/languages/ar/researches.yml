@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'سكر غير صالح للأكل'
+  explosives: 'إسهال متفجّر'
+  chlorine: 'مسابح أنظف!'
+  groundlauncher: 'قاذفة قذائف أرضية'
+  antimissilelauncher: 'القبة الحديدية.'
+  antielytramissilelauncher: 'قبة الاندر؟'
+  smallgmissileparts: 'قذيفة بخطوات إضافية'
+  gmissileparts: 'قذيفة بخطوات إضافية'
+  smallgmissile: '5 درجات من الرمادي'
+  advancedfuel: 'وقود متقدّم (وأقل صلاحية للأكل)!'
+  missileparts: 'قذيفة بخطوات أكثر'

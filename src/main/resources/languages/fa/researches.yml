@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'شکر نخوردنی'
+  explosives: 'اسهال انفجاری'
+  chlorine: 'استخرهای تمیزتر!'
+  groundlauncher: 'پرتابگر موشک زمینی'
+  antimissilelauncher: 'گنبد آهنین.'
+  antielytramissilelauncher: 'گنبد فرجام؟'
+  smallgmissileparts: 'موشک با مراحل اضافه'
+  gmissileparts: 'موشک با مراحل اضافه'
+  smallgmissile: '5 سایه از خاکستری'
+  advancedfuel: 'سوخت‌های پیشرفته (و حتی نخوردنی‌تر)!'
+  missileparts: 'موشک با مراحل باز هم بیشتر'

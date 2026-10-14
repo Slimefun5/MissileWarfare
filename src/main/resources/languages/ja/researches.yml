@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: '食べられない砂糖'
+  explosives: '爆発性の下痢'
+  chlorine: 'プールをきれいに！'
+  groundlauncher: '地上ミサイルランチャー'
+  antimissilelauncher: 'アイアンドーム。'
+  antielytramissilelauncher: 'エンダードーム？'
+  smallgmissileparts: '手順の多いミサイル'
+  gmissileparts: '手順の多いミサイル'
+  smallgmissile: 'グレイの5つの色合い'
+  advancedfuel: '高度な（さらに食べられない）燃料！'
+  missileparts: 'さらに手順の多いミサイル'

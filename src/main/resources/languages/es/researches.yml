@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Azúcar incomible'
+  explosives: 'Diarrea explosiva'
+  chlorine: '¡Piscinas más limpias!'
+  groundlauncher: 'Lanzador de misiles terrestre'
+  antimissilelauncher: 'Cúpula de Hierro.'
+  antielytramissilelauncher: '¿Cúpula de Ender?'
+  smallgmissileparts: 'Misil con pasos extra'
+  gmissileparts: 'Misil con pasos extra'
+  smallgmissile: '5 sombras de gris'
+  advancedfuel: '¡Combustibles avanzados (y aún menos comestibles)!'
+  missileparts: 'Misil con aún más pasos'

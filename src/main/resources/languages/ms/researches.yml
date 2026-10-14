@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Gula Tak Boleh Dimakan'
+  explosives: 'Cirit-birit Meletup'
+  chlorine: 'Kolam Lebih Bersih!'
+  groundlauncher: 'Pelancar Peluru Berpandu Darat'
+  antimissilelauncher: 'Kubah Besi.'
+  antielytramissilelauncher: 'Kubah Ender?'
+  smallgmissileparts: 'Peluru berpandu dengan langkah tambahan'
+  gmissileparts: 'Peluru berpandu dengan langkah tambahan'
+  smallgmissile: '5 Rona Kelabu'
+  advancedfuel: 'Bahan Api Lanjutan (dan lebih tak boleh dimakan)!'
+  missileparts: 'Peluru berpandu dengan lebih banyak langkah'

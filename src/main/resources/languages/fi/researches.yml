@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Syömäkelvoton sokeri'
+  explosives: 'Räjähtävä ripuli'
+  chlorine: 'Puhtaammat uima-altaat!'
+  groundlauncher: 'Maaohjuslaukaisin'
+  antimissilelauncher: 'Rautakupoli.'
+  antielytramissilelauncher: 'Ender-kupoli?'
+  smallgmissileparts: 'Ohjus lisävaiheilla'
+  gmissileparts: 'Ohjus lisävaiheilla'
+  smallgmissile: '5 harmaan sävyä'
+  advancedfuel: 'Kehittyneet (ja vielä vähemmän syötävät) polttoaineet!'
+  missileparts: 'Ohjus vielä useammilla vaiheilla'

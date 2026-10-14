@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: '먹을 수 없는 설탕'
+  explosives: '폭발성 설사'
+  chlorine: '더 깨끗한 수영장!'
+  groundlauncher: '지상 미사일 발사기'
+  antimissilelauncher: '아이언 돔.'
+  antielytramissilelauncher: '엔더 돔?'
+  smallgmissileparts: '단계가 추가된 미사일'
+  gmissileparts: '단계가 추가된 미사일'
+  smallgmissile: '그레이의 5가지 그림자'
+  advancedfuel: '고급 (그리고 더 못 먹는) 연료!'
+  missileparts: '단계가 훨씬 더 많은 미사일'

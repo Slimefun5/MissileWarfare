@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Oätligt socker'
+  explosives: 'Explosiv diarré'
+  chlorine: 'Renare pooler!'
+  groundlauncher: 'Markmissilramp'
+  antimissilelauncher: 'Järnkupol.'
+  antielytramissilelauncher: 'Enderkupol?'
+  smallgmissileparts: 'Missil med extra steg'
+  gmissileparts: 'Missil med extra steg'
+  smallgmissile: '5 nyanser av grått'
+  advancedfuel: 'Avancerade (och ännu mindre ätliga) bränslen!'
+  missileparts: 'Missil med ännu fler steg'

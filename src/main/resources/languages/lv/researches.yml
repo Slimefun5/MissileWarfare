@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Neēdams cukurs'
+  explosives: 'Sprādzienbīstama caureja'
+  chlorine: 'Tīrāki baseini!'
+  groundlauncher: 'Zemes raķešu palaidējs'
+  antimissilelauncher: 'Dzelzs kupols.'
+  antielytramissilelauncher: 'Ender kupols?'
+  smallgmissileparts: 'Raķete ar papildu soļiem'
+  gmissileparts: 'Raķete ar papildu soļiem'
+  smallgmissile: '5 pelēkā nokrāsas'
+  advancedfuel: 'Progresīva (un vēl mazāk ēdama) degviela!'
+  missileparts: 'Raķete ar vēl vairāk soļiem'

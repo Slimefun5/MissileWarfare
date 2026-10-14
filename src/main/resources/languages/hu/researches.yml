@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Ehetetlen cukor'
+  explosives: 'Robbanásszerű hasmenés'
+  chlorine: 'Tisztább medencék!'
+  groundlauncher: 'Földi rakétakilövő'
+  antimissilelauncher: 'Vaskupola.'
+  antielytramissilelauncher: 'Enderkupola?'
+  smallgmissileparts: 'Rakéta extra lépésekkel'
+  gmissileparts: 'Rakéta extra lépésekkel'
+  smallgmissile: 'A szürke 5 árnyalata'
+  advancedfuel: 'Fejlett (és még kevésbé ehető) üzemanyagok!'
+  missileparts: 'Rakéta még több lépéssel'

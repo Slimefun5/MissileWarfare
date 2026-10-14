@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Nevalgomas cukrus'
+  explosives: 'Sprogstamasis viduriavimas'
+  chlorine: 'Švaresni baseinai!'
+  groundlauncher: 'Antžeminis raketų paleidiklis'
+  antimissilelauncher: 'Geležinis kupolas.'
+  antielytramissilelauncher: 'Enderio kupolas?'
+  smallgmissileparts: 'Raketa su papildomais žingsniais'
+  gmissileparts: 'Raketa su papildomais žingsniais'
+  smallgmissile: '5 pilkos atspalviai'
+  advancedfuel: 'Pažangus (ir dar mažiau valgomas) kuras!'
+  missileparts: 'Raketa su dar daugiau žingsnių'

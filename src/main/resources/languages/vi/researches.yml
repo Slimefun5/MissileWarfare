@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Đường không ăn được'
+  explosives: 'Tiêu chảy bùng nổ'
+  chlorine: 'Hồ bơi sạch hơn!'
+  groundlauncher: 'Bệ phóng Tên lửa Mặt đất'
+  antimissilelauncher: 'Vòm Sắt.'
+  antielytramissilelauncher: 'Vòm Ender?'
+  smallgmissileparts: 'Tên lửa thêm vài bước'
+  gmissileparts: 'Tên lửa thêm vài bước'
+  smallgmissile: '5 Sắc thái Xám'
+  advancedfuel: 'Nhiên liệu Nâng cao (và càng không ăn được)!'
+  missileparts: 'Tên lửa thêm nhiều bước nữa'

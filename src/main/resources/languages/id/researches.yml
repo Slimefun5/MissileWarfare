@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Gula Tak Bisa Dimakan'
+  explosives: 'Diare Eksplosif'
+  chlorine: 'Kolam Lebih Bersih!'
+  groundlauncher: 'Peluncur Rudal Darat'
+  antimissilelauncher: 'Kubah Besi.'
+  antielytramissilelauncher: 'Kubah Ender?'
+  smallgmissileparts: 'Rudal dengan langkah tambahan'
+  gmissileparts: 'Rudal dengan langkah tambahan'
+  smallgmissile: '5 Nuansa Abu-abu'
+  advancedfuel: 'Bahan Bakar Canggih (dan makin tak bisa dimakan)!'
+  missileparts: 'Rudal dengan lebih banyak langkah lagi'

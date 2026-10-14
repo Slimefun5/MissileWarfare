@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Niejadalny cukier'
+  explosives: 'Wybuchowa biegunka'
+  chlorine: 'Czystsze baseny!'
+  groundlauncher: 'Naziemna wyrzutnia pocisków'
+  antimissilelauncher: 'Żelazna Kopuła.'
+  antielytramissilelauncher: 'Enderowa Kopuła?'
+  smallgmissileparts: 'Pocisk z dodatkowymi krokami'
+  gmissileparts: 'Pocisk z dodatkowymi krokami'
+  smallgmissile: '5 twarzy szarości'
+  advancedfuel: 'Zaawansowane (i jeszcze mniej jadalne) paliwa!'
+  missileparts: 'Pocisk z jeszcze większą liczbą kroków'

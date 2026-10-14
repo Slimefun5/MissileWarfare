@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'น้ำตาลที่กินไม่ได้'
+  explosives: 'ท้องเสียระเบิด'
+  chlorine: 'สระว่ายน้ำสะอาดขึ้น!'
+  groundlauncher: 'เครื่องยิงขีปนาวุธภาคพื้นดิน'
+  antimissilelauncher: 'โดมเหล็ก'
+  antielytramissilelauncher: 'โดมเอนเดอร์?'
+  smallgmissileparts: 'ขีปนาวุธแบบมีขั้นตอนเพิ่ม'
+  gmissileparts: 'ขีปนาวุธแบบมีขั้นตอนเพิ่ม'
+  smallgmissile: '5 เฉดสีเทา'
+  advancedfuel: 'เชื้อเพลิงขั้นสูง (และยิ่งกินไม่ได้)!'
+  missileparts: 'ขีปนาวุธแบบมีขั้นตอนเพิ่มอีก'

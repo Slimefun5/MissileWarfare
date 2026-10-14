@@ -137,6 +137,8 @@ public class MissileWarfare extends JavaPlugin implements SlimefunAddon {
         getServer().getPluginManager().registerEvents(new ExplosionEventListener(), this);
 
         Slimefun.getItemTranslationService().registerTranslations(this);
+        Slimefun.getLocalization().registerItemGroupTranslations(this);
+        Slimefun.getLocalization().registerResearchTranslations(this);
         Slimefun.getAddonMessageService().registerTranslations(this);
 
         // Register this addon's own in-game wiki page (core does not auto-generate addon wikis).

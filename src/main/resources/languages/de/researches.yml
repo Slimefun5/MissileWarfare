@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Ungenießbarer Zucker'
+  explosives: 'Explosiver Durchfall'
+  chlorine: 'Sauberere Schwimmbecken!'
+  groundlauncher: 'Boden-Raketenwerfer'
+  antimissilelauncher: 'Eisenkuppel.'
+  antielytramissilelauncher: 'Enderkuppel?'
+  smallgmissileparts: 'Rakete mit Extraschritten'
+  gmissileparts: 'Rakete mit Extraschritten'
+  smallgmissile: '5 Graustufen'
+  advancedfuel: 'Fortgeschrittene (und noch ungenießbarere) Treibstoffe!'
+  missileparts: 'Rakete mit noch mehr Schritten'

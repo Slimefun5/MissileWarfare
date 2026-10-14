@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'කෑමට නුසුදුසු සීනි'
+  explosives: 'පුපුරන පාචනය'
+  chlorine: 'වඩා පිරිසිදු තටාක!'
+  groundlauncher: 'බිම් මිසයිල දියත් කරන්නා'
+  antimissilelauncher: 'යකඩ ගුම්මටය.'
+  antielytramissilelauncher: 'එන්ඩර් ගුම්මටය?'
+  smallgmissileparts: 'අමතර පියවර සහිත මිසයිලය'
+  gmissileparts: 'අමතර පියවර සහිත මිසයිලය'
+  smallgmissile: 'අළු පැහැයේ සෙවණැලි 5'
+  advancedfuel: 'උසස් (තවත් කෑමට නුසුදුසු) ඉන්ධන!'
+  missileparts: 'තවත් පියවර සහිත මිසයිලය'

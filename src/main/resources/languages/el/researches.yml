@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Μη βρώσιμη ζάχαρη'
+  explosives: 'Εκρηκτική διάρροια'
+  chlorine: 'Πιο καθαρές πισίνες!'
+  groundlauncher: 'Εκτοξευτής Πυραύλων Εδάφους'
+  antimissilelauncher: 'Σιδερένιος Θόλος.'
+  antielytramissilelauncher: 'Θόλος Έντερ;'
+  smallgmissileparts: 'Πύραυλος με επιπλέον βήματα'
+  gmissileparts: 'Πύραυλος με επιπλέον βήματα'
+  smallgmissile: '5 Αποχρώσεις του Γκρι'
+  advancedfuel: 'Προηγμένα (και ακόμα λιγότερο βρώσιμα) Καύσιμα!'
+  missileparts: 'Πύραυλος με ακόμα περισσότερα βήματα'

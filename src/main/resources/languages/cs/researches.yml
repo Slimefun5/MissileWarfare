@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Nejedlý cukr'
+  explosives: 'Výbušný průjem'
+  chlorine: 'Čistší bazény!'
+  groundlauncher: 'Pozemní odpalovač střel'
+  antimissilelauncher: 'Železná kopule.'
+  antielytramissilelauncher: 'Endová kopule?'
+  smallgmissileparts: 'Střela, jen složitěji'
+  gmissileparts: 'Střela, jen složitěji'
+  smallgmissile: '5 odstínů šedi'
+  advancedfuel: 'Pokročilá (a ještě méně jedlá) paliva!'
+  missileparts: 'Střela, ještě složitěji'

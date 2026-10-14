@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Нејадлив шеќер'
+  explosives: 'Експлозивна дијареа'
+  chlorine: 'Почисти базени!'
+  groundlauncher: 'Копнен лансер за проектили'
+  antimissilelauncher: 'Железна купола.'
+  antielytramissilelauncher: 'Ендер купола?'
+  smallgmissileparts: 'Проектил, само посложено'
+  gmissileparts: 'Проектил, само посложено'
+  smallgmissile: '5 нијанси на сиво'
+  advancedfuel: 'Напредни (и уште помалку јадливи) горива!'
+  missileparts: 'Проектил, уште посложено'

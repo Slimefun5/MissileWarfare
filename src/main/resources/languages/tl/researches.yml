@@ -1,0 +1,12 @@
+missilewarfare:
+  basic_fuel: 'Asukal na Hindi Makakain'
+  explosives: 'Sumasabog na Pagtatae'
+  chlorine: 'Mas Malinis na Languyan!'
+  groundlauncher: 'Pantudla ng Misil sa Lupa'
+  antimissilelauncher: 'Bakal na Simboryo.'
+  antielytramissilelauncher: 'Simboryong Ender?'
+  smallgmissileparts: 'Misil na may dagdag na hakbang'
+  gmissileparts: 'Misil na may dagdag na hakbang'
+  smallgmissile: '5 Lilim ng Abo'
+  advancedfuel: 'Mga Abanseng (at lalong hindi makakain na) Gatong!'
+  missileparts: 'Misil na may mas marami pang hakbang'
