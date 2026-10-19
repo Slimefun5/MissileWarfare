@@ -687,14 +687,17 @@ public class CustomItems {
         NamespacedKey gmissilekey = new NamespacedKey("missilewarfare", "gmissile");
         Research gmissile = new Research(gmissilekey, 341243, "The Colors Of The Rainbow!", 20);
         gmissile.addItems(missile, missileHE, missileLR, missileAC);
+        gmissile.register();
 
-        NamespacedKey gmissileAPkey = new NamespacedKey("missilewarfare", "gmissileAP");
+        NamespacedKey gmissileAPkey = new NamespacedKey("missilewarfare", "gmissileap");
         Research gmissileAP = new Research(gmissileAPkey, 341246, "The Penetrator Trio", 15);
         gmissileAP.addItems(missileAP, missileAPt, missileAPtr);
+        gmissileAP.register();
 
-        NamespacedKey gmissileGASkey = new NamespacedKey("missilewarfare", "gmissileGAS");
+        NamespacedKey gmissileGASkey = new NamespacedKey("missilewarfare", "gmissilegas");
         Research gmissileGAS = new Research(gmissileGASkey, 341226, "One Ball Man", 15);
         gmissileGAS.addItems(missilegas);
+        gmissileGAS.register();
         //</editor-fold>
     }
 }

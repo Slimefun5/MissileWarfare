@@ -10,3 +10,6 @@ missilewarfare:
   smallgmissile: '5 เฉดสีเทา'
   advancedfuel: 'เชื้อเพลิงขั้นสูง (และยิ่งกินไม่ได้)!'
   missileparts: 'ขีปนาวุธแบบมีขั้นตอนเพิ่มอีก'
+  gmissile: 'สีสันของสายรุ้ง!'
+  gmissileap: 'สามสหายเจาะเกราะ'
+  gmissilegas: 'ชายลูกบอลเดียว'
