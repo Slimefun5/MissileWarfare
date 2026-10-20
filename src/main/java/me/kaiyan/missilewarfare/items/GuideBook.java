@@ -40,7 +40,7 @@ public class GuideBook extends SlimefunItem {
 
         String[] content = Translations.getarr("guidebook.homepage.content");
 
-        BaseComponent[] homepage = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.homepage.title") + "\n").color(ChatColor.BOLD)
+        BaseComponent[] homepage = new ComponentBuilder(ChatColor.BOLD + Translations.get("guidebook.homepage.title") + "\n")
                 .append(Translations.get("guidebook.homepage.subtitle") + "\n")
                 .append(ChatColor.BOLD + Translations.get("guidebook.homepage.contenttitle") + "\n")
                 .append(ChatColor.BLUE + "" + ChatColor.UNDERLINE + content[0] + "\n").event(new ClickEvent(ClickEvent.Action.CHANGE_PAGE, "2"))
